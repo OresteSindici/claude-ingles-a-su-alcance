@@ -1,0 +1,32 @@
+# Publishes the app to Firebase Hosting on every push to main, and a temporary preview link for each pull request.
+# Stays inactive until the FIREBASE_SERVICE_ACCOUNT secret is added to the repository (see DEPLOY.md).
+name: Deploy
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions: { contents: read, pull-requests: write, checks: write }
+    env:
+      HAS_FIREBASE: ${{ secrets.FIREBASE_SERVICE_ACCOUNT != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: app/package-lock.json }
+      - run: npm ci
+        working-directory: app
+      - run: npm run build
+        working-directory: app
+      - if: env.HAS_FIREBASE == 'true' && github.event_name == 'push'
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          channelId: live
+      - if: env.HAS_FIREBASE == 'true' && github.event_name == 'pull_request'
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
