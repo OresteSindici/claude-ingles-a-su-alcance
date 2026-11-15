@@ -1,0 +1,13 @@
+{
+ "fuente": "Pantallas del instalador original del manual (2003), escritas por el TC Jairo Alberto Payán",
+ "secciones": [
+  {"id": "memoria", "titulo": "In memoriam", "imagen": "capilla.jpg",
+   "texto": "A la memoria de mi padre, un médico palmirano que siempre se destacó por su altruismo, quien murió durante este período aciago de mi vida después de haber estado enfermo durante más de cinco años, y a quien no obstante estar en estado agonizante solo pude ver y despedir en su féretro, \"previa la presentación de su Certificado de Defunción\".\n\nPor fortuna falleció antes de enterarse de la atroz condena que se me infligió."},
+  {"id": "dedicatoria", "titulo": "Dedicatoria",
+   "texto": "A mi querida esposa Mary quien durante más de 20 años ha sabido interpretar con creces el mandato de Dios de acompañar a su pareja en la \"felicidad y en la adversidad\" y en quien reconozco por demás a una madre como pocas."},
+  {"id": "agradecimiento", "titulo": "Agradecimiento", "imagen": "tc-payan.jpg",
+   "texto": "A Dios por nutrirme con el estoicismo para soportar su voluntad y por llenarme de argumentos para aún seguir esperando su justicia.\n\nAl Comando Superior de la Fuerza Aérea Colombiana por creer en mi inocencia aunque esté impedida para pronunciarse al respecto;\n\nA mi hijo Ricardo Alberto por haberme transmitido sus conocimientos en el área de sistemas y por mostrarme su temple; a aquellos amigos verdaderos que se solidarizaron y me brindaron su apoyo a tan desigual causa, y por supuesto a mi familia que me da fuerzas para poder afrontar un mundo nuevo que honestamente no creo merecer."},
+  {"id": "plegaria", "titulo": "Plegaria",
+   "texto": "Por mi salud mental quisiese creer que mi situación es consecuencia de la inexactitud del Derecho Penal como ciencia.\n\nSólo espero que algún día la Honorable Corte Suprema de Justicia, en su sabiduría y guiada por el Todopoderoso, sepa reparar el daño ocasionado a una persona totalmente inocente y a su familia.\n\nSúbitamente, después de haber servido a mi Patria con amor por más de 25 años y exhibir una hoja de vida digna de emular, pasé a ser un paria social."}
+ ]
+}
