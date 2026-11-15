@@ -1,0 +1,1931 @@
+<?xml version="1.0"?>
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+       <html xmlns="http://www.w3.org/1999/xhtml"
+             xml:lang="en">
+<head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to jairo alberto payan."></meta><meta name="keywords" content="Hot Potatoes, Half-Baked Software, Windows, University of Victoria"></meta>
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC:Creator" content="UNREGISTERED" />
+<meta name="DC:Title" content="EVALUATION (12)" />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<title>
+EVALUATION (12)
+</title>
+
+<!-- Made with executable version 5.5 Release 0 Build 16 -->
+
+<style type="text/css">
+
+body{
+	font-family: COMIC SANS,Arial;
+	background-color: #a6a6a6;
+	color: #000000;
+	background-image: url('../Backup/Mis%20documentos/CURSO%20INGLES%20BASE/Ejercicios%20Internet/nova.GIF'); 
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: small
+}
+
+p{
+	text-align: justify;
+	margin: 0px;
+	font-size: small;
+}
+
+table, tr, td, div, span{
+	font-size: small;
+}
+
+div.Titles{
+	padding-top: 10px;
+	text-align: center;
+	margin-bottom: 4px;
+	color: #000000;
+}
+
+.ExerciseTitle{
+	font-size: large;
+	color: #000000;
+}
+
+.ExerciseSubtitle{
+	color: #000000;
+
+}
+
+span.Instructions{
+
+}
+
+.QuestionText{
+
+}
+
+.AnswerText{
+
+}
+
+.QNum{
+	font-weight: bold;
+}
+
+.FeedbackText{
+
+}	
+
+div.Feedback {
+	background-color: #a6a6a6;
+	left: 1px;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: small;
+}
+
+
+
+div.StdDiv{
+	background-color: #80ffff;
+	text-align: center;
+	color: #000000;
+	padding: 1em;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	margin: 1px 0px 0px 0px;
+	font-size: small;
+}
+
+
+.FunctionButton {
+	background-color: #80ffff;
+	color: #000000;
+	text-align: center;
+	border-style: solid;
+	border-color: #80ffff;
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+div.NavButtonBar{
+	background-color: #000000;
+	text-align: center;
+	margin: 2px 0px 2px 0px;
+	clear: both;
+	font-size: small;
+}
+
+div.NavButtonBar button {
+	border-style: solid;
+	border-color: #000000;
+	background-color: #000000;
+	border-width: 2px;
+	padding: 2px 2px 2px 2px;
+	color: #ffffff;
+	cursor: pointer;	
+}
+
+a{
+	color: #0000ff;
+}
+
+a:visited{
+	color: #0000cc;
+}
+
+a:hover{
+	color: #0000ff;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+<!--
+
+// BrowserCheck Object
+
+
+function BrowserCheck() {
+	var b = navigator.appName;
+	this.mac = (navigator.appVersion.indexOf('Mac') != -1);
+	if (b=="Netscape") this.b = 'ns';
+	else if (b=="Microsoft Internet Explorer") this.b = 'ie';
+	else this.b = b;
+	this.ns = (this.b == 'ns');
+	this.ie = (this.b == 'ie');
+	this.version = navigator.appVersion;
+	if (this.b == 'ie'){
+		var x = this.version.indexOf('MSIE ') + 5;
+		var vnum = '';
+
+		while ((this.version.charAt(x) > -1)&&(this.version.charAt(x) < 10)){
+			vnum += this.version.charAt(x);
+			x++;
+		}
+		this.v = parseInt(vnum);
+	}
+	else{
+		this.v = parseInt(this.version);
+	}
+	if (this.ns&&(this.v == 5)){
+		this.v = 6;
+	}
+	this.min = (this.v > 5);
+}
+
+is = new BrowserCheck();
+
+if ((is.min == false)||(is.ie5mac)){
+	alert('Your browser can\'t handle this page. You need NS6+ or IE6+ on Windows, or NS6+ on Mac.');
+}
+
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	if (is.ns) this.W = window.innerWidth;
+	if (is.ie) this.W = document.body.clientWidth;
+	if (is.ns) this.H = window.innerHeight;
+	if (is.ie) this.H = document.body.clientHeight;
+
+}
+
+var pg = null;
+
+function SuppressBackspace(e){ 
+
+	if (is.ns) {
+		thisKey = e.keyCode;
+	}
+	else {
+		thisKey = window.event.keyCode;
+	}
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+	}
+
+	if (Suppress == true){
+		if (is.ie){
+			window.event.returnValue = false;	
+			window.event.cancelBubble = true;
+		}
+		else{
+			e.preventDefault();
+		}
+	}
+}
+
+var NavLightColor = '#7f7f7f';
+var NavShadeColor = '#000000';
+var NavBarColor = '#000000';
+var FuncLightColor = '#bfffff';
+var FuncShadeColor = '#407f7f';
+var ExBGColor = '#80ffff';
+
+function NavBtnOver(Btn){
+	Btn.style.padding = '1px 3px 3px 1px';
+	Btn.style.borderLeftColor = NavLightColor;
+	Btn.style.borderTopColor = NavLightColor;
+	Btn.style.borderRightColor = NavShadeColor;
+	Btn.style.borderBottomColor = NavShadeColor;
+}
+
+function NavBtnOut(Btn){
+	Btn.style.borderColor = NavBarColor;
+	Btn.style.padding = '2px 2px 2px 2px';
+}
+
+function NavBtnDown(Btn){
+	Btn.style.borderLeftColor = NavShadeColor;
+	Btn.style.borderTopColor = NavShadeColor;
+	Btn.style.borderRightColor = NavLightColor;
+	Btn.style.borderBottomColor = NavLightColor;
+	Btn.style.padding = '3px 1px 1px 3px';
+}
+
+function FuncBtnOver(Btn){
+	Btn.style.padding = '2px 7px 4px 5px';
+	Btn.style.borderLeftColor = FuncLightColor;
+	Btn.style.borderTopColor = FuncLightColor;
+	Btn.style.borderRightColor = FuncShadeColor;
+	Btn.style.borderBottomColor = FuncShadeColor;
+}
+
+function FuncBtnOut(Btn){
+	Btn.style.borderColor = '#80ffff';
+	Btn.style.padding = '3px 6px 3px 6px';
+}
+
+function FuncBtnDown(Btn){
+	Btn.style.borderLeftColor = FuncShadeColor;
+	Btn.style.borderTopColor = FuncShadeColor;
+	Btn.style.borderRightColor = FuncLightColor;
+	Btn.style.borderBottomColor = FuncLightColor;
+	Btn.style.padding = '4px 5px 2px 7px';
+}
+
+var topZ = 100;
+
+var CurrQNum = 0;
+var ALetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var CorrectIndicator = 'O.K';
+var IncorrectIndicator = 'Oops!';
+var YourScoreIs = 'Your score is:';
+var Tries = 0;
+var CorrectChoices = 0;
+var ContinuousScoring = true;
+var CorrectFirstTime = 'Questions answered correctly first time:';
+var ShuffleQs = true;
+var ShuffleAs = true;
+var DefaultRight = 'Great job, go on';
+var DefaultWrong = 'WHAT HAPPENS TO YOU, BABY?';
+var QsToShow = 50;
+var ReadingURL = '[ReadingURL]';
+var Score = 0;
+var TempReading = '';
+var StartTime = (new Date()).toLocaleString();
+var HPNStartTime = (new Date()).getTime();
+var Finished = false;
+var SubmissionTimeout = 30000;
+
+
+
+var QButtonsOpener = '<button class="FunctionButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(-1); return false;">&nbsp;&lt;=&nbsp;</button><span class="QNum">';
+var QButtonsCloser = '</span><button id="NextQButton" class="FunctionButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(1); return false;">&nbsp;=&gt;&nbsp;</button>';
+
+
+var TableOpener = '<form name="QForm">';
+TableOpener += '<table border="0" style="margin-left: auto; margin-right: auto; margin-top: 10px;">';
+var QRow = '<tr><td valign="top" align="right"><span class="QNum">[QNumber].&nbsp;&nbsp;</span></td>';
+QRow += '<td valign="top" align="left"> <p><span class="QuestionText">[Question]</span><br />&nbsp;</p>';
+QRow += '</td></tr>';
+
+var ARow = '<tr><td>&nbsp;</td><td><table border="0" cellpadding="0" cellspacing="2">';
+ARow += '<tr><td></td><td valign="middle" align="left"><span id="FB_[QNum]_[ANum]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>';
+ARow += '<td valign="middle" align="left"><button class="FunctionButton" onfocus="FuncBtnOver(this)" onmouseover="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="CheckAnswer([QNum],[ANum]); return false;">&nbsp;[ALetter]&nbsp;</button></td>';
+
+ARow += '<td><span class="AnswerText">[Ans]</span></td></tr>';
+ARow += '</table></td></tr>';
+
+var MARow = '<tr><td></td><td valign="top" align="left"><input type="checkbox" name="A_[QNum]_[ANum]" value="[Correct]"></input>';
+MARow += '<span class="AnswerText">[Ans]</span></td></tr>';
+
+
+var CheckButton = '<tr><td align="center" colspan="2"><table border="0"><tr><td>';
+CheckButton += '<button class="FunctionButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="CheckMulti([QNum]); return false;">&nbsp;Verificar&nbsp;</button>';
+CheckButton += '</td></tr></table></td></tr>';
+
+TableCloser = '</table></form>';
+
+function ReduceItems(){
+	var ItemToDump=0;
+	var j=0;
+	while (I.length > QsToShow){
+		ItemToDump = Math.floor(I.length*Math.random());
+		for (j=ItemToDump; j<(I.length-1); j++){
+			I[j] = I[j+1];
+		}
+		I.length = I.length-1;
+	}
+}
+
+function Shuffle(InArray){
+	Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < j; k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteFeedback(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+//Calculate and set its left setting
+	topZ++;
+	FDiv.style.zIndex = topZ;
+
+//Position the feedback div
+	pg = new PageDim();
+	FDiv.style.left = Math.floor(pg.W/3) + 'px';
+	FDiv.style.width = Math.floor(pg.W/3) + 'px';
+//Set the top again in case the window has been resized
+	if (is.ns){
+		FDiv.style.top = Math.floor(pg.H/3) + window.pageYOffset + 'px';
+	}
+	else{
+		FDiv.style.top = Math.floor(pg.H/3) + document.body.scrollTop + 'px';
+	}
+	FDiv.style.display = 'block';
+	document.getElementById('FeedbackOKButton').focus();
+
+
+}
+
+function HideFeedback(){
+	document.getElementById('FeedbackOKButton').blur();
+	document.getElementById('FeedbackContent').innerHTML = '';
+	document.getElementById('FeedbackDiv').style.display='none';
+	document.getElementById('NextQButton').focus();
+	if (Finished == true){
+		Finish();
+	}
+}
+
+function WriteToInstructions(Feedback) {
+	Feedback = '<span class="FeedbackText">' + Feedback + '</span>';
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+}
+
+function WriteScore(Feedback) {
+	Feedback = '<span class="FeedbackText">' + Feedback + '</span>';
+	document.getElementById('ScoreDiv').innerHTML = Feedback;
+
+}
+
+
+
+
+function StartUp(){
+
+//IE bug avoidance -- remove bottom navbar
+	if (is.ie){
+		if (document.getElementById('BottomNavBar') != null){
+			document.getElementById('TheBody').removeChild(document.getElementById('BottomNavBar'));
+		}
+	}
+
+	if (is.ie){
+		document.attachEvent('onkeydown',SuppressBackspace);
+		window.attachEvent('onkeydown',SuppressBackspace);
+	}
+	else if (is.ns){
+		window.addEventListener('keypress',SuppressBackspace,false);
+	}
+
+
+
+
+
+//Reduce array if required
+	if (QsToShow < I.length){
+		ReduceItems();
+	}
+
+//Shuffle stuff if required
+
+	if (ShuffleQs == true){
+		I = Shuffle(I);
+	}
+
+	if (ShuffleAs == true){
+		for (var i=0; i<I.length; i++){
+			I[i][1] = Shuffle(I[i][1]);
+		}
+	}
+
+//Create arrays
+	CreateStatusArrays();
+
+
+//Show the first question
+	ShowQuestion(CurrQNum);
+
+
+
+}
+
+
+I = new Array();
+
+I[0] = new Array();
+I[0][0]='Be careful of that_______ glass. ';
+I[0][1] = new Array();
+I[0][1][0] = new Array();
+I[0][1][0][0]='broken ';
+I[0][1][0][1]='';
+I[0][1][0][2] = 1;
+I[0][1][1] = new Array();
+I[0][1][1][0]='breaks ';
+I[0][1][1][1]='';
+I[0][1][1][2] = 0;
+I[0][1][2] = new Array();
+I[0][1][2][0]='broke ';
+I[0][1][2][1]='';
+I[0][1][2][2] = 0;
+I[0][1][3] = new Array();
+I[0][1][3][0]='breaking ';
+I[0][1][3][1]='';
+I[0][1][3][2] = 0;
+I[0][2] = 0;
+
+I[1] = new Array();
+I[1][0]='He drove slowly ____ the block.';
+I[1][1] = new Array();
+I[1][1][0] = new Array();
+I[1][1][0][0]='above ';
+I[1][1][0][1]='';
+I[1][1][0][2] = 0;
+I[1][1][1] = new Array();
+I[1][1][1][0]='beneath';
+I[1][1][1][1]='';
+I[1][1][1][2] = 0;
+I[1][1][2] = new Array();
+I[1][1][2][0]='between ';
+I[1][1][2][1]='';
+I[1][1][2][2] = 0;
+I[1][1][3] = new Array();
+I[1][1][3][0]='around ';
+I[1][1][3][1]='';
+I[1][1][3][2] = 1;
+I[1][2] = 0;
+
+I[2] = new Array();
+I[2][0]='Will he go to class ____ breakfast?';
+I[2][1] = new Array();
+I[2][1][0] = new Array();
+I[2][1][0][0]='after he eats ';
+I[2][1][0][1]='';
+I[2][1][0][2] = 1;
+I[2][1][1] = new Array();
+I[2][1][1][0]='now that he eats ';
+I[2][1][1][1]='';
+I[2][1][1][2] = 0;
+I[2][1][2] = new Array();
+I[2][1][2][0]='while he ate ';
+I[2][1][2][1]='';
+I[2][1][2][2] = 0;
+I[2][1][3] = new Array();
+I[2][1][3][0]='before he ate ';
+I[2][1][3][1]='';
+I[2][1][3][2] = 0;
+I[2][2] = 0;
+
+I[3] = new Array();
+I[3][0]='Please excuse me. I\'m ____ sorry. ';
+I[3][1] = new Array();
+I[3][1][0] = new Array();
+I[3][1][0][0]='such ';
+I[3][1][0][1]='';
+I[3][1][0][2] = 0;
+I[3][1][1] = new Array();
+I[3][1][1][0]='as ';
+I[3][1][1][1]='';
+I[3][1][1][2] = 0;
+I[3][1][2] = new Array();
+I[3][1][2][0]='little';
+I[3][1][2][1]='';
+I[3][1][2][2] = 0;
+I[3][1][3] = new Array();
+I[3][1][3][0]='terribly';
+I[3][1][3][1]='';
+I[3][1][3][2] = 1;
+I[3][2] = 0;
+
+I[4] = new Array();
+I[4][0]='If he catches you ____ his truck, he\'ll be angry. ';
+I[4][1] = new Array();
+I[4][1][0] = new Array();
+I[4][1][0][0]='taking ';
+I[4][1][0][1]='';
+I[4][1][0][2] = 1;
+I[4][1][1] = new Array();
+I[4][1][1][0]='taken ';
+I[4][1][1][1]='';
+I[4][1][1][2] = 0;
+I[4][1][2] = new Array();
+I[4][1][2][0]='takes ';
+I[4][1][2][1]='';
+I[4][1][2][2] = 0;
+I[4][1][3] = new Array();
+I[4][1][3][0]='will take ';
+I[4][1][3][1]='';
+I[4][1][3][2] = 0;
+I[4][2] = 0;
+
+I[5] = new Array();
+I[5][0]='Doug said, "I\'ve been thinking about the new office." <br />Doug told us that he ____ about the new office.';
+I[5][1] = new Array();
+I[5][1][0] = new Array();
+I[5][1][0][0]='had been thinking ';
+I[5][1][0][1]='';
+I[5][1][0][2] = 1;
+I[5][1][1] = new Array();
+I[5][1][1][0]='had thought ';
+I[5][1][1][1]='';
+I[5][1][1][2] = 0;
+I[5][1][2] = new Array();
+I[5][1][2][0]='was thinking ';
+I[5][1][2][1]='';
+I[5][1][2][2] = 0;
+I[5][1][3] = new Array();
+I[5][1][3][0]='has thought';
+I[5][1][3][1]='';
+I[5][1][3][2] = 0;
+I[5][2] = 0;
+
+I[6] = new Array();
+I[6][0]='Couldn\'t you hear the ____ train? ';
+I[6][1] = new Array();
+I[6][1][0] = new Array();
+I[6][1][0][0]='approached ';
+I[6][1][0][1]='';
+I[6][1][0][2] = 0;
+I[6][1][1] = new Array();
+I[6][1][1][0]='approaches ';
+I[6][1][1][1]='';
+I[6][1][1][2] = 0;
+I[6][1][2] = new Array();
+I[6][1][2][0]='approaching ';
+I[6][1][2][1]='';
+I[6][1][2][2] = 1;
+I[6][1][3] = new Array();
+I[6][1][3][0]='approach ';
+I[6][1][3][1]='';
+I[6][1][3][2] = 0;
+I[6][2] = 0;
+
+I[7] = new Array();
+I[7][0]='We had to walk everywhere yesterday. I ____ my comfortable shoes for that. ';
+I[7][1] = new Array();
+I[7][1][0] = new Array();
+I[7][1][0][0]='should have worn ';
+I[7][1][0][1]='';
+I[7][1][0][2] = 1;
+I[7][1][1] = new Array();
+I[7][1][1][0]='have worn ';
+I[7][1][1][1]='';
+I[7][1][1][2] = 0;
+I[7][1][2] = new Array();
+I[7][1][2][0]='could wear';
+I[7][1][2][1]='';
+I[7][1][2][2] = 0;
+I[7][1][3] = new Array();
+I[7][1][3][0]='shouldn\'t wear';
+I[7][1][3][1]='';
+I[7][1][3][2] = 0;
+I[7][2] = 0;
+
+I[8] = new Array();
+I[8][0]='____ call me after 5:00. ';
+I[8][1] = new Array();
+I[8][1][0] = new Array();
+I[8][1][0][0]='Didn\'t ';
+I[8][1][0][1]='';
+I[8][1][0][2] = 0;
+I[8][1][1] = new Array();
+I[8][1][1][0]='Don\'t ';
+I[8][1][1][1]='';
+I[8][1][1][2] = 1;
+I[8][1][2] = new Array();
+I[8][1][2][0]='Wouldn\'t ';
+I[8][1][2][1]='';
+I[8][1][2][2] = 0;
+I[8][1][3] = new Array();
+I[8][1][3][0]='Won\'t ';
+I[8][1][3][1]='';
+I[8][1][3][2] = 0;
+I[8][2] = 0;
+
+I[9] = new Array();
+I[9][0]='The hats aren\'t ____ the shelf.';
+I[9][1] = new Array();
+I[9][1][0] = new Array();
+I[9][1][0][0]='at ';
+I[9][1][0][1]='';
+I[9][1][0][2] = 0;
+I[9][1][1] = new Array();
+I[9][1][1][0]='next ';
+I[9][1][1][1]='';
+I[9][1][1][2] = 0;
+I[9][1][2] = new Array();
+I[9][1][2][0]='in';
+I[9][1][2][1]='';
+I[9][1][2][2] = 0;
+I[9][1][3] = new Array();
+I[9][1][3][0]='on';
+I[9][1][3][1]='';
+I[9][1][3][2] = 1;
+I[9][2] = 0;
+
+I[10] = new Array();
+I[10][0]='Mark: ____ jacket is this? <br />Bill: It\'s Tom\'s.';
+I[10][1] = new Array();
+I[10][1][0] = new Array();
+I[10][1][0][0]='Who ';
+I[10][1][0][1]='';
+I[10][1][0][2] = 0;
+I[10][1][1] = new Array();
+I[10][1][1][0]='Whose';
+I[10][1][1][1]='';
+I[10][1][1][2] = 1;
+I[10][1][2] = new Array();
+I[10][1][2][0]='What ';
+I[10][1][2][1]='';
+I[10][1][2][2] = 0;
+I[10][1][3] = new Array();
+I[10][1][3][0]='How ';
+I[10][1][3][1]='';
+I[10][1][3][2] = 0;
+I[10][2] = 0;
+
+I[11] = new Array();
+I[11][0]='She was ironing her blouse ____ to the door. ';
+I[11][1] = new Array();
+I[11][1][0] = new Array();
+I[11][1][0][0]='until Fred comes ';
+I[11][1][0][1]='';
+I[11][1][0][2] = 0;
+I[11][1][1] = new Array();
+I[11][1][1][0]='now that Fred is coming ';
+I[11][1][1][1]='';
+I[11][1][1][2] = 0;
+I[11][1][2] = new Array();
+I[11][1][2][0]='when Fred came';
+I[11][1][2][1]='';
+I[11][1][2][2] = 1;
+I[11][1][3] = new Array();
+I[11][1][3][0]='whenever Fred comes';
+I[11][1][3][1]='';
+I[11][1][3][2] = 0;
+I[11][2] = 0;
+
+I[12] = new Array();
+I[12][0]='Could I borrow some ____ paper? ';
+I[12][1] = new Array();
+I[12][1][0] = new Array();
+I[12][1][0][0]='typed ';
+I[12][1][0][1]='';
+I[12][1][0][2] = 0;
+I[12][1][1] = new Array();
+I[12][1][1][0]='types';
+I[12][1][1][1]='';
+I[12][1][1][2] = 0;
+I[12][1][2] = new Array();
+I[12][1][2][0]='type';
+I[12][1][2][1]='';
+I[12][1][2][2] = 0;
+I[12][1][3] = new Array();
+I[12][1][3][0]='typing';
+I[12][1][3][1]='';
+I[12][1][3][2] = 1;
+I[12][2] = 0;
+
+I[13] = new Array();
+I[13][0]='Due to the foggy weather, the airport was ____ visible.';
+I[13][1] = new Array();
+I[13][1][0] = new Array();
+I[13][1][0][0]='such ';
+I[13][1][0][1]='';
+I[13][1][0][2] = 0;
+I[13][1][1] = new Array();
+I[13][1][1][0]='barely ';
+I[13][1][1][1]='';
+I[13][1][1][2] = 1;
+I[13][1][2] = new Array();
+I[13][1][2][0]='too';
+I[13][1][2][1]='';
+I[13][1][2][2] = 0;
+I[13][1][3] = new Array();
+I[13][1][3][0]='as';
+I[13][1][3][1]='';
+I[13][1][3][2] = 0;
+I[13][2] = 0;
+
+I[14] = new Array();
+I[14][0]='Mrs. Bailey found the sugar ____ with ants. ';
+I[14][1] = new Array();
+I[14][1][0] = new Array();
+I[14][1][0][0]='covered ';
+I[14][1][0][1]='';
+I[14][1][0][2] = 1;
+I[14][1][1] = new Array();
+I[14][1][1][0]='to cover ';
+I[14][1][1][1]='';
+I[14][1][1][2] = 0;
+I[14][1][2] = new Array();
+I[14][1][2][0]='covers ';
+I[14][1][2][1]='';
+I[14][1][2][2] = 0;
+I[14][1][3] = new Array();
+I[14][1][3][0]='was covering';
+I[14][1][3][1]='';
+I[14][1][3][2] = 0;
+I[14][2] = 0;
+
+I[15] = new Array();
+I[15][0]='Ann asked, "How long have you been teaching English, Jane?" <br />Ann asked Jane how long she ____ English.';
+I[15][1] = new Array();
+I[15][1][0] = new Array();
+I[15][1][0][0]='had taught ';
+I[15][1][0][1]='';
+I[15][1][0][2] = 0;
+I[15][1][1] = new Array();
+I[15][1][1][0]='have taught ';
+I[15][1][1][1]='';
+I[15][1][1][2] = 0;
+I[15][1][2] = new Array();
+I[15][1][2][0]='was teaching ';
+I[15][1][2][1]='';
+I[15][1][2][2] = 0;
+I[15][1][3] = new Array();
+I[15][1][3][0]='had been teaching ';
+I[15][1][3][1]='';
+I[15][1][3][2] = 1;
+I[15][2] = 0;
+
+I[16] = new Array();
+I[16][0]='Jerry looked tired. He looked ____ he hadn\'t slept well. ';
+I[16][1] = new Array();
+I[16][1][0] = new Array();
+I[16][1][0][0]='although ';
+I[16][1][0][1]='';
+I[16][1][0][2] = 0;
+I[16][1][1] = new Array();
+I[16][1][1][0]='so that ';
+I[16][1][1][1]='';
+I[16][1][1][2] = 0;
+I[16][1][2] = new Array();
+I[16][1][2][0]='because ';
+I[16][1][2][1]='';
+I[16][1][2][2] = 0;
+I[16][1][3] = new Array();
+I[16][1][3][0]='as though ';
+I[16][1][3][1]='';
+I[16][1][3][2] = 1;
+I[16][2] = 0;
+
+I[17] = new Array();
+I[17][0]='We hope Brad ____ by the new computer company.';
+I[17][1] = new Array();
+I[17][1][0] = new Array();
+I[17][1][0][0]='will hire ';
+I[17][1][0][1]='';
+I[17][1][0][2] = 0;
+I[17][1][1] = new Array();
+I[17][1][1][0]='will be hiring ';
+I[17][1][1][1]='';
+I[17][1][1][2] = 0;
+I[17][1][2] = new Array();
+I[17][1][2][0]='will get hired ';
+I[17][1][2][1]='';
+I[17][1][2][2] = 1;
+I[17][1][3] = new Array();
+I[17][1][3][0]='will have hired ';
+I[17][1][3][1]='';
+I[17][1][3][2] = 0;
+I[17][2] = 0;
+
+I[18] = new Array();
+I[18][0]='I always ____ when I see that movie. ';
+I[18][1] = new Array();
+I[18][1][0] = new Array();
+I[18][1][0][0]='had better laugh ';
+I[18][1][0][1]='';
+I[18][1][0][2] = 0;
+I[18][1][1] = new Array();
+I[18][1][1][0]='laugh ';
+I[18][1][1][1]='';
+I[18][1][1][2] = 1;
+I[18][1][2] = new Array();
+I[18][1][2][0]='laughed';
+I[18][1][2][1]='';
+I[18][1][2][2] = 0;
+I[18][1][3] = new Array();
+I[18][1][3][0]='laughing';
+I[18][1][3][1]='';
+I[18][1][3][2] = 0;
+I[18][2] = 0;
+
+I[19] = new Array();
+I[19][0]=' They thought excessive speed________________ of the accident.';
+I[19][1] = new Array();
+I[19][1][0] = new Array();
+I[19][1][0][0]='for causing ';
+I[19][1][0][1]='';
+I[19][1][0][2] = 0;
+I[19][1][1] = new Array();
+I[19][1][1][0]='being the cause';
+I[19][1][1][1]='';
+I[19][1][1][2] = 0;
+I[19][1][2] = new Array();
+I[19][1][2][0]='as if it caused ';
+I[19][1][2][1]='';
+I[19][1][2][2] = 0;
+I[19][1][3] = new Array();
+I[19][1][3][0]='to be the cause ';
+I[19][1][3][1]='';
+I[19][1][3][2] = 1;
+I[19][2] = 0;
+
+I[20] = new Array();
+I[20][0]='Al: ____ you riding with Mark this morning?<br />Ed: Yes, I was.';
+I[20][1] = new Array();
+I[20][1][0] = new Array();
+I[20][1][0][0]='Haven\'t ';
+I[20][1][0][1]='';
+I[20][1][0][2] = 0;
+I[20][1][1] = new Array();
+I[20][1][1][0]='Weren\'t';
+I[20][1][1][1]='';
+I[20][1][1][2] = 1;
+I[20][1][2] = new Array();
+I[20][1][2][0]='Doesn\'t ';
+I[20][1][2][1]='';
+I[20][1][2][2] = 0;
+I[20][1][3] = new Array();
+I[20][1][3][0]='Isn\'t';
+I[20][1][3][1]='';
+I[20][1][3][2] = 0;
+I[20][2] = 0;
+
+I[21] = new Array();
+I[21][0]='Some people think these oranges are too sweet, but I like their _____.';
+I[21][1] = new Array();
+I[21][1][0] = new Array();
+I[21][1][0][0]='sweetness ';
+I[21][1][0][1]='';
+I[21][1][0][2] = 1;
+I[21][1][1] = new Array();
+I[21][1][1][0]='sweeter ';
+I[21][1][1][1]='';
+I[21][1][1][2] = 0;
+I[21][1][2] = new Array();
+I[21][1][2][0]='sweeten ';
+I[21][1][2][1]='';
+I[21][1][2][2] = 0;
+I[21][1][3] = new Array();
+I[21][1][3][0]='sweetly ';
+I[21][1][3][1]='';
+I[21][1][3][2] = 0;
+I[21][2] = 0;
+
+I[22] = new Array();
+I[22][0]='They found __________photos in the closet. ';
+I[22][1] = new Array();
+I[22][1][0] = new Array();
+I[22][1][0][0]='several family old ';
+I[22][1][0][1]='';
+I[22][1][0][2] = 0;
+I[22][1][1] = new Array();
+I[22][1][1][0]='family old several ';
+I[22][1][1][1]='';
+I[22][1][1][2] = 0;
+I[22][1][2] = new Array();
+I[22][1][2][0]='several old family ';
+I[22][1][2][1]='';
+I[22][1][2][2] = 1;
+I[22][1][3] = new Array();
+I[22][1][3][0]='old several family ';
+I[22][1][3][1]='';
+I[22][1][3][2] = 0;
+I[22][2] = 0;
+
+I[23] = new Array();
+I[23][0]='Paul: I have eaten in that restaurant many times. <br />Dave: What did Paul say? <br />Mike: He said that he ____ in that restaurant many times';
+I[23][1] = new Array();
+I[23][1][0] = new Array();
+I[23][1][0][0]='would have eaten ';
+I[23][1][0][1]='';
+I[23][1][0][2] = 0;
+I[23][1][1] = new Array();
+I[23][1][1][0]='had eaten ';
+I[23][1][1][1]='';
+I[23][1][1][2] = 1;
+I[23][1][2] = new Array();
+I[23][1][2][0]='had been eating ';
+I[23][1][2][1]='';
+I[23][1][2][2] = 0;
+I[23][1][3] = new Array();
+I[23][1][3][0]='would eat ';
+I[23][1][3][1]='';
+I[23][1][3][2] = 0;
+I[23][2] = 0;
+
+I[24] = new Array();
+I[24][0]='All students who are taking the test must be in the lab at 7:25. <br />All students ____ the test must be in the lab at 7:25.';
+I[24][1] = new Array();
+I[24][1][0] = new Array();
+I[24][1][0][0]='take ';
+I[24][1][0][1]='';
+I[24][1][0][2] = 0;
+I[24][1][1] = new Array();
+I[24][1][1][0]='took ';
+I[24][1][1][1]='';
+I[24][1][1][2] = 0;
+I[24][1][2] = new Array();
+I[24][1][2][0]='taking ';
+I[24][1][2][1]='';
+I[24][1][2][2] = 1;
+I[24][1][3] = new Array();
+I[24][1][3][0]='to be taking ';
+I[24][1][3][1]='';
+I[24][1][3][2] = 0;
+I[24][2] = 0;
+
+I[25] = new Array();
+I[25][0]='The baby\'s sneezing. He sounds ____ he\'s catching a cold. ';
+I[25][1] = new Array();
+I[25][1][0] = new Array();
+I[25][1][0][0]='as if ';
+I[25][1][0][1]='';
+I[25][1][0][2] = 1;
+I[25][1][1] = new Array();
+I[25][1][1][0]='so that ';
+I[25][1][1][1]='';
+I[25][1][1][2] = 0;
+I[25][1][2] = new Array();
+I[25][1][2][0]='just as ';
+I[25][1][2][1]='';
+I[25][1][2][2] = 0;
+I[25][1][3] = new Array();
+I[25][1][3][0]='now that ';
+I[25][1][3][1]='';
+I[25][1][3][2] = 0;
+I[25][2] = 0;
+
+I[26] = new Array();
+I[26][0]='Don\'t forget to take your umbrella. It ____ outside.';
+I[26][1] = new Array();
+I[26][1][0] = new Array();
+I[26][1][0][0]='rains ';
+I[26][1][0][1]='';
+I[26][1][0][2] = 0;
+I[26][1][1] = new Array();
+I[26][1][1][0]='rained ';
+I[26][1][1][1]='';
+I[26][1][1][2] = 0;
+I[26][1][2] = new Array();
+I[26][1][2][0]='is raining ';
+I[26][1][2][1]='';
+I[26][1][2][2] = 1;
+I[26][1][3] = new Array();
+I[26][1][3][0]='would rain';
+I[26][1][3][1]='';
+I[26][1][3][2] = 0;
+I[26][2] = 0;
+
+I[27] = new Array();
+I[27][0]='Do you know if the game ____ because of the weather?';
+I[27][1] = new Array();
+I[27][1][0] = new Array();
+I[27][1][0][0]='cancelled';
+I[27][1][0][1]='';
+I[27][1][0][2] = 0;
+I[27][1][1] = new Array();
+I[27][1][1][0]='has been cancelled ';
+I[27][1][1][1]='';
+I[27][1][1][2] = 1;
+I[27][1][2] = new Array();
+I[27][1][2][0]='got cancelled ';
+I[27][1][2][1]='';
+I[27][1][2][2] = 0;
+I[27][1][3] = new Array();
+I[27][1][3][0]='had cancelled ';
+I[27][1][3][1]='';
+I[27][1][3][2] = 0;
+I[27][2] = 0;
+
+I[28] = new Array();
+I[28][0]='I ____ mail the package yesterday, but I didn\'t have enough time.';
+I[28][1] = new Array();
+I[28][1][0] = new Array();
+I[28][1][0][0]='might ';
+I[28][1][0][1]='';
+I[28][1][0][2] = 0;
+I[28][1][1] = new Array();
+I[28][1][1][0]='was going to ';
+I[28][1][1][1]='';
+I[28][1][1][2] = 1;
+I[28][1][2] = new Array();
+I[28][1][2][0]='wanted ';
+I[28][1][2][1]='';
+I[28][1][2][2] = 0;
+I[28][1][3] = new Array();
+I[28][1][3][0]='was unable to ';
+I[28][1][3][1]='';
+I[28][1][3][2] = 0;
+I[28][2] = 0;
+
+I[29] = new Array();
+I[29][0]='Ed doesn\'t take good care of his things. He\'s very ____. ';
+I[29][1] = new Array();
+I[29][1][0] = new Array();
+I[29][1][0][0]='carefulness ';
+I[29][1][0][1]='';
+I[29][1][0][2] = 0;
+I[29][1][1] = new Array();
+I[29][1][1][0]='carelessly ';
+I[29][1][1][1]='';
+I[29][1][1][2] = 0;
+I[29][1][2] = new Array();
+I[29][1][2][0]='careful ';
+I[29][1][2][1]='';
+I[29][1][2][2] = 0;
+I[29][1][3] = new Array();
+I[29][1][3][0]='careless ';
+I[29][1][3][1]='';
+I[29][1][3][2] = 1;
+I[29][2] = 0;
+
+I[30] = new Array();
+I[30][0]='This car window _______ every time I wash it. ';
+I[30][1] = new Array();
+I[30][1][0] = new Array();
+I[30][1][0][0]='is leaking ';
+I[30][1][0][1]='';
+I[30][1][0][2] = 0;
+I[30][1][1] = new Array();
+I[30][1][1][0]='had leaked ';
+I[30][1][1][1]='';
+I[30][1][1][2] = 0;
+I[30][1][2] = new Array();
+I[30][1][2][0]='leaks ';
+I[30][1][2][1]='';
+I[30][1][2][2] = 1;
+I[30][1][3] = new Array();
+I[30][1][3][0]='leaked ';
+I[30][1][3][1]='';
+I[30][1][3][2] = 0;
+I[30][2] = 0;
+
+I[31] = new Array();
+I[31][0]='They elected _____ president of the club. ';
+I[31][1] = new Array();
+I[31][1][0] = new Array();
+I[31][1][0][0]='as if Bob ';
+I[31][1][0][1]='';
+I[31][1][0][2] = 0;
+I[31][1][1] = new Array();
+I[31][1][1][0]='Bob will be';
+I[31][1][1][1]='';
+I[31][1][1][2] = 0;
+I[31][1][2] = new Array();
+I[31][1][2][0]='to Bob as';
+I[31][1][2][1]='';
+I[31][1][2][2] = 0;
+I[31][1][3] = new Array();
+I[31][1][3][0]='Bob as';
+I[31][1][3][1]='';
+I[31][1][3][2] = 1;
+I[31][2] = 0;
+
+I[32] = new Array();
+I[32][0]='While visiting abroad, she discovered_________. ';
+I[32][1] = new Array();
+I[32][1][0] = new Array();
+I[32][1][0][0]='so that friendly people';
+I[32][1][0][1]='';
+I[32][1][0][2] = 0;
+I[32][1][1] = new Array();
+I[32][1][1][0]='that people were friendly';
+I[32][1][1][1]='';
+I[32][1][1][2] = 1;
+I[32][1][2] = new Array();
+I[32][1][2][0]='friendly people were ';
+I[32][1][2][1]='';
+I[32][1][2][2] = 0;
+I[32][1][3] = new Array();
+I[32][1][3][0]='are friendly people';
+I[32][1][3][1]='';
+I[32][1][3][2] = 0;
+I[32][2] = 0;
+
+I[33] = new Array();
+I[33][0]='Mary: Have you eaten lunch yet? <br />Doug: No, my throat hurts so much, I ____ swallow anything. ';
+I[33][1] = new Array();
+I[33][1][0] = new Array();
+I[33][1][0][0]='can ';
+I[33][1][0][1]='';
+I[33][1][0][2] = 0;
+I[33][1][1] = new Array();
+I[33][1][1][0]='was going to ';
+I[33][1][1][1]='';
+I[33][1][1][2] = 0;
+I[33][1][2] = new Array();
+I[33][1][2][0]='had better ';
+I[33][1][2][1]='';
+I[33][1][2][2] = 0;
+I[33][1][3] = new Array();
+I[33][1][3][0]='am unable to';
+I[33][1][3][1]='';
+I[33][1][3][2] = 1;
+I[33][2] = 0;
+
+I[34] = new Array();
+I[34][0]='Susan: ____ you going to Cathy\'s party? <br />Alice: No, I wasn\'t invited.';
+I[34][1] = new Array();
+I[34][1][0] = new Array();
+I[34][1][0][0]='Wasn\'t ';
+I[34][1][0][1]='';
+I[34][1][0][2] = 0;
+I[34][1][1] = new Array();
+I[34][1][1][0]='Didn\'t ';
+I[34][1][1][1]='';
+I[34][1][1][2] = 0;
+I[34][1][2] = new Array();
+I[34][1][2][0]='Aren\'t ';
+I[34][1][2][1]='';
+I[34][1][2][2] = 1;
+I[34][1][3] = new Array();
+I[34][1][3][0]='Isn\'t';
+I[34][1][3][1]='';
+I[34][1][3][2] = 0;
+I[34][2] = 0;
+
+I[35] = new Array();
+I[35][0]='The girl who is sitting in the front row is my cousin. <br />The girl ____ in the front row is my cousin. ';
+I[35][1] = new Array();
+I[35][1][0] = new Array();
+I[35][1][0][0]='sat ';
+I[35][1][0][1]='';
+I[35][1][0][2] = 0;
+I[35][1][1] = new Array();
+I[35][1][1][0]='sits ';
+I[35][1][1][1]='';
+I[35][1][1][2] = 0;
+I[35][1][2] = new Array();
+I[35][1][2][0]='sitting ';
+I[35][1][2][1]='';
+I[35][1][2][2] = 1;
+I[35][1][3] = new Array();
+I[35][1][3][0]='to sit ';
+I[35][1][3][1]='';
+I[35][1][3][2] = 0;
+I[35][2] = 0;
+
+I[36] = new Array();
+I[36][0]='You may feel a little pain, but it shouldn\'t be too __ ';
+I[36][1] = new Array();
+I[36][1][0] = new Array();
+I[36][1][0][0]='painless';
+I[36][1][0][1]='';
+I[36][1][0][2] = 0;
+I[36][1][1] = new Array();
+I[36][1][1][0]='pained';
+I[36][1][1][1]='';
+I[36][1][1][2] = 0;
+I[36][1][2] = new Array();
+I[36][1][2][0]='painful';
+I[36][1][2][1]='';
+I[36][1][2][2] = 1;
+I[36][1][3] = new Array();
+I[36][1][3][0]='painfulness';
+I[36][1][3][1]='';
+I[36][1][3][2] = 0;
+I[36][2] = 0;
+
+I[37] = new Array();
+I[37][0]='Mr. Conway wrote the book several years ago, but it just ____ last month. ';
+I[37][1] = new Array();
+I[37][1][0] = new Array();
+I[37][1][0][0]='published';
+I[37][1][0][1]='';
+I[37][1][0][2] = 0;
+I[37][1][1] = new Array();
+I[37][1][1][0]='got published';
+I[37][1][1][1]='';
+I[37][1][1][2] = 1;
+I[37][1][2] = new Array();
+I[37][1][2][0]='has published';
+I[37][1][2][1]='';
+I[37][1][2][2] = 0;
+I[37][1][3] = new Array();
+I[37][1][3][0]='had published';
+I[37][1][3][1]='';
+I[37][1][3][2] = 0;
+I[37][2] = 0;
+
+I[38] = new Array();
+I[38][0]='It\'s very cloudy. It looks ____ it\'s going to rain. ';
+I[38][1] = new Array();
+I[38][1][0] = new Array();
+I[38][1][0][0]='although';
+I[38][1][0][1]='';
+I[38][1][0][2] = 0;
+I[38][1][1] = new Array();
+I[38][1][1][0]='because';
+I[38][1][1][1]='';
+I[38][1][1][2] = 0;
+I[38][1][2] = new Array();
+I[38][1][2][0]='as if';
+I[38][1][2][1]='';
+I[38][1][2][2] = 1;
+I[38][1][3] = new Array();
+I[38][1][3][0]='so that';
+I[38][1][3][1]='';
+I[38][1][3][2] = 0;
+I[38][2] = 0;
+
+I[39] = new Array();
+I[39][0]='Gary: Have you ever visited New York? <br />Paul: What did Gary ask you? <br />Dave: He asked me if I ____ New York.';
+I[39][1] = new Array();
+I[39][1][0] = new Array();
+I[39][1][0][0]='had ever visited';
+I[39][1][0][1]='';
+I[39][1][0][2] = 1;
+I[39][1][1] = new Array();
+I[39][1][1][0]='ever visit ';
+I[39][1][1][1]='';
+I[39][1][1][2] = 0;
+I[39][1][2] = new Array();
+I[39][1][2][0]='ever have to visit ';
+I[39][1][2][1]='';
+I[39][1][2][2] = 0;
+I[39][1][3] = new Array();
+I[39][1][3][0]='would ever visit ';
+I[39][1][3][1]='';
+I[39][1][3][2] = 0;
+I[39][2] = 0;
+
+I[40] = new Array();
+I[40][0]='Peter is busy. He _______ his homework now. ';
+I[40][1] = new Array();
+I[40][1][0] = new Array();
+I[40][1][0][0]='would do ';
+I[40][1][0][1]='';
+I[40][1][0][2] = 0;
+I[40][1][1] = new Array();
+I[40][1][1][0]='does ';
+I[40][1][1][1]='';
+I[40][1][1][2] = 0;
+I[40][1][2] = new Array();
+I[40][1][2][0]='is doing ';
+I[40][1][2][1]='';
+I[40][1][2][2] = 1;
+I[40][1][3] = new Array();
+I[40][1][3][0]='did ';
+I[40][1][3][1]='';
+I[40][1][3][2] = 0;
+I[40][2] = 0;
+
+I[41] = new Array();
+I[41][0]='Mrs. Wilson is a kind person. She shows great _______to everyone. ';
+I[41][1] = new Array();
+I[41][1][0] = new Array();
+I[41][1][0][0]='kindness ';
+I[41][1][0][1]='';
+I[41][1][0][2] = 1;
+I[41][1][1] = new Array();
+I[41][1][1][0]='kindly ';
+I[41][1][1][1]='';
+I[41][1][1][2] = 0;
+I[41][1][2] = new Array();
+I[41][1][2][0]='kinder ';
+I[41][1][2][1]='';
+I[41][1][2][2] = 0;
+I[41][1][3] = new Array();
+I[41][1][3][0]='kind ';
+I[41][1][3][1]='';
+I[41][1][3][2] = 0;
+I[41][2] = 0;
+
+I[42] = new Array();
+I[42][0]='He found________. ';
+I[42][1] = new Array();
+I[42][1][0] = new Array();
+I[42][1][0][0]='swimming an excellent exercise ';
+I[42][1][0][1]='';
+I[42][1][0][2] = 1;
+I[42][1][1] = new Array();
+I[42][1][1][0]='as though swimming ';
+I[42][1][1][1]='';
+I[42][1][1][2] = 0;
+I[42][1][2] = new Array();
+I[42][1][2][0]='to swim for exercise ';
+I[42][1][2][1]='';
+I[42][1][2][2] = 0;
+I[42][1][3] = new Array();
+I[42][1][3][0]='swims everyday for exercise ';
+I[42][1][3][1]='';
+I[42][1][3][2] = 0;
+I[42][2] = 0;
+
+I[43] = new Array();
+I[43][0]='He borrowed a pair of ____ boots. ';
+I[43][1] = new Array();
+I[43][1][0] = new Array();
+I[43][1][0][0]='Dad\'s combat old ';
+I[43][1][0][1]='';
+I[43][1][0][2] = 1;
+I[43][1][1] = new Array();
+I[43][1][1][0]='old Dad\'s combat ';
+I[43][1][1][1]='';
+I[43][1][1][2] = 0;
+I[43][1][2] = new Array();
+I[43][1][2][0]='combat Dad\'s old ';
+I[43][1][2][1]='';
+I[43][1][2][2] = 0;
+I[43][1][3] = new Array();
+I[43][1][3][0]='Dad\'s old combat ';
+I[43][1][3][1]='';
+I[43][1][3][2] = 0;
+I[43][2] = 0;
+
+I[44] = new Array();
+I[44][0]='Did he predict ____? ';
+I[44][1] = new Array();
+I[44][1][0] = new Array();
+I[44][1][0][0]='the weather would be cold ';
+I[44][1][0][1]='';
+I[44][1][0][2] = 1;
+I[44][1][1] = new Array();
+I[44][1][1][0]='so that the cold weather ';
+I[44][1][1][1]='';
+I[44][1][1][2] = 0;
+I[44][1][2] = new Array();
+I[44][1][2][0]='the weather was so cold that ';
+I[44][1][2][1]='';
+I[44][1][2][2] = 0;
+I[44][1][3] = new Array();
+I[44][1][3][0]='if the weather is cold ';
+I[44][1][3][1]='';
+I[44][1][3][2] = 0;
+I[44][2] = 0;
+
+I[45] = new Array();
+I[45][0]='Pat: I\'ve finally thought of the answer<br />Tom: What did Pat say?<br />Dan: He said that he ____ of the answer. ';
+I[45][1] = new Array();
+I[45][1][0] = new Array();
+I[45][1][0][0]='finally thinks ';
+I[45][1][0][1]='';
+I[45][1][0][2] = 0;
+I[45][1][1] = new Array();
+I[45][1][1][0]='would finally think ';
+I[45][1][1][1]='';
+I[45][1][1][2] = 0;
+I[45][1][2] = new Array();
+I[45][1][2][0]='was finally thinking ';
+I[45][1][2][1]='';
+I[45][1][2][2] = 0;
+I[45][1][3] = new Array();
+I[45][1][3][0]='had finally thought ';
+I[45][1][3][1]='';
+I[45][1][3][2] = 1;
+I[45][2] = 0;
+
+I[46] = new Array();
+I[46][0]='You ____ slow down or you\'re going to get a speeding ticket. ';
+I[46][1] = new Array();
+I[46][1][0] = new Array();
+I[46][1][0][0]='were going to ';
+I[46][1][0][1]='';
+I[46][1][0][2] = 0;
+I[46][1][1] = new Array();
+I[46][1][1][0]='have better';
+I[46][1][1][1]='';
+I[46][1][1][2] = 0;
+I[46][1][2] = new Array();
+I[46][1][2][0]='had better';
+I[46][1][2][1]='';
+I[46][1][2][2] = 1;
+I[46][1][3] = new Array();
+I[46][1][3][0]='better';
+I[46][1][3][1]='';
+I[46][1][3][2] = 0;
+I[46][2] = 0;
+
+I[47] = new Array();
+I[47][0]='When I talked to Betty last night, she sounded ____ she had a cold. ';
+I[47][1] = new Array();
+I[47][1][0] = new Array();
+I[47][1][0][0]='such that ';
+I[47][1][0][1]='';
+I[47][1][0][2] = 0;
+I[47][1][1] = new Array();
+I[47][1][1][0]='whether ';
+I[47][1][1][1]='';
+I[47][1][1][2] = 0;
+I[47][1][2] = new Array();
+I[47][1][2][0]='as though ';
+I[47][1][2][1]='';
+I[47][1][2][2] = 1;
+I[47][1][3] = new Array();
+I[47][1][3][0]='if';
+I[47][1][3][1]='';
+I[47][1][3][2] = 0;
+I[47][2] = 0;
+
+I[48] = new Array();
+I[48][0]='Does anyone know how this chair ____? ';
+I[48][1] = new Array();
+I[48][1][0] = new Array();
+I[48][1][0][0]='break ';
+I[48][1][0][1]='';
+I[48][1][0][2] = 0;
+I[48][1][1] = new Array();
+I[48][1][1][0]='had broken ';
+I[48][1][1][1]='';
+I[48][1][1][2] = 0;
+I[48][1][2] = new Array();
+I[48][1][2][0]='has been breaking ';
+I[48][1][2][1]='';
+I[48][1][2][2] = 0;
+I[48][1][3] = new Array();
+I[48][1][3][0]='got broken ';
+I[48][1][3][1]='';
+I[48][1][3][2] = 1;
+I[48][2] = 0;
+
+I[49] = new Array();
+I[49][0]='Items which are left in the lab will be turned in to the office. <br />Items ____ in the lab will be turned in to the office.';
+I[49][1] = new Array();
+I[49][1][0] = new Array();
+I[49][1][0][0]='leaving ';
+I[49][1][0][1]='';
+I[49][1][0][2] = 0;
+I[49][1][1] = new Array();
+I[49][1][1][0]='left ';
+I[49][1][1][1]='';
+I[49][1][1][2] = 1;
+I[49][1][2] = new Array();
+I[49][1][2][0]='to leave ';
+I[49][1][2][1]='';
+I[49][1][2][2] = 0;
+I[49][1][3] = new Array();
+I[49][1][3][0]='leave ';
+I[49][1][3][1]='';
+I[49][1][3][2] = 0;
+I[49][2] = 0;
+
+
+Status = new Array();
+
+
+function CreateStatusArrays(){
+	for (var x=0; x<I.length; x++){
+		Status[x] = new Array();
+		Status[x][0] = 0; // Question not done yet
+		Status[x][1] = new Array(); //for tracking whether answers chosen
+		for (var y=0; y<I[x][1].length; y++){
+			Status[x][1][y] = '0'; //Answers not chosen yet
+		}
+		Status[x][2] = 0; //Wrong tries at this question so far
+		Status[x][3] = 0; //Score for this question, out of one
+	}
+}
+
+function UpdateQuestionStatus(QNum){
+	if (Status[QNum][2] >= Status[QNum][1].length-1){
+		Status[QNum][0] = 1;
+		for (var i=0; i<Status[QNum][1].length; i++){
+			if (Status[QNum][1][i] == '0'){
+				Status[QNum][1][i] = 'R';
+			}
+		}
+	}
+}
+
+function ReplaceStuff(Token, Replacement, InString){
+	var i = InString.indexOf(Token);
+	var FirstBit = '';
+	var LastBit = '';
+	while (i>-1){
+		FirstBit = InString.substring(0, i);
+		LastBit = InString.substring(i + Token.length, InString.length);	
+		InString = FirstBit + Replacement + LastBit;
+		i = InString.indexOf(Token);
+	}
+	return InString;
+}
+
+function ChangeQ(ChangeBy){
+	var NewNum = CurrQNum + ChangeBy;
+	if ((NewNum >= 0)&&(NewNum<I.length)){
+		CurrQNum = NewNum;
+		ShowQuestion(CurrQNum);
+		CalculateScore();
+		if (ContinuousScoring == true){
+			var CurrScore = YourScoreIs + ' ' + Score + '%.';
+			WriteScore(CurrScore);
+		}
+	}
+}
+
+function BuildQuestion(QNum){
+	if (I[QNum][2] == 0){
+		var Temp = ReplaceStuff('[Question]', I[QNum][0], QRow);
+
+		var AnsRows = '';
+		for (var i=0; i<I[QNum][1].length; i++){
+			TempAns = ARow;
+			TempAns = ReplaceStuff('[ANum]', i, TempAns);
+			TempAns = ReplaceStuff('[ALetter]', ' ' + ALetters.charAt(i) + ' ', TempAns);
+			TempAns = ReplaceStuff('[Ans]', I[QNum][1][i][0], TempAns);
+			TempAns = ReplaceStuff('[Feedback]', I[QNum][1][i][1], TempAns);
+			AnsRows += TempAns;
+		}
+		Temp += AnsRows;
+		Temp = ReplaceStuff('[QNumber]', QNum+1, Temp);
+		Temp = ReplaceStuff('[QNum]', QNum, Temp);
+	}
+	else{
+		var Temp = ReplaceStuff('[Question]', I[QNum][0], QRow);
+		var AnsRows = '';
+		for (var i=0; i<I[QNum][1].length; i++){
+			TempAns = MARow;
+			TempAns = ReplaceStuff('[ANum]', i, TempAns);
+			TempAns = ReplaceStuff('[Correct]', I[QNum][1][i][2], TempAns);
+			TempAns = ReplaceStuff('[Ans]', I[QNum][1][i][0], TempAns);
+			AnsRows += TempAns;
+		}
+		Temp += AnsRows;
+		Temp += CheckButton;
+		Temp = ReplaceStuff('[QNumber]', QNum+1, Temp);
+		Temp = ReplaceStuff('[QNum]', QNum, Temp);
+	}
+	return Temp;
+}
+
+function DisplayExercise(StuffToDisplay){
+	document.getElementById('MainDiv').innerHTML = StuffToDisplay;
+
+}
+
+function ShowQuestion(QNum){
+//First, create the Q number readout at the top
+	var Readout = (QNum+1) + '/' + I.length;
+	while (Readout.length < 7){
+		Readout = ' ' + Readout + ' ';
+	}
+	Readout = QButtonsOpener + Readout + QButtonsCloser;
+
+	var Output = BuildQuestion(QNum);
+
+	Output = TableOpener + Output + TableCloser;
+
+	DisplayExercise(Readout + Output);
+
+//Mark the answers already done
+	for (i=0; i<Status[QNum][1].length; i++){
+		if (Status[QNum][1][i] == 'R'){
+
+			MarkAnswer(QNum,i,true,false)
+		}
+		if (Status[QNum][1][i] == 'W'){
+			MarkAnswer(QNum,i,false,false)
+		}
+		if (Status[QNum][1][i] == 'C'){
+			CheckCheckbox(QNum,i);
+		}
+	}
+
+//Set the focus
+	document.getElementById('NextQButton').focus();
+}
+
+function CheckMulti(QNum){
+	var TotWrong = 0;
+	var Output = '';
+	var TotAns = I[QNum][1].length;
+	for (var i=TotAns-1; i>=0; i--){
+//Find any incorrect choices
+
+		var b = eval('document.QForm.A_' + QNum + '_' + i);
+
+		if (b != null){
+//if it's wrong, count it
+			if (b.checked == true){
+				Status[QNum][1][i] = 'C';
+			}
+			else{
+				Status[QNum][1][i] = 'U';
+			}
+			if (((b.checked == true) && (b.value == "0"))||((b.checked == false)&&(b.value == "1"))){
+				TotWrong++;
+			}
+		}				
+	}
+
+	if (TotWrong == 0){
+		Output = DefaultRight;
+	}
+	else{
+		Output = DefaultWrong + '<br />' + (TotAns-TotWrong) + '/' + TotAns;
+	}
+
+//If you haven't tried the question before
+	if (Status[QNum][0] == 0){
+		if (TotWrong > 0){
+			Status[QNum][2]++;
+		}
+		if (TotWrong == 0){
+			Status[QNum][0] = 1;
+//Calculate the score for this question as a floating-point fraction of 1
+			Status[QNum][3] =  ((Status[QNum][1].length - Status[QNum][2]) - 1) / (Status[QNum][1].length - 1);
+//If less than zero, set to zero
+			if (Status[QNum][3] < 0){Status[QNum][3] = 0;}
+		}
+	}
+
+//Check whether the quiz is finished
+	Finished = true;
+	for (var i=0; i<Status.length; i++){
+		if (Status[i][0] == 0){Finished = false;}
+	}
+
+//Calculate the score if needed
+		
+		
+	if (Status[QNum][0] == 1){
+		if ((Finished==true)||(ContinuousScoring==true)){
+			CalculateScore();
+			var CurrScore = YourScoreIs + ' ' + Score + '%.';
+			Output = Output + '<br />' + CurrScore;
+			WriteScore(CurrScore);
+		}
+
+		if (Finished == true){
+			var CFT = 0;
+			for (i=0; i<I.length; i++){
+				if (Status[i][2] == 0){
+					CFT++;
+				}
+
+
+			}
+			Output += '<br />' + CorrectFirstTime + CFT + '/' + I.length;
+			WriteToInstructions(Output);
+
+
+			setTimeout('Finish()', SubmissionTimeout);
+		}
+	}
+
+//Show the feedback
+	if (Output.length > 0){
+		WriteFeedback(Output);
+	}
+}
+
+function CheckAnswer(QNum, ANum){
+	var Output = I[QNum][1][ANum][1];
+
+	if (Output==''){
+		if (I[QNum][1][ANum][2] == 1){
+			Output = DefaultRight;
+		}
+		else{
+			Output = DefaultWrong;
+		}
+	}
+
+//If it's not been previously answered correctly
+	if (Status[QNum][0] == 0){
+//If it's a correct answer
+		if (I[QNum][1][ANum][2] == 1){
+			Status[QNum][0] = 1;//Mark the Q as done
+			Status[QNum][1][ANum] = 'R';
+			MarkAnswer(QNum, ANum, true);
+//Calculate the score for this question as a floating-point fraction of 1
+			var PossibleWrongs = 0;
+			for (var i=0; i<I[QNum][1].length; i++){
+				if (I[QNum][1][i][2] == 0){
+					PossibleWrongs++;
+				}
+			}
+
+			if (PossibleWrongs == 0){PossibleWrongs = 1;}
+
+			Status[QNum][3] = 1 - (Status[QNum][2]/PossibleWrongs);
+
+//If less than zero, set to zero
+			if (Status[QNum][3] < 0){Status[QNum][3] = 0;}
+		}
+		else{
+			if (Status[QNum][1][ANum] != 'W'){
+				Status[QNum][1][ANum] = 'W';
+				MarkAnswer(QNum, ANum, false);
+				Status[QNum][2]++; //increment wrong tries for this Q
+			}
+		}
+	}
+
+	UpdateQuestionStatus(QNum);
+
+//Check whether the quiz is finished
+	Finished = true;
+	for (var i=0; i<Status.length; i++){
+		if (Status[i][0] == 0){Finished = false;}
+	}
+
+//Calculate the score if needed
+		
+	if (Status[QNum][0] == 1){
+		if ((Finished==true)||(ContinuousScoring==true)){
+			CalculateScore();
+			var CurrScore = YourScoreIs + ' ' + Score + '%.';
+			Output = Output + '<br />' + CurrScore;
+			WriteScore(CurrScore);
+		}
+
+		if (Finished == true){
+			var CFT = 0;
+			for (i=0; i<I.length; i++){
+				if (Status[i][2] == 0){
+					CFT++;
+				}
+			}
+			Output += '<br />' + CorrectFirstTime + CFT + '/' + I.length;
+			WriteToInstructions(Output);
+			CurrScore = YourScoreIs + ' ' + Score + '%.';
+			WriteScore(CurrScore);
+
+
+			setTimeout('Finish()', SubmissionTimeout);
+		}
+	}
+
+//Show the feedback
+	if (Output.length > 0){
+		WriteFeedback(Output);
+	}
+}
+
+function CalculateScore(){
+	var TriedQs = 0;
+	var TotalScore = 0;
+	for (var i=0; i<Status.length; i++){
+		if ((Status[i][2] > 0)||(Status[i][3] == 1)){
+			TriedQs++;
+			TotalScore += Status[i][3];
+		}
+	}
+	if (TriedQs == 0){
+		Score = 0;
+	}
+	else{
+		Score = (Math.floor(100 * (TotalScore/TriedQs)));
+	}
+}
+
+function MarkAnswer(QNum, ANum, Right, Done){
+	if (Done == false){
+		var Mark = CorrectIndicator;
+		if (Right == false){Mark = IncorrectIndicator;}
+		document.getElementById('FB_' + QNum + '_' + ANum).innerHTML = Mark;
+	}
+	else{
+		if (Right == false){
+			document.getElementById('FB_' + QNum + '_' + ANum).innerHTML = IncorrectIndicator;
+		}
+		else{
+			document.getElementById('FB_' + QNum + '_' + ANum).innerHTML = CorrectIndicator;
+		}
+	}
+}
+
+function CheckCheckbox(QNum, ANum){
+	if (eval('document.QForm.A_' + QNum + '_' + ANum) != null){
+		eval('document.QForm.A_' + QNum + '_' + ANum).checked = true;
+
+	}
+}
+
+
+
+
+
+function Finish(){
+//If there's a form, fill it out and submit it
+	if (document.store != null){
+		Frm = document.store;
+		Frm.starttime.value = HPNStartTime;
+		Frm.endtime.value = (new Date()).getTime();
+		Frm.mark.value = Score;
+		Frm.submit();
+	}
+}
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+<!-- <body>Fool those dumb ad-inserting ISPs</body> -->
+
+<body onload="StartUp()" id="TheBody">
+
+<!-- BeginTopNavButtons -->
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<span class="ExerciseTitle"><font color="#FF0000">EVALUATION (12)</font></span><font color="#FF0000"><br />
+	</font><br />
+</div>
+
+
+
+<div id="InstructionsDiv" class="StdDiv">
+	<p id="Instructions">Esta evaluaci&#243;n se presenta totalmente en ingl&#233;s y forma parte de 12 con estas caracter&#237;sticas, ordenadas por grado de dificultad. Con ellas se busca ver su capacidad de asimilaci&#243;n en el evento de que tenga que presentar ex&#225;menes de la parte de gram&#225;tica, como el 
+	TOEFL, Michigan, y SAT entre otros, cuyo estilo de preguntas es muy similar.</p>
+</div>
+
+
+	<div id="ScoreDiv" class="StdDiv">
+&nbsp;
+	</div>
+
+
+	<div id="MainDiv" class="StdDiv">
+&nbsp;
+	</div>
+
+
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FunctionButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>

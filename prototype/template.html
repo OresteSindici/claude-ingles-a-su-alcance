@@ -1,0 +1,114 @@
+<title>Inglés a su Alcance</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: single reading column; a sticky formula strip; each sentence is a drill card */
+:root{
+  --bg:#f3f6f7; --surface:#ffffff; --fg:#14232b; --muted:#56666e; --line:#d5dfe2;
+  --aux:#007f80;            /* the teal the 2002 manual used for the "21" */
+  --aux-soft:#e0f1f1; --sun:#c98a00; --ok:#2f7d4a; --redo:#b4472f;
+  --display:"Sora",system-ui,sans-serif; --body:"Source Sans 3",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e171b; --surface:#16232a; --fg:#e4eef0; --muted:#97a9b0; --line:#2a3b43;
+  --aux:#4fc4c2; --aux-soft:#173638; --sun:#e2b13c; --ok:#6cc58a; --redo:#ef8a72; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e171b; --surface:#16232a; --fg:#e4eef0; --muted:#97a9b0; --line:#2a3b43;
+  --aux:#4fc4c2; --aux-soft:#173638; --sun:#e2b13c; --ok:#6cc58a; --redo:#ef8a72; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:17px/1.55 var(--body)}
+.wrap{max-width:760px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header .eyebrow{font:600 12px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--aux)}
+h1{font:700 clamp(28px,6vw,40px)/1.1 var(--display);margin:6px 0 8px;text-wrap:balance}
+header p{color:var(--muted);margin:0;max-width:62ch}
+.tribute{margin-top:14px;font-size:14px;color:var(--muted);border-left:3px solid var(--sun);padding-left:10px}
+.formulas{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px;margin-top:22px;border-bottom:1px solid var(--line)}
+.formulas h2{font:600 12px var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.fgrid{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}
+.f{flex:0 0 auto;border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:6px 10px;font-size:13px;line-height:1.3}
+.f b{font:500 12px var(--mono);color:var(--aux)} .f span{display:block;font:500 13px var(--mono)}
+.f.on{border-color:var(--aux);background:var(--aux-soft)}
+.progress{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:22px 0 10px;font-size:15px}
+.bar{flex:1;height:6px;background:var(--line);border-radius:3px;overflow:hidden}.bar i{display:block;height:100%;background:var(--aux);width:0;transition:width .3s}
+.section{font:700 18px var(--display);margin:24px 0 4px}
+.hint{color:var(--muted);font-size:15px;margin:0 0 14px}
+.list{display:grid;gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:10px}
+.card.done-ok{border-color:var(--ok)} .card.done-redo{border-color:var(--redo)}
+.row{display:flex;gap:12px;align-items:flex-start}
+.num{font:500 13px var(--mono);color:var(--muted);padding-top:4px;min-width:2.2em}
+.sent{flex:1;min-width:0;font:600 19px/1.35 var(--display)} .sent em{font-style:normal;color:var(--aux)}
+.tag{font:500 12px var(--mono);color:var(--aux);border:1px solid var(--aux);border-radius:4px;padding:2px 6px;white-space:nowrap;cursor:help}
+button{font:600 15px var(--body);border-radius:8px;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.play{width:40px;height:40px;flex:0 0 40px;border:0;background:var(--aux);color:var(--surface);display:grid;place-items:center}
+.play svg{width:16px;height:16px;fill:currentColor}
+input{width:100%;font:17px var(--body);padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg)}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+.reveal{border:1px solid var(--aux);background:transparent;color:var(--aux);padding:8px 14px}
+.ans{background:var(--aux-soft);border-radius:8px;padding:10px 12px;white-space:pre-line}
+.ans small{display:block;font:600 11px var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--aux);margin-bottom:2px}
+.self{display:flex;gap:8px;flex-wrap:wrap}
+.self button{border:1px solid var(--line);background:var(--surface);color:var(--fg);padding:7px 12px}
+.self .y[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:var(--surface)}
+.self .n[aria-pressed="true"]{background:var(--redo);border-color:var(--redo);color:var(--surface)}
+footer{margin-top:36px;font-size:13px;color:var(--muted);text-align:center}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<div class="wrap">
+<header>
+  <div class="eyebrow">Prototipo · Lección de práctica</div>
+  <h1>Inglés a su Alcance</h1>
+  <p>Escuche cada frase, escriba su traducción al español y luego compare con la respuesta del manual. El número entre paréntesis indica la fórmula que usa la frase.</p>
+  <div class="tribute">Programa diseñado por el Teniente Coronel Jairo Alberto Payán, Fuerza Aérea Colombiana, Base Aérea de Melgar, 2002.</div>
+</header>
+<nav class="formulas" aria-label="Fórmulas">
+  <h2>Las 5 fórmulas</h2>
+  <div class="fgrid" id="fgrid"></div>
+</nav>
+<div class="progress"><span id="ptext">0 de 0 practicadas</span><div class="bar"><i id="pbar"></i></div></div>
+<div class="section">Del inglés al español</div>
+<p class="hint">Las palabras en verde azulado son los «21»: los auxiliares que permiten construir cualquier frase.</p>
+<div class="list" id="list"></div>
+<footer>Página 32 del manual original · Audio original de 2002</footer>
+</div>
+<script>
+const DATA = /*DATA*/[];
+const F = {1:["Afirmativa","S + V + C"],2:["Afirmativa con 21","S + 21 + V + C"],3:["Negativa","S + 21 + N + V + C"],4:["Interrogativa","21 + S + V + C"],5:["Interrogativa negativa","21 + N + S + V + C"]};
+const fgrid = document.getElementById("fgrid");
+for (const [k,[name,f]] of Object.entries(F)) fgrid.insertAdjacentHTML("beforeend",`<div class="f" data-f="${k}"><b>(${k})</b> ${name}<span>${f}</span></div>`);
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function mark(text, hl){ let h = esc(text); for (const w of hl) { const e = esc(w); h = h.replace(new RegExp("\\b"+e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"(?![\\w'’])"), `<em>${e}</em>`);} return h; }
+let state = {}; try { state = JSON.parse(localStorage.getItem("ias-demo") || "{}"); } catch {}
+const save = () => { try { localStorage.setItem("ias-demo", JSON.stringify(state)); } catch {} };
+const list = document.getElementById("list"); let current;
+DATA.forEach(d => {
+  const s = state[d.n] || {};
+  const card = document.createElement("article"); card.className = "card";
+  card.innerHTML = `
+    <div class="row"><span class="num">${d.n}.</span><div class="sent">${mark(d.prompt, d.hl)}</div>
+      <span class="tag" title="${F[d.formula]?.[0]||""}: ${F[d.formula]?.[1]||""}">(${d.formula})</span>
+      <button class="play" aria-label="Escuchar frase ${d.n}"><svg viewBox="0 0 16 16"><path d="M3 2l11 6-11 6z"/></svg></button></div>
+    <input id="t${d.n}" placeholder="Escriba su traducción…" autocomplete="off" value="${esc(s.t||"")}">
+    <div class="actions"><button class="reveal">Ver respuesta</button></div>
+    <div class="ans" hidden><small>Respuesta del manual</small>${esc(d.answer)}</div>
+    <div class="self" hidden><button class="y">La tuve bien</button><button class="n">Debo repasarla</button></div>`;
+  const ans = card.querySelector(".ans"), self = card.querySelector(".self"), y = card.querySelector(".y"), n = card.querySelector(".n");
+  const paint = () => { y.setAttribute("aria-pressed", s.r==="y"); n.setAttribute("aria-pressed", s.r==="n");
+    card.classList.toggle("done-ok", s.r==="y"); card.classList.toggle("done-redo", s.r==="n"); };
+  const open = () => { ans.hidden = false; self.hidden = false; card.querySelector(".reveal").hidden = true; };
+  if (s.r) open(); paint();
+  card.querySelector(".reveal").onclick = () => { open(); s.seen = 1; state[d.n] = s; save(); };
+  const audio = new Audio(d.audio);
+  card.querySelector(".play").onclick = () => { if (current && current !== audio) current.pause(); current = audio; audio.currentTime = 0; audio.play().catch(()=>{}); };
+  card.querySelector("input").oninput = e => { s.t = e.target.value; state[d.n] = s; save(); };
+  y.onclick = () => { s.r = "y"; state[d.n] = s; save(); paint(); progress(); };
+  n.onclick = () => { s.r = "n"; state[d.n] = s; save(); paint(); progress(); };
+  card.onmouseenter = card.onfocusin = () => document.querySelectorAll(".f").forEach(el => el.classList.toggle("on", el.dataset.f == d.formula));
+  list.append(card);
+});
+function progress(){ const done = DATA.filter(d => state[d.n]?.r).length;
+  document.getElementById("ptext").textContent = `${done} de ${DATA.length} practicadas`;
+  document.getElementById("pbar").style.width = (100*done/DATA.length)+"%"; }
+progress();
+</script>

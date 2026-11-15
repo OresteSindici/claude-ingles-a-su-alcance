@@ -1,0 +1,4449 @@
+<?xml version="1.0"?>
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+       <html xmlns="http://www.w3.org/1999/xhtml"
+             xml:lang="en">
+<head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to jairo alberto payan."></meta><meta name="keywords" content="Hot Potatoes, Half-Baked Software, Windows, University of Victoria"></meta>
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC:Creator" content="UNREGISTERED" />
+<meta name="DC:Title" content=""RESUMEN AVANZADO "" />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<title>
+"RESUMEN AVANZADO "
+</title>
+
+<!-- Made with executable version 5.5 Release 0 Build 16 -->
+
+<style type="text/css">
+
+body{
+	font-family: COMIC SANS,Arial;
+	background-color: #c0c0c0;
+	color: #000000;
+	background-image: url(../Backup/Mis documentos/CURSO INGLES BASE/Ejercicios Internet/nova.GIF); 
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: small;
+}
+
+p{
+	text-align: justify;
+	margin: 0px;
+	font-size: small;
+}
+
+table,tr,td,div,span{
+	font-size: small;
+}
+
+div.Titles{
+	padding-top: 10px;
+	text-align: center;
+	margin-bottom: 4px;
+	color: #000000;
+}
+
+.ExerciseTitle{
+	font-size: large;
+	color: #000000;
+}
+
+.ExerciseSubtitle{
+	color: #000000;
+
+}
+
+span.Instructions{
+
+}
+
+.QuestionText{
+
+}
+
+.AnswerText{
+
+}
+
+.QNum{
+	font-weight: bold;
+}
+
+.FeedbackText{
+
+}	
+
+div.Feedback {
+	background-color: #c0c0c0;
+	left: 1px;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: small;
+}
+
+
+div.LeftContainer{
+	border-style: none;
+	padding: 2px 0px 2px 0px;
+	float: left;
+	width: 49.8%;
+	margin-bottom: 0px;
+}
+
+div.RightContainer{
+	border-style: none;
+	padding: 2px 0px 2px 0px;
+	float: right;
+	width: 49.8%;
+	margin-bottom: 0px;
+}
+
+.ReadingText{
+
+}
+
+
+div.StdDiv{
+	background-color: #bfffbf;
+	text-align: center;
+	color: #000000;
+	padding: 1em;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	margin: 1px 0px 0px 0px;
+	font-size: small;
+}
+
+
+.FunctionButton {
+	background-color: #bfffbf;
+	color: #000000;
+	text-align: center;
+	border-style: solid;
+	border-color: #bfffbf;
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+div.NavButtonBar{
+	background-color: #000000;
+	text-align: center;
+	margin: 2px 0px 2px 0px;
+	clear: both;
+	font-size: small;
+}
+
+div.NavButtonBar button {
+	border-style: solid;
+	border-color: #000000;
+	background-color: #000000;
+	border-width: 2px;
+	padding: 2px 2px 2px 2px;
+	color: #ffffff;
+	cursor: pointer;	
+}
+
+a{
+	color: #0000ff;
+}
+
+a:visited{
+	color: #0000cc;
+}
+
+a:hover{
+	color: #0000ff;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+<!--
+
+// BrowserCheck Object
+
+
+function BrowserCheck() {
+	var b = navigator.appName;
+	this.mac = (navigator.appVersion.indexOf('Mac') != -1);
+	if (b=="Netscape") this.b = 'ns';
+	else if (b=="Microsoft Internet Explorer") this.b = 'ie';
+	else this.b = b;
+	this.ns = (this.b == 'ns');
+	this.ie = (this.b == 'ie');
+	this.version = navigator.appVersion;
+	if (this.b == 'ie'){
+		var x = this.version.indexOf('MSIE ') + 5;
+		var vnum = '';
+
+		while ((this.version.charAt(x) > -1)&&(this.version.charAt(x) < 10)){
+			vnum += this.version.charAt(x);
+			x++;
+		}
+		this.v = parseInt(vnum);
+	}
+	else{
+		this.v = parseInt(this.version);
+	}
+	if (this.ns&&(this.v == 5)){
+		this.v = 6;
+	}
+	this.min = (this.v > 5);
+}
+
+is = new BrowserCheck();
+
+if ((is.min == false)||(is.ie5mac)){
+	alert('Your browser can\'t handle this page. You need NS6+ or IE6+ on Windows, or NS6+ on Mac.');
+}
+
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	if (is.ns) this.W = window.innerWidth;
+	if (is.ie) this.W = document.body.clientWidth;
+	if (is.ns) this.H = window.innerHeight;
+	if (is.ie) this.H = document.body.clientHeight;
+
+}
+
+var pg = null;
+
+function SuppressBackspace(e){ 
+
+	if (is.ns) {
+		thisKey = e.keyCode;
+	}
+	else {
+		thisKey = window.event.keyCode;
+	}
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+	}
+
+	if (Suppress == true){
+		if (is.ie){
+			window.event.returnValue = false;	
+			window.event.cancelBubble = true;
+		}
+		else{
+			e.preventDefault();
+		}
+	}
+}
+
+var NavLightColor = '#7f7f7f';
+var NavShadeColor = '#000000';
+var NavBarColor = '#000000';
+var FuncLightColor = '#dfffdf';
+var FuncShadeColor = '#5f7f5f';
+var ExBGColor = '#bfffbf';
+
+function NavBtnOver(Btn){
+	Btn.style.padding = '1px 3px 3px 1px';
+	Btn.style.borderLeftColor = NavLightColor;
+	Btn.style.borderTopColor = NavLightColor;
+	Btn.style.borderRightColor = NavShadeColor;
+	Btn.style.borderBottomColor = NavShadeColor;
+}
+
+function NavBtnOut(Btn){
+	Btn.style.borderColor = NavBarColor;
+	Btn.style.padding = '2px 2px 2px 2px';
+}
+
+function NavBtnDown(Btn){
+	Btn.style.borderLeftColor = NavShadeColor;
+	Btn.style.borderTopColor = NavShadeColor;
+	Btn.style.borderRightColor = NavLightColor;
+	Btn.style.borderBottomColor = NavLightColor;
+	Btn.style.padding = '3px 1px 1px 3px';
+}
+
+function FuncBtnOver(Btn){
+	Btn.style.padding = '2px 7px 4px 5px';
+	Btn.style.borderLeftColor = FuncLightColor;
+	Btn.style.borderTopColor = FuncLightColor;
+	Btn.style.borderRightColor = FuncShadeColor;
+	Btn.style.borderBottomColor = FuncShadeColor;
+}
+
+function FuncBtnOut(Btn){
+	Btn.style.borderColor = '#bfffbf';
+	Btn.style.padding = '3px 6px 3px 6px';
+}
+
+function FuncBtnDown(Btn){
+	Btn.style.borderLeftColor = FuncShadeColor;
+	Btn.style.borderTopColor = FuncShadeColor;
+	Btn.style.borderRightColor = FuncLightColor;
+	Btn.style.borderBottomColor = FuncLightColor;
+	Btn.style.padding = '4px 5px 2px 7px';
+}
+
+var topZ = 100;
+
+var CurrQNum = 0;
+var ALetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var CorrectIndicator = 'Exacto!';
+var IncorrectIndicator = 'Sorry!';
+var YourScoreIs = 'Su puntaje es:';
+var Tries = 0;
+var CorrectChoices = 0;
+var ContinuousScoring = true;
+var CorrectFirstTime = 'Preguntas contestadas acertadamente al primer intento: ';
+var ShuffleQs = true;
+var ShuffleAs = true;
+var DefaultRight = 'Lo (a) veo bien!';
+var DefaultWrong = 'Un repaso no caer&#237;a mal!';
+var QsToShow = 182;
+var ReadingURL = '[ReadingURL]';
+var Score = 0;
+var TempReading = '';
+var StartTime = (new Date()).toLocaleString();
+var HPNStartTime = (new Date()).getTime();
+var Finished = false;
+var SubmissionTimeout = 30000;
+
+
+
+var QButtonsOpener = '<button class="FunctionButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(-1); return false;">&nbsp;&lt;=&nbsp;</button><span class="QNum">';
+var QButtonsCloser = '</span><button id="NextQButton" class="FunctionButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(1); return false;">&nbsp;=&gt;&nbsp;</button>';
+
+
+var TableOpener = '<form name="QForm">';
+TableOpener += '<table border="0" style="margin-left: auto; margin-right: auto; margin-top: 10px;">';
+var QRow = '<tr><td valign="top" align="right"><span class="QNum">[QNumber].&nbsp;&nbsp;</span></td>';
+QRow += '<td valign="top" align="left"> <p><span class="QuestionText">[Question]</span><br />&nbsp;</p>';
+QRow += '</td></tr>';
+
+var ARow = '<tr><td>&nbsp;</td><td><table border="0" cellpadding="0" cellspacing="2">';
+ARow += '<tr><td></td><td valign="middle" align="left"><span id="FB_[QNum]_[ANum]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>';
+ARow += '<td valign="middle" align="left"><button class="FunctionButton" onfocus="FuncBtnOver(this)" onmouseover="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="CheckAnswer([QNum],[ANum]); return false;">&nbsp;[ALetter]&nbsp;</button></td>';
+
+ARow += '<td><span class="AnswerText">[Ans]</span></td></tr>';
+ARow += '</table></td></tr>';
+
+var MARow = '<tr><td></td><td valign="top" align="left"><input type="checkbox" name="A_[QNum]_[ANum]" value="[Correct]"></input>';
+MARow += '<span class="AnswerText">[Ans]</span></td></tr>';
+
+
+var CheckButton = '<tr><td align="center" colspan="2"><table border="0"><tr><td>';
+CheckButton += '<button class="FunctionButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="CheckMulti([QNum]); return false;">&nbsp;Verificar&nbsp;</button>';
+CheckButton += '</td></tr></table></td></tr>';
+
+TableCloser = '</table></form>';
+
+function ReduceItems(){
+	var ItemToDump=0;
+	var j=0;
+	while (I.length > QsToShow){
+		ItemToDump = Math.floor(I.length*Math.random());
+		for (j=ItemToDump; j<(I.length-1); j++){
+			I[j] = I[j+1];
+		}
+		I.length = I.length-1;
+	}
+}
+
+function Shuffle(InArray){
+	Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < j; k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteFeedback(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+//Calculate and set its left setting
+	topZ++;
+	FDiv.style.zIndex = topZ;
+
+//Position the feedback div
+	pg = new PageDim();
+	FDiv.style.left = Math.floor(pg.W/3) + 'px';
+	FDiv.style.width = Math.floor(pg.W/3) + 'px';
+//Set the top again in case the window has been resized
+	if (is.ns){
+		FDiv.style.top = Math.floor(pg.H/3) + window.pageYOffset + 'px';
+	}
+	else{
+		FDiv.style.top = Math.floor(pg.H/3) + document.body.scrollTop + 'px';
+	}
+	FDiv.style.display = 'block';
+	document.getElementById('FeedbackOKButton').focus();
+
+
+	RefreshImages();
+
+}
+
+function HideFeedback(){
+	document.getElementById('FeedbackOKButton').blur();
+	document.getElementById('FeedbackContent').innerHTML = '';
+	document.getElementById('FeedbackDiv').style.display='none';
+	document.getElementById('NextQButton').focus();
+	if (Finished == true){
+		Finish();
+	}
+}
+
+function WriteToInstructions(Feedback) {
+	Feedback = '<span class="FeedbackText">' + Feedback + '</span>';
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+	RefreshImages();
+
+}
+
+function WriteScore(Feedback) {
+	Feedback = '<span class="FeedbackText">' + Feedback + '</span>';
+	document.getElementById('ScoreDiv').innerHTML = Feedback;
+
+	RefreshImages();
+
+}
+
+
+Imgs = new Array();
+
+function PreloadImages(){
+	var a = PreloadImages.arguments;
+	for (var i=0; i<a.length; i++){
+		Imgs[i] = new Image();
+		Imgs[i].src = a[i];
+	}
+}
+
+function RefreshImages(){
+	for (var i=0; i<document.images.length; i++){
+		if (document.images[i].name.substring(0,6) != 'NavBar'){
+			document.images[i].src = document.images[i].src;
+		}
+	}
+}
+
+
+
+function StartUp(){
+
+//IE bug avoidance -- remove bottom navbar
+	if (is.ie){
+		if (document.getElementById('BottomNavBar') != null){
+			document.getElementById('TheBody').removeChild(document.getElementById('BottomNavBar'));
+		}
+	}
+
+	if (is.ie){
+		document.attachEvent('onkeydown',SuppressBackspace);
+		window.attachEvent('onkeydown',SuppressBackspace);
+	}
+	else if (is.ns){
+		window.addEventListener('keypress',SuppressBackspace,false);
+	}
+
+
+
+
+	PreloadImages('nova.GIF');
+
+
+//Reduce array if required
+	if (QsToShow < I.length){
+		ReduceItems();
+	}
+
+//Shuffle stuff if required
+
+	if (ShuffleQs == true){
+		I = Shuffle(I);
+	}
+
+	if (ShuffleAs == true){
+		for (var i=0; i<I.length; i++){
+			I[i][1] = Shuffle(I[i][1]);
+		}
+	}
+
+//Create arrays
+	CreateStatusArrays();
+
+
+//Show the first question
+	ShowQuestion(CurrQNum);
+
+
+
+
+
+}
+
+
+I = new Array();
+
+I[0] = new Array();
+I[0][0]='Este computador es el que menos me gusta';
+I[0][1] = new Array();
+I[0][1][0] = new Array();
+I[0][1][0][0]='This computer is the one that I least like';
+I[0][1][0][1]='NO.<br />VEA P&#193;GINA 149';
+I[0][1][0][2] = 0;
+I[0][1][1] = new Array();
+I[0][1][1][0]='This computer is the one that I like the least';
+I[0][1][1][1]='';
+I[0][1][1][2] = 1;
+I[0][2] = 0;
+
+I[1] = new Array();
+I[1][0]='Esta es la canci&#243;n que m&#225;s me gusta';
+I[1][1] = new Array();
+I[1][1][0] = new Array();
+I[1][1][0][0]='This is the song that I like the most';
+I[1][1][0][1]='';
+I[1][1][0][2] = 1;
+I[1][1][1] = new Array();
+I[1][1][1][0]='This is the song that I most like';
+I[1][1][1][1]='NO.<br />VEA P&#193;GINA 149';
+I[1][1][1][2] = 0;
+I[1][1][2] = new Array();
+I[1][1][2][0]='This is the song that I like the more';
+I[1][1][2][1]='NO.<br />VEA P&#193;GINA 149';
+I[1][1][2][2] = 0;
+I[1][2] = 0;
+
+I[2] = new Array();
+I[2][0]='Esta mujer me gusta m&#225;s.';
+I[2][1] = new Array();
+I[2][1][0] = new Array();
+I[2][1][0][0]='I like this woman better';
+I[2][1][0][1]='';
+I[2][1][0][2] = 1;
+I[2][1][1] = new Array();
+I[2][1][1][0]='This woman I like more';
+I[2][1][1][1]='NO.<br />VEA P&#193;GINA 149';
+I[2][1][1][2] = 0;
+I[2][2] = 0;
+
+I[3] = new Array();
+I[3][0]='Ni mis pap&#225;s ni Mar&#237;a saben la verdad';
+I[3][1] = new Array();
+I[3][1][0] = new Array();
+I[3][1][0][0]='Neither my parents nor Mar&#237;a Know the truth';
+I[3][1][0][1]='NO.<br />VEA P&#193;GINA 148';
+I[3][1][0][2] = 0;
+I[3][1][1] = new Array();
+I[3][1][1][0]='Neither my parents nor Maria Knows the truth';
+I[3][1][1][1]='';
+I[3][1][1][2] = 1;
+I[3][2] = 0;
+
+I[4] = new Array();
+I[4][0]='Ni Mar&#237;a ni Pedro van a volar esta noche.';
+I[4][1] = new Array();
+I[4][1][0] = new Array();
+I[4][1][0][0]='Neither Maria nor Pedro are going to fly tonight';
+I[4][1][0][1]='NO.<br />VEA P&#193;GINA 148';
+I[4][1][0][2] = 0;
+I[4][1][1] = new Array();
+I[4][1][1][0]='Neither Maria nor Pedro is going to fly tonight';
+I[4][1][1][1]='';
+I[4][1][1][2] = 1;
+I[4][2] = 0;
+
+I[5] = new Array();
+I[5][0]='Pedro y yo somos felices';
+I[5][1] = new Array();
+I[5][1][0] = new Array();
+I[5][1][0][0]='Peter and I am happy';
+I[5][1][0][1]='NO.<br />VEA P&#193;GINA 148';
+I[5][1][0][2] = 0;
+I[5][1][1] = new Array();
+I[5][1][1][0]='Peter and I are happy';
+I[5][1][1][1]='';
+I[5][1][1][2] = 1;
+I[5][1][2] = new Array();
+I[5][1][2][0]='Peter and me are happy';
+I[5][1][2][1]='NO.<br />VEA P&#193;GINA 148 y adem&#225;s el pronombre como complemento no va en este caso. VEA P&#193;GINA 53';
+I[5][1][2][2] = 0;
+I[5][2] = 0;
+
+I[6] = new Array();
+I[6][0]='Ese es el problema de alguien m&#225;s (Utilizando el posesivo saj&#243;n)';
+I[6][1] = new Array();
+I[6][1][0] = new Array();
+I[6][1][0][0]='That is somebody\'s else problem';
+I[6][1][0][1]='NO.<br />VEA P&#193;GINA 148';
+I[6][1][0][2] = 0;
+I[6][1][1] = new Array();
+I[6][1][1][0]='That is somebody\'s else\'s problem';
+I[6][1][1][1]='NO.<br />VEA P&#193;GINA 148';
+I[6][1][1][2] = 0;
+I[6][1][2] = new Array();
+I[6][1][2][0]='That is somebody else\'s problem';
+I[6][1][2][1]='';
+I[6][1][2][2] = 1;
+I[6][2] = 0;
+
+I[7] = new Array();
+I[7][0]='Este es el cuarto de Pedro, Pablo y m&#237;o. (Utilizando el posesivo saj&#243;n)';
+I[7][1] = new Array();
+I[7][1][0] = new Array();
+I[7][1][0][0]='This is Pedro, Pablo and mine room.';
+I[7][1][0][1]='NO.<br />VEA P&#193;GINA 148';
+I[7][1][0][2] = 0;
+I[7][1][1] = new Array();
+I[7][1][1][0]='This is Pedro\'s, Pablo\'s and mine room.';
+I[7][1][1][1]='NO.<br />VEA P&#193;GINA 148';
+I[7][1][1][2] = 0;
+I[7][1][2] = new Array();
+I[7][1][2][0]='This is Pedro\'s, Pablo\'s and my room.';
+I[7][1][2][1]='';
+I[7][1][2][2] = 1;
+I[7][1][3] = new Array();
+I[7][1][3][0]='This is Pedro\'s, Pablo\'s and my\'s room.';
+I[7][1][3][1]='NO.<br />VEA P&#193;GINA 148';
+I[7][1][3][2] = 0;
+I[7][2] = 0;
+
+I[8] = new Array();
+I[8][0]='Ella es la hija de Carlos y de Mary (Utilizando el posesivo saj&#243;n)';
+I[8][1] = new Array();
+I[8][1][0] = new Array();
+I[8][1][0][0]='She is Carlos and Mary\'s daughter';
+I[8][1][0][1]='';
+I[8][1][0][2] = 1;
+I[8][1][1] = new Array();
+I[8][1][1][0]='She is Carlos\' and Mary daughter';
+I[8][1][1][1]='NO.<br />VEA P&#193;GINA 148';
+I[8][1][1][2] = 0;
+I[8][1][2] = new Array();
+I[8][1][2][0]='She is Carlos\' and Mary\'s daughter';
+I[8][1][2][1]='NO.<br />VEA P&#193;GINA 148';
+I[8][1][2][2] = 0;
+I[8][2] = 0;
+
+I[9] = new Array();
+I[9][0]='Yo quer&#237;a un amigo que cantase bien';
+I[9][1] = new Array();
+I[9][1][0] = new Array();
+I[9][1][0][0]='I wanted a friend who sang well';
+I[9][1][0][1]='No. Vea p&#225;gina 126';
+I[9][1][0][2] = 0;
+I[9][1][1] = new Array();
+I[9][1][1][0]='I wanted a friend who would sing well';
+I[9][1][1][1]='';
+I[9][1][1][2] = 1;
+I[9][2] = 0;
+
+I[10] = new Array();
+I[10][0]='Tienes algo de dinero?';
+I[10][1] = new Array();
+I[10][1][0] = new Array();
+I[10][1][0][0]='Do you have some money?';
+I[10][1][0][1]='NO. <br />Podr&#237;a estar buena si estamos averiguando si alguien tiene dinero, a sabiendas de que es muy probable que lo tenga. <br />La p&#225;gina 117 estudia este caso';
+I[10][1][0][2] = 0;
+I[10][1][1] = new Array();
+I[10][1][1][0]='Do you have any money?';
+I[10][1][1][1]='NO. <br />Podr&#237;a estar buena si estamos averiguando si alguien por casualidad tiene dinero, a sabiendas de que es muy probable que eventualmente no lo tenga. Por ejemplo si estamos en una piscina en pantaloneta de ba&#241;o.<br />La p&#225;gina 117 estudia este caso';
+I[10][1][1][2] = 0;
+I[10][1][2] = new Array();
+I[10][1][2][0]='Dependiendo del contexto de la pregunta las dos podr&#237;an estar acertadas';
+I[10][1][2][1]='Exacto. La p&#225;gina 117 estudia este caso';
+I[10][1][2][2] = 1;
+I[10][2] = 0;
+
+I[11] = new Array();
+I[11][0]='Peter podr&#225; adoptar un ni&#241;o';
+I[11][1] = new Array();
+I[11][1][0] = new Array();
+I[11][1][0][0]='Peter will be able to adopt a child';
+I[11][1][0][1]='';
+I[11][1][0][2] = 1;
+I[11][1][1] = new Array();
+I[11][1][1][0]='Peter will can adopt a child';
+I[11][1][1][1]='NO.<br />La combinaci&#243;n de los 21\'s "Will + can" no se permite. VEA P&#193;GINA 48';
+I[11][1][1][2] = 0;
+I[11][1][2] = new Array();
+I[11][1][2][0]='Peter will can to adopt a child';
+I[11][1][2][1]='NO.<br />La combinaci&#243;n de los 21\'s "Will + can" no se permite. VEA P&#193;GINA 48. Adem&#225;s le sobra el "to"';
+I[11][1][2][2] = 0;
+I[11][2] = 0;
+
+I[12] = new Array();
+I[12][0]='Am I supposed to be happy here?';
+I[12][1] = new Array();
+I[12][1][0] = new Array();
+I[12][1][0][0]='Yo estoy supuesto a estar feliz aqu&#237;?';
+I[12][1][0][1]='NO. Este espa&#241;ol de d&#243;nde lo saca? <br />VEA P&#193;GINA 119';
+I[12][1][0][2] = 0;
+I[12][1][1] = new Array();
+I[12][1][1][0]='Yo supongo que debo estar feliz aqu&#237;?';
+I[12][1][1][1]='NO. Este espa&#241;ol de d&#243;nde lo saca? <br />VEA P&#193;GINA 119';
+I[12][1][1][2] = 0;
+I[12][1][2] = new Array();
+I[12][1][2][0]='Se supone que debo estar feliz aqu&#237;?';
+I[12][1][2][1]='Muy bien!';
+I[12][1][2][2] = 1;
+I[12][2] = 0;
+
+I[13] = new Array();
+I[13][0]='A m&#237; para nada me gusta el f&#250;tbol';
+I[13][1] = new Array();
+I[13][1][0] = new Array();
+I[13][1][0][0]='I don&#180;t like soccer for nothing';
+I[13][1][0][1]='No. Esta traducci&#243;n est&#225; muy a lo chibcha.<br />VEA P&#193;GINA 118';
+I[13][1][0][2] = 0;
+I[13][1][1] = new Array();
+I[13][1][1][0]='I don&#180;t like soccer';
+I[13][1][1][1]='NO. <br />Le falta enfatizar la negaci&#243;n como est&#225; en el texto en espa&#241;ol. <br />VEA P&#193;GINA 118';
+I[13][1][1][2] = 0;
+I[13][1][2] = new Array();
+I[13][1][2][0]='I don\'t like soccer not at all';
+I[13][1][2][1]='NO. Esta frase no tiene sentido en ingl&#233;s.<br />VEA P&#193;GINA 118';
+I[13][1][2][2] = 0;
+I[13][1][3] = new Array();
+I[13][1][3][0]='I don\'t like soccer at all';
+I[13][1][3][1]='Excelente!';
+I[13][1][3][2] = 1;
+I[13][2] = 0;
+
+I[14] = new Array();
+I[14][0]='Alguien m&#225;s a visto a Pedro?';
+I[14][1] = new Array();
+I[14][1][0] = new Array();
+I[14][1][0][0]='Have anybody else seen Pedro?';
+I[14][1][0][1]='NO.<br />VEA P&#193;GINA 115';
+I[14][1][0][2] = 0;
+I[14][1][1] = new Array();
+I[14][1][1][0]='Has anybody else seen Pedro?';
+I[14][1][1][1]='';
+I[14][1][1][2] = 1;
+I[14][1][2] = new Array();
+I[14][1][2][0]='Has somebody else seen Pedro?';
+I[14][1][2][1]='NO.<br /> VEA P&#193;GINA 115 y P&#193;GINA 79';
+I[14][1][2][2] = 0;
+I[14][2] = 0;
+
+I[15] = new Array();
+I[15][0]='C&#243;mo m&#225;s puedo averiguar la altura de este edificio?';
+I[15][1] = new Array();
+I[15][1][0] = new Array();
+I[15][1][0][0]='How more can I find the high of this building?';
+I[15][1][0][1]='NO.<br />VEA P&#193;GINA 114. Adem&#225;s "high" es el adjetivo "alto" pero no el sustantivo "altura"';
+I[15][1][0][2] = 0;
+I[15][1][1] = new Array();
+I[15][1][1][0]='How more can I find the height of this building?';
+I[15][1][1][1]='NO. <br />VEA P&#193;GINA 114.';
+I[15][1][1][2] = 0;
+I[15][1][2] = new Array();
+I[15][1][2][0]='How else can I find the high of this building?';
+I[15][1][2][1]='NO. "High" es el adjetivo "alto" pero no el sustantivo "altura"';
+I[15][1][2][2] = 0;
+I[15][1][3] = new Array();
+I[15][1][3][0]='How else can I find the height of this building?';
+I[15][1][3][1]='';
+I[15][1][3][2] = 1;
+I[15][2] = 0;
+
+I[16] = new Array();
+I[16][0]='Con raz&#243;n est&#225;s tan gordo';
+I[16][1] = new Array();
+I[16][1][0] = new Array();
+I[16][1][0][0]='No wonder you are so fat';
+I[16][1][0][1]='Claro que s&#237;!';
+I[16][1][0][2] = 1;
+I[16][1][1] = new Array();
+I[16][1][1][0]='With reason you are so fat';
+I[16][1][1][1]='NO. Esta traducci&#243;n est&#225; muy a lo chibcha. "No wonder" significa "con raz&#243;n", "no en vano"<br />VEA P&#193;GINA 140';
+I[16][1][1][2] = 0;
+I[16][1][2] = new Array();
+I[16][1][2][0]='I wonder if you are so fat';
+I[16][1][2][1]='NO. "I wonder" es "yo me pregunto"<br /> "No wonder" significa "con raz&#243;n", "no en vano"<br />';
+I[16][1][2][2] = 0;
+I[16][1][3] = new Array();
+I[16][1][3][0]='I understand you are so fat';
+I[16][1][3][1]='NO. Esta traducci&#243;n est&#225; muy a lo chibcha. "No wonder" significa "con raz&#243;n", "no en vano"<br />VEA P&#193;GINA 140';
+I[16][1][3][2] = 0;
+I[16][2] = 0;
+
+I[17] = new Array();
+I[17][0]='Compr&#233; un edificio de cinco apartamentos';
+I[17][1] = new Array();
+I[17][1][0] = new Array();
+I[17][1][0][0]='I bought a five apartment building';
+I[17][1][0][1]='';
+I[17][1][0][2] = 1;
+I[17][1][1] = new Array();
+I[17][1][1][0]='I bought a five apartments building';
+I[17][1][1][1]='NO.<br />VEA P&#193;GINA 7, los adjetivos no se pluralizan en ingl&#233;s y cuando hay dos sustantivos consecutivos (apartment- building) el primero hace las veces de adjetivo.';
+I[17][1][1][2] = 0;
+I[17][2] = 0;
+
+I[18] = new Array();
+I[18][0]='Dame otra oportunidad';
+I[18][1] = new Array();
+I[18][1][0] = new Array();
+I[18][1][0][0]='Give me another chance';
+I[18][1][0][1]='';
+I[18][1][0][2] = 1;
+I[18][1][1] = new Array();
+I[18][1][1][0]='Give me the other chance';
+I[18][1][1][1]='NO.<br />VEA P&#193;GINA 134';
+I[18][1][1][2] = 0;
+I[18][1][2] = new Array();
+I[18][1][2][0]='Give me other chance';
+I[18][1][2][1]='NO.<br />VEA P&#193;GINA 134';
+I[18][1][2][2] = 0;
+I[18][2] = 0;
+
+I[19] = new Array();
+I[19][0]='El alcalde mismo di&#243; la orden.';
+I[19][1] = new Array();
+I[19][1][0] = new Array();
+I[19][1][0][0]='The same mayor gave the order.';
+I[19][1][0][1]='NO.<br />VEA P&#193;GINA 63';
+I[19][1][0][2] = 0;
+I[19][1][1] = new Array();
+I[19][1][1][0]='The mayor himself gave the order.';
+I[19][1][1][1]='Un altero: "The mayor gave the order himself"';
+I[19][1][1][2] = 1;
+I[19][1][2] = new Array();
+I[19][1][2][0]='Himself the mayor gave the order.';
+I[19][1][2][1]='NO.<br />VEA P&#193;GINA 63';
+I[19][1][2][2] = 0;
+I[19][1][3] = new Array();
+I[19][1][3][0]='The mayor gave himself the order.';
+I[19][1][3][1]='NO.<br />VEA P&#193;GINA 63';
+I[19][1][3][2] = 0;
+I[19][2] = 0;
+
+I[20] = new Array();
+I[20][0]='El podr&#237;a haber ido (no se sabe si fue)';
+I[20][1] = new Array();
+I[20][1][0] = new Array();
+I[20][1][0][0]='He may/might have gone';
+I[20][1][0][1]='';
+I[20][1][0][2] = 1;
+I[20][1][1] = new Array();
+I[20][1][1][0]='He could have gone';
+I[20][1][1][1]='NO. <br />VEA P&#193;GINA 128';
+I[20][1][1][2] = 0;
+I[20][1][2] = new Array();
+I[20][1][2][0]='He would can have gone';
+I[20][1][2][1]='Nunca!. La combinaci&#243;n would+can para obtener "podr&#237;a" no existe. Aqu&#237; si est&#225; grave. <br />VEA P&#193;GINA 55';
+I[20][1][2][2] = 0;
+I[20][2] = 0;
+
+I[21] = new Array();
+I[21][0]='Ella nunca ha ido a Cartagena';
+I[21][1] = new Array();
+I[21][1][0] = new Array();
+I[21][1][0][0]='She never has gone to Cartagena.';
+I[21][1][0][1]='NO.<br />VEA P&#193;GINA 95';
+I[21][1][0][2] = 0;
+I[21][1][1] = new Array();
+I[21][1][1][0]='She has never gone to Cartagena.';
+I[21][1][1][1]='';
+I[21][1][1][2] = 1;
+I[21][1][2] = new Array();
+I[21][1][2][0]='She has gone never to Cartagena';
+I[21][1][2][1]='Cuidado. <br />VEA P&#193;GINA 95';
+I[21][1][2][2] = 0;
+I[21][1][3] = new Array();
+I[21][1][3][0]='Never she has gone to Cartagena';
+I[21][1][3][1]='Cuidado. <br />VEA P&#193;GINA 95';
+I[21][1][3][2] = 0;
+I[21][2] = 0;
+
+I[22] = new Array();
+I[22][0]='Esta sopa huele delicioso';
+I[22][1] = new Array();
+I[22][1][0] = new Array();
+I[22][1][0][0]='This soup smells delicious';
+I[22][1][0][1]='';
+I[22][1][0][2] = 1;
+I[22][1][1] = new Array();
+I[22][1][1][0]='This soup smells deliciously';
+I[22][1][1][1]='Lamentablemente no! <br />VEA P&#193;GINA 90';
+I[22][1][1][2] = 0;
+I[22][2] = 0;
+
+I[23] = new Array();
+I[23][0]='Es importante no tener enemigos';
+I[23][1] = new Array();
+I[23][1][0] = new Array();
+I[23][1][0][0]='It&#180;s important not to have enemies';
+I[23][1][0][1]='Por supuesto!';
+I[23][1][0][2] = 1;
+I[23][1][1] = new Array();
+I[23][1][1][0]='It&#180;s important no to have enemies';
+I[23][1][1][1]='NO. <br />VEA P&#193;GINA 103';
+I[23][1][1][2] = 0;
+I[23][1][2] = new Array();
+I[23][1][2][0]='Is important not to have enemies';
+I[23][1][2][1]='NO. La construcci&#243;n est&#225; bien, pero.. y el sujeto de la frase? <br />VEA P&#193;GINA 8<br />';
+I[23][1][2][2] = 0;
+I[23][1][3] = new Array();
+I[23][1][3][0]='It&#180;s important not having enemies';
+I[23][1][3][1]='NO. <br />VEA P&#193;GINA 103';
+I[23][1][3][2] = 0;
+I[23][2] = 0;
+
+I[24] = new Array();
+I[24][0]='Estoy tan cansado que no puedo volar';
+I[24][1] = new Array();
+I[24][1][0] = new Array();
+I[24][1][0][0]='I\'m too tired and I can\'t fly';
+I[24][1][0][1]='NO.<br />VEA P&#193;GINA 95';
+I[24][1][0][2] = 0;
+I[24][1][1] = new Array();
+I[24][1][1][0]='I\'m so tired that I can\'t fly';
+I[24][1][1][1]='';
+I[24][1][1][2] = 1;
+I[24][1][2] = new Array();
+I[24][1][2][0]='I\'m so tired I can\'t fly';
+I[24][1][2][1]='NO.<br />En este caso no puede omitir la conjunci&#243;n "that" como en otros casos porque la frase queda coja.';
+I[24][1][2][2] = 0;
+I[24][1][3] = new Array();
+I[24][1][3][0]='I\'m very tired and I can\'t fly';
+I[24][1][3][1]='NO. <br />VEA P&#193;GINA 95';
+I[24][1][3][2] = 0;
+I[24][2] = 0;
+
+I[25] = new Array();
+I[25][0]='Ellos desear&#237;an (a ellos les gustar&#237;a) que tu volases este helic&#243;ptero ';
+I[25][1] = new Array();
+I[25][1][0] = new Array();
+I[25][1][0][0]='They would wish that you fly this helicopter';
+I[25][1][0][1]='NO. <br />VEA P&#193;GINA 103';
+I[25][1][0][2] = 0;
+I[25][1][1] = new Array();
+I[25][1][1][0]='They would wish that you would fly this helicopter';
+I[25][1][1][1]='NO. <br />VEA P&#193;GINA 103';
+I[25][1][1][2] = 0;
+I[25][1][2] = new Array();
+I[25][1][2][0]='They wish you would fly this helicopter';
+I[25][1][2][1]='';
+I[25][1][2][2] = 1;
+I[25][1][3] = new Array();
+I[25][1][3][0]='They wish that you fly this helicopter';
+I[25][1][3][1]='NO.<br />VEA P&#193;GINA 103';
+I[25][1][3][2] = 0;
+I[25][2] = 0;
+
+I[26] = new Array();
+I[26][0]='Eso es peligroso, as&#237; como ilegal';
+I[26][1] = new Array();
+I[26][1][0] = new Array();
+I[26][1][0][0]='That is dangerous, as good as unlawful';
+I[26][1][0][1]='NO. <br />La expresi&#243;n "as&#237; como" es "as well as".';
+I[26][1][0][2] = 0;
+I[26][1][1] = new Array();
+I[26][1][1][0]='That is dangerous, and unlawful';
+I[26][1][1][1]='NO.<br />La expresi&#243;n "as&#237; como" es "as well as".';
+I[26][1][1][2] = 0;
+I[26][1][2] = new Array();
+I[26][1][2][0]='That is dangerous, as well as unlawful';
+I[26][1][2][1]='Esta bien!';
+I[26][1][2][2] = 1;
+I[26][2] = 0;
+
+I[27] = new Array();
+I[27][0]='Fui castigado por no volar';
+I[27][1] = new Array();
+I[27][1][0] = new Array();
+I[27][1][0][0]='I was punished for not to fly';
+I[27][1][0][1]='NO. <br />VEA P&#193;GINA 103';
+I[27][1][0][2] = 0;
+I[27][1][1] = new Array();
+I[27][1][1][0]='I was punished for not flying';
+I[27][1][1][1]='SI. <br />Tiene claro el concepto';
+I[27][1][1][2] = 1;
+I[27][1][2] = new Array();
+I[27][1][2][0]='I was punished for no flying';
+I[27][1][2][1]='NO. <br />VEA P&#193;GINA 103';
+I[27][1][2][2] = 0;
+I[27][2] = 0;
+
+I[28] = new Array();
+I[28][0]='He wouldn&#180;t say the answer';
+I[28][1] = new Array();
+I[28][1][0] = new Array();
+I[28][1][0][0]='El podr&#237;a dar la respuesta';
+I[28][1][0][1]='NO.<br />VEA P&#193;GINA 126 ';
+I[28][1][0][2] = 0;
+I[28][1][1] = new Array();
+I[28][1][1][0]='El no dir&#237;a la respuesta';
+I[28][1][1][1]='NO. <br />VEA P&#193;GINA 126 ';
+I[28][1][1][2] = 0;
+I[28][1][2] = new Array();
+I[28][1][2][0]='El se neg&#243; (se rehus&#243; a decir la respuesta, no la quiso dar)';
+I[28][1][2][1]='';
+I[28][1][2][2] = 1;
+I[28][2] = 0;
+
+I[29] = new Array();
+I[29][0]='I don\'t like your speaking at all';
+I[29][1] = new Array();
+I[29][1][0] = new Array();
+I[29][1][0][0]='No me gusta para nada tu hablado.';
+I[29][1][0][1]='Claro que s&#237;!';
+I[29][1][0][2] = 1;
+I[29][1][1] = new Array();
+I[29][1][1][0]='No me gusta como hablas';
+I[29][1][1][1]='NO. La expresi&#243;n "at all" enfatiza la negaci&#243;n. <br />VER P&#193;GINA 118';
+I[29][1][1][2] = 0;
+I[29][1][2] = new Array();
+I[29][1][2][0]='No me gusta que hables';
+I[29][1][2][1]='NO. Definitivamente aqu&#237; si requiere ayuda. VEA P&#193;GINA 118';
+I[29][1][2][2] = 0;
+I[29][1][3] = new Array();
+I[29][1][3][0]='No me gusta que hables con todos';
+I[29][1][3][1]='No. Definitivamente aqu&#237; si requiere ayuda. VEA P&#193;GINA 118';
+I[29][1][3][2] = 0;
+I[29][2] = 0;
+
+I[30] = new Array();
+I[30][0]='I&#180;ve got to tell you something';
+I[30][1] = new Array();
+I[30][1][0] = new Array();
+I[30][1][0][0]='Tengo que decirte algo';
+I[30][1][0][1]='';
+I[30][1][0][2] = 1;
+I[30][1][1] = new Array();
+I[30][1][1][0]='Te iba a decir algo';
+I[30][1][1][1]='NO.<br />VEA P&#193;GINA 51';
+I[30][1][1][2] = 0;
+I[30][1][2] = new Array();
+I[30][1][2][0]='Debo decirte algo';
+I[30][1][2][1]='NO.<br />VEA P&#193;GINA 51';
+I[30][1][2][2] = 0;
+I[30][2] = 0;
+
+I[31] = new Array();
+I[31][0]='La noticia es preocupante';
+I[31][1] = new Array();
+I[31][1][0] = new Array();
+I[31][1][0][0]='The news is worry';
+I[31][1][0][1]='NO. "worry" es el verbo. Estudie "sufijos" en la p&#225;gina 97';
+I[31][1][0][2] = 0;
+I[31][1][1] = new Array();
+I[31][1][1][0]='The news is worrysome';
+I[31][1][1][1]='';
+I[31][1][1][2] = 1;
+I[31][1][2] = new Array();
+I[31][1][2][0]='The news is worryable';
+I[31][1][2][1]='NO. Qu&#233; va! El adjetivo "worryable" no existe';
+I[31][1][2][2] = 0;
+I[31][1][3] = new Array();
+I[31][1][3][0]='The new is worrysome';
+I[31][1][3][1]='NO. El adjetivo est&#225; bien pero no olvide que "noticia" y "noticias" se escriben asi: "news".';
+I[31][1][3][2] = 0;
+I[31][2] = 0;
+
+I[32] = new Array();
+I[32][0]='Lo mejor es que te vayas';
+I[32][1] = new Array();
+I[32][1][0] = new Array();
+I[32][1][0][0]='You have better go';
+I[32][1][0][1]='NO. Esta forma est&#225; mal empleada.<br />VEA P&#193;GINA 51';
+I[32][1][0][2] = 0;
+I[32][1][1] = new Array();
+I[32][1][1][0]='You\'d better go';
+I[32][1][1][1]='NO. Aunque tiene clara la expresi&#243;n debe diferenciar entre el verbo "to go" (ir) y el verbo "to leave" (irse) Aqu&#237; lo que dice es "lo mejor es que vayas", pero esa no es la pregunta.';
+I[32][1][1][2] = 0;
+I[32][1][2] = new Array();
+I[32][1][2][0]='You\'d better leave';
+I[32][1][2][1]='Magn&#237;fico!';
+I[32][1][2][2] = 1;
+I[32][1][3] = new Array();
+I[32][1][3][0]='The best is that you go';
+I[32][1][3][1]='NO. Muy chibcha esa traducci&#243;n.<br />VEA P&#193;GINA 51';
+I[32][1][3][2] = 0;
+I[32][2] = 0;
+
+I[33] = new Array();
+I[33][0]='No quiero volver a quererte';
+I[33][1] = new Array();
+I[33][1][0] = new Array();
+I[33][1][0][0]='I don\'t want to love you more';
+I[33][1][0][1]='NO.<br />VEA P&#193;GINA 115';
+I[33][1][0][2] = 0;
+I[33][1][1] = new Array();
+I[33][1][1][0]='I don\'t want to love you anymore';
+I[33][1][1][1]='';
+I[33][1][1][2] = 1;
+I[33][1][2] = new Array();
+I[33][1][2][0]='I don\'t want to love you no more';
+I[33][1][2][1]='NO.<br />VEA P&#193;GINA 115';
+I[33][1][2][2] = 0;
+I[33][1][3] = new Array();
+I[33][1][3][0]='I don\'t want to love you no longer';
+I[33][1][3][1]='NO.<br />VEA P&#193;GINA 115';
+I[33][1][3][2] = 0;
+I[33][2] = 0;
+
+I[34] = new Array();
+I[34][0]='No conocer a tu enemigo podr&#237;a ser peligroso';
+I[34][1] = new Array();
+I[34][1][0] = new Array();
+I[34][1][0][0]='Not knowing your enemy can be dangerous';
+I[34][1][0][1]='NO. <br />VEA P&#193;GINA 21';
+I[34][1][0][2] = 0;
+I[34][1][1] = new Array();
+I[34][1][1][0]='Not knowing your enemy might be dangerous';
+I[34][1][1][1]='';
+I[34][1][1][2] = 1;
+I[34][1][2] = new Array();
+I[34][1][2][0]='Not to know your enemy can be dangerous';
+I[34][1][2][1]='NO. <br />VEA P&#193;GINA 103';
+I[34][1][2][2] = 0;
+I[34][1][3] = new Array();
+I[34][1][3][0]='Not to know your enemy may be dangerous';
+I[34][1][3][1]='NO. <br />VEA P&#193;GINA 103';
+I[34][1][3][2] = 0;
+I[34][2] = 0;
+
+I[35] = new Array();
+I[35][0]='Ojal&#225; ella fuese m&#225;s joven';
+I[35][1] = new Array();
+I[35][1][0] = new Array();
+I[35][1][0][0]='I wish she was younger';
+I[35][1][0][1]='NO.<br />VEA P&#193;GINA 104';
+I[35][1][0][2] = 0;
+I[35][1][1] = new Array();
+I[35][1][1][0]='I wish she be younger';
+I[35][1][1][1]='NO.<br />VEA P&#193;GINA 104';
+I[35][1][1][2] = 0;
+I[35][1][2] = new Array();
+I[35][1][2][0]='I wish she were younger';
+I[35][1][2][1]='';
+I[35][1][2][2] = 1;
+I[35][2] = 0;
+
+I[36] = new Array();
+I[36][0]='Pedro volar&#225; ma&#241;ana y yo tambi&#233;n';
+I[36][1] = new Array();
+I[36][1][0] = new Array();
+I[36][1][0][0]='Pedro will fly tomorrow and I too.';
+I[36][1][0][1]='NO.<br />VEA P&#193;GINA 112';
+I[36][1][0][2] = 0;
+I[36][1][1] = new Array();
+I[36][1][1][0]='Pedro will fly tomorrow and so will I.';
+I[36][1][1][1]='';
+I[36][1][1][2] = 1;
+I[36][1][2] = new Array();
+I[36][1][2][0]='Pedro will fly tomorrow and so will me.';
+I[36][1][2][1]='NO.<br />VEA P&#193;GINA 112';
+I[36][1][2][2] = 0;
+I[36][1][3] = new Array();
+I[36][1][3][0]='Pedro will fly tomorrow and I also.';
+I[36][1][3][1]='NO.<br />VEA P&#193;GINA 112';
+I[36][1][3][2] = 0;
+I[36][2] = 0;
+
+I[37] = new Array();
+I[37][0]='Por casualidad sabes su nombre?';
+I[37][1] = new Array();
+I[37][1][0] = new Array();
+I[37][1][0][0]='Do you happen to know his name?';
+I[37][1][0][1]='';
+I[37][1][0][2] = 1;
+I[37][1][1] = new Array();
+I[37][1][1][0]='For casualty do you know his name?';
+I[37][1][1][1]='NO.<br />VEA P&#193;GINA 141';
+I[37][1][1][2] = 0;
+I[37][1][2] = new Array();
+I[37][1][2][0]='Do you know his name for casualty?';
+I[37][1][2][1]='NO.<br />VEA P&#193;GINA 141';
+I[37][1][2][2] = 0;
+I[37][2] = 0;
+
+I[38] = new Array();
+I[38][0]='Pedro: Are you a pilot?<br />Pablo: No, actually I\'m a preacher';
+I[38][1] = new Array();
+I[38][1][0] = new Array();
+I[38][1][0][0]='Era, ahora soy predicador';
+I[38][1][0][1]='NO. El adverbio "actually" significa "en realidad", "la verdad es que".';
+I[38][1][0][2] = 0;
+I[38][1][1] = new Array();
+I[38][1][1][0]='No, actualmente soy predicador.';
+I[38][1][1][1]='NO. El adverbio "actually" significa "en realidad", "la verdad es que", nunca significa "actualmente"';
+I[38][1][1][2] = 0;
+I[38][1][2] = new Array();
+I[38][1][2][0]='No, en realidad soy predicador.';
+I[38][1][2][1]='';
+I[38][1][2][2] = 1;
+I[38][2] = 0;
+
+I[39] = new Array();
+I[39][0]='Qu&#233; m&#225;s le dijiste?';
+I[39][1] = new Array();
+I[39][1][0] = new Array();
+I[39][1][0][0]='What more did you say?';
+I[39][1][0][1]='NO. VEA P&#193;GINA 114. Adem&#225;s el verbo "to say" est&#225; mal empleado. Es "to tell" ';
+I[39][1][0][2] = 0;
+I[39][1][1] = new Array();
+I[39][1][1][0]='What else did you say?';
+I[39][1][1][1]='NO. Ojo con el verbo, una cosa es decir "to say" y otra "decir a alguien" to tell.';
+I[39][1][1][2] = 0;
+I[39][1][2] = new Array();
+I[39][1][2][0]='What more did you tell her?';
+I[39][1][2][1]='NO. VEA P&#193;GINA 114';
+I[39][1][2][2] = 0;
+I[39][1][3] = new Array();
+I[39][1][3][0]='What else did you tell her?';
+I[39][1][3][1]='Claro que s&#237;.';
+I[39][1][3][2] = 1;
+I[39][2] = 0;
+
+I[40] = new Array();
+I[40][0]='Quieres agua?';
+I[40][1] = new Array();
+I[40][1][0] = new Array();
+I[40][1][0][0]='Do you want some water?';
+I[40][1][0][1]='';
+I[40][1][0][2] = 1;
+I[40][1][1] = new Array();
+I[40][1][1][0]='Do you want any water?';
+I[40][1][1][1]='NO.<br />VEA P&#193;GINA 79';
+I[40][1][1][2] = 0;
+I[40][1][2] = new Array();
+I[40][1][2][0]='Do you want water?';
+I[40][1][2][1]='NO. No se puede utilizar el sustantivo, en este caso "water" sin art&#237;culo.';
+I[40][1][2][2] = 0;
+I[40][2] = 0;
+
+I[41] = new Array();
+I[41][0]='Tomorrow I will have understood the truth';
+I[41][1] = new Array();
+I[41][1][0] = new Array();
+I[41][1][0][0]='Ma&#241;ana yo entender&#233; la verdad';
+I[41][1][0][1]='NO. Use la combinaci&#243;n de auxiliares. VEA P&#193;GINA 47';
+I[41][1][0][2] = 0;
+I[41][1][1] = new Array();
+I[41][1][1][0]='Ma&#241;ana yo habr&#233; entendido la verdad';
+I[41][1][1][1]='';
+I[41][1][1][2] = 1;
+I[41][1][2] = new Array();
+I[41][1][2][0]='Ma&#241;ana yo tendr&#233; entendida la verdad';
+I[41][1][2][1]='NO. Este espa&#241;ol es muy rebuscado.<br />Use la combinaci&#243;n de auxiliares. <br />VEA P&#193;GINA 47';
+I[41][1][2][2] = 0;
+I[41][1][3] = new Array();
+I[41][1][3][0]='Ma&#241;ana yo entender&#237;a la verdad.';
+I[41][1][3][1]='NO. Use la combinaci&#243;n de auxiliares. VEA P&#193;GINA 47';
+I[41][1][3][2] = 0;
+I[41][2] = 0;
+
+I[42] = new Array();
+I[42][0]='Tienes algo para darme?';
+I[42][1] = new Array();
+I[42][1][0] = new Array();
+I[42][1][0][0]='Do you have something to give me?';
+I[42][1][0][1]='NO.<br />VEA P&#193;GINA 79';
+I[42][1][0][2] = 0;
+I[42][1][1] = new Array();
+I[42][1][1][0]='Do you have anything to give me?';
+I[42][1][1][1]='';
+I[42][1][1][2] = 1;
+I[42][1][2] = new Array();
+I[42][1][2][0]='Do you have some to give me?';
+I[42][1][2][1]='NO. <br />VEA P&#193;GINA 79. "Some" en este caso es un adjetivo y debe ir acompa&#241;ado de un adjetivo';
+I[42][1][2][2] = 0;
+I[42][2] = 0;
+
+I[43] = new Array();
+I[43][0]='That man is pretty weird';
+I[43][1] = new Array();
+I[43][1][0] = new Array();
+I[43][1][0][0]='Ese hombre es un poco raro';
+I[43][1][0][1]='NO. Mire el significado del adverbio "pretty" <br />VEA P&#193;GINA 95';
+I[43][1][0][2] = 0;
+I[43][1][1] = new Array();
+I[43][1][1][0]='Ese hombre es bastante raro';
+I[43][1][1][1]='';
+I[43][1][1][2] = 1;
+I[43][1][2] = new Array();
+I[43][1][2][0]='Ese hombre es poco raro';
+I[43][1][2][1]='NO. Mire el significado del adverbio "pretty" <br />VEA P&#193;GINA 95';
+I[43][1][2][2] = 0;
+I[43][2] = 0;
+
+I[44] = new Array();
+I[44][0]='The airflow';
+I[44][1] = new Array();
+I[44][1][0] = new Array();
+I[44][1][0][0]='El aire fluye';
+I[44][1][0][1]='NO.<br />Si observa bien esta no es una conjugaci&#243;n sino un sustantivo. El aire fluye es: "The air flows"';
+I[44][1][0][2] = 0;
+I[44][1][1] = new Array();
+I[44][1][1][0]='El flujo de aire';
+I[44][1][1][1]='';
+I[44][1][1][2] = 1;
+I[44][2] = 0;
+
+I[45] = new Array();
+I[45][0]='Un placer hacer negocios con usted';
+I[45][1] = new Array();
+I[45][1][0] = new Array();
+I[45][1][0][0]='A pleasure doing business with you';
+I[45][1][0][1]='NO. Qu&#233; paso con el sujeto? <br />VEA P&#193;GINA 8';
+I[45][1][0][2] = 0;
+I[45][1][1] = new Array();
+I[45][1][1][0]='It&#180;s a pleasure making business with you';
+I[45][1][1][1]='NO. Le sugiero que haga los ejercicios interactivos de la p&#225;gina 133 para ver la aplicaci&#243;n de "to make" and "to do"';
+I[45][1][1][2] = 0;
+I[45][1][2] = new Array();
+I[45][1][2][0]='It&#180;s a pleasure doing business with you';
+I[45][1][2][1]='Por supuesto';
+I[45][1][2][2] = 1;
+I[45][1][3] = new Array();
+I[45][1][3][0]='Is a pleasure doing business with you';
+I[45][1][3][1]='NO. Qu&#233; paso con el sujeto? <br />VEA P&#193;GINA 8';
+I[45][1][3][2] = 0;
+I[45][2] = 0;
+
+I[46] = new Array();
+I[46][0]='Uno piensa que volar es f&#225;cil';
+I[46][1] = new Array();
+I[46][1][0] = new Array();
+I[46][1][0][0]='One thinks that flying is easy';
+I[46][1][0][1]='';
+I[46][1][0][2] = 1;
+I[46][1][1] = new Array();
+I[46][1][1][0]='One think that flying is easy';
+I[46][1][1][1]='NO.<br />VEA P&#193;GINA 142';
+I[46][1][1][2] = 0;
+I[46][1][2] = new Array();
+I[46][1][2][0]='One thinks than to fly is easy';
+I[46][1][2][1]='NO. <br />VEA P&#193;GINAS 70 y 142';
+I[46][1][2][2] = 0;
+I[46][1][3] = new Array();
+I[46][1][3][0]='I think that flying is easy';
+I[46][1][3][1]='NO. <br />VEA P&#193;GINA 142';
+I[46][1][3][2] = 0;
+I[46][2] = 0;
+
+I[47] = new Array();
+I[47][0]='A ella no le gusta el f&#250;tbol y a &#233;l tampoco ';
+I[47][1] = new Array();
+I[47][1][0] = new Array();
+I[47][1][0][0]='She doesn\'t like soccer and neither does he.';
+I[47][1][0][1]='Un alterno:"She doesn\'t like soccer and he doesn\'t either".';
+I[47][1][0][2] = 1;
+I[47][1][1] = new Array();
+I[47][1][1][0]='She doesn\'t like soccer and neither does him.';
+I[47][1][1][1]='NO. <br />VEA P&#193;GINA 111';
+I[47][1][1][2] = 0;
+I[47][1][2] = new Array();
+I[47][1][2][0]='She doesn\'t like soccer and he doesn\'t neither.';
+I[47][1][2][1]='NO. <br />VEA P&#193;GINA 111';
+I[47][1][2][2] = 0;
+I[47][1][3] = new Array();
+I[47][1][3][0]='She doesn\'t like soccer and neither doesn\'t he.';
+I[47][1][3][1]='NO. <br />VEA P&#193;GINA 111';
+I[47][1][3][2] = 0;
+I[47][2] = 0;
+
+I[48] = new Array();
+I[48][0]='Yo me baj&#233; del tren';
+I[48][1] = new Array();
+I[48][1][0] = new Array();
+I[48][1][0][0]='I got out of the train';
+I[48][1][0][1]='NO.<br />VEA P&#193;GINA 132';
+I[48][1][0][2] = 0;
+I[48][1][1] = new Array();
+I[48][1][1][0]='I got of the train';
+I[48][1][1][1]='NO.<br />VEA P&#193;GINA 132';
+I[48][1][1][2] = 0;
+I[48][1][2] = new Array();
+I[48][1][2][0]='I got off the train';
+I[48][1][2][1]='';
+I[48][1][2][2] = 1;
+I[48][1][3] = new Array();
+I[48][1][3][0]='I got out the train';
+I[48][1][3][1]='NO.<br />VEA P&#193;GINA 132';
+I[48][1][3][2] = 0;
+I[48][2] = 0;
+
+I[49] = new Array();
+I[49][0]='Yo deber&#237;a haber evitado ver la pel&#237;cula';
+I[49][1] = new Array();
+I[49][1][0] = new Array();
+I[49][1][0][0]='I should have avoided seeing the movie';
+I[49][1][0][1]='';
+I[49][1][0][2] = 1;
+I[49][1][1] = new Array();
+I[49][1][1][0]='I should have avoided to see the movie';
+I[49][1][1][1]='NO.<br />VEA P&#193;GINA 68';
+I[49][1][1][2] = 0;
+I[49][1][2] = new Array();
+I[49][1][2][0]='I should have avoid to see the movie';
+I[49][1][2][1]='NO.<br />VEA P&#193;GINAS 48 Y 68';
+I[49][1][2][2] = 0;
+I[49][1][3] = new Array();
+I[49][1][3][0]='I should have avoid seeing the movie';
+I[49][1][3][1]='NO. <br />VEA P&#193;GINA 48';
+I[49][1][3][2] = 0;
+I[49][2] = 0;
+
+I[50] = new Array();
+I[50][0]='Yo no s&#233; si el est&#225; diciendo la verdad o no';
+I[50][1] = new Array();
+I[50][1][0] = new Array();
+I[50][1][0][0]='I don\'t know whether he is telling the true or not.';
+I[50][1][0][1]='NO.La idea la tiene, pero "verdad" es sustantivo y "true" es el adjetivo "verdadero"';
+I[50][1][0][2] = 0;
+I[50][1][1] = new Array();
+I[50][1][1][0]='I don\'t know whether he is telling the truth or no.';
+I[50][1][1][1]='NO. La idea la tiene, pero es "not" y no "no" <br />VEA P&#193;GINA 62';
+I[50][1][1][2] = 0;
+I[50][1][2] = new Array();
+I[50][1][2][0]='I don\'t know whether he is telling the truth or not.';
+I[50][1][2][1]='Si se&#241;or!';
+I[50][1][2][2] = 1;
+I[50][1][3] = new Array();
+I[50][1][3][0]='I don\'t know if he is telling the truth or not.';
+I[50][1][3][1]='NO.Aunque eventualmente podr&#237;a estar bien, es m&#225;s apropiado utilizar "whether" que corresponde al "s&#237;" que no es condicional. <br />VEA P&#193;GINA 62';
+I[50][1][3][2] = 0;
+I[50][2] = 0;
+
+I[51] = new Array();
+I[51][0]='Yo a duras penas te conozco';
+I[51][1] = new Array();
+I[51][1][0] = new Array();
+I[51][1][0][0]='I hardly know you';
+I[51][1][0][1]='';
+I[51][1][0][2] = 1;
+I[51][1][1] = new Array();
+I[51][1][1][0]='I little know you';
+I[51][1][1][1]='NO.<br />VEA P&#193;GINA 117';
+I[51][1][1][2] = 0;
+I[51][1][2] = new Array();
+I[51][1][2][0]='I almost know you';
+I[51][1][2][1]='NO.<br />VEA P&#193;GINA 117';
+I[51][1][2][2] = 0;
+I[51][1][3] = new Array();
+I[51][1][3][0]='I know you a little';
+I[51][1][3][1]='NO. Esto significa "te conozco un poco". No es lo mismo';
+I[51][1][3][2] = 0;
+I[51][2] = 0;
+
+I[52] = new Array();
+I[52][0]='Yo tengo que ir a Bariloche.';
+I[52][1] = new Array();
+I[52][1][0] = new Array();
+I[52][1][0][0]='I got to go to Bariloche';
+I[52][1][0][1]='NO.<br />VEA P&#193;GINA 51. ';
+I[52][1][0][2] = 0;
+I[52][1][1] = new Array();
+I[52][1][1][0]='I\'ve got to go to Bariloche';
+I[52][1][1][1]='';
+I[52][1][1][2] = 1;
+I[52][1][2] = new Array();
+I[52][1][2][0]='I go to go to Bariloche';
+I[52][1][2][1]='NO.<br />VEA P&#193;GINA 51. ';
+I[52][1][2][2] = 0;
+I[52][2] = 0;
+
+I[53] = new Array();
+I[53][0]='Yo necesito que ella cante esta noche';
+I[53][1] = new Array();
+I[53][1][0] = new Array();
+I[53][1][0][0]='I need that she to sing tonight';
+I[53][1][0][1]='Lo siento. Este tipo de frases tienen una construcci&#243;n especial. <br />VER P&#193;GINA 111';
+I[53][1][0][2] = 0;
+I[53][1][1] = new Array();
+I[53][1][1][0]='I need she sings tonight';
+I[53][1][1][1]='Lo siento. Este tipo de frases tienen una construcci&#243;n especial. <br />VER P&#193;GINA 111';
+I[53][1][1][2] = 0;
+I[53][1][2] = new Array();
+I[53][1][2][0]='I need her sings tonight';
+I[53][1][2][1]='Lo siento. Este tipo de frases tienen una construcci&#243;n especial. <br />VER P&#193;GINA 111';
+I[53][1][2][2] = 0;
+I[53][1][3] = new Array();
+I[53][1][3][0]='I need her to sing tonight';
+I[53][1][3][1]='Se ve que tiene idea!';
+I[53][1][3][2] = 1;
+I[53][2] = 0;
+
+I[54] = new Array();
+I[54][0]='Yo no he podido encontrar el hotel';
+I[54][1] = new Array();
+I[54][1][0] = new Array();
+I[54][1][0][0]='I haven&#180;t been able to find the hotel';
+I[54][1][0][1]='';
+I[54][1][0][2] = 1;
+I[54][1][1] = new Array();
+I[54][1][1][0]='I haven\'t could find the hotel';
+I[54][1][1][1]='NO. La combinaci&#243;n "have+could" no existe. <br />VEA P&#193;GINA 48.';
+I[54][1][1][2] = 0;
+I[54][1][2] = new Array();
+I[54][1][2][0]='I couldn\'t have found the hotel.';
+I[54][1][2][1]='NO.Esta expresi&#243;n es correcta pero significa "Yo no pude haber encontrado el hotel" ';
+I[54][1][2][2] = 0;
+I[54][2] = 0;
+
+I[55] = new Array();
+I[55][0]='Yo si bes&#233; a Pedro anoche';
+I[55][1] = new Array();
+I[55][1][0] = new Array();
+I[55][1][0][0]='I kissed Pedro last night.';
+I[55][1][0][1]='NO. No ha enfatizado la acci&#243;n.<br />VEA P&#193;GINA 80';
+I[55][1][0][2] = 0;
+I[55][1][1] = new Array();
+I[55][1][1][0]='I did kissed Pedro last night';
+I[55][1][1][1]='NO. Lo veo con dudas <br />VEA P&#193;GINA 80';
+I[55][1][1][2] = 0;
+I[55][1][2] = new Array();
+I[55][1][2][0]='I actually kissed Pedro last night';
+I[55][1][2][1]='NO. Lo veo con dudas <br />VEA P&#193;GINA 80';
+I[55][1][2][2] = 0;
+I[55][1][3] = new Array();
+I[55][1][3][0]='I did kiss Pedro last night.';
+I[55][1][3][1]='Efectivamente! Sabe usted como enfatizar la acci&#243;n de un verbo.';
+I[55][1][3][2] = 1;
+I[55][2] = 0;
+
+I[56] = new Array();
+I[56][0]='El es qui&#233;n vende revistas.';
+I[56][1] = new Array();
+I[56][1][0] = new Array();
+I[56][1][0][0]='He is the people who sell magazines';
+I[56][1][0][1]='NO.<br />VEA P&#193;GINA 142';
+I[56][1][0][2] = 0;
+I[56][1][1] = new Array();
+I[56][1][1][0]='He is the one who sells magazines';
+I[56][1][1][1]='';
+I[56][1][1][2] = 1;
+I[56][1][2] = new Array();
+I[56][1][2][0]='He sells magazines';
+I[56][1][2][1]='NO. No es la traducci&#243;n que se le pide.<br />VEA P&#193;GINA 142';
+I[56][1][2][2] = 0;
+I[56][1][3] = new Array();
+I[56][1][3][0]='He is the one which sells magazines';
+I[56][1][3][1]='NO. Tiene idea pero el conector "which" no es adecuado para personas. Podr&#237;a haber sido tambi&#233;n "that" ';
+I[56][1][3][2] = 0;
+I[56][2] = 0;
+
+I[57] = new Array();
+I[57][0]='Encontr&#233; unos ratones aqu&#237; arriba';
+I[57][1] = new Array();
+I[57][1][0] = new Array();
+I[57][1][0][0]='I found some mouses up';
+I[57][1][0][1]='NO.<br />VEA P&#193;GINA 91. Adem&#225;s "mouses" no es el plural de mouse.';
+I[57][1][0][2] = 0;
+I[57][1][1] = new Array();
+I[57][1][1][0]='I found some mice up here.';
+I[57][1][1][1]='';
+I[57][1][1][2] = 1;
+I[57][1][2] = new Array();
+I[57][1][2][0]='I found some mices up here.';
+I[57][1][2][1]='NO. Qu&#237;&#233;n dijo que el existe el sustantivo "mices"? "Mice" es "ratones" por lo tanto qu&#233; mas va a pluralizar?';
+I[57][1][2][2] = 0;
+I[57][1][3] = new Array();
+I[57][1][3][0]='I found some mice uphere';
+I[57][1][3][1]='NO. Este tipo de preposiciones van separadas. Up there, up here, down there, down here, etc.<br />VEA P&#193;GINA 91';
+I[57][1][3][2] = 0;
+I[57][2] = 0;
+
+I[58] = new Array();
+I[58][0]='Hace fr&#237;o aqu&#237; adentro';
+I[58][1] = new Array();
+I[58][1][0] = new Array();
+I[58][1][0][0]='Is cold inside';
+I[58][1][0][1]='NO. "inside" es dentro, "aqu&#237; adentro" es otra cosa pues implica que usted est&#225; adentro .<br />VEA P&#193;GINA 91. Se me olvidaba: Qu&#233; paso con el art&#237;culo? VEA P&#193;GINA 8';
+I[58][1][0][2] = 0;
+I[58][1][1] = new Array();
+I[58][1][1][0]='It is cold in here.';
+I[58][1][1][1]='';
+I[58][1][1][2] = 1;
+I[58][1][2] = new Array();
+I[58][1][2][0]='It is cold in there';
+I[58][1][2][1]='NO. Esto significa "all&#225; adentro" (lo que implica que usted est&#225; afuera) <br />VEA P&#193;GINA 91';
+I[58][1][2][2] = 0;
+I[58][1][3] = new Array();
+I[58][1][3][0]='It\'s cold inside';
+I[58][1][3][1]='NO. Textualmente dice "hace frio adentro" pero no hay implicaci&#243;n de que usted est&#233; adentro que es lo que s&#237; dice la frase.';
+I[58][1][3][2] = 0;
+I[58][2] = 0;
+
+I[59] = new Array();
+I[59][0]='Cuando era joven, yo sol&#237;a jugar f&#250;tbol todos los d&#237;as ';
+I[59][1] = new Array();
+I[59][1][0] = new Array();
+I[59][1][0][0]='When I was young, I would play soccer every day';
+I[59][1][0][1]='';
+I[59][1][0][2] = 1;
+I[59][1][1] = new Array();
+I[59][1][1][0]='When I was young, I used playing soccer every day';
+I[59][1][1][1]='NO. <br />VEA P&#193;GINAS 126 y 72';
+I[59][1][1][2] = 0;
+I[59][1][2] = new Array();
+I[59][1][2][0]='When I was young, I was playing soccer every day';
+I[59][1][2][1]='NO.<br />VEA P&#193;GINA 126';
+I[59][1][2][2] = 0;
+I[59][2] = 0;
+
+I[60] = new Array();
+I[60][0]='Mi hermano sol&#237;a cantar en un bar ';
+I[60][1] = new Array();
+I[60][1][0] = new Array();
+I[60][1][0][0]='My brother used to sing at a bar';
+I[60][1][0][1]='';
+I[60][1][0][2] = 1;
+I[60][1][1] = new Array();
+I[60][1][1][0]='My brother used singing at a bar';
+I[60][1][1][1]='NO. <br />VEA P&#193;GINA 72';
+I[60][1][1][2] = 0;
+I[60][1][2] = new Array();
+I[60][1][2][0]='My brother was used to singing at a bar';
+I[60][1][2][1]='NO. Aqu&#237; lo que dice es: "Mi hermano estaba acostumbrado..." que es algo diferente<br />VEA P&#193;GINA 72';
+I[60][1][2][2] = 0;
+I[60][1][3] = new Array();
+I[60][1][3][0]='My brother used to singing at a bar';
+I[60][1][3][1]='NO. <br />VEA P&#193;GINA 72';
+I[60][1][3][2] = 0;
+I[60][2] = 0;
+
+I[61] = new Array();
+I[61][0]='Yo estoy acostumbrado a volar ';
+I[61][1] = new Array();
+I[61][1][0] = new Array();
+I[61][1][0][0]='I am used to flying';
+I[61][1][0][1]='';
+I[61][1][0][2] = 1;
+I[61][1][1] = new Array();
+I[61][1][1][0]='I used to fly';
+I[61][1][1][1]='NO. Esto es "yo sol&#237;a volar" que no es lo mismo!<br />VEA P&#193;GINA 72';
+I[61][1][1][2] = 0;
+I[61][1][2] = new Array();
+I[61][1][2][0]='I am used to fly';
+I[61][1][2][1]='NO. <br />VEA P&#193;GINA 72';
+I[61][1][2][2] = 0;
+I[61][1][3] = new Array();
+I[61][1][3][0]='I used to flying';
+I[61][1][3][1]='NO. <br />VEA P&#193;GINA 72';
+I[61][1][3][2] = 0;
+I[61][2] = 0;
+
+I[62] = new Array();
+I[62][0]='Si yo hubiese ido a Cali lo hubieses sabido';
+I[62][1] = new Array();
+I[62][1][0] = new Array();
+I[62][1][0][0]='If I had gone to Cali you would have known it';
+I[62][1][0][1]='NO. <br />VEA P&#193;GINA 95';
+I[62][1][0][2] = 0;
+I[62][1][1] = new Array();
+I[62][1][1][0]='If I had gone to Cali you had known it';
+I[62][1][1][1]='Correcto. Una forma opcional de decirlo es &#233;sta: Had I gone to Cali you had known it.';
+I[62][1][1][2] = 1;
+I[62][1][2] = new Array();
+I[62][1][2][0]='If I had go to Cali you would have known it';
+I[62][1][2][1]='NO. <br />VEA P&#193;GINA 13';
+I[62][1][2][2] = 0;
+I[62][1][3] = new Array();
+I[62][1][3][0]='If I had gone to Cali you would know it';
+I[62][1][3][1]='NO. "Si yo hubiera ido a Cali tu lo sabr&#237;as" no es lo mismo! <br />VEA P&#193;GINA 95';
+I[62][1][3][2] = 0;
+I[62][2] = 0;
+
+I[63] = new Array();
+I[63][0]='Usted obedecer&#225; las reglas ';
+I[63][1] = new Array();
+I[63][1][0] = new Array();
+I[63][1][0][0]='You shall obey the rules';
+I[63][1][0][1]='NO.<br />VEA P&#193;GINA 126';
+I[63][1][0][2] = 0;
+I[63][1][1] = new Array();
+I[63][1][1][0]='You will obey the rules';
+I[63][1][1][1]='';
+I[63][1][1][2] = 1;
+I[63][1][2] = new Array();
+I[63][1][2][0]='You are going to obey the rules';
+I[63][1][2][1]='NO. Esto es "Usted va a obedecer las reglas". <br />VEA P&#193;GINA 126';
+I[63][1][2][2] = 0;
+I[63][1][3] = new Array();
+I[63][1][3][0]='You must obey the rules';
+I[63][1][3][1]='NO. Esto es "Usted debe obedecer las reglas". <br />VEA P&#193;GINA 126';
+I[63][1][3][2] = 0;
+I[63][2] = 0;
+
+I[64] = new Array();
+I[64][0]='Como te dije antes, est&#225;s despedida ';
+I[64][1] = new Array();
+I[64][1][0] = new Array();
+I[64][1][0][0]='As I told you before, you are fired';
+I[64][1][0][1]='';
+I[64][1][0][2] = 1;
+I[64][1][1] = new Array();
+I[64][1][1][0]='Like I told you before, you are fired';
+I[64][1][1][1]='NO.<br />VEA P&#193;GINA 135';
+I[64][1][1][2] = 0;
+I[64][1][2] = new Array();
+I[64][1][2][0]='How I told you before, you are fired';
+I[64][1][2][1]='NO. <br />VEA P&#193;GINA 135';
+I[64][1][2][2] = 0;
+I[64][1][3] = new Array();
+I[64][1][3][0]='Since I told you before, you are fired';
+I[64][1][3][1]='NO.<br />VEA P&#193;GINA 135';
+I[64][1][3][2] = 0;
+I[64][2] = 0;
+
+I[65] = new Array();
+I[65][0]='Oil cleans, lubricates and softens';
+I[65][1] = new Array();
+I[65][1][0] = new Array();
+I[65][1][0][0]='El aceite limpia, lubrica y suaviza';
+I[65][1][0][1]='';
+I[65][1][0][2] = 1;
+I[65][1][1] = new Array();
+I[65][1][1][0]='Limpie, lubrique y suavice el aceite';
+I[65][1][1][1]='NO. Tenga en cuenta la conjugaci&#243;n del verbo. El sujeto de esta frase es "el aceite" y las otras son acciones que realiza. No hay art&#237;culo "the" pues se habla del aceite en sentido general.';
+I[65][1][1][2] = 0;
+I[65][1][2] = new Array();
+I[65][1][2][0]='Aceite, lubrique y suavice.';
+I[65][1][2][1]='NO. Tenga en cuenta la conjugaci&#243;n del verbo. El sujeto de esta frase es "el aceite" y las otras son acciones que realiza.No hay art&#237;culo "the" pues se habla del aceite en sentido general.';
+I[65][1][2][2] = 0;
+I[65][1][3] = new Array();
+I[65][1][3][0]='Limpie el aceite, lubrique y suavice.';
+I[65][1][3][1]='NO. Tenga en cuenta la conjugaci&#243;n del verbo. El sujeto de esta frase es "el aceite" y las otras son acciones que realiza.No hay art&#237;culo "the" pues se habla del aceite en sentido general.';
+I[65][1][3][2] = 0;
+I[65][2] = 0;
+
+I[66] = new Array();
+I[66][0]='Esa es la raz&#243;n por la cual ella muri&#243;';
+I[66][1] = new Array();
+I[66][1][0] = new Array();
+I[66][1][0][0]='That&#180;s the reason why she died.';
+I[66][1][0][1]='';
+I[66][1][0][2] = 1;
+I[66][1][1] = new Array();
+I[66][1][1][0]='That&#180;s the reason because she died.';
+I[66][1][1][1]='NO. El conector "why" es el adecuado para esto tipo de frases.';
+I[66][1][1][2] = 0;
+I[66][1][2] = new Array();
+I[66][1][2][0]='That&#180;s the reason that she died.';
+I[66][1][2][1]='NO. El conector "why" es el adecuado para esto tipo de frases.';
+I[66][1][2][2] = 0;
+I[66][1][3] = new Array();
+I[66][1][3][0]='That&#180;s the reason she died.';
+I[66][1][3][1]='NO. El conector "why" es el adecuado para esto tipo de frases.';
+I[66][1][3][2] = 0;
+I[66][2] = 0;
+
+I[67] = new Array();
+I[67][0]='Como as&#237; que no viniste! ';
+I[67][1] = new Array();
+I[67][1][0] = new Array();
+I[67][1][0][0]='How come you didn\'t come';
+I[67][1][0][1]='';
+I[67][1][0][2] = 1;
+I[67][1][1] = new Array();
+I[67][1][1][0]='How you didn\'t come';
+I[67][1][1][1]='NO. <br />Vea la explicaci&#243;n de este modismo en la p&#225;gina 152';
+I[67][1][1][2] = 0;
+I[67][1][2] = new Array();
+I[67][1][2][0]='How come didn\'t you come';
+I[67][1][2][1]='NO. <br />Vea la explicaci&#243;n de este modismo en la p&#225;gina 152';
+I[67][1][2][2] = 0;
+I[67][1][3] = new Array();
+I[67][1][3][0]='How so you didn\'t come';
+I[67][1][3][1]='NO. <br />Vea la explicaci&#243;n de este modismo en la p&#225;gina 152';
+I[67][1][3][2] = 0;
+I[67][2] = 0;
+
+I[68] = new Array();
+I[68][0]='Mi hermano es m&#225;s alto que yo ';
+I[68][1] = new Array();
+I[68][1][0] = new Array();
+I[68][1][0][0]='My brother is taller than I.';
+I[68][1][0][1]='Exacto!';
+I[68][1][0][2] = 1;
+I[68][1][1] = new Array();
+I[68][1][1][0]='My brother is taller than me.';
+I[68][1][1][1]='NO.<br />VEA P&#193;GINA 53';
+I[68][1][1][2] = 0;
+I[68][1][2] = new Array();
+I[68][1][2][0]='My brother is taller than myself.';
+I[68][1][2][1]='NO. <br />VEA P&#193;GINA 53. Recuerde adem&#225;s que "myself" no debe utilizarse para reemplazar a "mi persona" que adem&#225;s es p&#233;simo espa&#241;ol.';
+I[68][1][2][2] = 0;
+I[68][2] = 0;
+
+I[69] = new Array();
+I[69][0]='El carro de Andres is mucho m&#225;s espacioso que el tuyo.';
+I[69][1] = new Array();
+I[69][1][0] = new Array();
+I[69][1][0][0]='Andres\' car is much roomier than yours.';
+I[69][1][0][1]='Muy bien!. Aplic&#243; varias reglas para llegar a la respuesta correcta.';
+I[69][1][0][2] = 1;
+I[69][1][1] = new Array();
+I[69][1][1][0]='Andres\'s car is much roomier than yours.';
+I[69][1][1][1]='Le peg&#243; a todo menos al posesivo saj&#243;n. Vea p&#225;gina 50';
+I[69][1][1][2] = 0;
+I[69][1][2] = new Array();
+I[69][1][2][0]='Andres\' car is much more roomier than yours.';
+I[69][1][2][1]='Esta fallando en el comparativo pues le sobr&#243; "more" ya que est&#225; implicito en "roomier". Vea p&#225;gina 52';
+I[69][1][2][2] = 0;
+I[69][1][3] = new Array();
+I[69][1][3][0]='Andres\' car is much roomier than your.';
+I[69][1][3][1]='Le peg&#243; a todo menos al pronombre posesivo "yours". Vea p&#225;gina 59';
+I[69][1][3][2] = 0;
+I[69][1][4] = new Array();
+I[69][1][4][0]='Andres\' car is more roomier than yours.';
+I[69][1][4][1]='No. Vea las comparaciones en la p&#225;gina 52.';
+I[69][1][4][2] = 0;
+I[69][2] = 0;
+
+I[70] = new Array();
+I[70][0]='El tiene una tienda, o mejor dicho, un supermercado. ';
+I[70][1] = new Array();
+I[70][1][0] = new Array();
+I[70][1][0][0]='He has a store, or rather, a supermarket.';
+I[70][1][0][1]='';
+I[70][1][0][2] = 1;
+I[70][1][1] = new Array();
+I[70][1][1][0]='He has a store, or better, a supermarket.';
+I[70][1][1][1]='NO.<br />No adivine, VEA P&#193;GINA 140';
+I[70][1][1][2] = 0;
+I[70][1][2] = new Array();
+I[70][1][2][0]='He has a store, better said, a supermarket.';
+I[70][1][2][1]='NO.<br />No adivine, VEA P&#193;GINA 140';
+I[70][1][2][2] = 0;
+I[70][2] = 0;
+
+I[71] = new Array();
+I[71][0]='Se oy&#243; una detonaci&#243;n ';
+I[71][1] = new Array();
+I[71][1][0] = new Array();
+I[71][1][0][0]='A detonation was heard';
+I[71][1][0][1]='';
+I[71][1][0][2] = 1;
+I[71][1][1] = new Array();
+I[71][1][1][0]='I heard a detonation';
+I[71][1][1][1]='NO. "Yo oi una detonaci&#243;n es voz activa". Lo que se le pregunta es Voz Pasiva. VEA P&#193;GINA 62';
+I[71][1][1][2] = 0;
+I[71][1][2] = new Array();
+I[71][1][2][0]='I listened a detonation';
+I[71][1][2][1]='NO. Est&#225; fallando en Voz Pasiva. <br />VEA P&#193;GINA 62. Adem&#225;s una detonaci&#243;n se "oye" pero no se "escucha"';
+I[71][1][2][2] = 0;
+I[71][1][3] = new Array();
+I[71][1][3][0]='It heard a detonation';
+I[71][1][3][1]='NO. Est&#225; fallando en la estructura de la Voz Pasiva. <br />VEA P&#193;GINA 62';
+I[71][1][3][2] = 0;
+I[71][2] = 0;
+
+I[72] = new Array();
+I[72][0]='Si hubiese habido una pregunta el profesor no la habr&#237;a podido haber contestado.';
+I[72][1] = new Array();
+I[72][1][0] = new Array();
+I[72][1][0][0]='If there had been a question the teacher wouldn\'t have been able to answer it.';
+I[72][1][0][1]='Se nota que domina esta &#225;rea.';
+I[72][1][0][2] = 1;
+I[72][1][1] = new Array();
+I[72][1][1][0]='If there were a question the teacher wouldn\'t have been able to answer it.';
+I[72][1][1][1]='NO. Estas ya son ligas mayores. <br />VEA P&#193;GINA 55';
+I[72][1][1][2] = 0;
+I[72][1][2] = new Array();
+I[72][1][2][0]='If there had been a question the teacher wouldn\'t be able to answer it.';
+I[72][1][2][1]='NO. Estas ya son ligas mayores. <br />VEA P&#193;GINA 55';
+I[72][1][2][2] = 0;
+I[72][1][3] = new Array();
+I[72][1][3][0]='If there was a question the teacher wouldn\'t have answered it.';
+I[72][1][3][1]='NO. Estas ya son ligas mayores. <br />VEA P&#193;GINA 55';
+I[72][1][3][2] = 0;
+I[72][2] = 0;
+
+I[73] = new Array();
+I[73][0]='Yo quiero que ellos vayan ';
+I[73][1] = new Array();
+I[73][1][0] = new Array();
+I[73][1][0][0]='I want them to go';
+I[73][1][0][1]='';
+I[73][1][0][2] = 1;
+I[73][1][1] = new Array();
+I[73][1][1][0]='I want that they go';
+I[73][1][1][1]='NO. Esta es una traducci&#243;n muy a lo chibcha, puede que le entiendan pero usted har&#225; el oso.<br /> VEA P&#193;GINA 111';
+I[73][1][1][2] = 0;
+I[73][1][2] = new Array();
+I[73][1][2][0]='I want them go';
+I[73][1][2][1]='NO. <br />VEA P&#193;GINA 111';
+I[73][1][2][2] = 0;
+I[73][1][3] = new Array();
+I[73][1][3][0]='I want they to go';
+I[73][1][3][1]='NO. <br />VEA P&#193;GINA 111';
+I[73][1][3][2] = 0;
+I[73][2] = 0;
+
+I[74] = new Array();
+I[74][0]='Deja tu quejadera a todo momento! ';
+I[74][1] = new Array();
+I[74][1][0] = new Array();
+I[74][1][0][0]='Stop your complaining at all times!';
+I[74][1][0][1]='';
+I[74][1][0][2] = 1;
+I[74][1][1] = new Array();
+I[74][1][1][0]='Stop your complain at all times!';
+I[74][1][1][1]='NO.<br />VEA P&#193;GINA 69';
+I[74][1][1][2] = 0;
+I[74][1][2] = new Array();
+I[74][1][2][0]='Stop you complaining at all times!';
+I[74][1][2][1]='NO.<br />VEA P&#193;GINA 69';
+I[74][1][2][2] = 0;
+I[74][1][3] = new Array();
+I[74][1][3][0]='Stop you complain at all times!';
+I[74][1][3][1]='NO.<br />VEA P&#193;GINA 69';
+I[74][1][3][2] = 0;
+I[74][2] = 0;
+
+I[75] = new Array();
+I[75][0]='Me casar&#233; contigo sin importar tu condici&#243;n social.';
+I[75][1] = new Array();
+I[75][1][0] = new Array();
+I[75][1][0][0]='I\'ll marry you regardless of your social status.';
+I[75][1][0][1]='';
+I[75][1][0][2] = 1;
+I[75][1][1] = new Array();
+I[75][1][1][0]='I\'ll marry you without caring for your social status.';
+I[75][1][1][1]='NO. "Regardless of" es un adverbio que se usa para significar "sin importar", "sin tener en cuenta".';
+I[75][1][1][2] = 0;
+I[75][1][2] = new Array();
+I[75][1][2][0]='I\'ll marry you regardless your social status';
+I[75][1][2][1]='NO. El adverbio correcto es "Regardless of"';
+I[75][1][2][2] = 0;
+I[75][1][3] = new Array();
+I[75][1][3][0]='I\'ll marry with you regardless of your social status.';
+I[75][1][3][1]='Casi. Le sobra la preposici&#243;n "with"';
+I[75][1][3][2] = 0;
+I[75][2] = 0;
+
+I[76] = new Array();
+I[76][0]='Los carros estar&#225;n siendo probados ma&#241;ana ';
+I[76][1] = new Array();
+I[76][1][0] = new Array();
+I[76][1][0][0]='The cars will be being tested tomorrow';
+I[76][1][0][1]='Bien! Conoce la voz pasiva en tiempo futuro continuo';
+I[76][1][0][2] = 1;
+I[76][1][1] = new Array();
+I[76][1][1][0]='The cars will be tested tomorrow';
+I[76][1][1][1]='NO.<br />VEA P&#193;GINA 62';
+I[76][1][1][2] = 0;
+I[76][1][2] = new Array();
+I[76][1][2][0]='The cars will be been tested tomorrow';
+I[76][1][2][1]='NO.<br />VEA P&#193;GINA 62';
+I[76][1][2][2] = 0;
+I[76][1][3] = new Array();
+I[76][1][3][0]='The cars will be being test tomorrow';
+I[76][1][3][1]='NO.<br />VEA P&#193;GINA 62';
+I[76][1][3][2] = 0;
+I[76][2] = 0;
+
+I[77] = new Array();
+I[77][0]='Casi no hay peligro';
+I[77][1] = new Array();
+I[77][1][0] = new Array();
+I[77][1][0][0]='There is little danger';
+I[77][1][0][1]='';
+I[77][1][0][2] = 1;
+I[77][1][1] = new Array();
+I[77][1][1][0]='Almost there is not danger';
+I[77][1][1][1]='NO. No es tan literal como piensa.<br />VEA P&#193;GINA 116';
+I[77][1][1][2] = 0;
+I[77][1][2] = new Array();
+I[77][1][2][0]='There isn&#180;t almost danger';
+I[77][1][2][1]='NO. No es tan literal como piensa.<br />VEA P&#193;GINA 116';
+I[77][1][2][2] = 0;
+I[77][1][3] = new Array();
+I[77][1][3][0]='There is a little danger.';
+I[77][1][3][1]='NO. " Hay un poco de peligro" no significa lo mismo que "casi no hay peligro"';
+I[77][1][3][2] = 0;
+I[77][2] = 0;
+
+I[78] = new Array();
+I[78][0]='No quiero repetir tal experiencia ';
+I[78][1] = new Array();
+I[78][1][0] = new Array();
+I[78][1][0][0]='I don\'t want to repeat such experience';
+I[78][1][0][1]='';
+I[78][1][0][2] = 1;
+I[78][1][1] = new Array();
+I[78][1][1][0]='I don\'t want to repeat the experience';
+I[78][1][1][1]='NO. La frase est&#225; correcta pero difiere de lo preguntado. <br />VEA P&#193;GINA 139';
+I[78][1][1][2] = 0;
+I[78][1][2] = new Array();
+I[78][1][2][0]='I don\'t want to repeat that experience';
+I[78][1][2][1]='NO.La frase est&#225; correcta pero difiere de lo preguntado. <br />VEA P&#193;GINA 139';
+I[78][1][2][2] = 0;
+I[78][1][3] = new Array();
+I[78][1][3][0]='I don\'t want to repeat as equal as experience';
+I[78][1][3][1]='NO. <br />VEA P&#193;GINA 139';
+I[78][1][3][2] = 0;
+I[78][2] = 0;
+
+I[79] = new Array();
+I[79][0]='Mi hermano se sent&#243; aqu&#237;';
+I[79][1] = new Array();
+I[79][1][0] = new Array();
+I[79][1][0][0]='Mi brother sat here';
+I[79][1][0][1]='NO. <br />Hay una sutil diferencia.<br />VEA P&#193;GINA 91 (Pie de p&#225;gina)';
+I[79][1][0][2] = 0;
+I[79][1][1] = new Array();
+I[79][1][1][0]='Mi brother sat over here';
+I[79][1][1][1]='';
+I[79][1][1][2] = 1;
+I[79][2] = 0;
+
+I[80] = new Array();
+I[80][0]='Apaga la luz ';
+I[80][1] = new Array();
+I[80][1][0] = new Array();
+I[80][1][0][0]='Cualquiera de las dos est&#225; correcta';
+I[80][1][0][1]='';
+I[80][1][0][2] = 1;
+I[80][1][1] = new Array();
+I[80][1][1][0]='Turn the light off';
+I[80][1][1][1]='NO. <br />Cualquiera de las dos est&#225; correcta y no exclusivamente esta.<br />VER P&#193;GINA 124';
+I[80][1][1][2] = 0;
+I[80][1][2] = new Array();
+I[80][1][2][0]='Turn off the light';
+I[80][1][2][1]='NO. <br />Cualquiera de las dos est&#225; correcta y no exclusivamente esta.<br />VER P&#193;GINA 124';
+I[80][1][2][2] = 0;
+I[80][2] = 0;
+
+I[81] = new Array();
+I[81][0]='Como no fui invitado, no estuve all&#225; ';
+I[81][1] = new Array();
+I[81][1][0] = new Array();
+I[81][1][0][0]='Since I wasn\'t invited I wasn\'t there';
+I[81][1][0][1]='Si se&#241;or. <br />"Since" significa: "Puesto que". Tambi&#233;n podr&#237;a ser "As I wasn&#180;t invited" (Vea p&#225;gina 135 para recordar este concepto si no lo tiene claro)';
+I[81][1][0][2] = 1;
+I[81][1][1] = new Array();
+I[81][1][1][0]='How I wasn\'t invited I wasn\'t there';
+I[81][1][1][1]='NO. <br />VEA P&#193;GINA 61';
+I[81][1][1][2] = 0;
+I[81][1][2] = new Array();
+I[81][1][2][0]='Because I wasn\'t invited I wasn\'t there';
+I[81][1][2][1]='Cuidado! Para eso no se usa "because" VEA P&#193;GINA 61';
+I[81][1][2][2] = 0;
+I[81][2] = 0;
+
+I[82] = new Array();
+I[82][0]='Ella desear&#237;a, (a ella le gustar&#237;a) que yo fuese m&#225;s alto. ';
+I[82][1] = new Array();
+I[82][1][0] = new Array();
+I[82][1][0][0]='She wishes I were taller';
+I[82][1][0][1]='';
+I[82][1][0][2] = 1;
+I[82][1][1] = new Array();
+I[82][1][1][0]='She wishes I was taller';
+I[82][1][1][1]='NO.<br />VEA P&#193;GINA 104';
+I[82][1][1][2] = 0;
+I[82][1][2] = new Array();
+I[82][1][2][0]='She wishes I be taller';
+I[82][1][2][1]='NO.<br />VEA P&#193;GINA 104';
+I[82][1][2][2] = 0;
+I[82][1][3] = new Array();
+I[82][1][3][0]='She wishes I am taller';
+I[82][1][3][1]='NO.<br />VEA P&#193;GINA 104';
+I[82][1][3][2] = 0;
+I[82][2] = 0;
+
+I[83] = new Array();
+I[83][0]='No quiero ir con &#233;l, es tan estupido! ';
+I[83][1] = new Array();
+I[83][1][0] = new Array();
+I[83][1][0][0]='I don\'t want to go with him, he is such a moron!';
+I[83][1][0][1]='';
+I[83][1][0][2] = 1;
+I[83][1][1] = new Array();
+I[83][1][1][0]='I don\'t want to go with him, he is a moron!';
+I[83][1][1][1]='NO. No es lo mismo. <br />VEA P&#193;GINA 139';
+I[83][1][1][2] = 0;
+I[83][1][2] = new Array();
+I[83][1][2][0]='I don\'t want to go with him, he is so moron!';
+I[83][1][2][1]='NO. No es lo mismo. <br />VEA P&#193;GINA 139';
+I[83][1][2][2] = 0;
+I[83][2] = 0;
+
+I[84] = new Array();
+I[84][0]='Yo trabaj&#233; para esa compa&#241;&#237;a como abogado ';
+I[84][1] = new Array();
+I[84][1][0] = new Array();
+I[84][1][0][0]='I worked for that company as a lawyer';
+I[84][1][0][1]='';
+I[84][1][0][2] = 1;
+I[84][1][1] = new Array();
+I[84][1][1][0]='I worked for that company like a lawyer';
+I[84][1][1][1]='NO.<br />VEA P&#193;GINA 135';
+I[84][1][1][2] = 0;
+I[84][1][2] = new Array();
+I[84][1][2][0]='I worked for that company how a lawyer';
+I[84][1][2][1]='NO. Aqu&#237; si est&#225; grave.<br />VEA P&#193;GINA 135';
+I[84][1][2][2] = 0;
+I[84][2] = 0;
+
+I[85] = new Array();
+I[85][0]='Donde quiera que voy veo su hermosura ';
+I[85][1] = new Array();
+I[85][1][0] = new Array();
+I[85][1][0][0]='Wherever I go I see her beautifulness';
+I[85][1][0][1]='';
+I[85][1][0][2] = 1;
+I[85][1][1] = new Array();
+I[85][1][1][0]='Where I go I see her beautiness';
+I[85][1][1][1]='NO. "Beautiness" no existe en ingl&#233;s.<br />VEA P&#193;GINA 90';
+I[85][1][1][2] = 0;
+I[85][1][2] = new Array();
+I[85][1][2][0]='Wherever I go I see her beauty';
+I[85][1][2][1]='NO.<br />VEA P&#193;GINA 98';
+I[85][1][2][2] = 0;
+I[85][1][3] = new Array();
+I[85][1][3][0]='Wherever I go I see her beautiful';
+I[85][1][3][1]='Ojo! ';
+I[85][1][3][2] = 0;
+I[85][2] = 0;
+
+I[86] = new Array();
+I[86][0]='Es problem&#225;tica la situaci&#243;n?';
+I[86][1] = new Array();
+I[86][1][0] = new Array();
+I[86][1][0][0]='Is the situation troublesome?';
+I[86][1][0][1]='Vamos bien!';
+I[86][1][0][2] = 1;
+I[86][1][1] = new Array();
+I[86][1][1][0]='Is the situation troubleness?';
+I[86][1][1][1]='NO. Que v&#225;. Esa adjetivo no existe. El sufijo "-some" es el adecuado en este caso';
+I[86][1][1][2] = 0;
+I[86][1][2] = new Array();
+I[86][1][2][0]='Is the situation trouble?';
+I[86][1][2][1]='NO. "Trouble" es el sustantivo y se le est&#225; pidiendo el adjetivo. El sufijo "-some" es el adecuado en este caso';
+I[86][1][2][2] = 0;
+I[86][2] = 0;
+
+I[87] = new Array();
+I[87][0]='Que Dios te bendiga! ';
+I[87][1] = new Array();
+I[87][1][0] = new Array();
+I[87][1][0][0]='May God bless you';
+I[87][1][0][1]='';
+I[87][1][0][2] = 1;
+I[87][1][1] = new Array();
+I[87][1][1][0]='Bless you!';
+I[87][1][1][1]='NO. Esto significa "salud", es decir lo que se le dice a alguien que estornuda.<br />VEA P&#193;GINA 126';
+I[87][1][1][2] = 0;
+I[87][1][2] = new Array();
+I[87][1][2][0]='That God bless you';
+I[87][1][2][1]='NO. <br />Esta construcci&#243;n est&#225; muy rebuscada. <br />VEA P&#193;GINA 126';
+I[87][1][2][2] = 0;
+I[87][1][3] = new Array();
+I[87][1][3][0]='God bless you.';
+I[87][1][3][1]='NO. <br />Esto es "Dios te bendiga" que no es lo que se pretende que traduzca. <br />VEA P&#193;GINA 126';
+I[87][1][3][2] = 0;
+I[87][2] = 0;
+
+I[88] = new Array();
+I[88][0]='Por casualidad s&#225;bes su nombre? ';
+I[88][1] = new Array();
+I[88][1][0] = new Array();
+I[88][1][0][0]='By chance, do you know his name?';
+I[88][1][0][1]='Correcto. Un alterno correcto: "By any chance do you know his name?" o "Do you happen to know his name?';
+I[88][1][0][2] = 1;
+I[88][1][1] = new Array();
+I[88][1][1][0]='For casuality do you know his name?';
+I[88][1][1][1]='NO. Traducci&#243;n muy chibcha. <br />VEA P&#193;GINA 141';
+I[88][1][1][2] = 0;
+I[88][1][2] = new Array();
+I[88][1][2][0]='For casualty do you know his name?';
+I[88][1][2][1]='NO. "Casualty" significa: herido,baja en una guerra"<br />VEA P&#193;GINA 141';
+I[88][1][2][2] = 0;
+I[88][1][3] = new Array();
+I[88][1][3][0]='Just in case, do you know his name?';
+I[88][1][3][1]='NO. "Just in case" es un modismo que significa "por si las moscas" que no es lo mismo. <br />VEA P&#193;GINA 141';
+I[88][1][3][2] = 0;
+I[88][2] = 0;
+
+I[89] = new Array();
+I[89][0]='Por casualidad Peter estaba conmigo ';
+I[89][1] = new Array();
+I[89][1][0] = new Array();
+I[89][1][0][0]='Peter happened to be with me';
+I[89][1][0][1]='Exacto. <br />Un alterno correcto: "Peter was with me by chance".';
+I[89][1][0][2] = 1;
+I[89][1][1] = new Array();
+I[89][1][1][0]='Peter was with me for chance';
+I[89][1][1][1]='NO. <br />VEA P&#193;GINA 141';
+I[89][1][1][2] = 0;
+I[89][1][2] = new Array();
+I[89][1][2][0]='For chance Peter was with me';
+I[89][1][2][1]='NO. <br />VEA P&#193;GINA 141';
+I[89][1][2][2] = 0;
+I[89][1][3] = new Array();
+I[89][1][3][0]='For coincidence Peter was with me';
+I[89][1][3][1]='NO. <br />VEA P&#193;GINA 141';
+I[89][1][3][2] = 0;
+I[89][2] = 0;
+
+I[90] = new Array();
+I[90][0]='El compr&#243; comestibles tales como vegetales, granos, enlatados, etc. ';
+I[90][1] = new Array();
+I[90][1][0] = new Array();
+I[90][1][0][0]='He bought groceries such as vegetables, ....';
+I[90][1][0][1]='';
+I[90][1][0][2] = 1;
+I[90][1][1] = new Array();
+I[90][1][1][0]='He bought groceries as vegetables, ....';
+I[90][1][1][1]='NO.<br />VEA P&#193;GINA 139';
+I[90][1][1][2] = 0;
+I[90][1][2] = new Array();
+I[90][1][2][0]='He bought groceries such vegetables, ....';
+I[90][1][2][1]='NO.<br />VEA P&#193;GINA 139';
+I[90][1][2][2] = 0;
+I[90][1][3] = new Array();
+I[90][1][3][0]='He bought groceries like vegetables, ....';
+I[90][1][3][1]='NO.<br />VEA P&#193;GINA 139';
+I[90][1][3][2] = 0;
+I[90][2] = 0;
+
+I[91] = new Array();
+I[91][0]='Ojal&#225; el pudiese venir pasado ma&#241;ana. ';
+I[91][1] = new Array();
+I[91][1][0] = new Array();
+I[91][1][0][0]='I wish he could come the day after tomorrow';
+I[91][1][0][1]='';
+I[91][1][0][2] = 1;
+I[91][1][1] = new Array();
+I[91][1][1][0]='I wish he came the day after tomorrow';
+I[91][1][1][1]='NO.<br />VEA P&#193;GINA 103';
+I[91][1][1][2] = 0;
+I[91][1][2] = new Array();
+I[91][1][2][0]='I wish he comes the day after tomorrow';
+I[91][1][2][1]='NO.<br />VEA P&#193;GINA 103';
+I[91][1][2][2] = 0;
+I[91][1][3] = new Array();
+I[91][1][3][0]='I wish he could came the day after tomorrow';
+I[91][1][3][1]='NO.<br />VEA P&#193;GINA 103';
+I[91][1][3][2] = 0;
+I[91][2] = 0;
+
+I[92] = new Array();
+I[92][0]='Podr&#237;as haberme ayudado, por qu&#233; no lo hiciste? ';
+I[92][1] = new Array();
+I[92][1][0] = new Array();
+I[92][1][0][0]='You might have helped me.....';
+I[92][1][0][1]='';
+I[92][1][0][2] = 1;
+I[92][1][1] = new Array();
+I[92][1][1][0]='You could have helped me....';
+I[92][1][1][1]='NO.<br />VEA P&#193;GINA 129';
+I[92][1][1][2] = 0;
+I[92][1][2] = new Array();
+I[92][1][2][0]='You can have helped me.....';
+I[92][1][2][1]='NO.<br />VEA P&#193;GINA 129';
+I[92][1][2][2] = 0;
+I[92][1][3] = new Array();
+I[92][1][3][0]='You could help me....';
+I[92][1][3][1]='NO.<br />VEA P&#193;GINA 129';
+I[92][1][3][2] = 0;
+I[92][2] = 0;
+
+I[93] = new Array();
+I[93][0]='Ayer yo estaba buscando un amigo que tuviese carro';
+I[93][1] = new Array();
+I[93][1][0] = new Array();
+I[93][1][0][0]='Yesterday I was looking for a friend who would have a car';
+I[93][1][0][1]='';
+I[93][1][0][2] = 1;
+I[93][1][1] = new Array();
+I[93][1][1][0]='Yesterday I was looking for a friend who had a car';
+I[93][1][1][1]='NO.<br />VEA P&#193;GINA 126';
+I[93][1][1][2] = 0;
+I[93][1][2] = new Array();
+I[93][1][2][0]='Yesterday I was looking for a friend who has a car';
+I[93][1][2][1]='NO.<br />VEA P&#193;GINA 126';
+I[93][1][2][2] = 0;
+I[93][1][3] = new Array();
+I[93][1][3][0]='Yesterday I was looking for a friend who have a car';
+I[93][1][3][1]='NO.<br />VEA P&#193;GINA 126';
+I[93][1][3][2] = 0;
+I[93][2] = 0;
+
+I[94] = new Array();
+I[94][0]='O el est&#225; loco, o est&#225; muy enfermo ';
+I[94][1] = new Array();
+I[94][1][0] = new Array();
+I[94][1][0][0]='Either he is crazy or very sick';
+I[94][1][0][1]='Alterno: "He is either crazy or very sick"';
+I[94][1][0][2] = 1;
+I[94][1][1] = new Array();
+I[94][1][1][0]='He is crazy or very sick';
+I[94][1][1][1]='NO.<br />VEA P&#193;GINA 113';
+I[94][1][1][2] = 0;
+I[94][1][2] = new Array();
+I[94][1][2][0]='Or he is crazy or is very sick';
+I[94][1][2][1]='NO.<br />VEA P&#193;GINA 113';
+I[94][1][2][2] = 0;
+I[94][1][3] = new Array();
+I[94][1][3][0]='Or he is crazy or very sic';
+I[94][1][3][1]='NO.<br />VEA P&#193;GINA 113';
+I[94][1][3][2] = 0;
+I[94][2] = 0;
+
+I[95] = new Array();
+I[95][0]='Peter told Martha, "You have been a good friend"<br />What did Peter tell her? ';
+I[95][1] = new Array();
+I[95][1][0] = new Array();
+I[95][1][0][0]='That she had been a good friend';
+I[95][1][0][1]='';
+I[95][1][0][2] = 1;
+I[95][1][1] = new Array();
+I[95][1][1][0]='That Martha had been a good friend';
+I[95][1][1][1]='NO. La estructura est&#225; bien pero el sujeto receptor es "she", no "Martha"';
+I[95][1][1][2] = 0;
+I[95][1][2] = new Array();
+I[95][1][2][0]='That she has been a good friend';
+I[95][1][2][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[95][1][2][2] = 0;
+I[95][1][3] = new Array();
+I[95][1][3][0]='That Martha has been a good friend';
+I[95][1][3][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[95][1][3][2] = 0;
+I[95][2] = 0;
+
+I[96] = new Array();
+I[96][0]='Lorna told Peter: "I flew last night"<br />What did Lorna tell Peter? ';
+I[96][1] = new Array();
+I[96][1][0] = new Array();
+I[96][1][0][0]='That she had flown last night';
+I[96][1][0][1]='';
+I[96][1][0][2] = 1;
+I[96][1][1] = new Array();
+I[96][1][1][0]='That she flew last night';
+I[96][1][1][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[96][1][1][2] = 0;
+I[96][1][2] = new Array();
+I[96][1][2][0]='That she would fly last night';
+I[96][1][2][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[96][1][2][2] = 0;
+I[96][1][3] = new Array();
+I[96][1][3][0]='That she has flown last night';
+I[96][1][3][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[96][1][3][2] = 0;
+I[96][2] = 0;
+
+I[97] = new Array();
+I[97][0]='Lorna told Peter, "I would like to win the race"<br />What did Lorna tell Peter? ';
+I[97][1] = new Array();
+I[97][1][0] = new Array();
+I[97][1][0][0]='That she would like to win the race';
+I[97][1][0][1]='';
+I[97][1][0][2] = 1;
+I[97][1][1] = new Array();
+I[97][1][1][0]='That she will like to win the race';
+I[97][1][1][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[97][1][1][2] = 0;
+I[97][1][2] = new Array();
+I[97][1][2][0]='That he would like to win the race';
+I[97][1][2][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[97][1][2][2] = 0;
+I[97][1][3] = new Array();
+I[97][1][3][0]='That she could to win the race';
+I[97][1][3][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[97][1][3][2] = 0;
+I[97][2] = 0;
+
+I[98] = new Array();
+I[98][0]='He told me, "I\'m waiting for my mother"<br />What did he tell me? ';
+I[98][1] = new Array();
+I[98][1][0] = new Array();
+I[98][1][0][0]='That he was waiting for his mother';
+I[98][1][0][1]='';
+I[98][1][0][2] = 1;
+I[98][1][1] = new Array();
+I[98][1][1][0]='That he is waiting for his mother';
+I[98][1][1][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[98][1][1][2] = 0;
+I[98][1][2] = new Array();
+I[98][1][2][0]='That he waits for my mother';
+I[98][1][2][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[98][1][2][2] = 0;
+I[98][1][3] = new Array();
+I[98][1][3][0]='That he waited for my mother';
+I[98][1][3][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[98][1][3][2] = 0;
+I[98][2] = 0;
+
+I[99] = new Array();
+I[99][0]='Lorna told Peter, "I will be helping you"<br />What did Lorna tell Peter? ';
+I[99][1] = new Array();
+I[99][1][0] = new Array();
+I[99][1][0][0]='That she would be helping Peter';
+I[99][1][0][1]='';
+I[99][1][0][2] = 1;
+I[99][1][1] = new Array();
+I[99][1][1][0]='That she would be helping you';
+I[99][1][1][1]='NO. Tiene la idea pero lea bien! <br />VEA P&#193;GINA 131';
+I[99][1][1][2] = 0;
+I[99][1][2] = new Array();
+I[99][1][2][0]='That she will help Peter';
+I[99][1][2][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[99][1][2][2] = 0;
+I[99][1][3] = new Array();
+I[99][1][3][0]='That she would help Peter';
+I[99][1][3][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[99][1][3][2] = 0;
+I[99][2] = 0;
+
+I[100] = new Array();
+I[100][0]='Lorna told Peter, " I could win the contest"<br />What did Lorna tell Peter? ';
+I[100][1] = new Array();
+I[100][1][0] = new Array();
+I[100][1][0][0]='That she could win the contest';
+I[100][1][0][1]='';
+I[100][1][0][2] = 1;
+I[100][1][1] = new Array();
+I[100][1][1][0]='That Lorna will win the contest';
+I[100][1][1][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[100][1][1][2] = 0;
+I[100][1][2] = new Array();
+I[100][1][2][0]='That she will win the contest';
+I[100][1][2][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[100][1][2][2] = 0;
+I[100][1][3] = new Array();
+I[100][1][3][0]='That she can win the contest';
+I[100][1][3][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[100][1][3][2] = 0;
+I[100][2] = 0;
+
+I[101] = new Array();
+I[101][0]='He said, "I know you"<br />What did he say? ';
+I[101][1] = new Array();
+I[101][1][0] = new Array();
+I[101][1][0][0]='That he knew me';
+I[101][1][0][1]='';
+I[101][1][0][2] = 1;
+I[101][1][1] = new Array();
+I[101][1][1][0]='That he knows me';
+I[101][1][1][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[101][1][1][2] = 0;
+I[101][1][2] = new Array();
+I[101][1][2][0]='That he had known me';
+I[101][1][2][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[101][1][2][2] = 0;
+I[101][1][3] = new Array();
+I[101][1][3][0]='That he had known you';
+I[101][1][3][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[101][1][3][2] = 0;
+I[101][2] = 0;
+
+I[102] = new Array();
+I[102][0]='Mary told me, "I have known the truth"<br />What did Mary tell me? ';
+I[102][1] = new Array();
+I[102][1][0] = new Array();
+I[102][1][0][0]='That she had known the truth';
+I[102][1][0][1]='';
+I[102][1][0][2] = 1;
+I[102][1][1] = new Array();
+I[102][1][1][0]='That Mary had known the truth';
+I[102][1][1][1]='NO. Que ella hab&#237;a sabido la verdad y no "que Mary hab&#237;a sabido la verdad".';
+I[102][1][1][2] = 0;
+I[102][1][2] = new Array();
+I[102][1][2][0]='That Mary has known the truth';
+I[102][1][2][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[102][1][2][2] = 0;
+I[102][1][3] = new Array();
+I[102][1][3][0]='That Mary Knew the truth';
+I[102][1][3][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[102][1][3][2] = 0;
+I[102][2] = 0;
+
+I[103] = new Array();
+I[103][0]='He said, "I will help her"<br />What did he say? ';
+I[103][1] = new Array();
+I[103][1][0] = new Array();
+I[103][1][0][0]='That he would help her';
+I[103][1][0][1]='';
+I[103][1][0][2] = 1;
+I[103][1][1] = new Array();
+I[103][1][1][0]='That he would help me';
+I[103][1][1][1]='Casi.<br />Le quedo mal "el receptor de la acci&#243;n"<br />';
+I[103][1][1][2] = 0;
+I[103][1][2] = new Array();
+I[103][1][2][0]='That I would help her';
+I[103][1][2][1]='NO. Tiene idea pero confundi&#243; el sujeto de la frase.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[103][1][2][2] = 0;
+I[103][1][3] = new Array();
+I[103][1][3][0]='That he should help me';
+I[103][1][3][1]='NO.<br />VEA P&#193;GINA 131 "REPORTED SPEECH"';
+I[103][1][3][2] = 0;
+I[103][2] = 0;
+
+I[104] = new Array();
+I[104][0]='Morir&#225;s si no comes! ';
+I[104][1] = new Array();
+I[104][1][0] = new Array();
+I[104][1][0][0]='You shall die if you don\'t eat!';
+I[104][1][0][1]='';
+I[104][1][0][2] = 1;
+I[104][1][1] = new Array();
+I[104][1][1][0]='You will die if you don\'t eat!';
+I[104][1][1][1]='NO.<br />VEA P&#193;GINA 126';
+I[104][1][1][2] = 0;
+I[104][1][2] = new Array();
+I[104][1][2][0]='You could die if you don\'t eat!';
+I[104][1][2][1]='NO.<br />VEA P&#193;GINA 126';
+I[104][1][2][2] = 0;
+I[104][2] = 0;
+
+I[105] = new Array();
+I[105][0]='El comi&#243; sin notar que la comida estaba envenenada';
+I[105][1] = new Array();
+I[105][1][0] = new Array();
+I[105][1][0][0]='He ate not noticing the food was poisoned';
+I[105][1][0][1]='Muy bien. Un alterno: "He ate without noticing the food was poisoned"';
+I[105][1][0][2] = 1;
+I[105][1][1] = new Array();
+I[105][1][1][0]='He ate no notice the food was poisoned';
+I[105][1][1][1]='Sorry!<br />Para formar la estructura correspondiente en espa&#241;ol a "Sin + el infinitivo de un verbo, se utiliza "not + verbo en continuo, o en su defecto "without + verbo en continuo"<br />';
+I[105][1][1][2] = 0;
+I[105][1][2] = new Array();
+I[105][1][2][0]='He ate without notice the food was poisoned';
+I[105][1][2][1]='Sorry!<br />Para formar la estructura correspondiente en espa&#241;ol a "Sin + el infinitivo de un verbo, se utiliza "not + verbo en continuo, o en su defecto "without + verbo en continuo"<br />';
+I[105][1][2][2] = 0;
+I[105][2] = 0;
+
+I[106] = new Array();
+I[106][0]='Yo hab&#237;a acabado de llegar';
+I[106][1] = new Array();
+I[106][1][0] = new Array();
+I[106][1][0][0]='I had just arrived';
+I[106][1][0][1]='';
+I[106][1][0][2] = 1;
+I[106][1][1] = new Array();
+I[106][1][1][0]='I just arrived';
+I[106][1][1][1]='NO. Esto significa :"Yo acab&#233; de llegar"<br />VEA P&#193;GINA 97';
+I[106][1][1][2] = 0;
+I[106][1][2] = new Array();
+I[106][1][2][0]='I just had arrived';
+I[106][1][2][1]='NO.<br />VEA P&#193;GINA 97';
+I[106][1][2][2] = 0;
+I[106][1][3] = new Array();
+I[106][1][3][0]='I had arrived just';
+I[106][1][3][1]='NO. Muy chibcha esta traducci&#243;n.<br />VEA P&#193;GINA 97';
+I[106][1][3][2] = 0;
+I[106][2] = 0;
+
+I[107] = new Array();
+I[107][0]='She is hardly breathing ';
+I[107][1] = new Array();
+I[107][1][0] = new Array();
+I[107][1][0][0]='Ella escasamente respira';
+I[107][1][0][1]='';
+I[107][1][0][2] = 1;
+I[107][1][1] = new Array();
+I[107][1][1][0]='Ella no est&#225; respirando';
+I[107][1][1][1]='NO.<br />VEA P&#193;GINA 117';
+I[107][1][1][2] = 0;
+I[107][1][2] = new Array();
+I[107][1][2][0]='Ella est&#225; respirando r&#225;pidamente';
+I[107][1][2][1]='NO.<br />VEA P&#193;GINA 117';
+I[107][1][2][2] = 0;
+I[107][1][3] = new Array();
+I[107][1][3][0]='Ella est&#225; respirando duro';
+I[107][1][3][1]='NO.<br />VEA P&#193;GINA 117';
+I[107][1][3][2] = 0;
+I[107][2] = 0;
+
+I[108] = new Array();
+I[108][0]='El la mat&#243; a causa de su locura';
+I[108][1] = new Array();
+I[108][1][0] = new Array();
+I[108][1][0][0]='He killed her because of his craziness';
+I[108][1][0][1]='Bien! Un alterno v&#225;lido "He killed her by reason of his craziness"';
+I[108][1][0][2] = 1;
+I[108][1][1] = new Array();
+I[108][1][1][0]='He killed her because his craziness';
+I[108][1][1][1]='No. La expresi&#243;n equivalente a "a causa de" es "because of"';
+I[108][1][1][2] = 0;
+I[108][1][2] = new Array();
+I[108][1][2][0]='He killed her because of his crazy';
+I[108][1][2][1]='NO.<br />VEA P&#193;GINA 97';
+I[108][1][2][2] = 0;
+I[108][2] = 0;
+
+I[109] = new Array();
+I[109][0]='Sucede que no me gusta el f&#250;tbol ';
+I[109][1] = new Array();
+I[109][1][0] = new Array();
+I[109][1][0][0]='I don\'t happen to like soccer';
+I[109][1][0][1]='';
+I[109][1][0][2] = 1;
+I[109][1][1] = new Array();
+I[109][1][1][0]='It happens that I don&#180;t like soccer';
+I[109][1][1][1]='NO.<br />VEA P&#193;GINA 141';
+I[109][1][1][2] = 0;
+I[109][1][2] = new Array();
+I[109][1][2][0]='I happen not to like soccer';
+I[109][1][2][1]='NO.<br />VEA P&#193;GINA 141';
+I[109][1][2][2] = 0;
+I[109][1][3] = new Array();
+I[109][1][3][0]='I happen not to like soccer';
+I[109][1][3][1]='NO.<br />VEA P&#193;GINA 141';
+I[109][1][3][2] = 0;
+I[109][2] = 0;
+
+I[110] = new Array();
+I[110][0]='El fue despedido por su despreocupaci&#243;n ';
+I[110][1] = new Array();
+I[110][1][0] = new Array();
+I[110][1][0][0]='He was fired because of his carelessness';
+I[110][1][0][1]='Bien! Maneja los sufijos con propiedad. Por lo menos en este caso!';
+I[110][1][0][2] = 1;
+I[110][1][1] = new Array();
+I[110][1][1][0]='He was fired because of his careless';
+I[110][1][1][1]='NO. "Careless" es el adjetivo "despreocupado"<br />VEA P&#193;GINA 97';
+I[110][1][1][2] = 0;
+I[110][1][2] = new Array();
+I[110][1][2][0]='He was fired because of his carefulness';
+I[110][1][2][1]='NO. Ese sustantivo significa "cuidadosidad" o si lo prefiere "prudencia"<br />VEA P&#193;GINA 97';
+I[110][1][2][2] = 0;
+I[110][2] = 0;
+
+I[111] = new Array();
+I[111][0]='No me gusta tu hermano, sinembargo yo lo ayudar&#233;';
+I[111][1] = new Array();
+I[111][1][0] = new Array();
+I[111][1][0][0]='I don\'t like your brother but I will help him, though.';
+I[111][1][0][1]='';
+I[111][1][0][2] = 1;
+I[111][1][1] = new Array();
+I[111][1][1][0]='However I don\'t like your brother I will help him.';
+I[111][1][1][1]='NO. <br />VEA P&#193;GINA 107';
+I[111][1][1][2] = 0;
+I[111][1][2] = new Array();
+I[111][1][2][0]='I don\'t like your brother but I will help him.';
+I[111][1][2][1]='NO. <br />VEA P&#193;GINA 107';
+I[111][1][2][2] = 0;
+I[111][1][3] = new Array();
+I[111][1][3][0]='I don\'t like your brother although I will help him.';
+I[111][1][3][1]='NO. <br />Esta frase se puede traducir pero no tiene l&#243;gica. "No me gusta tu hermano aunque yo lo ayudar&#233;"<br />VEA P&#193;GINA 107';
+I[111][1][3][2] = 0;
+I[111][2] = 0;
+
+I[112] = new Array();
+I[112][0]='If you have any problem whatsoever, just tell me ';
+I[112][1] = new Array();
+I[112][1][0] = new Array();
+I[112][1][0][0]='Si tienes alg&#250;n problema, no importa cu&#225;l, s&#243;lo dime';
+I[112][1][0][1]='';
+I[112][1][0][2] = 1;
+I[112][1][1] = new Array();
+I[112][1][1][0]='Si tienes alg&#250;n problema al respecto s&#243;lo dime.';
+I[112][1][1][1]='NO. <br />VEA P&#193;GINA 141';
+I[112][1][1][2] = 0;
+I[112][1][2] = new Array();
+I[112][1][2][0]='Si tienes alg&#250;n problema dif&#237;cil de resolver, s&#243;lo dime';
+I[112][1][2][1]='NO. <br />VEA P&#193;GINA 141';
+I[112][1][2][2] = 0;
+I[112][1][3] = new Array();
+I[112][1][3][0]='Si tienes alg&#250;n problema imprevisto, s&#243;lo dime.';
+I[112][1][3][1]='NO. <br />VEA P&#193;GINA 141';
+I[112][1][3][2] = 0;
+I[112][2] = 0;
+
+I[113] = new Array();
+I[113][0]='Entre m&#225;s conozco a los hombres, m&#225;s quiero a mi perro. ';
+I[113][1] = new Array();
+I[113][1][0] = new Array();
+I[113][1][0][0]='The more I know men, the more I love my dog';
+I[113][1][0][1]='';
+I[113][1][0][2] = 1;
+I[113][1][1] = new Array();
+I[113][1][1][0]='The more I know the men, the more I love my dog';
+I[113][1][1][1]='NO. <br />VEA P&#193;GINA 54. Adem&#225;s le sobra el art&#237;culo, si tiene dudas al respecto VEA P&#193;GINA 120';
+I[113][1][1][2] = 0;
+I[113][1][2] = new Array();
+I[113][1][2][0]='When I know men more, more I love my dog';
+I[113][1][2][1]='NO. <br />VEA P&#193;GINA 120';
+I[113][1][2][2] = 0;
+I[113][1][3] = new Array();
+I[113][1][3][0]='While I more know men I more love my dog';
+I[113][1][3][1]='NO. <br />VEA P&#193;GINA 120';
+I[113][1][3][2] = 0;
+I[113][2] = 0;
+
+I[114] = new Array();
+I[114][0]='Ojal&#225; tu vinieses a mi fiesta ';
+I[114][1] = new Array();
+I[114][1][0] = new Array();
+I[114][1][0][0]='I wish you would come to my party';
+I[114][1][0][1]='';
+I[114][1][0][2] = 1;
+I[114][1][1] = new Array();
+I[114][1][1][0]='I wish you came to my party';
+I[114][1][1][1]='NO. <br />VEA P&#193;GINA 104';
+I[114][1][1][2] = 0;
+I[114][1][2] = new Array();
+I[114][1][2][0]='I wish you come to my party';
+I[114][1][2][1]='NO. <br />VEA P&#193;GINA 104';
+I[114][1][2][2] = 0;
+I[114][2] = 0;
+
+I[115] = new Array();
+I[115][0]='Me gusta la m&#250;sica y a Pedro tambi&#233;n ';
+I[115][1] = new Array();
+I[115][1][0] = new Array();
+I[115][1][0][0]='I like music and so does Pedro';
+I[115][1][0][1]='Bien! Otra opci&#243;n v&#225;lida "I like music and Pedro does too"';
+I[115][1][0][2] = 1;
+I[115][1][1] = new Array();
+I[115][1][1][0]='I like music and Pedro too';
+I[115][1][1][1]='NO. <br />VEA P&#193;GINA 112';
+I[115][1][1][2] = 0;
+I[115][1][2] = new Array();
+I[115][1][2][0]='I like music and Pedro also';
+I[115][1][2][1]='NO. <br />VEA P&#193;GINA 112';
+I[115][1][2][2] = 0;
+I[115][1][3] = new Array();
+I[115][1][3][0]='I like music and Pedro too does';
+I[115][1][3][1]='NO. <br />VEA P&#193;GINA 112';
+I[115][1][3][2] = 0;
+I[115][2] = 0;
+
+I[116] = new Array();
+I[116][0]='La ni&#241;a que gan&#243; la carrera es colombiana?';
+I[116][1] = new Array();
+I[116][1][0] = new Array();
+I[116][1][0][0]='Is the girl who won the race colombian?';
+I[116][1][0][1]='Muy bien! Esta no era nada f&#225;cil!';
+I[116][1][0][2] = 1;
+I[116][1][1] = new Array();
+I[116][1][1][0]='Does the girl who won the race is colombian?';
+I[116][1][1][1]='Esta es una frase interrogativa y el orden debe mantenerse: 21+S +V+ C VEA P&#193;GINA 20<br />';
+I[116][1][1][2] = 0;
+I[116][1][2] = new Array();
+I[116][1][2][0]='Is colombian the girl who won the race?';
+I[116][1][2][1]='Esta es una frase interrogativa y el orden debe mantenerse: 21+S +V+ C VEA P&#193;GINA 20. El auxiliar es "is", "colombian" no forma parte del sujeto sino que es complemento. <br />';
+I[116][1][2][2] = 0;
+I[116][1][3] = new Array();
+I[116][1][3][0]='Did the colombian girl win the race?';
+I[116][1][3][1]='No. Esta frase est&#225; correcta pero no tiene el mismo sentido de la pregunta. "La ni&#241;a colombiana gan&#243; la carrera?';
+I[116][1][3][2] = 0;
+I[116][2] = 0;
+
+I[117] = new Array();
+I[117][0]='Puedes parquear aqu&#237; (Est&#225; permitido) ';
+I[117][1] = new Array();
+I[117][1][0] = new Array();
+I[117][1][0][0]='You can park here';
+I[117][1][0][1]='';
+I[117][1][0][2] = 1;
+I[117][1][1] = new Array();
+I[117][1][1][0]='You may park here';
+I[117][1][1][1]='NO.<br />VEA P&#193;GINA 125';
+I[117][1][1][2] = 0;
+I[117][1][2] = new Array();
+I[117][1][2][0]='You could park here';
+I[117][1][2][1]='NO.<br />VEA P&#193;GINA 125';
+I[117][1][2][2] = 0;
+I[117][2] = 0;
+
+I[118] = new Array();
+I[118][0]='El compr&#243; este libro para que yo lo lea ';
+I[118][1] = new Array();
+I[118][1][0] = new Array();
+I[118][1][0][0]='He bought this book for me to read it';
+I[118][1][0][1]='';
+I[118][1][0][2] = 1;
+I[118][1][1] = new Array();
+I[118][1][1][0]='He bought this book I to read it';
+I[118][1][1][1]='NO.<br />VEA P&#193;GINA 142';
+I[118][1][1][2] = 0;
+I[118][1][2] = new Array();
+I[118][1][2][0]='He bought this book for me so I can read it';
+I[118][1][2][1]='NO. Esta construcci&#243;n tiene l&#243;gica pero no es exactamente lo mismo "El compr&#233; este libro de tal manera que yo pueda leerlo"<br />VEA P&#193;GINA 142';
+I[118][1][2][2] = 0;
+I[118][2] = 0;
+
+I[119] = new Array();
+I[119][0]='El se rehusa a ayudarme ';
+I[119][1] = new Array();
+I[119][1][0] = new Array();
+I[119][1][0][0]='He won\'t help me';
+I[119][1][0][1]='';
+I[119][1][0][2] = 1;
+I[119][1][1] = new Array();
+I[119][1][1][0]='He shouldn\'t help me';
+I[119][1][1][1]='NO.<br />VEA P&#193;GINA 126';
+I[119][1][1][2] = 0;
+I[119][1][2] = new Array();
+I[119][1][2][0]='He wouldn\'t help me';
+I[119][1][2][1]='NO.<br />VEA P&#193;GINA 126';
+I[119][1][2][2] = 0;
+I[119][1][3] = new Array();
+I[119][1][3][0]='He doesn\'t help me';
+I[119][1][3][1]='NO. No tiene el mismo sentido.<br />VEA P&#193;GINA 126';
+I[119][1][3][2] = 0;
+I[119][2] = 0;
+
+I[120] = new Array();
+I[120][0]='El m&#225;s o menos tiene mi edad ';
+I[120][1] = new Array();
+I[120][1][0] = new Array();
+I[120][1][0][0]='He is about my age';
+I[120][1][0][1]='';
+I[120][1][0][2] = 1;
+I[120][1][1] = new Array();
+I[120][1][1][0]='He is more or less my age';
+I[120][1][1][1]='NO. Traducci&#243;n muy chibcha<br />VEA P&#193;GINA 137';
+I[120][1][1][2] = 0;
+I[120][1][2] = new Array();
+I[120][1][2][0]='He is almost my age.';
+I[120][1][2][1]='NO.<br />VEA P&#193;GINA 137';
+I[120][1][2][2] = 0;
+I[120][1][3] = new Array();
+I[120][1][3][0]='He has more or less my age';
+I[120][1][3][1]='NO. Traducci&#243;n muy chibcha<br />VEA P&#193;GINA 137';
+I[120][1][3][2] = 0;
+I[120][2] = 0;
+
+I[121] = new Array();
+I[121][0]='Yo prefiero volar en lugar de estudiar ';
+I[121][1] = new Array();
+I[121][1][0] = new Array();
+I[121][1][0][0]='I prefer to fly rather than study';
+I[121][1][0][1]='';
+I[121][1][0][2] = 1;
+I[121][1][1] = new Array();
+I[121][1][1][0]='I prefer to fly rather than to study';
+I[121][1][1][1]='NO.<br />VEA P&#193;GINA 140';
+I[121][1][1][2] = 0;
+I[121][1][2] = new Array();
+I[121][1][2][0]='I prefer to fly instead of study';
+I[121][1][2][1]='NO. VEA P&#193;GINA 64. "SEGUNDO CASO"<br />';
+I[121][1][2][2] = 0;
+I[121][2] = 0;
+
+I[122] = new Array();
+I[122][0]='El debe haber estado loco cuando la mato.';
+I[122][1] = new Array();
+I[122][1][0] = new Array();
+I[122][1][0][0]='He must have been crazy when he killed her';
+I[122][1][0][1]='';
+I[122][1][0][2] = 1;
+I[122][1][1] = new Array();
+I[122][1][1][0]='He would have been crazy when he killed her';
+I[122][1][1][1]='Esta es una especulaci&#243;n y para ello se utiliza la combinaci&#243;n "must + have".<br />VEA P&#193;GINA 48<br />';
+I[122][1][1][2] = 0;
+I[122][1][2] = new Array();
+I[122][1][2][0]='He will have been crazy when he killed her';
+I[122][1][2][1]='Esta es una especulaci&#243;n y para ello se utiliza la combinaci&#243;n "must + have".<br />VEA P&#193;GINA 48<br />';
+I[122][1][2][2] = 0;
+I[122][1][3] = new Array();
+I[122][1][3][0]='He should have been crazy when he killed her';
+I[122][1][3][1]='Esta es una especulaci&#243;n mas que una presuncion; para el caso que se le pide la combinaci&#243;n no es del todo correcta. Se usa en este caso "must + have".<br />VEA P&#193;GINA 48<br />';
+I[122][1][3][2] = 0;
+I[122][2] = 0;
+
+I[123] = new Array();
+I[123][0]='Tomar alcohol es como suicidarse ';
+I[123][1] = new Array();
+I[123][1][0] = new Array();
+I[123][1][0][0]='Drinking alcohol is like killing yourself';
+I[123][1][0][1]='';
+I[123][1][0][2] = 1;
+I[123][1][1] = new Array();
+I[123][1][1][0]='Drinking alcohol is as killing yourself';
+I[123][1][1][1]='NO.<br />VEA P&#193;GINA 135';
+I[123][1][1][2] = 0;
+I[123][1][2] = new Array();
+I[123][1][2][0]='Drinking alcohol is how killing yourself';
+I[123][1][2][1]='NO.<br />VEA P&#193;GINA 135';
+I[123][1][2][2] = 0;
+I[123][2] = 0;
+
+I[124] = new Array();
+I[124][0]='El tiene muchos libros ';
+I[124][1] = new Array();
+I[124][1][0] = new Array();
+I[124][1][0][0]='He has quite a few books';
+I[124][1][0][1]='';
+I[124][1][0][2] = 1;
+I[124][1][1] = new Array();
+I[124][1][1][0]='He has lot books';
+I[124][1][1][1]='NO.<br />VEA P&#193;GINA 116';
+I[124][1][1][2] = 0;
+I[124][1][2] = new Array();
+I[124][1][2][0]='He has a lot books';
+I[124][1][2][1]='NO.<br />VEA P&#193;GINA 116';
+I[124][1][2][2] = 0;
+I[124][1][3] = new Array();
+I[124][1][3][0]='He has quite books';
+I[124][1][3][1]='NO.<br />VEA P&#193;GINA 116';
+I[124][1][3][2] = 0;
+I[124][2] = 0;
+
+I[125] = new Array();
+I[125][0]='Sabes qu&#233;? No vamos a la fiesta';
+I[125][1] = new Array();
+I[125][1][0] = new Array();
+I[125][1][0][0]='You know what? Let&#180;s not go to the party';
+I[125][1][0][1]='';
+I[125][1][0][2] = 1;
+I[125][1][1] = new Array();
+I[125][1][1][0]='Do you know what? Don\'t let\'s go to the party';
+I[125][1][1][1]='NO. VEA MODISMOS para entender &#233;ste y muchos m&#225;s. Adem&#225;s VEA P&#193;GINA 122 en su pi&#233; de p&#225;gina';
+I[125][1][1][2] = 0;
+I[125][1][2] = new Array();
+I[125][1][2][0]='Do you know what? Let\'s not go to the party';
+I[125][1][2][1]='NO. VEA MODISMOS para entender &#233;ste y muchos m&#225;s. La segunda parte est&#225; bien';
+I[125][1][2][2] = 0;
+I[125][1][3] = new Array();
+I[125][1][3][0]='You know what? Let&#180;s go not to the party';
+I[125][1][3][1]='NO.<br />VEA P&#193;GINA 122 en su pie de p&#225;gina';
+I[125][1][3][2] = 0;
+I[125][2] = 0;
+
+I[126] = new Array();
+I[126][0]='Si tuvieses un problema, d&#233;jame saberlo';
+I[126][1] = new Array();
+I[126][1][0] = new Array();
+I[126][1][0][0]='If you should have a problem...';
+I[126][1][0][1]='Bien! Otra opcion v&#225;lida: Should you have a problem..';
+I[126][1][0][2] = 1;
+I[126][1][1] = new Array();
+I[126][1][1][0]='If you had a problem..';
+I[126][1][1][1]='NO. "Tuvieras" es menos remoto que "tuvieses" que es lo que se pide que traduzca. <br />VEA P&#193;GINA 126';
+I[126][1][1][2] = 0;
+I[126][1][2] = new Array();
+I[126][1][2][0]='If you have a problem..';
+I[126][1][2][1]='NO. <br />VEA P&#193;GINA 126';
+I[126][1][2][2] = 0;
+I[126][1][3] = new Array();
+I[126][1][3][0]='If you would have a problem..';
+I[126][1][3][1]='NO. <br />VEA P&#193;GINA 126';
+I[126][1][3][2] = 0;
+I[126][2] = 0;
+
+I[127] = new Array();
+I[127][0]='Frank es alem&#225;n, en cambio Pedro es espa&#241;ol. ';
+I[127][1] = new Array();
+I[127][1][0] = new Array();
+I[127][1][0][0]='Frank is German whereas Pedro is Spanish';
+I[127][1][0][1]='';
+I[127][1][0][2] = 1;
+I[127][1][1] = new Array();
+I[127][1][1][0]='Frank is German while Pedro is Spanish';
+I[127][1][1][1]='NO. <br />La conjunci&#243;n "while" se aplica a tiempo y este no es el caso.<br />VEA P&#193;GINA 62';
+I[127][1][1][2] = 0;
+I[127][1][2] = new Array();
+I[127][1][2][0]='Frank is German, in change, Pedro is Spanish';
+I[127][1][2][1]='NO. Traducci&#243;n chibcha pero no inglesa.<br />VEA P&#193;GINA 62';
+I[127][1][2][2] = 0;
+I[127][1][3] = new Array();
+I[127][1][3][0]='Frank is German and Pedro is Spanish';
+I[127][1][3][1]='NO. No es lo mismo<br />VEA P&#193;GINA 62';
+I[127][1][3][2] = 0;
+I[127][2] = 0;
+
+I[128] = new Array();
+I[128][0]='No se supone que bebas y conduzcas ';
+I[128][1] = new Array();
+I[128][1][0] = new Array();
+I[128][1][0][0]='You are not supposed to drink and drive';
+I[128][1][0][1]='';
+I[128][1][0][2] = 1;
+I[128][1][1] = new Array();
+I[128][1][1][0]='You don\'t suppose to drink and drive';
+I[128][1][1][1]='NO.<br />VEA P&#193;GINA 119';
+I[128][1][1][2] = 0;
+I[128][1][2] = new Array();
+I[128][1][2][0]='It is not supposed that you drink and drive';
+I[128][1][2][1]='NO.<br />VEA P&#193;GINA 119';
+I[128][1][2][2] = 0;
+I[128][2] = 0;
+
+I[129] = new Array();
+I[129][0]='"Barrab&#225;s ser&#225; ejecutado ma&#241;ana" (Titular de Prensa) ';
+I[129][1] = new Array();
+I[129][1][0] = new Array();
+I[129][1][0][0]='"Barrabas to be executed tomorrow"';
+I[129][1][0][1]='';
+I[129][1][0][2] = 1;
+I[129][1][1] = new Array();
+I[129][1][1][0]='"Barrabas be executed tomorrow"';
+I[129][1][1][1]='NO.<br />VEA P&#193;GINA 138';
+I[129][1][1][2] = 0;
+I[129][1][2] = new Array();
+I[129][1][2][0]='"Barrabas is executed tomorrow"';
+I[129][1][2][1]='NO.<br />VEA P&#193;GINA 138';
+I[129][1][2][2] = 0;
+I[129][1][3] = new Array();
+I[129][1][3][0]='"Barrabas executed tomorrow"';
+I[129][1][3][1]='NO.<br />VEA P&#193;GINA 138';
+I[129][1][3][2] = 0;
+I[129][2] = 0;
+
+I[130] = new Array();
+I[130][0]='Un tal Pedro te llam&#243; esta ma&#241;ana ';
+I[130][1] = new Array();
+I[130][1][0] = new Array();
+I[130][1][0][0]='One Pedro called you this morning';
+I[130][1][0][1]='Por supuesto!';
+I[130][1][0][2] = 1;
+I[130][1][1] = new Array();
+I[130][1][1][0]='Pedro called you this morning';
+I[130][1][1][1]='NO. <br />VEA P&#193;GINA 142';
+I[130][1][1][2] = 0;
+I[130][1][2] = new Array();
+I[130][1][2][0]='One such Pedro called this morning';
+I[130][1][2][1]='NO. Esta construcci&#243;n est&#225; muy chibcha. VEA P&#193;GINA 142';
+I[130][1][2][2] = 0;
+I[130][1][3] = new Array();
+I[130][1][3][0]='Some Pedro called this morning';
+I[130][1][3][1]='NO. <br />VEA P&#193;GINA 142';
+I[130][1][3][2] = 0;
+I[130][2] = 0;
+
+I[131] = new Array();
+I[131][0]='Ella es la &#250;nica amiga que yo tengo ';
+I[131][1] = new Array();
+I[131][1][0] = new Array();
+I[131][1][0][0]='She is the one friend I have';
+I[131][1][0][1]='Alterno: She is the only friend I have.';
+I[131][1][0][2] = 1;
+I[131][1][1] = new Array();
+I[131][1][1][0]='She is the single friend I have';
+I[131][1][1][1]='NO.<br />VEA P&#193;GINA 142';
+I[131][1][1][2] = 0;
+I[131][1][2] = new Array();
+I[131][1][2][0]='She is the unique friend I have';
+I[131][1][2][1]='NO. "Unique" en ingl&#233;s no significa &#250;nica, sino "excepcional".<br />VEA P&#193;GINA 142';
+I[131][1][2][2] = 0;
+I[131][1][3] = new Array();
+I[131][1][3][0]='She is the only one friend I have';
+I[131][1][3][1]='NO: Le sobra "one" pues nombr&#243; al sustantivo "friend" <br />VEA P&#193;GINA 142';
+I[131][1][3][2] = 0;
+I[131][2] = 0;
+
+I[132] = new Array();
+I[132][0]='Fui a Cali caminando ';
+I[132][1] = new Array();
+I[132][1][0] = new Array();
+I[132][1][0][0]='I went to cali on foot';
+I[132][1][0][1]='';
+I[132][1][0][2] = 1;
+I[132][1][1] = new Array();
+I[132][1][1][0]='I went to cali by foot';
+I[132][1][1][1]='NO.<br />VEA P&#193;GINA 132';
+I[132][1][1][2] = 0;
+I[132][1][2] = new Array();
+I[132][1][2][0]='I went to cali at foot';
+I[132][1][2][1]='NO.<br />VEA P&#193;GINA 132';
+I[132][1][2][2] = 0;
+I[132][1][3] = new Array();
+I[132][1][3][0]='I went to cali in foot';
+I[132][1][3][1]='NO.<br />VEA P&#193;GINA 132';
+I[132][1][3][2] = 0;
+I[132][2] = 0;
+
+I[133] = new Array();
+I[133][0]='El hombre que te vi&#243;, los vi&#243; a ellos?';
+I[133][1] = new Array();
+I[133][1][0] = new Array();
+I[133][1][0][0]='Did the man who saw you, see them?';
+I[133][1][0][1]='Bien! Aqu&#237; me tram&#243;!';
+I[133][1][0][2] = 1;
+I[133][1][1] = new Array();
+I[133][1][1][0]='The man who saw you, did see them?';
+I[133][1][1][1]='Esta es una frase interrogativa y el orden es 21+S +V+ C vea p&#225;gina 20. El sujeto de esta frase es "el hombre que te vi&#243;" <br />Tal sujeto no puede alterarse<br />';
+I[133][1][1][2] = 0;
+I[133][1][2] = new Array();
+I[133][1][2][0]='The man who saw you, did he see them?';
+I[133][1][2][1]='No. Esta es una frase interrogativa y el orden es 21+S +V+ C vea p&#225;gina 20.';
+I[133][1][2][2] = 0;
+I[133][1][3] = new Array();
+I[133][1][3][0]='The man who saw you, saw them?';
+I[133][1][3][1]='NO. Esta frase no tiene estructura de pregunta pues carece de 21.La frase que se pide traducir es una frase interrogativa y el orden debe ser 21+S +V+ C; vea p&#225;gina 20. El sujeto de esta frase es "el hombre que te vi&#243;" <br />Tal sujeto no puede alterarse<br />';
+I[133][1][3][2] = 0;
+I[133][1][4] = new Array();
+I[133][1][4][0]='Did the man who see you, saw them?';
+I[133][1][4][1]='NO. Esta es una frase interrogativa y el orden es 21+S +V+ C vea p&#225;gina 20. El sujeto de esta frase es "el hombre que te vi&#243;", el verbo central "ver" debe ir en su forma de infinitivo "see"<br />Tal sujeto no puede alterarse<br />';
+I[133][1][4][2] = 0;
+I[133][2] = 0;
+
+I[134] = new Array();
+I[134][0]='No me gusta para nada tu hablado ';
+I[134][1] = new Array();
+I[134][1][0] = new Array();
+I[134][1][0][0]='I don\'t like your speaking at all';
+I[134][1][0][1]='';
+I[134][1][0][2] = 1;
+I[134][1][1] = new Array();
+I[134][1][1][0]='I don\'t like you to speak';
+I[134][1][1][1]='NO. VEA P&#193;GINA 118<br />';
+I[134][1][1][2] = 0;
+I[134][1][2] = new Array();
+I[134][1][2][0]='I don\'t like your speaking, not at all.';
+I[134][1][2][1]='NO. La expresion "not at all" significa otra cosa.<br />VEA P&#193;GINA 118';
+I[134][1][2][2] = 0;
+I[134][1][3] = new Array();
+I[134][1][3][0]='I don\'t like your speaking<br />';
+I[134][1][3][1]='NO. No ha enfatizado.<br />VEA P&#193;GINA 118';
+I[134][1][3][2] = 0;
+I[134][2] = 0;
+
+I[135] = new Array();
+I[135][0]='A lo mejor el viene';
+I[135][1] = new Array();
+I[135][1][0] = new Array();
+I[135][1][0][0]='He might/may/could come';
+I[135][1][0][1]='';
+I[135][1][0][2] = 1;
+I[135][1][1] = new Array();
+I[135][1][1][0]='He can come';
+I[135][1][1][1]='NO. El 21 "can" no se usa para probabilidades. <br />VEA P&#193;GINA 21';
+I[135][1][1][2] = 0;
+I[135][1][2] = new Array();
+I[135][1][2][0]='He should come';
+I[135][1][2][1]='NO. <br />VEA P&#193;GINA 21';
+I[135][1][2][2] = 0;
+I[135][1][3] = new Array();
+I[135][1][3][0]='He said he could come';
+I[135][1][3][1]='NO. Esto no es lo mismo. <br />VEA P&#193;GINA 21';
+I[135][1][3][2] = 0;
+I[135][2] = 0;
+
+I[136] = new Array();
+I[136][0]='Est&#225; Mar&#237;a por ah&#237;? ';
+I[136][1] = new Array();
+I[136][1][0] = new Array();
+I[136][1][0][0]='Is Maria about?';
+I[136][1][0][1]='';
+I[136][1][0][2] = 1;
+I[136][1][1] = new Array();
+I[136][1][1][0]='Is Maria there?';
+I[136][1][1][1]='NO. <br />No significa exactamente lo que se le est&#225; preguntando. <br />VEA P&#193;GINA 137';
+I[136][1][1][2] = 0;
+I[136][1][2] = new Array();
+I[136][1][2][0]='Is Maria for there?';
+I[136][1][2][1]='NO. Est&#225; traducci&#243;n est&#225; muy chibcha. VEA P&#196;GINA 137';
+I[136][1][2][2] = 0;
+I[136][1][3] = new Array();
+I[136][1][3][0]='Is Maria with you ?';
+I[136][1][3][1]='No exactamente. Est&#225; bien pero no expresa lo que se le pregunta. <br />VEA P&#193;GINA 137';
+I[136][1][3][2] = 0;
+I[136][2] = 0;
+
+I[137] = new Array();
+I[137][0]='Valdr&#225; la pena tomar un taxi? ';
+I[137][1] = new Array();
+I[137][1][0] = new Array();
+I[137][1][0][0]='"Will taking a taxi be wortwhile?';
+I[137][1][0][1]='Exacto! No era para nada f&#225;cil!<br />Otra opci&#243;n valida: "Will it be worth taking a taxi?"';
+I[137][1][0][2] = 1;
+I[137][1][1] = new Array();
+I[137][1][1][0]='Will it worth to take a taxi?';
+I[137][1][1][1]='NO. VEA P&#193;GINA 71';
+I[137][1][1][2] = 0;
+I[137][1][2] = new Array();
+I[137][1][2][0]='Will it be worth to take a taxi?';
+I[137][1][2][1]='NO. VEA P&#193;GINA 71';
+I[137][1][2][2] = 0;
+I[137][1][3] = new Array();
+I[137][1][3][0]='Will it worth taking a taxi?';
+I[137][1][3][1]='NO. VEA P&#193;GINA 71';
+I[137][1][3][2] = 0;
+I[137][2] = 0;
+
+I[138] = new Array();
+I[138][0]='El avi&#243;n est&#225; pr&#243;ximo a aterrizar ';
+I[138][1] = new Array();
+I[138][1][0] = new Array();
+I[138][1][0][0]='The plane is about to land';
+I[138][1][0][1]='';
+I[138][1][0][2] = 1;
+I[138][1][1] = new Array();
+I[138][1][1][0]='The plane is close to land';
+I[138][1][1][1]='NO. <br />VEA P&#193;GINA 137. "Close" es cercan&#237;a de distancia pero no de tiempo.';
+I[138][1][1][2] = 0;
+I[138][1][2] = new Array();
+I[138][1][2][0]='The plane is next to land';
+I[138][1][2][1]='NO. <br />VEA P&#193;GINA 137';
+I[138][1][2][2] = 0;
+I[138][1][3] = new Array();
+I[138][1][3][0]='The plane is just to land';
+I[138][1][3][1]='NO. <br />VEA P&#193;GINA 137';
+I[138][1][3][2] = 0;
+I[138][2] = 0;
+
+I[139] = new Array();
+I[139][0]='Tr&#225;elo de regreso ';
+I[139][1] = new Array();
+I[139][1][0] = new Array();
+I[139][1][0][0]='Bring him back';
+I[139][1][0][1]='';
+I[139][1][0][2] = 1;
+I[139][1][1] = new Array();
+I[139][1][1][0]='Bring back him';
+I[139][1][1][1]='NO. <br />VEA P&#193;GINA 124';
+I[139][1][1][2] = 0;
+I[139][1][2] = new Array();
+I[139][1][2][0]='Cualquiera de las dos est&#225; correcta';
+I[139][1][2][1]='NO. <br />Existen restricciones . VEA P&#193;GINA 124';
+I[139][1][2][2] = 0;
+I[139][2] = 0;
+
+I[140] = new Array();
+I[140][0]='Yo no he podido encontrar la pista ';
+I[140][1] = new Array();
+I[140][1][0] = new Array();
+I[140][1][0][0]='I haven\'t been able to find the runway';
+I[140][1][0][1]='';
+I[140][1][0][2] = 1;
+I[140][1][1] = new Array();
+I[140][1][1][0]='I haven\'t could find the runway';
+I[140][1][1][1]='NO. La combinaci&#243;n "have+could" no existe. VEA P&#193;GINA 48';
+I[140][1][1][2] = 0;
+I[140][1][2] = new Array();
+I[140][1][2][0]='I couldn\'t have find the runway';
+I[140][1][2][1]='NO. Esta frase es gramaticalmente correcta pero no significa lo mismo. VEA P&#193;GINA 48';
+I[140][1][2][2] = 0;
+I[140][2] = 0;
+
+I[141] = new Array();
+I[141][0]='Yo escasamente tengo 20 a&#241;os, ten paciencia ';
+I[141][1] = new Array();
+I[141][1][0] = new Array();
+I[141][1][0][0]='I\'m barely twenty, be patient';
+I[141][1][0][1]='';
+I[141][1][0][2] = 1;
+I[141][1][1] = new Array();
+I[141][1][1][0]='I barely am twenty, be patient';
+I[141][1][1][1]='NO.<br />Un adverbio no puede interrumpir al verbo "to be"';
+I[141][1][1][2] = 0;
+I[141][1][2] = new Array();
+I[141][1][2][0]='I\'m almost twenty, be patient';
+I[141][1][2][1]='NO. <br />VEA P&#193;GINA 117';
+I[141][1][2][2] = 0;
+I[141][1][3] = new Array();
+I[141][1][3][0]='I\'m not twenty yet, be patient';
+I[141][1][3][1]='NO.<br />Esto no significa lo mismo. VEA P&#193;GINA 117';
+I[141][1][3][2] = 0;
+I[141][2] = 0;
+
+I[142] = new Array();
+I[142][0]='Peter: Do you mind if I smoke?<br />Luc&#237;a: Not at all ';
+I[142][1] = new Array();
+I[142][1][0] = new Array();
+I[142][1][0][0]='Luc&#237;a: Absolutamente no (Para nada)';
+I[142][1][0][1]='';
+I[142][1][0][2] = 1;
+I[142][1][1] = new Array();
+I[142][1][1][0]='Luc&#237;a: No del todo';
+I[142][1][1][1]='NO. Y eso como qu&#233; significa? No es culpa suya sino del profesor que no le ense&#241;&#243; a usted, ni a sus compa&#241;eros esta expresi&#243;n correctamente. VEA P&#196;GINA 118';
+I[142][1][1][2] = 0;
+I[142][1][2] = new Array();
+I[142][1][2][0]='Luc&#237;a: Un poquito';
+I[142][1][2][1]='NO. VEA P&#196;GINA 118';
+I[142][1][2][2] = 0;
+I[142][1][3] = new Array();
+I[142][1][3][0]='Luc&#237;a: Depende';
+I[142][1][3][1]='NO. VEA P&#196;GINA 118';
+I[142][1][3][2] = 0;
+I[142][2] = 0;
+
+I[143] = new Array();
+I[143][0]='El casi me mata';
+I[143][1] = new Array();
+I[143][1][0] = new Array();
+I[143][1][0][0]='He almost killed me';
+I[143][1][0][1]='';
+I[143][1][0][2] = 1;
+I[143][1][1] = new Array();
+I[143][1][1][0]='He almost kills me';
+I[143][1][1][1]='En ingl&#233;s, contrario al espa&#241;ol, el verbo va en tiempo pasado cuando se usa el adverbio "almost"';
+I[143][1][1][2] = 0;
+I[143][2] = 0;
+
+I[144] = new Array();
+I[144][0]='Cuando llegaste? (Mostrando sorpresa) ';
+I[144][1] = new Array();
+I[144][1][0] = new Array();
+I[144][1][0][0]='When ever did you arrive?';
+I[144][1][0][1]='';
+I[144][1][0][2] = 1;
+I[144][1][1] = new Array();
+I[144][1][1][0]='When did you arrive?';
+I[144][1][1][1]='NO. <br />Esta frase est&#225; bien pero no denota sorpresa. VEA P&#193;GINA 133';
+I[144][1][1][2] = 0;
+I[144][1][2] = new Array();
+I[144][1][2][0]='When the hell did you arrive?';
+I[144][1][2][1]='NO. <br />Si bien esta frase est&#225; correcta, no muestra sorpresa sino indignaci&#243;n y literalmente significa "Cu&#225;ndo diablos llegaste? VEA P&#193;GINA 133';
+I[144][1][2][2] = 0;
+I[144][2] = 0;
+
+I[145] = new Array();
+I[145][0]='A duras penas puedo dormir ';
+I[145][1] = new Array();
+I[145][1][0] = new Array();
+I[145][1][0][0]='I can hardly sleep';
+I[145][1][0][1]='';
+I[145][1][0][2] = 1;
+I[145][1][1] = new Array();
+I[145][1][1][0]='I can\'t hardly sleep';
+I[145][1][1][1]='NO. <br />VEA P&#193;GINA 117';
+I[145][1][1][2] = 0;
+I[145][1][2] = new Array();
+I[145][1][2][0]='I can\'t sleep at all';
+I[145][1][2][1]='NO. Si bien esta frase est&#225; correcta, ella significa: "Yo no puedo dormir" (para nada). VEA P&#193;GINA 117 y significado de "at all" en la p&#225;gina 118.';
+I[145][1][2][2] = 0;
+I[145][2] = 0;
+
+I[146] = new Array();
+I[146][0]='El fu&#233; a Santiago, por mi parte, yo me qued&#233; en Valparaiso ';
+I[146][1] = new Array();
+I[146][1][0] = new Array();
+I[146][1][0][0]='He went to Santiago, as for me, I stayed in Valparaiso';
+I[146][1][0][1]='';
+I[146][1][0][2] = 1;
+I[146][1][1] = new Array();
+I[146][1][1][0]='He went to Santiago, for my part, I stayed in Valparaiso';
+I[146][1][1][1]='NO. Traducci&#243;n muy chibcha<br />VEA P&#193;GINA 135';
+I[146][1][1][2] = 0;
+I[146][1][2] = new Array();
+I[146][1][2][0]='He went to Santiago, like for me, I stayed in Valparaiso';
+I[146][1][2][1]='NO. Traducci&#243;n muy chibcha<br />VEA P&#193;GINA 135';
+I[146][1][2][2] = 0;
+I[146][2] = 0;
+
+I[147] = new Array();
+I[147][0]='Hace varios a&#241;os muri&#243; el inigualable Frank Sinatra ';
+I[147][1] = new Array();
+I[147][1][0] = new Array();
+I[147][1][0][0]='Several years ago, the one and only Frank Sinatra died.';
+I[147][1][0][1]='';
+I[147][1][0][2] = 1;
+I[147][1][1] = new Array();
+I[147][1][1][0]='Several years ago, the only Frank Sinatra died.';
+I[147][1][1][1]='NO. <br />VEA P&#193;GINA 142';
+I[147][1][1][2] = 0;
+I[147][1][2] = new Array();
+I[147][1][2][0]='Several years ago, the inequitable Frank Sinatra died.';
+I[147][1][2][1]='NO. <br />VEA P&#193;GINA 142. Adem&#225;s "inequitable" no significa "inigualable"';
+I[147][1][2][2] = 0;
+I[147][2] = 0;
+
+I[148] = new Array();
+I[148][0]='El deber&#237;a haber llamado';
+I[148][1] = new Array();
+I[148][1][0] = new Array();
+I[148][1][0][0]='He should have called';
+I[148][1][0][1]='';
+I[148][1][0][2] = 1;
+I[148][1][1] = new Array();
+I[148][1][1][0]='He could have called';
+I[148][1][1][1]='NO. <br />VEA P&#193;GINA 48';
+I[148][1][1][2] = 0;
+I[148][1][2] = new Array();
+I[148][1][2][0]='He must have called';
+I[148][1][2][1]='NO. <br />VEA P&#193;GINA 48';
+I[148][1][2][2] = 0;
+I[148][1][3] = new Array();
+I[148][1][3][0]='He might have called';
+I[148][1][3][1]='NO. <br />VEA P&#193;GINA 48';
+I[148][1][3][2] = 0;
+I[148][2] = 0;
+
+I[149] = new Array();
+I[149][0]='Mi historia es un poco triste ';
+I[149][1] = new Array();
+I[149][1][0] = new Array();
+I[149][1][0][0]='My story is somewhat sad';
+I[149][1][0][1]='';
+I[149][1][0][2] = 1;
+I[149][1][1] = new Array();
+I[149][1][1][0]='My story is little sad';
+I[149][1][1][1]='NO. <br />Esto significa "mi historia es poco triste", lo cual es diferente VEA P&#193;GINA 95';
+I[149][1][1][2] = 0;
+I[149][1][2] = new Array();
+I[149][1][2][0]='My history is some sad';
+I[149][1][2][1]='NO. <br />VEA P&#193;GINA 95 y pie de p&#225;gina en la 43.';
+I[149][1][2][2] = 0;
+I[149][1][3] = new Array();
+I[149][1][3][0]='My history is somewhat sad';
+I[149][1][3][1]='Casi. <br />VEA PIE DE P&#193;GINA EN LA P&#193;GINA 43';
+I[149][1][3][2] = 0;
+I[149][2] = 0;
+
+I[150] = new Array();
+I[150][0]='De alguna manera yo lo voy a encontrar.';
+I[150][1] = new Array();
+I[150][1][0] = new Array();
+I[150][1][0][0]='Somehow, I\'m going to find him';
+I[150][1][0][1]='';
+I[150][1][0][2] = 1;
+I[150][1][1] = new Array();
+I[150][1][1][0]='In any way I\'m going to find him';
+I[150][1][1][1]='NO. <br />Esta construcci&#243;n est&#225; muy chibcha. El adverbio "somehow" es el adecuado. ';
+I[150][1][1][2] = 0;
+I[150][1][2] = new Array();
+I[150][1][2][0]='Some way I\'m going to find him';
+I[150][1][2][1]='NO. <br />Esta construcci&#243;n est&#225; muy chibcha. El adverbio "somehow" es el adecuado. ';
+I[150][1][2][2] = 0;
+I[150][1][3] = new Array();
+I[150][1][3][0]='Some how, I\'m going to find him';
+I[150][1][3][1]='NO. <br />Casi. El adverbio "somehow" es una sola palabra.';
+I[150][1][3][2] = 0;
+I[150][2] = 0;
+
+I[151] = new Array();
+I[151][0]='Quieres que te ayude?';
+I[151][1] = new Array();
+I[151][1][0] = new Array();
+I[151][1][0][0]='Shall I help you?';
+I[151][1][0][1]='';
+I[151][1][0][2] = 1;
+I[151][1][1] = new Array();
+I[151][1][1][0]='May I help you?';
+I[151][1][1][1]='NO. No significa exactamente lo mismo. VEA P&#193;GINA 127';
+I[151][1][1][2] = 0;
+I[151][1][2] = new Array();
+I[151][1][2][0]='Do you need some help?';
+I[151][1][2][1]='NO. No significa exactamente lo mismo. VEA P&#193;GINA 127';
+I[151][1][2][2] = 0;
+I[151][2] = 0;
+
+I[152] = new Array();
+I[152][0]='Celia Cruz fue una mujer alegre y ser&#225; recordada como tal';
+I[152][1] = new Array();
+I[152][1][0] = new Array();
+I[152][1][0][0]='Celia Cruz was a happy woman and she will be remember as such';
+I[152][1][0][1]='';
+I[152][1][0][2] = 1;
+I[152][1][1] = new Array();
+I[152][1][1][0]='Celia Cruz was a happy woman and she will be remember so';
+I[152][1][1][1]='NO. <br />VEA P&#193;GINA 139';
+I[152][1][1][2] = 0;
+I[152][1][2] = new Array();
+I[152][1][2][0]='Celia Cruz was a happy woman and she will be remember such';
+I[152][1][2][1]='NO. <br />VEA P&#193;GINA 139';
+I[152][1][2][2] = 0;
+I[152][1][3] = new Array();
+I[152][1][3][0]='Celia Cruz was a happy woman and she will be remember so such';
+I[152][1][3][1]='NO. <br />VEA P&#193;GINA 139';
+I[152][1][3][2] = 0;
+I[152][2] = 0;
+
+I[153] = new Array();
+I[153][0]='Al terminar de volar, &#233;l se fue ';
+I[153][1] = new Array();
+I[153][1][0] = new Array();
+I[153][1][0][0]='Upon finishing flying, he left';
+I[153][1][0][1]='';
+I[153][1][0][2] = 1;
+I[153][1][1] = new Array();
+I[153][1][1][0]='Upon finish fly, he left';
+I[153][1][1][1]='NO. <br />VEA P&#193;GINA 64 y P&#193;GINA 68';
+I[153][1][1][2] = 0;
+I[153][1][2] = new Array();
+I[153][1][2][0]='Upon finishing fly, he left';
+I[153][1][2][1]='NO. <br />VEA P&#193;GINA 64 y P&#193;GINA 68';
+I[153][1][2][2] = 0;
+I[153][1][3] = new Array();
+I[153][1][3][0]='Upon to finish flying, he left';
+I[153][1][3][1]='NO. <br />VEA P&#193;GINA 64 y P&#193;GINA 68';
+I[153][1][3][2] = 0;
+I[153][2] = 0;
+
+I[154] = new Array();
+I[154][0]='Yo deber&#237;a haber evitado ver la pel&#237;cula ';
+I[154][1] = new Array();
+I[154][1][0] = new Array();
+I[154][1][0][0]='I should have avoided seeing the movie';
+I[154][1][0][1]='';
+I[154][1][0][2] = 1;
+I[154][1][1] = new Array();
+I[154][1][1][0]='I should have avoided to see the movie';
+I[154][1][1][1]='NO.<br />VEA P&#193;GINA 48';
+I[154][1][1][2] = 0;
+I[154][1][2] = new Array();
+I[154][1][2][0]='I could have avoided seeing the movie';
+I[154][1][2][1]='NO.<br />VEA P&#193;GINA 48';
+I[154][1][2][2] = 0;
+I[154][1][3] = new Array();
+I[154][1][3][0]='I should have avoid to see the movie';
+I[154][1][3][1]='NO. <br />VEA P&#193;GINA 48 y 68';
+I[154][1][3][2] = 0;
+I[154][2] = 0;
+
+I[155] = new Array();
+I[155][0]='Tienes que permanecer aqu&#237; (As&#237; te lo han ordenado)';
+I[155][1] = new Array();
+I[155][1][0] = new Array();
+I[155][1][0][0]='You are to stay here';
+I[155][1][0][1]='';
+I[155][1][0][2] = 1;
+I[155][1][1] = new Array();
+I[155][1][1][0]='Stay here';
+I[155][1][1][1]='NO. Esta es una frase que transmite una orden emitida directamente por quien la pronuncia. <br />VEA P&#193;GINA 138';
+I[155][1][1][2] = 0;
+I[155][1][2] = new Array();
+I[155][1][2][0]='You should stay here';
+I[155][1][2][1]='NO.<br />VEA P&#193;GINA 138';
+I[155][1][2][2] = 0;
+I[155][2] = 0;
+
+I[156] = new Array();
+I[156][0]='Yo nunca te dejar&#233; ';
+I[156][1] = new Array();
+I[156][1][0] = new Array();
+I[156][1][0][0]='I will never leave you';
+I[156][1][0][1]='';
+I[156][1][0][2] = 1;
+I[156][1][1] = new Array();
+I[156][1][1][0]='I won\'t leave you never';
+I[156][1][1][1]='NO. <br />VEA P&#193;GINA 97';
+I[156][1][1][2] = 0;
+I[156][1][2] = new Array();
+I[156][1][2][0]='I never will leave you';
+I[156][1][2][1]='NO. <br />VEA P&#193;GINA 97';
+I[156][1][2][2] = 0;
+I[156][1][3] = new Array();
+I[156][1][3][0]='Never I will leave you';
+I[156][1][3][1]='NO. <br />VEA P&#193;GINA 97';
+I[156][1][3][2] = 0;
+I[156][2] = 0;
+
+I[157] = new Array();
+I[157][0]='El no es ni loco ni perezoso ';
+I[157][1] = new Array();
+I[157][1][0] = new Array();
+I[157][1][0][0]='He is neither crazy nor lazy';
+I[157][1][0][1]='Como no! Un alterno correcto es: "Neither he is crazy nor lazy"';
+I[157][1][0][2] = 1;
+I[157][1][1] = new Array();
+I[157][1][1][0]='He isn\'t crazy no lazy';
+I[157][1][1][1]='NO. <br />VEA P&#193;GINA 113';
+I[157][1][1][2] = 0;
+I[157][1][2] = new Array();
+I[157][1][2][0]='He isn\'t crazy not lazy';
+I[157][1][2][1]='NO. <br />VEA P&#193;GINA 113';
+I[157][1][2][2] = 0;
+I[157][1][3] = new Array();
+I[157][1][3][0]='He isn\'t crazy and he isn\'t lazy';
+I[157][1][3][1]='NO. <br />VEA P&#193;GINA 113';
+I[157][1][3][2] = 0;
+I[157][2] = 0;
+
+I[158] = new Array();
+I[158][0]='Pedro trabaja como una mula ';
+I[158][1] = new Array();
+I[158][1][0] = new Array();
+I[158][1][0][0]='Pedro works like a mule ';
+I[158][1][0][1]='';
+I[158][1][0][2] = 1;
+I[158][1][1] = new Array();
+I[158][1][1][0]='Pedro works as a mule';
+I[158][1][1][1]='NO. <br />Aqu&#237; lo que dice es que Pedro trabaja como "mula", es decir llevando droga al exterior. <br />VEA P&#193;GINA 135';
+I[158][1][1][2] = 0;
+I[158][2] = 0;
+
+I[159] = new Array();
+I[159][0]='Es importante que el sea sincero ';
+I[159][1] = new Array();
+I[159][1][0] = new Array();
+I[159][1][0][0]='It\'s important that he be sincere';
+I[159][1][0][1]='Exacto. Conoce el modo subjuntivo';
+I[159][1][0][2] = 1;
+I[159][1][1] = new Array();
+I[159][1][1][0]='It\'s important that he is sincere';
+I[159][1][1][1]='NO. <br />VEA P&#193;GINA 106';
+I[159][1][1][2] = 0;
+I[159][1][2] = new Array();
+I[159][1][2][0]='It\'s important that he will be sincere';
+I[159][1][2][1]='NO. <br />VEA P&#193;GINA 106';
+I[159][1][2][2] = 0;
+I[159][2] = 0;
+
+I[160] = new Array();
+I[160][0]='Entre m&#225;s fumo, peor me siento ';
+I[160][1] = new Array();
+I[160][1][0] = new Array();
+I[160][1][0][0]='The more I smoke, the worse I feel';
+I[160][1][0][1]='';
+I[160][1][0][2] = 1;
+I[160][1][1] = new Array();
+I[160][1][1][0]='The more I smoke, I feel worse';
+I[160][1][1][1]='NO. <br />VEA P&#193;GINA 54';
+I[160][1][1][2] = 0;
+I[160][1][2] = new Array();
+I[160][1][2][0]='When I more smoke I feel worse';
+I[160][1][2][1]='NO. <br />VEA P&#193;GINA 54';
+I[160][1][2][2] = 0;
+I[160][1][3] = new Array();
+I[160][1][3][0]='The most I smoke, the worst I feel';
+I[160][1][3][1]='NO. <br />VEA P&#193;GINA 54';
+I[160][1][3][2] = 0;
+I[160][2] = 0;
+
+I[161] = new Array();
+I[161][0]='M&#225;s que amantes, somos amigos ';
+I[161][1] = new Array();
+I[161][1][0] = new Array();
+I[161][1][0][0]='We are friends rather than lovers';
+I[161][1][0][1]='';
+I[161][1][0][2] = 1;
+I[161][1][1] = new Array();
+I[161][1][1][0]='More than lovers we are friends';
+I[161][1][1][1]='NO. <br />VEA P&#193;GINA 140';
+I[161][1][1][2] = 0;
+I[161][1][2] = new Array();
+I[161][1][2][0]='We are friends more than lovers.';
+I[161][1][2][1]='NO. <br />VEA P&#193;GINA 140';
+I[161][1][2][2] = 0;
+I[161][1][3] = new Array();
+I[161][1][3][0]='We are friends rather that lovers';
+I[161][1][3][1]='NO. <br />VEA P&#193;GINA 140';
+I[161][1][3][2] = 0;
+I[161][2] = 0;
+
+I[162] = new Array();
+I[162][0]='Yo todav&#237;a te amo';
+I[162][1] = new Array();
+I[162][1][0] = new Array();
+I[162][1][0][0]='I still love you';
+I[162][1][0][1]='Bien. No se dej&#243; confundir pues la frase est&#225; mal escrita ya que "todav&#237;a" tiene un significado propio, diferente de "a&#250;n".';
+I[162][1][0][2] = 1;
+I[162][1][1] = new Array();
+I[162][1][1][0]='Yet I love you';
+I[162][1][1][1]='NO. <br />VEA P&#193;GINA 93';
+I[162][1][1][2] = 0;
+I[162][1][2] = new Array();
+I[162][1][2][0]='I yet love you ';
+I[162][1][2][1]='NO. <br />VEA P&#193;GINA 93';
+I[162][1][2][2] = 0;
+I[162][1][3] = new Array();
+I[162][1][3][0]='I love you still';
+I[162][1][3][1]='NO. <br />VEA P&#193;GINA 96';
+I[162][1][3][2] = 0;
+I[162][2] = 0;
+
+I[163] = new Array();
+I[163][0]='Se pueden sentar (Tienen mi autorizaci&#243;n)';
+I[163][1] = new Array();
+I[163][1][0] = new Array();
+I[163][1][0][0]='You may sit';
+I[163][1][0][1]='';
+I[163][1][0][2] = 1;
+I[163][1][1] = new Array();
+I[163][1][1][0]='You can sit';
+I[163][1][1][1]='NO. <br />VEA P&#193;GINA 125';
+I[163][1][1][2] = 0;
+I[163][1][2] = new Array();
+I[163][1][2][0]='You could sit';
+I[163][1][2][1]='NO. <br />VEA P&#193;GINA 125';
+I[163][1][2][2] = 0;
+I[163][1][3] = new Array();
+I[163][1][3][0]='Sit';
+I[163][1][3][1]='NO. Esta es una frase imperativa, y la frase original no es una orden.<br />VEA P&#193;GINA 125';
+I[163][1][3][2] = 0;
+I[163][2] = 0;
+
+I[164] = new Array();
+I[164][0]='Podr&#237;a llover esta noche? ';
+I[164][1] = new Array();
+I[164][1][0] = new Array();
+I[164][1][0][0]='Might it rain tonight?';
+I[164][1][0][1]='';
+I[164][1][0][2] = 1;
+I[164][1][1] = new Array();
+I[164][1][1][0]='May it rain tonight?';
+I[164][1][1][1]='NO. <br />VEA P&#193;GINA 128';
+I[164][1][1][2] = 0;
+I[164][1][2] = new Array();
+I[164][1][2][0]='Will it rain tonight?';
+I[164][1][2][1]='NO. Esta es una simple pregunta en futuro pero no habla de probabilidad<br />VEA P&#193;GINA 128';
+I[164][1][2][2] = 0;
+I[164][2] = 0;
+
+I[165] = new Array();
+I[165][0]='Yo soy bueno para las matem&#225;ticas';
+I[165][1] = new Array();
+I[165][1][0] = new Array();
+I[165][1][0][0]='I\'m good at math';
+I[165][1][0][1]='';
+I[165][1][0][2] = 1;
+I[165][1][1] = new Array();
+I[165][1][1][0]='I\'m good for math';
+I[165][1][1][1]='No. La preposici&#243;n correcta en este caso es "at"';
+I[165][1][1][2] = 0;
+I[165][1][2] = new Array();
+I[165][1][2][0]='I\'m good in math';
+I[165][1][2][1]='No. La preposici&#243;n correcta en este caso es "at"';
+I[165][1][2][2] = 0;
+I[165][1][3] = new Array();
+I[165][1][3][0]='I\'m good on math';
+I[165][1][3][1]='No. La preposici&#243;n correcta en este caso es "at"';
+I[165][1][3][2] = 0;
+I[165][2] = 0;
+
+I[166] = new Array();
+I[166][0]='Si hubiese habido una raz&#243;n yo habr&#237;a vivido contigo ';
+I[166][1] = new Array();
+I[166][1][0] = new Array();
+I[166][1][0][0]='If there had been a reason I would have lived with you';
+I[166][1][0][1]='Bien. Esta no era "piece of cake" (f&#225;cil, chimba, tirada, pan comido o como quiera que se diga en su pa&#237;s de origen)';
+I[166][1][0][2] = 1;
+I[166][1][1] = new Array();
+I[166][1][1][0]='If there were a reason I would have lived with you';
+I[166][1][1][1]='No. Abra pregunta 14C de la p&#225;gina 58';
+I[166][1][1][2] = 0;
+I[166][1][2] = new Array();
+I[166][1][2][0]='If there was a reason I would have lived with you';
+I[166][1][2][1]='No. Abra pregunta 14C de la p&#225;gina 58';
+I[166][1][2][2] = 0;
+I[166][1][3] = new Array();
+I[166][1][3][0]='If there was a reason I would live with you';
+I[166][1][3][1]='No.Abra pregunta 14C de la p&#225;gina 58 y adem&#225;s revise uso del "21" would en la p&#225;gina 21.';
+I[166][1][3][2] = 0;
+I[166][2] = 0;
+
+I[167] = new Array();
+I[167][0]='Esperar&#233; dos minutos m&#225;s';
+I[167][1] = new Array();
+I[167][1][0] = new Array();
+I[167][1][0][0]='I\'ll wait two more minutes';
+I[167][1][0][1]='';
+I[167][1][0][2] = 1;
+I[167][1][1] = new Array();
+I[167][1][1][0]='I\'ll wait two minutes more';
+I[167][1][1][1]='No. Este no es el orden; el adverbio "more" va antes del sustantivo.';
+I[167][1][1][2] = 0;
+I[167][2] = 0;
+
+I[168] = new Array();
+I[168][0]='Qu&#233; actriz!<br />';
+I[168][1] = new Array();
+I[168][1][0] = new Array();
+I[168][1][0][0]='What an actres!<br />';
+I[168][1][0][1]='';
+I[168][1][0][2] = 1;
+I[168][1][1] = new Array();
+I[168][1][1][0]='What a actres!<br />';
+I[168][1][1][1]='NO. VEA P&#193;GINA 144. Adem&#225;s el art&#237;culo indeterminado no es el correcto.<br />';
+I[168][1][1][2] = 0;
+I[168][1][2] = new Array();
+I[168][1][2][0]='What actress!<br />';
+I[168][1][2][1]='NO. VEA P&#193;GINA 144. ';
+I[168][1][2][2] = 0;
+I[168][2] = 0;
+
+I[169] = new Array();
+I[169][0]='Yo ni siquiera vi la pel&#237;cula<br />';
+I[169][1] = new Array();
+I[169][1][0] = new Array();
+I[169][1][0][0]='Not even I, saw the movie';
+I[169][1][0][1]='NO. Esto significa "ni siquiera yo vi la pel&#237;cula" que no es lo mismo. VEA P&#193;GINA 147<br />';
+I[169][1][0][2] = 0;
+I[169][1][1] = new Array();
+I[169][1][1][0]='I didn\'t even see the movie<br />';
+I[169][1][1][1]='';
+I[169][1][1][2] = 1;
+I[169][2] = 0;
+
+I[170] = new Array();
+I[170][0]='Qu&#233; buenos actores!<br />';
+I[170][1] = new Array();
+I[170][1][0] = new Array();
+I[170][1][0][0]='What a good actors!<br />';
+I[170][1][0][1]='NO. VEA P&#193;GINA 144<br />';
+I[170][1][0][2] = 0;
+I[170][1][1] = new Array();
+I[170][1][1][0]='What good actors!<br />';
+I[170][1][1][1]='';
+I[170][1][1][2] = 1;
+I[170][2] = 0;
+
+I[171] = new Array();
+I[171][0]='Descansaste suficientemente?<br />';
+I[171][1] = new Array();
+I[171][1][0] = new Array();
+I[171][1][0][0]='Enough did you rest?';
+I[171][1][0][1]='NO. VEA P&#193;GINA 146';
+I[171][1][0][2] = 0;
+I[171][1][1] = new Array();
+I[171][1][1][0]='Did you rest enough?<br />';
+I[171][1][1][1]='';
+I[171][1][1][2] = 1;
+I[171][1][2] = new Array();
+I[171][1][2][0]='Did you enough rest?<br />';
+I[171][1][2][1]='NO. VEA P&#193;GINA 146';
+I[171][1][2][2] = 0;
+I[171][2] = 0;
+
+I[172] = new Array();
+I[172][0]='Yo prefiero volar en lugar de estudiar ';
+I[172][1] = new Array();
+I[172][1][0] = new Array();
+I[172][1][0][0]='I prefer to fly rather than to study';
+I[172][1][0][1]='NO. VEA P&#193;GINA 140<br />';
+I[172][1][0][2] = 0;
+I[172][1][1] = new Array();
+I[172][1][1][0]='I prefer to fly rather than study';
+I[172][1][1][1]='';
+I[172][1][1][2] = 1;
+I[172][1][2] = new Array();
+I[172][1][2][0]='I prefer to fly instead of study<br />';
+I[172][1][2][1]='NO. VEA P&#193;GINA 140<br />';
+I[172][1][2][2] = 0;
+I[172][2] = 0;
+
+I[173] = new Array();
+I[173][0]='Es que nunca escuchas?';
+I[173][1] = new Array();
+I[173][1][0] = new Array();
+I[173][1][0][0]='Is that you never listen?<br />';
+I[173][1][0][1]='Grave!. VEA P&#193;GINA 144. Qu&#233; construcci&#243;n tan rebuscada!<br />';
+I[173][1][0][2] = 0;
+I[173][1][1] = new Array();
+I[173][1][1][0]='Don&#180;t you listen?<br />';
+I[173][1][1][1]='NO. VEA P&#193;GINA 144. Esto significa "no escuchas" que no es lo mismo.<br />';
+I[173][1][1][2] = 0;
+I[173][1][2] = new Array();
+I[173][1][2][0]='Don&#180;t you ever listen?';
+I[173][1][2][1]='';
+I[173][1][2][2] = 1;
+I[173][2] = 0;
+
+I[174] = new Array();
+I[174][0]='Incluso mi mam&#225; sabe la verdad';
+I[174][1] = new Array();
+I[174][1][0] = new Array();
+I[174][1][0][0]='Inclusive my mother knows the truth<br />';
+I[174][1][0][1]='NO. No invente! VEA P&#193;GINA 146';
+I[174][1][0][2] = 0;
+I[174][1][1] = new Array();
+I[174][1][1][0]='My mother knows even the truth<br />';
+I[174][1][1][1]='NO. VEA P&#193;GINA 146<br />';
+I[174][1][1][2] = 0;
+I[174][1][2] = new Array();
+I[174][1][2][0]='My mother even knows the truth';
+I[174][1][2][1]='NO. VEA P&#193;GINA 146<br />';
+I[174][1][2][2] = 0;
+I[174][1][3] = new Array();
+I[174][1][3][0]='Even my mother knows the truth';
+I[174][1][3][1]='';
+I[174][1][3][2] = 1;
+I[174][2] = 0;
+
+I[175] = new Array();
+I[175][0]='No te hab&#237;a visto desde que tenias 15 a&#241;os.<br />';
+I[175][1] = new Array();
+I[175][1][0] = new Array();
+I[175][1][0][0]='I haven\'t seen you ever since you were fifteen';
+I[175][1][0][1]='';
+I[175][1][0][2] = 1;
+I[175][1][1] = new Array();
+I[175][1][1][0]='I haven\'t seen you ever since you were fifteen';
+I[175][1][1][1]='NO. VEA P&#193;GINA 109<br />';
+I[175][1][1][2] = 0;
+I[175][1][2] = new Array();
+I[175][1][2][0]=' haven\'t seen you ever since you were fifteen years old.';
+I[175][1][2][1]='NO. VEA P&#193;GINA 109. Cay&#243; en la "cascarita" que le puse.';
+I[175][1][2][2] = 0;
+I[175][2] = 0;
+
+I[176] = new Array();
+I[176][0]='Have you visited New york?<br />________________';
+I[176][1] = new Array();
+I[176][1][0] = new Array();
+I[176][1][0][0]='Not ever';
+I[176][1][0][1]='';
+I[176][1][0][2] = 1;
+I[176][1][1] = new Array();
+I[176][1][1][0]='Not never';
+I[176][1][1][1]='NO. VEA P&#193;GINA 144 No se pueden dos ideas negativas en una oraci&#243;n.';
+I[176][1][1][2] = 0;
+I[176][1][2] = new Array();
+I[176][1][2][0]='Ever';
+I[176][1][2][1]='NO. VEA P&#193;GINA 144<br />';
+I[176][1][2][2] = 0;
+I[176][2] = 0;
+
+I[177] = new Array();
+I[177][0]='Mi carro es lo suficientemente bueno para m&#237;.<br />';
+I[177][1] = new Array();
+I[177][1][0] = new Array();
+I[177][1][0][0]='My car is good enough for me';
+I[177][1][0][1]='';
+I[177][1][0][2] = 1;
+I[177][1][1] = new Array();
+I[177][1][1][0]='My car is for me enough good ';
+I[177][1][1][1]='NO. VEA P&#193;GINA 146<br />';
+I[177][1][1][2] = 0;
+I[177][1][2] = new Array();
+I[177][1][2][0]='My car is enoughly good for me<br />';
+I[177][1][2][1]='NO. VEA P&#193;GINA 146. El adverbio "enoughly" no existe.';
+I[177][1][2][2] = 0;
+I[177][2] = 0;
+
+I[178] = new Array();
+I[178][0]='Tu ni siquiera debes trabajar';
+I[178][1] = new Array();
+I[178][1][0] = new Array();
+I[178][1][0][0]='Don\'t you ever work';
+I[178][1][0][1]='NO. VEA P&#193;GINA 146. No es lo mismo.<br />Esto es algo similar a "Ni se le ocurra trabajar"';
+I[178][1][0][2] = 0;
+I[178][1][1] = new Array();
+I[178][1][1][0]='Even you musn\'t work<br />';
+I[178][1][1][1]='NO. VEA P&#193;GINA 146';
+I[178][1][1][2] = 0;
+I[178][1][2] = new Array();
+I[178][1][2][0]='You musn\'t even work<br />';
+I[178][1][2][1]='';
+I[178][1][2][2] = 1;
+I[178][2] = 0;
+
+I[179] = new Array();
+I[179][0]='Ni siquiera Pedro la conoc&#237;a';
+I[179][1] = new Array();
+I[179][1][0] = new Array();
+I[179][1][0][0]='Pedro didn\'t even know her<br />';
+I[179][1][0][1]='';
+I[179][1][0][2] = 1;
+I[179][1][1] = new Array();
+I[179][1][1][0]='Not even Peter, knew her<br />';
+I[179][1][1][1]='NO. Esto quiero decir que "Pedro ni siquiera la conoc&#237;a" que no es lo mismo que se le pregunta VEA P&#193;GINA 147<br />';
+I[179][1][1][2] = 0;
+I[179][1][2] = new Array();
+I[179][1][2][0]='Pedro didn\'t know her even<br />';
+I[179][1][2][1]='NO. VEA P&#193;GINA 147<br />';
+I[179][1][2][2] = 0;
+I[179][2] = 0;
+
+I[180] = new Array();
+I[180][0]='Yo preferir&#225; estudiar en Cali<br />';
+I[180][1] = new Array();
+I[180][1][0] = new Array();
+I[180][1][0][0]='I would prefer study in Cali<br />';
+I[180][1][0][1]='NO.Le falta la part&#237;cula "to" antes del verbo. VEA P&#193;GINA 113<br />';
+I[180][1][0][2] = 0;
+I[180][1][1] = new Array();
+I[180][1][1][0]='I would rather to study in Cali';
+I[180][1][1][1]='NO. Le sobra la part&#237;cula "to" antes del verbo VEA P&#193;GINA 113<br />';
+I[180][1][1][2] = 0;
+I[180][1][2] = new Array();
+I[180][1][2][0]='I would rather study in Cali<br />';
+I[180][1][2][1]='';
+I[180][1][2][2] = 1;
+I[180][2] = 0;
+
+I[181] = new Array();
+I[181][0]='Ellos todos son muy amigables';
+I[181][1] = new Array();
+I[181][1][0] = new Array();
+I[181][1][0][0]='All they are very friendly';
+I[181][1][0][1]='NO. VEA P&#193;GINA 145<br />';
+I[181][1][0][2] = 0;
+I[181][1][1] = new Array();
+I[181][1][1][0]='They are very friendly all';
+I[181][1][1][1]='NO. VEA P&#193;GINA 145<br />';
+I[181][1][1][2] = 0;
+I[181][1][2] = new Array();
+I[181][1][2][0]='They are all very friendly<br />';
+I[181][1][2][1]='';
+I[181][1][2][2] = 1;
+I[181][1][3] = new Array();
+I[181][1][3][0]='They all are very friendly';
+I[181][1][3][1]='NO. VEA P&#193;GINA 145<br />';
+I[181][1][3][2] = 0;
+I[181][2] = 0;
+
+
+Status = new Array();
+
+
+function CreateStatusArrays(){
+	for (var x=0; x<I.length; x++){
+		Status[x] = new Array();
+		Status[x][0] = 0; // Question not done yet
+		Status[x][1] = new Array(); //for tracking whether answers chosen
+		for (var y=0; y<I[x][1].length; y++){
+			Status[x][1][y] = '0'; //Answers not chosen yet
+		}
+		Status[x][2] = 0; //Wrong tries at this question so far
+		Status[x][3] = 0; //Score for this question, out of one
+	}
+}
+
+function UpdateQuestionStatus(QNum){
+	if (Status[QNum][2] >= Status[QNum][1].length-1){
+		Status[QNum][0] = 1;
+		for (var i=0; i<Status[QNum][1].length; i++){
+			if (Status[QNum][1][i] == '0'){
+				Status[QNum][1][i] = 'R';
+			}
+		}
+	}
+}
+
+function ReplaceStuff(Token, Replacement, InString){
+	var i = InString.indexOf(Token);
+	var FirstBit = '';
+	var LastBit = '';
+	while (i>-1){
+		FirstBit = InString.substring(0, i);
+		LastBit = InString.substring(i + Token.length, InString.length);	
+		InString = FirstBit + Replacement + LastBit;
+		i = InString.indexOf(Token);
+	}
+	return InString;
+}
+
+function ChangeQ(ChangeBy){
+	var NewNum = CurrQNum + ChangeBy;
+	if ((NewNum >= 0)&&(NewNum<I.length)){
+		CurrQNum = NewNum;
+		ShowQuestion(CurrQNum);
+		CalculateScore();
+		if (ContinuousScoring == true){
+			var CurrScore = YourScoreIs + ' ' + Score + '%.';
+			WriteScore(CurrScore);
+		}
+	}
+}
+
+function BuildQuestion(QNum){
+	if (I[QNum][2] == 0){
+		var Temp = ReplaceStuff('[Question]', I[QNum][0], QRow);
+
+		var AnsRows = '';
+		for (var i=0; i<I[QNum][1].length; i++){
+			TempAns = ARow;
+			TempAns = ReplaceStuff('[ANum]', i, TempAns);
+			TempAns = ReplaceStuff('[ALetter]', ' ' + ALetters.charAt(i) + ' ', TempAns);
+			TempAns = ReplaceStuff('[Ans]', I[QNum][1][i][0], TempAns);
+			TempAns = ReplaceStuff('[Feedback]', I[QNum][1][i][1], TempAns);
+			AnsRows += TempAns;
+		}
+		Temp += AnsRows;
+		Temp = ReplaceStuff('[QNumber]', QNum+1, Temp);
+		Temp = ReplaceStuff('[QNum]', QNum, Temp);
+	}
+	else{
+		var Temp = ReplaceStuff('[Question]', I[QNum][0], QRow);
+		var AnsRows = '';
+		for (var i=0; i<I[QNum][1].length; i++){
+			TempAns = MARow;
+			TempAns = ReplaceStuff('[ANum]', i, TempAns);
+			TempAns = ReplaceStuff('[Correct]', I[QNum][1][i][2], TempAns);
+			TempAns = ReplaceStuff('[Ans]', I[QNum][1][i][0], TempAns);
+			AnsRows += TempAns;
+		}
+		Temp += AnsRows;
+		Temp += CheckButton;
+		Temp = ReplaceStuff('[QNumber]', QNum+1, Temp);
+		Temp = ReplaceStuff('[QNum]', QNum, Temp);
+	}
+	return Temp;
+}
+
+function DisplayExercise(StuffToDisplay){
+	document.getElementById('MainDiv').innerHTML = StuffToDisplay;
+
+	RefreshImages();
+
+}
+
+function ShowQuestion(QNum){
+//First, create the Q number readout at the top
+	var Readout = (QNum+1) + '/' + I.length;
+	while (Readout.length < 7){
+		Readout = ' ' + Readout + ' ';
+	}
+	Readout = QButtonsOpener + Readout + QButtonsCloser;
+
+	var Output = BuildQuestion(QNum);
+
+	Output = TableOpener + Output + TableCloser;
+
+	DisplayExercise(Readout + Output);
+
+//Mark the answers already done
+	for (i=0; i<Status[QNum][1].length; i++){
+		if (Status[QNum][1][i] == 'R'){
+
+			MarkAnswer(QNum,i,true,false)
+		}
+		if (Status[QNum][1][i] == 'W'){
+			MarkAnswer(QNum,i,false,false)
+		}
+		if (Status[QNum][1][i] == 'C'){
+			CheckCheckbox(QNum,i);
+		}
+	}
+
+//Set the focus
+	document.getElementById('NextQButton').focus();
+}
+
+function CheckMulti(QNum){
+	var TotWrong = 0;
+	var Output = '';
+	var TotAns = I[QNum][1].length;
+	for (var i=TotAns-1; i>=0; i--){
+//Find any incorrect choices
+
+		var b = eval('document.QForm.A_' + QNum + '_' + i);
+
+		if (b != null){
+//if it's wrong, count it
+			if (b.checked == true){
+				Status[QNum][1][i] = 'C';
+			}
+			else{
+				Status[QNum][1][i] = 'U';
+			}
+			if (((b.checked == true) && (b.value == "0"))||((b.checked == false)&&(b.value == "1"))){
+				TotWrong++;
+			}
+		}				
+	}
+
+	if (TotWrong == 0){
+		Output = DefaultRight;
+	}
+	else{
+		Output = DefaultWrong + '<br />' + (TotAns-TotWrong) + '/' + TotAns;
+	}
+
+//If you haven't tried the question before
+	if (Status[QNum][0] == 0){
+		if (TotWrong > 0){
+			Status[QNum][2]++;
+		}
+		if (TotWrong == 0){
+			Status[QNum][0] = 1;
+//Calculate the score for this question as a floating-point fraction of 1
+			Status[QNum][3] =  ((Status[QNum][1].length - Status[QNum][2]) - 1) / (Status[QNum][1].length - 1);
+//If less than zero, set to zero
+			if (Status[QNum][3] < 0){Status[QNum][3] = 0;}
+		}
+	}
+
+//Check whether the quiz is finished
+	Finished = true;
+	for (var i=0; i<Status.length; i++){
+		if (Status[i][0] == 0){Finished = false;}
+	}
+
+//Calculate the score if needed
+		
+		
+	if (Status[QNum][0] == 1){
+		if ((Finished==true)||(ContinuousScoring==true)){
+			CalculateScore();
+			var CurrScore = YourScoreIs + ' ' + Score + '%.';
+			Output = Output + '<br />' + CurrScore;
+			WriteScore(CurrScore);
+		}
+
+		if (Finished == true){
+			var CFT = 0;
+			for (i=0; i<I.length; i++){
+				if (Status[i][2] == 0){
+					CFT++;
+				}
+
+
+			}
+			Output += '<br />' + CorrectFirstTime + CFT + '/' + I.length;
+			WriteToInstructions(Output);
+
+
+			setTimeout('Finish()', SubmissionTimeout);
+		}
+	}
+
+//Show the feedback
+	if (Output.length > 0){
+		WriteFeedback(Output);
+	}
+}
+
+function CheckAnswer(QNum, ANum){
+	var Output = I[QNum][1][ANum][1];
+
+	if (Output==''){
+		if (I[QNum][1][ANum][2] == 1){
+			Output = DefaultRight;
+		}
+		else{
+			Output = DefaultWrong;
+		}
+	}
+
+//If it's not been previously answered correctly
+	if (Status[QNum][0] == 0){
+//If it's a correct answer
+		if (I[QNum][1][ANum][2] == 1){
+			Status[QNum][0] = 1;//Mark the Q as done
+			Status[QNum][1][ANum] = 'R';
+			MarkAnswer(QNum, ANum, true);
+//Calculate the score for this question as a floating-point fraction of 1
+			var PossibleWrongs = 0;
+			for (var i=0; i<I[QNum][1].length; i++){
+				if (I[QNum][1][i][2] == 0){
+					PossibleWrongs++;
+				}
+			}
+
+			if (PossibleWrongs == 0){PossibleWrongs = 1;}
+
+			Status[QNum][3] = 1 - (Status[QNum][2]/PossibleWrongs);
+
+//If less than zero, set to zero
+			if (Status[QNum][3] < 0){Status[QNum][3] = 0;}
+		}
+		else{
+			if (Status[QNum][1][ANum] != 'W'){
+				Status[QNum][1][ANum] = 'W';
+				MarkAnswer(QNum, ANum, false);
+				Status[QNum][2]++; //increment wrong tries for this Q
+			}
+		}
+	}
+
+	UpdateQuestionStatus(QNum);
+
+//Check whether the quiz is finished
+	Finished = true;
+	for (var i=0; i<Status.length; i++){
+		if (Status[i][0] == 0){Finished = false;}
+	}
+
+//Calculate the score if needed
+		
+	if (Status[QNum][0] == 1){
+		if ((Finished==true)||(ContinuousScoring==true)){
+			CalculateScore();
+			var CurrScore = YourScoreIs + ' ' + Score + '%.';
+			Output = Output + '<br />' + CurrScore;
+			WriteScore(CurrScore);
+		}
+
+		if (Finished == true){
+			var CFT = 0;
+			for (i=0; i<I.length; i++){
+				if (Status[i][2] == 0){
+					CFT++;
+				}
+			}
+			Output += '<br />' + CorrectFirstTime + CFT + '/' + I.length;
+			WriteToInstructions(Output);
+			CurrScore = YourScoreIs + ' ' + Score + '%.';
+			WriteScore(CurrScore);
+
+
+			setTimeout('Finish()', SubmissionTimeout);
+		}
+	}
+
+//Show the feedback
+	if (Output.length > 0){
+		WriteFeedback(Output);
+	}
+}
+
+function CalculateScore(){
+	var TriedQs = 0;
+	var TotalScore = 0;
+	for (var i=0; i<Status.length; i++){
+		if ((Status[i][2] > 0)||(Status[i][3] == 1)){
+			TriedQs++;
+			TotalScore += Status[i][3];
+		}
+	}
+	if (TriedQs == 0){
+		Score = 0;
+	}
+	else{
+		Score = (Math.floor(100 * (TotalScore/TriedQs)));
+	}
+}
+
+function MarkAnswer(QNum, ANum, Right, Done){
+	if (Done == false){
+		var Mark = CorrectIndicator;
+		if (Right == false){Mark = IncorrectIndicator;}
+		document.getElementById('FB_' + QNum + '_' + ANum).innerHTML = Mark;
+	}
+	else{
+		if (Right == false){
+			document.getElementById('FB_' + QNum + '_' + ANum).innerHTML = IncorrectIndicator;
+		}
+		else{
+			document.getElementById('FB_' + QNum + '_' + ANum).innerHTML = CorrectIndicator;
+		}
+	}
+}
+
+function CheckCheckbox(QNum, ANum){
+	if (eval('document.QForm.A_' + QNum + '_' + ANum) != null){
+		eval('document.QForm.A_' + QNum + '_' + ANum).checked = true;
+
+	}
+}
+
+
+function ShowReading(){
+	document.getElementById('ReadingDiv').innerHTML = TempReading;
+	document.getElementById('NextQButton').focus();
+
+//	if (is.ns){window.resizeBy(1,0);window.resizeBy(-1,0);;}
+
+	RefreshImages();
+
+}
+
+
+
+
+
+
+function Finish(){
+//If there's a form, fill it out and submit it
+	if (document.store != null){
+		Frm = document.store;
+		Frm.starttime.value = HPNStartTime;
+		Frm.endtime.value = (new Date()).getTime();
+		Frm.mark.value = Score;
+		Frm.submit();
+	}
+}
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+<!-- <body>Fool those dumb ad-inserting ISPs</body> -->
+
+<body onload="StartUp()" id="TheBody">
+
+<!-- BeginTopNavButtons -->
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<b>
+	<span class="ExerciseTitle"><font color="#FF0000">"RESUMEN AVANZADO "</font></span><font color="#FF0000"><br />
+	</font></b>
+	<span class="ExerciseSubtitle"></span><br />
+</div>
+
+
+
+<div id="InstructionsDiv" class="StdDiv">
+	<p style="background: #BFFFBF"><span style="font-family:Arial;color:black">
+	Este ejercicio contiene expresiones aparentemente fáciles y que son de uso 
+	común en cualquier conversación pero a la hora de traducirlas nos hacen 
+	&quot;patinar&quot;.<br>
+	Si su respuesta es errónea repase en <b><i>la página indicada</i></b> en 
+	cada caso. No necesita cerrar el ejercicio para abrir el manual. <br>
+	Si después de hacerlo se considera un <b>&quot;duro&quot;,</b> haga&nbsp;el ejercicio
+	</span><b><span style="font-family:Arial;color:red">&quot;LA HORA DE LA VERDAD&quot;
+	</span></b><span style="font-family:Arial;color:black">que es similar pero 
+	en el ya no encontrará opciones sino que usted debe digitar la respuesta. 
+	(Tal como en la vida real!)</span></div>
+
+
+<div class="LeftContainer">
+
+	<div id="Reading" class="StdDiv">
+
+
+
+		<div id="ReadingDiv">
+<span class="ExerciseTitle">EJERCICIO DE RETROALIMENTACI&Oacute;N INTERACTIVA</span><br /><br /><p><center><img src="nova.GIF" alt="nova.GIF" width="200" height="109" border="0"></img></center><br />Javascript. Ricardo Pay&aacute;n 2003</p>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="RightContainer">
+
+	<div id="ScoreDiv" class="StdDiv">
+&nbsp;
+	</div>
+
+
+	<div id="MainDiv" class="StdDiv">
+&nbsp;
+	</div>
+
+
+</div>
+
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FunctionButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>

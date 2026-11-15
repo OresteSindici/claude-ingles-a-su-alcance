@@ -1,0 +1,2705 @@
+<?xml version="1.0"?>
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+       <html xmlns="http://www.w3.org/1999/xhtml"
+             xml:lang="en"><head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to jairo alberto payan."></meta><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"></meta>
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC:Creator" content="UNREGISTERED" />
+<meta name="DC:Title" content="LA HORA DE LA VERDAD&lt;center&gt;&lt;img src=&quot;../Ejercicios Internet/PRUEBA.GIF&quot; alt=&quot;PRUEBA.GIF&quot; width=&quot;361&quot; height=&quot;80&quot; border=&quot;0&quot;&gt;&lt;/img&gt;&lt;/center&gt;" />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+<title>
+LA HORA DE LA VERDAD
+</title>
+
+<!-- Made with executable version 6.0 Release 3 Build 1 -->
+
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+
+
+<style type="text/css">
+
+
+/* This is the CSS stylesheet used in the exercise. */
+/* Elements in square brackets are replaced by data based on configuration settings when the exercise is built. */
+
+
+body{
+	font-family: COMIC SANS,Arial;
+	background-color: #a6a6a6;
+	color: #00000d;
+	background-image: url(../Backup/Mis documentos/CURSO INGLES BASE/Ejercicios Internet/nova.GIF); 
+	margin-right: 5%;
+	margin-left: 5%;
+	font-size: small;
+}
+
+p{
+	text-align: left;
+	margin: 0px;
+	font-size: small;
+}
+
+div,span,td{
+	font-size: small;
+	color: #00000d;
+}
+
+.RTLText{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", COMIC SANS,Arial; 
+}
+
+.CentredRTLText{
+	text-align: center;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", COMIC SANS,Arial; 
+}
+
+button p.RTLText{
+	text-align: center;
+}
+
+.RTLGapBox{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Times New Roman", COMIC SANS,Arial;
+}
+
+.Guess{
+	font-weight: bold;
+}
+
+.CorrectAnswer{
+	font-weight: bold;
+}
+
+div.Titles{
+	padding: 10px;
+	text-align: center;
+	color: #000000;
+}
+
+button{
+	display: inline;
+}
+
+.ExerciseTitle{
+	font-size: large;
+	color: #000000;
+}
+
+.ExerciseSubtitle{
+	color: #000000;
+}
+
+div#Timer{
+	padding: 6px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+span#TimerText{
+	padding: 6px;
+	border-width: 1px;
+	border-style: solid;
+	font-weight: bold;
+	display: none;
+}
+
+span.Instructions{
+
+}
+
+div.ExerciseText{
+
+}
+
+.FeedbackText{
+	color: #000000;
+}
+
+span.LeftItem{
+	font-size: small;
+	color: #00000d;
+}
+
+span.RightItem{
+	font-weight: bold;
+	font-size: small;
+	color: #00000d;
+}
+
+span.CorrectMark{
+
+}
+
+div.Feedback {
+	background-color: #a6a6a6;
+	left: 33%;
+	width: 34%;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: small;
+}
+
+
+
+
+div.ExerciseDiv{
+	color: #00000d;
+}
+
+/* JMatch flashcard styles */
+table.FlashcardTable{
+	background-color: transparent;
+	color: #00000d;
+	border-color: #00000d;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 90%;
+	position: relative;
+	align: center;
+	padding: 0px;
+}
+
+table.FlashcardTable tr{
+	border-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: #a0cdde;
+}
+
+table.FlashcardTable td.Showing{
+	font-size: large;
+	text-align: center;
+	width: 50%;
+	display: table-cell;
+	padding: 2em;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	color: #00000d;
+	background-color: #a0cdde;
+}
+
+table.FlashcardTable td.Hidden{
+	display: none;
+}
+
+/* JMix styles */
+div#SegmentDiv{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+a.ExSegment{
+	font-size: medium;
+	font-weight: bold;
+	text-decoration: none;
+	color: #00000d;
+}
+
+span.RemainingWordList{
+	font-style: italic;
+}
+
+div.DropLine {
+	position: absolute;
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	width: 80%;
+}
+
+/* JCloze styles */
+
+input{
+	font-family: COMIC SANS,Arial;
+	font-size: larger;
+}
+
+.ClozeWordList{
+	text-align: center;
+	font-weight: bold;
+}
+
+div.ClozeBody{
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	line-height: 2.0
+}
+
+span.GapSpan{
+	font-weight: bold;
+}
+
+/* JCross styles */
+
+table.CrosswordGrid{
+	margin: auto auto 1em auto;
+	border-collapse: collapse;
+	padding: 0px;
+}
+
+table.CrosswordGrid td{
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	font-size: large;
+	padding: 0px;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+}
+
+table.CrosswordGrid td.BlankCell{
+	background-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid td.LetterOnlyCell{
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+}
+
+table.CrosswordGrid td.NumLetterCell{
+	text-align: left;
+	vertical-align: top;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 1px;
+	font-weight: bold;
+}
+
+.NumLetterCellText{
+	cursor: pointer;
+}
+
+.GridNum{
+	vertical-align: super;
+	font-size: x-small;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+table#Clues{
+	margin: auto;
+	vertical-align: top;
+}
+
+table#Clues td{
+	vertical-align: top;
+}
+
+table.ClueList{
+  margin: auto;
+}
+
+td.ClueNum{
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+td.Clue{
+	text-align: left;
+}
+
+div#ClueEntry{
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+/* Keypad styles */
+
+div.Keypad{
+	text-align: center;
+}
+
+div.Keypad button{
+	font-family: COMIC SANS,Arial;
+	font-size: 120%;
+	background-color: #ffffff;
+	color: #000000;
+	width: 2em;
+}
+
+/* JQuiz styles */
+
+div.QuestionNavigation{
+	text-align: center;
+}
+
+.QNum{
+	margin: 0em 1em 0.5em 1em;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+textarea{
+	font-family: COMIC SANS,Arial;
+	font-size: larger;
+}
+
+.QuestionText{
+
+}
+
+.Answer{
+	font-size: 120%;
+	letter-spacing: 0.1em;
+}
+
+.Highlight{
+	color: #000000;
+	background-color: #ffff00;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+ol.QuizQuestions{
+	text-align: left;
+	list-style-type: none;
+}
+
+li.QuizQuestion{
+	padding: 1em;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+
+ol.MCAnswers{
+	text-align: left;
+	list-style-type: upper-alpha;
+	padding: 1em;
+}
+
+ol.MCAnswers li{
+	margin-bottom: 1em;
+}
+
+ol.MSelAnswers{
+	text-align: left;
+	list-style-type: lower-alpha;
+	padding: 1em;
+}
+
+div.ShortAnswer{
+	padding: 1em;
+}
+
+div.StdDiv{
+	background-color: #a0cdde;
+	text-align: center;
+	font-size: small;
+	color: #00000d;
+	padding: 8px;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #00000d;
+	margin: 1px;
+}
+
+.FuncButton {
+	text-align: center;
+	border-style: solid;
+
+	border-left-color: #cfe6ee;
+	border-top-color: #cfe6ee;
+	border-right-color: #50666f;
+	border-bottom-color: #50666f;
+	color: #00000d;
+	background-color: #a0cdde;
+
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+.FuncButtonUp {
+	color: #a0cdde;
+	text-align: center;
+	border-style: solid;
+
+	border-left-color: #cfe6ee;
+	border-top-color: #cfe6ee;
+	border-right-color: #50666f;
+	border-bottom-color: #50666f;
+
+	background-color: #00000d;
+	color: #a0cdde;
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+.FuncButtonDown {
+	color: #a0cdde;
+	text-align: center;
+	border-style: solid;
+
+	border-left-color: #50666f;
+	border-top-color: #50666f;
+	border-right-color: #cfe6ee;
+	border-bottom-color: #cfe6ee;
+	background-color: #00000d;
+	color: #a0cdde;
+
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+/*BeginNavBarStyle*/
+
+div.NavButtonBar{
+	background-color: #0080ff;
+	text-align: center;
+	margin: 2px 0px 2px 0px;
+	clear: both;
+	font-size: small;
+}
+
+.NavButton {
+	border-style: solid;
+	
+	border-left-color: #7fbfff;
+	border-top-color: #7fbfff;
+	border-right-color: #00407f;
+	border-bottom-color: #00407f;
+	background-color: #0080ff;
+	color: #000000;
+
+	border-width: 2px;
+	cursor: pointer;	
+}
+
+.NavButtonUp {
+	border-style: solid;
+
+	border-left-color: #7fbfff;
+	border-top-color: #7fbfff;
+	border-right-color: #00407f;
+	border-bottom-color: #00407f;
+	color: #0080ff;
+	background-color: #000000;
+
+	border-width: 2px;
+	cursor: pointer;	
+}
+
+.NavButtonDown {
+	border-style: solid;
+
+	border-left-color: #00407f;
+	border-top-color: #00407f;
+	border-right-color: #7fbfff;
+	border-bottom-color: #7fbfff;
+	color: #0080ff;
+	background-color: #000000;
+
+	border-width: 2px;
+	cursor: pointer;	
+}
+
+/*EndNavBarStyle*/
+
+a{
+	color: #0000ff;
+}
+
+a: visited{
+	color: #0000cc;
+}
+
+a:hover{
+	color: #0000ff;
+}
+
+div.CardStyle {
+	position: absolute;
+	font-family: COMIC SANS,Arial;
+	font-size: small;
+	padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+	color: #00000d;
+	background-color: #a0cdde;
+	left: -50px;
+	top: -50px;
+	overflow: visible;
+}
+
+.rtl{
+	text-align: right;
+	font-size: large;
+}
+
+
+</style>
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+<!--
+
+
+function Client(){
+//if not a DOM browser, hopeless
+	this.min = false; if (document.getElementById){this.min = true;};
+
+	this.ua = navigator.userAgent;
+	this.name = navigator.appName;
+	this.ver = navigator.appVersion;  
+
+//Get data about the browser
+	this.mac = (this.ver.indexOf('Mac') != -1);
+	this.win = (this.ver.indexOf('Windows') != -1);
+
+//Look for Gecko
+	this.gecko = (this.ua.indexOf('Gecko') > 1);
+	if (this.gecko){
+		this.geckoVer = parseInt(this.ua.substring(this.ua.indexOf('Gecko')+6, this.ua.length));
+		if (this.geckoVer < 20020000){this.min = false;}
+	}
+	
+//Look for Firebird
+	this.firebird = (this.ua.indexOf('Firebird') > 1);
+	
+//Look for Safari
+	this.safari = (this.ua.indexOf('Safari') > 1);
+	if (this.safari){
+		this.gecko = false;
+	}
+	
+//Look for IE
+	this.ie = (this.ua.indexOf('MSIE') > 0);
+	if (this.ie){
+		this.ieVer = parseFloat(this.ua.substring(this.ua.indexOf('MSIE')+5, this.ua.length));
+		if (this.ieVer < 5.5){this.min = false;}
+	}
+	
+//Look for Opera
+	this.opera = (this.ua.indexOf('Opera') > 0);
+	if (this.opera){
+		this.operaVer = parseFloat(this.ua.substring(this.ua.indexOf('Opera')+6, this.ua.length));
+		if (this.operaVer < 7.04){this.min = false;}
+	}
+	if (this.min == false){
+		alert('Your browser may not be able to handle this page.');
+	}
+	
+//Special case for the horrible ie5mac
+	this.ie5mac = (this.ie&&this.mac&&(this.ieVer<6));
+}
+
+var C = new Client();
+
+//for (prop in C){
+//	alert(prop + ': ' + C[prop]);
+//}
+
+
+
+//CODE FOR HANDLING NAV BUTTONS AND FUNCTION BUTTONS
+
+//[strNavBarJS]
+function NavBtnOver(Btn){
+	if (Btn.className != 'NavButtonDown'){Btn.className = 'NavButtonUp';}
+}
+
+function NavBtnOut(Btn){
+	Btn.className = 'NavButton';
+}
+
+function NavBtnDown(Btn){
+	Btn.className = 'NavButtonDown';
+}
+//[/strNavBarJS]
+
+function FuncBtnOver(Btn){
+	if (Btn.className != 'FuncButtonDown'){Btn.className = 'FuncButtonUp';}
+}
+
+function FuncBtnOut(Btn){
+	Btn.className = 'FuncButton';
+}
+
+function FuncBtnDown(Btn){
+	Btn.className = 'FuncButtonDown';
+}
+
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	}
+	else{
+		if (document.getElementById('CheckButton2') != null){
+			document.getElementById('CheckButton2').focus();
+		}
+		else{
+			document.getElementsByTagName('button')[0].focus();
+		}
+	}
+}
+
+
+
+
+//CODE FOR HANDLING DISPLAY OF POPUP FEEDBACK BOX
+
+var topZ = 1000;
+
+function ShowMessage(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+	topZ++;
+	FDiv.style.zIndex = topZ;
+	FDiv.style.top = TopSettingWithScrollOffset(30) + 'px';
+//IE can't focus a hidden div; Moz needs to focus before display to avoid jumping
+	if (C.gecko){
+		document.getElementById('FeedbackOKButton').focus();
+	}
+	FDiv.style.display = 'block';
+
+	ShowElements(false, 'input');
+	ShowElements(false, 'select');
+	ShowElements(false, 'object');
+	if (C.ie){
+		document.getElementById('FeedbackOKButton').focus();
+	}
+	
+//
+//	RefreshImages();
+//
+}
+
+function ShowElements(Show, TagName){
+//Special for IE bug -- hide all the form elements that will show through the popup
+	if (C.ie){
+		var Els = document.getElementsByTagName(TagName);
+		for (var i=0; i<Els.length; i++){
+			if (Show == true){
+				Els[i].style.display = 'inline';
+			}
+			else{
+				Els[i].style.display = 'none';
+			}
+		}
+	} 
+}
+
+function HideFeedback(){
+	document.getElementById('FeedbackDiv').style.display = 'none';
+	ShowElements(true, 'input');
+	ShowElements(true, 'select');
+	ShowElements(true, 'object');
+	if (Finished == true){
+		Finish();
+	}
+}
+
+
+//GENERAL UTILITY FUNCTIONS AND VARIABLES
+
+//PAGE DIMENSION FUNCTIONS
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	this.W = document.getElementsByTagName('body')[0].clientWidth;
+	this.H = document.getElementsByTagName('body')[0].clientHeight;
+}
+
+var pg = null;
+
+function GetPageXY(El) {
+	var XY = {x: 0, y: 0};
+	while(El){
+		XY.x += El.offsetLeft;
+		XY.y += El.offsetTop;
+		El = El.offsetParent;
+	}
+	return XY;
+}
+
+function GetScrollTop(){
+	if (document.documentElement && document.documentElement.scrollTop){
+		return document.documentElement.scrollTop;
+	}
+	else{
+		if (document.body){
+ 			return document.body.scrollTop;
+		}
+		else{
+			return window.pageYOffset;
+		}
+	}
+}
+
+function GetViewportHeight(){
+	if (window.innerWidth){
+		return window.innerWidth;
+	}
+	else{
+		return document.getElementsByTagName('body')[0].clientHeight;
+	}
+}
+
+function TopSettingWithScrollOffset(TopPercent){
+	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
+	return GetScrollTop() + T; 
+}
+
+//CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
+var InTextBox = false;
+
+function SuppressBackspace(e){ 
+	if (InTextBox == true){return;}
+	if (C.ie) {
+		thisKey = window.event.keyCode;
+	}
+	else {
+		thisKey = e.keyCode;
+	}
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+	}
+
+	if (Suppress == true){
+		if (C.ie){
+			window.event.returnValue = false;	
+			window.event.cancelBubble = true;
+		}
+		else{
+			e.preventDefault();
+		}
+	}
+}
+
+if (C.ie){
+	document.attachEvent('onkeydown',SuppressBackspace);
+	window.attachEvent('onkeydown',SuppressBackspace);
+}
+else{
+	window.addEventListener('keypress',SuppressBackspace,false);
+}
+
+function ReduceItems(InArray, ReduceToSize){
+	var ItemToDump=0;
+	var j=0;
+	while (InArray.length > ReduceToSize){
+		ItemToDump = Math.floor(InArray.length*Math.random());
+		InArray.splice(ItemToDump, 1);
+	}
+}
+
+function Shuffle(InArray){
+	Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < j; k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteToInstructions(Feedback) {
+//	Feedback = '<span class="FeedbackText">' + Feedback + '</span>';
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+	RefreshImages();
+
+}
+
+
+
+Imgs = new Array();
+
+function PreloadImages(){
+	var a = PreloadImages.arguments;
+	for (var i=0; i<a.length; i++){
+		Imgs[i] = new Image();
+		Imgs[i].src = a[i];
+	}
+}
+
+function RefreshImages(){
+	for (var i=0; i<document.images.length; i++){
+		if (document.images[i].name.substring(0,6) != 'NavBar'){
+			document.images[i].src = document.images[i].src;
+		}
+	}
+}
+
+
+function EscapeDoubleQuotes(InString){
+	return InString.replace(/"/g, '&quot;')
+}
+
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	}
+	else{
+		document.getElementsByTagName('button')[0].focus();
+	}
+}
+
+function TrimString(InString){
+        var x = 0;
+
+        if (InString.length != 0) {
+                while ((InString.charAt(InString.length - 1) == '\u0020') || (InString.charAt(InString.length - 1) == '\u000A') || (InString.charAt(InString.length - 1) == '\u000D')){
+                        InString = InString.substring(0, InString.length - 1)
+                }
+
+                while ((InString.charAt(0) == '\u0020') || (InString.charAt(0) == '\u000A') || (InString.charAt(0) == '\u000D')){
+                        InString = InString.substring(1, InString.length)
+                }
+
+                while (InString.indexOf('  ') != -1) {
+                        x = InString.indexOf('  ')
+                        InString = InString.substring(0, x) + InString.substring(x+1, InString.length)
+                 }
+
+                return InString;
+        }
+
+        else {
+                return '';
+        }
+}
+
+function FindLongest(InArray){
+	if (InArray.length < 1){return -1;}
+
+	var Longest = 0;
+	for (var i=1; i<InArray.length; i++){
+		if (InArray[i].length > InArray[Longest].length){
+			Longest = i;
+		}
+	}
+	return Longest;
+}
+
+//UNICODE CHARACTER FUNCTIONS
+function IsCombiningDiacritic(CharNum){
+	var Result = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNum >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Result = Result || (((CharNum >= 0x3099)&&(CharNum <= 0x309a))||((CharNum >= 0xfe20)&&(CharNum <= 0xfe23)));
+	return Result;
+}
+
+function IsCJK(CharNum){
+	return ((CharNum >= 0x3000)&&(CharNum < 0xd800));
+}
+
+//SETUP FUNCTIONS
+//BROWSER WILL REFILL TEXT BOXES FROM CACHE IF NOT PREVENTED
+function ClearTextBoxes(){
+	var NList = document.getElementsByTagName('input');
+	for (var i=0; i<NList.length; i++){
+		if (NList[i].id.indexOf('Guess') > -1){
+			NList[i].value = '';
+		}
+		if (NList[i].id.indexOf('Chk') > -1){
+			NList[i].checked = '';
+		}
+	}
+}
+
+//EXTENSION TO ARRAY OBJECT
+function Array_IndexOf(Input){
+	var Result = -1;
+	for (var i=0; i<this.length; i++){
+		if (this[i] == Input){
+			Result = i;
+		}
+	}
+	return Result;
+}
+Array.prototype.indexOf = Array_IndexOf;
+
+//IE HAS RENDERING BUG WITH BOTTOM NAVBAR
+function RemoveBottomNavBarForIE(){
+	if ((C.ie)&&(document.getElementById('Reading') != null)){
+		if (document.getElementById('BottomNavBar') != null){
+			document.getElementById('TheBody').removeChild(document.getElementById('BottomNavBar'));
+		}
+	}
+}
+
+
+
+
+//HOTPOTNET-RELATED CODE
+
+var HPNStartTime = (new Date()).getTime();
+var SubmissionTimeout = 30000;
+var Detail = ''; //Global that is used to submit tracking data
+
+function Finish(){
+//If there's a form, fill it out and submit it
+	if (document.store != null){
+		Frm = document.store;
+		Frm.starttime.value = HPNStartTime;
+		Frm.endtime.value = (new Date()).getTime();
+		Frm.mark.value = Score;
+		Frm.detail.value = Detail;
+		Frm.submit();
+	}
+}
+
+
+
+//JQUIZ CORE JAVASCRIPT CODE
+
+var CurrQNum = 0;
+var CorrectIndicator = 'Exacto!';
+var IncorrectIndicator = 'PLOP!';
+var YourScoreIs = 'Su puntaje es:';
+var ContinuousScoring = false;
+var CorrectFirstTime = 'Preguntas contestadas acertadamente al primer intento: ';
+var ShowCorrectFirstTime = true;
+var ShuffleQs = true;
+var ShuffleAs = true;
+var DefaultRight = 'Se nota que el curso le ha servido!';
+var DefaultWrong = 'No est&#x00E1; ni tibio!';
+var QsToShow = 162;
+var Score = 0;
+var Finished = false;
+var Qs = null;
+var QArray = new Array();
+var ShowingAllQuestions = false;
+var ShowAllQuestionsCaption = 'Mostrar todas las preguntas';
+var ShowOneByOneCaption = 'Mostrar preguntas una por una';
+var State = new Array();
+var Feedback = '';
+var TimeOver = false;
+
+//The following variable can be used to add a message explaining that
+//the question is finished, so no further marking will take place.
+var strQuestionFinished = '';
+
+function CompleteEmptyFeedback(){
+	var QNum, ANum;
+	for (QNum=0; QNum<I.length; QNum++){
+//Only do this if not multi-select
+		if (I[QNum][2] != '3'){
+  		for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+  			if (I[QNum][3][ANum][1].length < 1){
+  				if (I[QNum][3][ANum][2] > 0){
+  					I[QNum][3][ANum][1] = DefaultRight;
+  				}
+  				else{
+  					I[QNum][3][ANum][1] = DefaultWrong;
+  				}
+  			}
+  		}
+		}
+	}
+}
+
+function SetUpQuestions(){
+	var AList = new Array(); 
+	var QList = new Array();
+	var i, j;
+	Qs = document.getElementById('Questions');
+	while (Qs.getElementsByTagName('li').length > 0){
+		QList.push(Qs.removeChild(Qs.getElementsByTagName('li')[0]));
+	}
+	var DumpItem = 0;
+	while (QsToShow < QList.length){
+		DumpItem = Math.floor(QList.length*Math.random());
+		for (j=DumpItem; j<(QList.length-1); j++){
+			QList[j] = QList[j+1];
+		}
+		QList.length = QList.length-1;
+	}
+	if (ShuffleQs == true){
+		QList = Shuffle(QList);
+	}
+	if (ShuffleAs == true){
+		var As;
+		for (var i=0; i<QList.length; i++){
+			As = QList[i].getElementsByTagName('ol')[0];
+			if (As != null){
+  			AList.length = 0;
+				while (As.getElementsByTagName('li').length > 0){
+					AList.push(As.removeChild(As.getElementsByTagName('li')[0]));
+				}
+				AList = Shuffle(AList);
+				for (j=0; j<AList.length; j++){
+					As.appendChild(AList[j]);
+				}
+			}
+		}
+	}
+	
+	for (i=0; i<QList.length; i++){
+		Qs.appendChild(QList[i]);
+		QArray[QArray.length] = QList[i];
+	}
+
+//Show the first item
+	QArray[0].style.display = '';
+	
+//Now hide all except the first item
+	for (i=1; i<QArray.length; i++){
+		QArray[i].style.display = 'none';
+	}		
+	SetQNumReadout();
+}
+
+function ChangeQ(ChangeBy){
+	if (((CurrQNum + ChangeBy) < 0)||((CurrQNum + ChangeBy) >= QArray.length)){return;}
+	QArray[CurrQNum].style.display = 'none';
+	CurrQNum += ChangeBy;
+	QArray[CurrQNum].style.display = '';
+	SetQNumReadout();
+//if there's a textbox, set the focus in it
+	if (QArray[CurrQNum].getElementsByTagName('input')[0] != null){
+		QArray[CurrQNum].getElementsByTagName('input')[0].focus();
+	}
+}
+
+function SetQNumReadout(){
+	document.getElementById('QNumReadout').innerHTML = (CurrQNum+1) + ' / ' + QArray.length;
+}
+
+I=new Array();
+I[0]=new Array();I[0][0]=100;
+I[0][1]='';
+I[0][2]='1';
+I[0][3]=new Array();
+I[0][3][0]=new Array('It\'s important that he not know the truth','',1,100,1);
+I[1]=new Array();I[1][0]=100;
+I[1][1]='';
+I[1][2]='1';
+I[1][3]=new Array();
+I[1][3][0]=new Array('She is Carlos and Mary\'s daughter','',1,100,1);
+I[2]=new Array();I[2][0]=100;
+I[2][1]='';
+I[2][2]='1';
+I[2][3]=new Array();
+I[2][3][0]=new Array('Peter and I are happy','',1,100,1);
+I[3]=new Array();I[3][0]=100;
+I[3][1]='';
+I[3][2]='1';
+I[3][3]=new Array();
+I[3][3][0]=new Array('Neither my parents nor Maria Knows the truth','',1,100,1);
+I[4]=new Array();I[4][0]=100;
+I[4][1]='';
+I[4][2]='1';
+I[4][3]=new Array();
+I[4][3][0]=new Array('I like this woman better','',1,100,1);
+I[5]=new Array();I[5][0]=100;
+I[5][1]='';
+I[5][2]='1';
+I[5][3]=new Array();
+I[5][3][0]=new Array('This is the song that I like the most','',1,100,1);
+I[6]=new Array();I[6][0]=100;
+I[6][1]='';
+I[6][2]='1';
+I[6][3]=new Array();
+I[6][3][0]=new Array('This computer is the one that I like the least','',1,100,1);
+I[7]=new Array();I[7][0]=100;
+I[7][1]='';
+I[7][2]='1';
+I[7][3]=new Array();
+I[7][3][0]=new Array('I wanted a dog that wouldn\'t cost too much','',1,100,1);
+I[7][3][1]=new Array('I wanted a dog which wouldn\'t cost too much','',1,100,1);
+I[8]=new Array();I[8][0]=100;
+I[8][1]='';
+I[8][2]='1';
+I[8][3]=new Array();
+I[8][3][0]=new Array('You\'d better!','',1,100,1);
+I[9]=new Array();I[9][0]=100;
+I[9][1]='';
+I[9][2]='1';
+I[9][3]=new Array();
+I[9][3][0]=new Array('Peter will be able to adopt a girl','',1,100,1);
+I[10]=new Array();I[10][0]=100;
+I[10][1]='';
+I[10][2]='1';
+I[10][3]=new Array();
+I[10][3][0]=new Array('Am I supposed to be happy here?','',1,100,1);
+I[11]=new Array();I[11][0]=100;
+I[11][1]='';
+I[11][2]='1';
+I[11][3]=new Array();
+I[11][3][0]=new Array('I don\'t like soccer at all','',1,100,1);
+I[12]=new Array();I[12][0]=100;
+I[12][1]='';
+I[12][2]='1';
+I[12][3]=new Array();
+I[12][3][0]=new Array('Has anybody else seen Pedro?','',1,100,1);
+I[13]=new Array();I[13][0]=100;
+I[13][1]='';
+I[13][2]='1';
+I[13][3]=new Array();
+I[13][3][0]=new Array('How else can I know the height of this building?','',1,100,1);
+I[14]=new Array();I[14][0]=100;
+I[14][1]='';
+I[14][2]='1';
+I[14][3]=new Array();
+I[14][3][0]=new Array('No wonder you are so fat','',1,100,1);
+I[15]=new Array();I[15][0]=100;
+I[15][1]='';
+I[15][2]='1';
+I[15][3]=new Array();
+I[15][3][0]=new Array('I bought a five apartment building','',1,100,1);
+I[16]=new Array();I[16][0]=100;
+I[16][1]='';
+I[16][2]='1';
+I[16][3]=new Array();
+I[16][3][0]=new Array('Give me another chance','',1,100,1);
+I[17]=new Array();I[17][0]=100;
+I[17][1]='';
+I[17][2]='1';
+I[17][3]=new Array();
+I[17][3][0]=new Array('The mayor gave the order himself','Tambi\u00E9n podr\u00EDa ser:  "The mayor himself gave the order"',1,100,1);
+I[17][3][1]=new Array('The mayor himself gave the order','Tambi\u00E9n podr\u00EDa ser:  "The mayor  gave the orderhimself "',1,100,1);
+I[18]=new Array();I[18][0]=100;
+I[18][1]='';
+I[18][2]='1';
+I[18][3]=new Array();
+I[18][3][0]=new Array('I\'ll be with you, no matter what','',1,100,1);
+I[19]=new Array();I[19][0]=100;
+I[19][1]='';
+I[19][2]='1';
+I[19][3]=new Array();
+I[19][3][0]=new Array('He may have gone','Tambi\u00E9n: He might have gone',1,100,1);
+I[19][3][1]=new Array('He might have gone','Tambi\u00E9n: He may have gone',1,100,1);
+I[20]=new Array();I[20][0]=100;
+I[20][1]='';
+I[20][2]='1';
+I[20][3]=new Array();
+I[20][3][0]=new Array('She has never gone to Cartagena','',1,100,1);
+I[21]=new Array();I[21][0]=100;
+I[21][1]='';
+I[21][2]='1';
+I[21][3]=new Array();
+I[21][3][0]=new Array('It\'s important not having enemies','',1,100,1);
+I[22]=new Array();I[22][0]=100;
+I[22][1]='';
+I[22][2]='1';
+I[22][3]=new Array();
+I[22][3][0]=new Array('I am so tired that I can\'t fly','',1,100,1);
+I[23]=new Array();I[23][0]=100;
+I[23][1]='';
+I[23][2]='1';
+I[23][3]=new Array();
+I[23][3][0]=new Array('They  wish you  would fly this helicopter','',1,100,1);
+I[24]=new Array();I[24][0]=100;
+I[24][1]='';
+I[24][2]='1';
+I[24][3]=new Array();
+I[24][3][0]=new Array('That is dangerous, as well as unlawful','',1,100,1);
+I[25]=new Array();I[25][0]=100;
+I[25][1]='';
+I[25][2]='1';
+I[25][3]=new Array();
+I[25][3][0]=new Array('I was punished for not flying','',1,100,1);
+I[26]=new Array();I[26][0]=100;
+I[26][1]='';
+I[26][2]='1';
+I[26][3]=new Array();
+I[26][3][0]=new Array('El se neg\u00F3 a decir la respuesta','',1,100,1);
+I[26][3][1]=new Array('El se rehus\u00F3 a decir la respuesta',' ',1,100,1);
+I[27]=new Array();I[27][0]=100;
+I[27][1]='';
+I[27][2]='1';
+I[27][3]=new Array();
+I[27][3][0]=new Array('No me gusta para nada tu hablado','',1,100,1);
+I[27][3][1]=new Array('No me gusta nada tu hablado','',1,100,1);
+I[28]=new Array();I[28][0]=100;
+I[28][1]='';
+I[28][2]='1';
+I[28][3]=new Array();
+I[28][3][0]=new Array('The news is worrysome','',1,100,1);
+I[29]=new Array();I[29][0]=100;
+I[29][1]='';
+I[29][2]='1';
+I[29][3]=new Array();
+I[29][3][0]=new Array('You\'d better leave','',1,100,1);
+I[30]=new Array();I[30][0]=100;
+I[30][1]='';
+I[30][2]='1';
+I[30][3]=new Array();
+I[30][3][0]=new Array('I don\'t want to love you anymore','Recuerde que hay otras tres formas de decirlo utilizando anymore-any longer-no longer-no more.',1,100,1);
+I[30][3][1]=new Array('I don\'t want to love you any longer','Recuerde que hay otras tres formas de decirlo utilizando anymore-any longer-no longer-no more.',1,100,1);
+I[30][3][2]=new Array('No longer I want to love you','Recuerde que hay otras tres formas de decirlo utilizando anymore-any longer-no longer-no more.',1,100,1);
+I[30][3][3]=new Array('No more I want to love you','',1,100,1);
+I[30][3][4]=new Array('I don\'t want to love you back','NO. VEA P\u00C1GINA 115',0,0,1);
+I[31]=new Array();I[31][0]=100;
+I[31][1]='';
+I[31][2]='1';
+I[31][3]=new Array();
+I[31][3][0]=new Array('I wish she were younger','',1,100,1);
+I[32]=new Array();I[32][0]=100;
+I[32][1]='';
+I[32][2]='1';
+I[32][3]=new Array();
+I[32][3][0]=new Array('Pedro will fly tomorrow and so will I','',1,100,1);
+I[32][3][1]=new Array('Pedro will fly tomorrow and I\'ll too','',1,100,1);
+I[33]=new Array();I[33][0]=100;
+I[33][1]='';
+I[33][2]='1';
+I[33][3]=new Array();
+I[33][3][0]=new Array('Do you happen to know their names?','',1,100,1);
+I[33][3][1]=new Array('By chance, do you know their names?','',1,100,1);
+I[33][3][2]=new Array('By any chance, do you know their names?','',1,100,1);
+I[34]=new Array();I[34][0]=100;
+I[34][1]='';
+I[34][2]='1';
+I[34][3]=new Array();
+I[34][3][0]=new Array('Actually, I was born in Colombia','',1,100,1);
+I[35]=new Array();I[35][0]=100;
+I[35][1]='';
+I[35][2]='1';
+I[35][3]=new Array();
+I[35][3][0]=new Array('What else did you tell her?','',1,100,1);
+I[36]=new Array();I[36][0]=100;
+I[36][1]='';
+I[36][2]='1';
+I[36][3]=new Array();
+I[36][3][0]=new Array('Do you want some water?','',1,100,1);
+I[37]=new Array();I[37][0]=100;
+I[37][1]='';
+I[37][2]='1';
+I[37][3]=new Array();
+I[37][3][0]=new Array('Ma\u00F1ana yo habr\u00E9 entendido la verdad','',1,100,1);
+I[38]=new Array();I[38][0]=100;
+I[38][1]='';
+I[38][2]='1';
+I[38][3]=new Array();
+I[38][3][0]=new Array('Do you have anything to give me?','',1,100,1);
+I[39]=new Array();I[39][0]=100;
+I[39][1]='';
+I[39][2]='1';
+I[39][3]=new Array();
+I[39][3][0]=new Array('One thinks that flying is easy','',1,100,1);
+I[40]=new Array();I[40][0]=100;
+I[40][1]='';
+I[40][2]='1';
+I[40][3]=new Array();
+I[40][3][0]=new Array('She doesn\'t like soccer and neither does he','',1,100,1);
+I[40][3][1]=new Array('She doesn\'t like soccer and he doesn\'t either ','',1,100,1);
+I[41]=new Array();I[41][0]=100;
+I[41][1]='';
+I[41][2]='1';
+I[41][3]=new Array();
+I[41][3][0]=new Array('I got off the train','',1,100,1);
+I[42]=new Array();I[42][0]=100;
+I[42][1]='';
+I[42][2]='1';
+I[42][3]=new Array();
+I[42][3][0]=new Array('I should have avoided seeing the movie','',1,100,1);
+I[43]=new Array();I[43][0]=100;
+I[43][1]='';
+I[43][2]='1';
+I[43][3]=new Array();
+I[43][3][0]=new Array('I don\'t know whether he is telling the truth or not','',1,100,1);
+I[44]=new Array();I[44][0]=100;
+I[44][1]='';
+I[44][2]='1';
+I[44][3]=new Array();
+I[44][3][0]=new Array('I hardly know you','',1,100,1);
+I[44][3][1]=new Array('I barely know you','',1,100,1);
+I[45]=new Array();I[45][0]=100;
+I[45][1]='';
+I[45][2]='1';
+I[45][3]=new Array();
+I[45][3][0]=new Array('I need her to sing tonight','',1,100,1);
+I[46]=new Array();I[46][0]=100;
+I[46][1]='';
+I[46][2]='1';
+I[46][3]=new Array();
+I[46][3][0]=new Array('I haven\'t been able to find the hotel','',1,100,1);
+I[47]=new Array();I[47][0]=100;
+I[47][1]='';
+I[47][2]='1';
+I[47][3]=new Array();
+I[47][3][0]=new Array('I did kiss Pedro last night','',1,100,1);
+I[48]=new Array();I[48][0]=100;
+I[48][1]='';
+I[48][2]='1';
+I[48][3]=new Array();
+I[48][3][0]=new Array('He is the one who sells magazines','',1,100,1);
+I[48][3][1]=new Array('He is the one that sells magazines','',1,100,1);
+I[49]=new Array();I[49][0]=100;
+I[49][1]='';
+I[49][2]='1';
+I[49][3]=new Array();
+I[49][3][0]=new Array('I found some mice up here','',1,100,1);
+I[50]=new Array();I[50][0]=100;
+I[50][1]='';
+I[50][2]='1';
+I[50][3]=new Array();
+I[50][3][0]=new Array('It\'s cold in here','',1,100,1);
+I[51]=new Array();I[51][0]=100;
+I[51][1]='';
+I[51][2]='1';
+I[51][3]=new Array();
+I[51][3][0]=new Array('When I was young, I would play soccer every day','',1,100,1);
+I[51][3][1]=new Array('When I was young, I used to play soccer every day','',1,100,1);
+I[52]=new Array();I[52][0]=100;
+I[52][1]='';
+I[52][2]='1';
+I[52][3]=new Array();
+I[52][3][0]=new Array('I\'m used to flying','',1,100,1);
+I[53]=new Array();I[53][0]=100;
+I[53][1]='';
+I[53][2]='1';
+I[53][3]=new Array();
+I[53][3][0]=new Array('If I had gone to Cali you would already know it','',1,100,1);
+I[54]=new Array();I[54][0]=100;
+I[54][1]='';
+I[54][2]='1';
+I[54][3]=new Array();
+I[54][3][0]=new Array('As I told you before, you are fired','',1,100,1);
+I[55]=new Array();I[55][0]=100;
+I[55][1]='';
+I[55][2]='1';
+I[55][3]=new Array();
+I[55][3][0]=new Array('Oil cleans, lubricates and softens','',1,100,1);
+I[56]=new Array();I[56][0]=100;
+I[56][1]='';
+I[56][2]='1';
+I[56][3]=new Array();
+I[56][3][0]=new Array('That is the reason why she died.','',1,100,1);
+I[56][3][1]=new Array('','.',0,0,1);
+I[57]=new Array();I[57][0]=100;
+I[57][1]='';
+I[57][2]='1';
+I[57][3]=new Array();
+I[57][3][0]=new Array('If Pedro were to kill you, you would know it','',1,100,1);
+I[58]=new Array();I[58][0]=100;
+I[58][1]='';
+I[58][2]='1';
+I[58][3]=new Array();
+I[58][3][0]=new Array('How come you didn\'t come!','',1,100,1);
+I[59]=new Array();I[59][0]=100;
+I[59][1]='';
+I[59][2]='1';
+I[59][3]=new Array();
+I[59][3][0]=new Array('My brother is taller than I','',1,100,1);
+I[60]=new Array();I[60][0]=100;
+I[60][1]='';
+I[60][2]='1';
+I[60][3]=new Array();
+I[60][3][0]=new Array('He has a store, or rather, a supermarket','',1,100,1);
+I[61]=new Array();I[61][0]=100;
+I[61][1]='';
+I[61][2]='1';
+I[61][3]=new Array();
+I[61][3][0]=new Array('An explosion was heard','',1,100,1);
+I[62]=new Array();I[62][0]=100;
+I[62][1]='';
+I[62][2]='1';
+I[62][3]=new Array();
+I[62][3][0]=new Array('If there had been a question the teacher wouldn\'t have been able to answer it','',1,100,1);
+I[63]=new Array();I[63][0]=100;
+I[63][1]='';
+I[63][2]='1';
+I[63][3]=new Array();
+I[63][3][0]=new Array('I want them to go','',1,100,1);
+I[64]=new Array();I[64][0]=100;
+I[64][1]='';
+I[64][2]='1';
+I[64][3]=new Array();
+I[64][3][0]=new Array('Stop your complaining at all times!','',1,100,1);
+I[64][3][1]=new Array('Stop your complaining all the time!','',1,100,1);
+I[65]=new Array();I[65][0]=100;
+I[65][1]='';
+I[65][2]='1';
+I[65][3]=new Array();
+I[65][3][0]=new Array('The cars will be being tested tomorrow','',1,100,1);
+I[66]=new Array();I[66][0]=100;
+I[66][1]='';
+I[66][2]='1';
+I[66][3]=new Array();
+I[66][3][0]=new Array('There is little danger','',1,100,1);
+I[67]=new Array();I[67][0]=100;
+I[67][1]='';
+I[67][2]='1';
+I[67][3]=new Array();
+I[67][3][0]=new Array('I don\'t want to repeat such experience','',1,100,1);
+I[68]=new Array();I[68][0]=100;
+I[68][1]='';
+I[68][2]='1';
+I[68][3]=new Array();
+I[68][3][0]=new Array('My brother sat over here','',1,100,1);
+I[69]=new Array();I[69][0]=100;
+I[69][1]='';
+I[69][2]='1';
+I[69][3]=new Array();
+I[69][3][0]=new Array('Since I wasn\'t invited, I wasn\'t there','',1,100,1);
+I[69][3][1]=new Array('As I wasn\'t invited, I wasn\'t there','',1,100,1);
+I[69][3][2]=new Array('As long as I wasn\'t invited, I wasn\'t there','',1,100,1);
+I[70]=new Array();I[70][0]=100;
+I[70][1]='';
+I[70][2]='1';
+I[70][3]=new Array();
+I[70][3][0]=new Array('She wishes I were taller','',1,100,1);
+I[71]=new Array();I[71][0]=100;
+I[71][1]='';
+I[71][2]='1';
+I[71][3]=new Array();
+I[71][3][0]=new Array('I worked for that company as a lawyer','',1,100,1);
+I[72]=new Array();I[72][0]=100;
+I[72][1]='';
+I[72][2]='1';
+I[72][3]=new Array();
+I[72][3][0]=new Array('Wherever I go, I see her beautifulness','Otra opci\u00F3n: Wherever I go, I see her prettiness',1,100,1);
+I[72][3][1]=new Array('Wherever I go, I see her prettiness','',1,100,1);
+I[73]=new Array();I[73][0]=100;
+I[73][1]='';
+I[73][2]='1';
+I[73][3]=new Array();
+I[73][3][0]=new Array('Is the situation troublesome?','',1,100,1);
+I[74]=new Array();I[74][0]=100;
+I[74][1]='';
+I[74][2]='1';
+I[74][3]=new Array();
+I[74][3][0]=new Array('May God bless you!','',1,100,1);
+I[75]=new Array();I[75][0]=100;
+I[75][1]='';
+I[75][2]='1';
+I[75][3]=new Array();
+I[75][3][0]=new Array('He happens to be my brother','',1,100,1);
+I[76]=new Array();I[76][0]=100;
+I[76][1]='';
+I[76][2]='1';
+I[76][3]=new Array();
+I[76][3][0]=new Array('I wish he could come the day after tomorrow','',1,100,1);
+I[77]=new Array();I[77][0]=100;
+I[77][1]='';
+I[77][2]='1';
+I[77][3]=new Array();
+I[77][3][0]=new Array('Either he is crazy, or very sick','',1,100,1);
+I[78]=new Array();I[78][0]=100;
+I[78][1]='';
+I[78][2]='1';
+I[78][3]=new Array();
+I[78][3][0]=new Array('That she had been a good friend','',1,100,1);
+I[79]=new Array();I[79][0]=100;
+I[79][1]='';
+I[79][2]='1';
+I[79][3]=new Array();
+I[79][3][0]=new Array('That she had flown last night','',1,100,1);
+I[80]=new Array();I[80][0]=100;
+I[80][1]='';
+I[80][2]='1';
+I[80][3]=new Array();
+I[80][3][0]=new Array('That she would like to win the race','',1,100,1);
+I[81]=new Array();I[81][0]=100;
+I[81][1]='';
+I[81][2]='1';
+I[81][3]=new Array();
+I[81][3][0]=new Array('That he was waiting for his mother','',1,100,1);
+I[82]=new Array();I[82][0]=100;
+I[82][1]='';
+I[82][2]='1';
+I[82][3]=new Array();
+I[82][3][0]=new Array('That she would be helping Peter','',1,100,1);
+I[83]=new Array();I[83][0]=100;
+I[83][1]='';
+I[83][2]='1';
+I[83][3]=new Array();
+I[83][3][0]=new Array('That she could win the contest','',1,100,1);
+I[84]=new Array();I[84][0]=100;
+I[84][1]='';
+I[84][2]='1';
+I[84][3]=new Array();
+I[84][3][0]=new Array('That he knew me','',1,100,1);
+I[85]=new Array();I[85][0]=100;
+I[85][1]='';
+I[85][2]='1';
+I[85][3]=new Array();
+I[85][3][0]=new Array('That she had known the truth','',1,100,1);
+I[85][3][1]=new Array('','.',0,0,1);
+I[86]=new Array();I[86][0]=100;
+I[86][1]='';
+I[86][2]='1';
+I[86][3]=new Array();
+I[86][3][0]=new Array('That he would help her','',1,100,1);
+I[87]=new Array();I[87][0]=100;
+I[87][1]='';
+I[87][2]='1';
+I[87][3]=new Array();
+I[87][3][0]=new Array('You shall die if you don\'t eat!','',1,100,1);
+I[88]=new Array();I[88][0]=100;
+I[88][1]='';
+I[88][2]='1';
+I[88][3]=new Array();
+I[88][3][0]=new Array('He ate not realizing the food was poisoned','',1,100,1);
+I[88][3][1]=new Array('He ate without realizing the food was poisoned','',1,100,1);
+I[89]=new Array();I[89][0]=100;
+I[89][1]='';
+I[89][2]='1';
+I[89][3]=new Array();
+I[89][3][0]=new Array('I had just arrived','',1,100,1);
+I[90]=new Array();I[90][0]=100;
+I[90][1]='';
+I[90][2]='1';
+I[90][3]=new Array();
+I[90][3][0]=new Array('Ella escasamente respira','',1,100,1);
+I[90][3][1]=new Array('Ella a duras penas respira','',1,100,1);
+I[91]=new Array();I[91][0]=100;
+I[91][1]='';
+I[91][2]='1';
+I[91][3]=new Array();
+I[91][3][0]=new Array('He killed her because of his craziness','',1,100,1);
+I[91][3][1]=new Array('He killed her by reason of his craziness','',1,100,1);
+I[92]=new Array();I[92][0]=100;
+I[92][1]='';
+I[92][2]='1';
+I[92][3]=new Array();
+I[92][3][0]=new Array('I don\'t happen to like soccer','',1,100,1);
+I[93]=new Array();I[93][0]=100;
+I[93][1]='';
+I[93][2]='1';
+I[93][3]=new Array();
+I[93][3][0]=new Array('Let\'s not fly tonight','',1,100,1);
+I[94]=new Array();I[94][0]=100;
+I[94][1]='';
+I[94][2]='1';
+I[94][3]=new Array();
+I[94][3][0]=new Array('He was fired because of his carelessness','',1,100,1);
+I[95]=new Array();I[95][0]=100;
+I[95][1]='';
+I[95][2]='1';
+I[95][3]=new Array();
+I[95][3][0]=new Array('The more I know men, the more I love my dog','',1,100,1);
+I[96]=new Array();I[96][0]=100;
+I[96][1]='';
+I[96][2]='1';
+I[96][3]=new Array();
+I[96][3][0]=new Array('I wish you would come to my party','',1,100,1);
+I[97]=new Array();I[97][0]=100;
+I[97][1]='';
+I[97][2]='1';
+I[97][3]=new Array();
+I[97][3][0]=new Array('I like music and so does Pedro','',1,100,1);
+I[97][3][1]=new Array('I like music and Pedro does too','',1,100,1);
+I[98]=new Array();I[98][0]=100;
+I[98][1]='';
+I[98][2]='1';
+I[98][3]=new Array();
+I[98][3][0]=new Array('Is the girl who won the race Colombian?','',1,100,1);
+I[99]=new Array();I[99][0]=100;
+I[99][1]='';
+I[99][2]='1';
+I[99][3]=new Array();
+I[99][3][0]=new Array('You can park here','',1,100,1);
+I[100]=new Array();I[100][0]=100;
+I[100][1]='';
+I[100][2]='1';
+I[100][3]=new Array();
+I[100][3][0]=new Array('He bought this book for me to read it','',1,100,1);
+I[101]=new Array();I[101][0]=100;
+I[101][1]='';
+I[101][2]='1';
+I[101][3]=new Array();
+I[101][3][0]=new Array('El se rehusa a venir','',1,100,1);
+I[101][3][1]=new Array('El se niega a venir','',1,100,1);
+I[102]=new Array();I[102][0]=100;
+I[102][1]='';
+I[102][2]='1';
+I[102][3]=new Array();
+I[102][3][0]=new Array('El se neg\u00F3 a venir','',1,100,1);
+I[102][3][1]=new Array('El se rehus\u00F3 a venir','',1,100,1);
+I[103]=new Array();I[103][0]=100;
+I[103][1]='';
+I[103][2]='1';
+I[103][3]=new Array();
+I[103][3][0]=new Array('He is about my age','',1,100,1);
+I[104]=new Array();I[104][0]=100;
+I[104][1]='';
+I[104][2]='1';
+I[104][3]=new Array();
+I[104][3][0]=new Array('I prefer to fly rather than study','',1,100,1);
+I[104][3][1]=new Array('I prefer to fly instead of studying','',1,100,1);
+I[105]=new Array();I[105][0]=100;
+I[105][1]='';
+I[105][2]='1';
+I[105][3]=new Array();
+I[105][3][0]=new Array('He must have been crazy when he killed her','',1,100,1);
+I[106]=new Array();I[106][0]=100;
+I[106][1]='';
+I[106][2]='1';
+I[106][3]=new Array();
+I[106][3][0]=new Array('Drinking alcohol is like killing yourself','',1,100,1);
+I[107]=new Array();I[107][0]=100;
+I[107][1]='';
+I[107][2]='1';
+I[107][3]=new Array();
+I[107][3][0]=new Array('If you should have a problem, let me know it','',1,100,1);
+I[107][3][1]=new Array('Should you have a problem, let me know it','',1,100,1);
+I[108]=new Array();I[108][0]=100;
+I[108][1]='';
+I[108][2]='1';
+I[108][3]=new Array();
+I[108][3][0]=new Array('I\'m German, whereas he is Spanish','',1,100,1);
+I[109]=new Array();I[109][0]=100;
+I[109][1]='';
+I[109][2]='1';
+I[109][3]=new Array();
+I[109][3][0]=new Array('You\'re not supposed to drink and drive','',1,100,1);
+I[110]=new Array();I[110][0]=100;
+I[110][1]='';
+I[110][2]='1';
+I[110][3]=new Array();
+I[110][3][0]=new Array('"Barrabas to be executed tomorrow"','',1,100,1);
+I[111]=new Array();I[111][0]=100;
+I[111][1]='';
+I[111][2]='1';
+I[111][3]=new Array();
+I[111][3][0]=new Array('One Pedro called you this morning','',1,100,1);
+I[112]=new Array();I[112][0]=100;
+I[112][1]='';
+I[112][2]='1';
+I[112][3]=new Array();
+I[112][3][0]=new Array('She is the one friend I have','',1,100,1);
+I[112][3][1]=new Array('She is the only friend I have','',1,100,1);
+I[113]=new Array();I[113][0]=100;
+I[113][1]='';
+I[113][2]='1';
+I[113][3]=new Array();
+I[113][3][0]=new Array('I went to Cali on foot','',1,100,1);
+I[114]=new Array();I[114][0]=100;
+I[114][1]='';
+I[114][2]='1';
+I[114][3]=new Array();
+I[114][3][0]=new Array('Did the man who saw you, see them?','',1,100,1);
+I[115]=new Array();I[115][0]=100;
+I[115][1]='';
+I[115][2]='1';
+I[115][3]=new Array();
+I[115][3][0]=new Array('He might come','',1,100,1);
+I[115][3][1]=new Array('He may come','',1,100,1);
+I[115][3][2]=new Array('He could come','',1,100,1);
+I[116]=new Array();I[116][0]=100;
+I[116][1]='';
+I[116][2]='1';
+I[116][3]=new Array();
+I[116][3][0]=new Array('Est\u00E1 Mar\u00EDa por ah\u00ED?','',1,100,1);
+I[117]=new Array();I[117][0]=100;
+I[117][1]='';
+I[117][2]='1';
+I[117][3]=new Array();
+I[117][3][0]=new Array('Will taking a taxi be wortwhile?','',1,100,1);
+I[117][3][1]=new Array('Will it be worth taking a taxi?','',1,100,1);
+I[118]=new Array();I[118][0]=100;
+I[118][1]='';
+I[118][2]='1';
+I[118][3]=new Array();
+I[118][3][0]=new Array('The plane is about to land','',1,100,1);
+I[119]=new Array();I[119][0]=100;
+I[119][1]='';
+I[119][2]='1';
+I[119][3]=new Array();
+I[119][3][0]=new Array('I haven\'t been able to find the runway','',1,100,1);
+I[120]=new Array();I[120][0]=100;
+I[120][1]='';
+I[120][2]='1';
+I[120][3]=new Array();
+I[120][3][0]=new Array('I\'m barely twenty','',1,100,1);
+I[121]=new Array();I[121][0]=100;
+I[121][1]='';
+I[121][2]='1';
+I[121][3]=new Array();
+I[121][3][0]=new Array('Absolutamente no','',1,100,1);
+I[121][3][1]=new Array('Para nada','',1,100,1);
+I[121][3][2]=new Array('De ninguna manera','',1,100,1);
+I[122]=new Array();I[122][0]=100;
+I[122][1]='';
+I[122][2]='1';
+I[122][3]=new Array();
+I[122][3][0]=new Array('He almost killed me','',1,100,1);
+I[123]=new Array();I[123][0]=100;
+I[123][1]='';
+I[123][2]='1';
+I[123][3]=new Array();
+I[123][3][0]=new Array('When ever did you arrive?','',1,100,1);
+I[124]=new Array();I[124][0]=100;
+I[124][1]='';
+I[124][2]='1';
+I[124][3]=new Array();
+I[124][3][0]=new Array('I can hardly sleep','',1,100,1);
+I[125]=new Array();I[125][0]=100;
+I[125][1]='';
+I[125][2]='1';
+I[125][3]=new Array();
+I[125][3][0]=new Array('He went to Santiago, as for me, I stayed in Valparaiso','',1,100,1);
+I[126]=new Array();I[126][0]=100;
+I[126][1]='';
+I[126][2]='1';
+I[126][3]=new Array();
+I[126][3][0]=new Array('I don\'t even know your name','',1,100,1);
+I[126][3][1]=new Array('Not even I know your name','',1,100,1);
+I[127]=new Array();I[127][0]=100;
+I[127][1]='';
+I[127][2]='1';
+I[127][3]=new Array();
+I[127][3][0]=new Array('He should have called','',1,100,1);
+I[128]=new Array();I[128][0]=100;
+I[128][1]='';
+I[128][2]='1';
+I[128][3]=new Array();
+I[128][3][0]=new Array('Somehow, I\'m going to find her','',1,100,1);
+I[129]=new Array();I[129][0]=100;
+I[129][1]='';
+I[129][2]='1';
+I[129][3]=new Array();
+I[129][3][0]=new Array('Celia Cruz was a happy woman and she will be remember as such','',1,100,1);
+I[130]=new Array();I[130][0]=100;
+I[130][1]='';
+I[130][2]='1';
+I[130][3]=new Array();
+I[130][3][0]=new Array('Upon finishing flying, he left','',1,100,1);
+I[130][3][1]=new Array('After finishing flying, he left','',1,100,1);
+I[131]=new Array();I[131][0]=100;
+I[131][1]='';
+I[131][2]='1';
+I[131][3]=new Array();
+I[131][3][0]=new Array('I should have avoided seeing that movie','',1,100,1);
+I[132]=new Array();I[132][0]=100;
+I[132][1]='';
+I[132][2]='1';
+I[132][3]=new Array();
+I[132][3][0]=new Array('I\'ll be here until he come','',1,100,1);
+I[133]=new Array();I[133][0]=100;
+I[133][1]='';
+I[133][2]='1';
+I[133][3]=new Array();
+I[133][3][0]=new Array('I\'ll never leave you','',1,100,1);
+I[134]=new Array();I[134][0]=100;
+I[134][1]='';
+I[134][2]='1';
+I[134][3]=new Array();
+I[134][3][0]=new Array('He is neither crazy nor lazy','',1,100,1);
+I[134][3][1]=new Array('Neither he is crazy nor lazy','',1,100,1);
+I[135]=new Array();I[135][0]=100;
+I[135][1]='';
+I[135][2]='1';
+I[135][3]=new Array();
+I[135][3][0]=new Array('Pedro works like a mule','Exacto.',1,100,1);
+I[136]=new Array();I[136][0]=100;
+I[136][1]='';
+I[136][2]='1';
+I[136][3]=new Array();
+I[136][3][0]=new Array('It\'s important that he be sincere','',1,100,1);
+I[137]=new Array();I[137][0]=100;
+I[137][1]='';
+I[137][2]='1';
+I[137][3]=new Array();
+I[137][3][0]=new Array('The more I smoke, the worse I feel','',1,100,1);
+I[138]=new Array();I[138][0]=100;
+I[138][1]='';
+I[138][2]='1';
+I[138][3]=new Array();
+I[138][3][0]=new Array('We\'re friends rather than lovers','',1,100,1);
+I[139]=new Array();I[139][0]=100;
+I[139][1]='';
+I[139][2]='1';
+I[139][3]=new Array();
+I[139][3][0]=new Array('I still love you','Bien. No se dej\u00F3 confundir pues la frase est\u00E1 mal escrita ya que "todav\u00EDa" tiene un significado propio diferente de "a\u00FAn".',1,100,1);
+I[140]=new Array();I[140][0]=100;
+I[140][1]='';
+I[140][2]='1';
+I[140][3]=new Array();
+I[140][3][0]=new Array('You may sit','',1,100,1);
+I[141]=new Array();I[141][0]=100;
+I[141][1]='';
+I[141][2]='1';
+I[141][3]=new Array();
+I[141][3][0]=new Array('Might it rain tonight?','',1,100,1);
+I[141][3][1]=new Array('Could it rain tonight?','',1,100,1);
+I[142]=new Array();I[142][0]=100;
+I[142][1]='';
+I[142][2]='1';
+I[142][3]=new Array();
+I[142][3][0]=new Array('I\'m good at math','',1,100,1);
+I[143]=new Array();I[143][0]=100;
+I[143][1]='';
+I[143][2]='1';
+I[143][3]=new Array();
+I[143][3][0]=new Array('If you could, would you live with me?','',1,100,1);
+I[144]=new Array();I[144][0]=100;
+I[144][1]='';
+I[144][2]='1';
+I[144][3]=new Array();
+I[144][3][0]=new Array('If there had been a reason I would have lived with you','',1,100,1);
+I[145]=new Array();I[145][0]=100;
+I[145][1]='';
+I[145][2]='1';
+I[145][3]=new Array();
+I[145][3][0]=new Array('Carlos depends on his brother','',1,100,1);
+I[146]=new Array();I[146][0]=100;
+I[146][1]='';
+I[146][2]='1';
+I[146][3]=new Array();
+I[146][3][0]=new Array('Your understanding is remarkable','',1,100,1);
+I[147]=new Array();I[147][0]=100;
+I[147][1]='';
+I[147][2]='1';
+I[147][3]=new Array();
+I[147][3][0]=new Array('The situation is understandable','',1,100,1);
+I[148]=new Array();I[148][0]=100;
+I[148][1]='';
+I[148][2]='1';
+I[148][3]=new Array();
+I[148][3][0]=new Array('Give me two more kisses','',1,100,1);
+I[149]=new Array();I[149][0]=100;
+I[149][1]='';
+I[149][2]='1';
+I[149][3]=new Array();
+I[149][3][0]=new Array('What a good actress!','',1,100,1);
+I[150]=new Array();I[150][0]=100;
+I[150][1]='';
+I[150][2]='1';
+I[150][3]=new Array();
+I[150][3][0]=new Array('I didn\u00B4t even read that book','',1,100,1);
+I[151]=new Array();I[151][0]=100;
+I[151][1]='';
+I[151][2]='1';
+I[151][3]=new Array();
+I[151][3][0]=new Array('What good actors!','',1,100,1);
+I[152]=new Array();I[152][0]=100;
+I[152][1]='';
+I[152][2]='1';
+I[152][3]=new Array();
+I[152][3][0]=new Array('Did you rest enough?','',1,100,1);
+I[153]=new Array();I[153][0]=100;
+I[153][1]='';
+I[153][2]='1';
+I[153][3]=new Array();
+I[153][3][0]=new Array('I prefer to fly rather than study','',1,100,1);
+I[153][3][1]=new Array('I prefer to fly instead of studying','',1,100,1);
+I[154]=new Array();I[154][0]=100;
+I[154][1]='';
+I[154][2]='1';
+I[154][3]=new Array();
+I[154][3][0]=new Array('Don\'t you ever listen?','',1,100,1);
+I[155]=new Array();I[155][0]=100;
+I[155][1]='';
+I[155][2]='1';
+I[155][3]=new Array();
+I[155][3][0]=new Array('Even my mother knows the truth','',1,100,1);
+I[156]=new Array();I[156][0]=100;
+I[156][1]='';
+I[156][2]='1';
+I[156][3]=new Array();
+I[156][3][0]=new Array('I haven\'t seen you ever since you were fifteen','',1,100,1);
+I[156][3][1]=new Array('I haven\'t seen you ever since you were fifteen years old','',1,100,1);
+I[157]=new Array();I[157][0]=100;
+I[157][1]='';
+I[157][2]='1';
+I[157][3]=new Array();
+I[157][3][0]=new Array('My car is good enough for me','',1,100,1);
+I[158]=new Array();I[158][0]=100;
+I[158][1]='';
+I[158][2]='1';
+I[158][3]=new Array();
+I[158][3][0]=new Array('You musn\'t even work','',1,100,1);
+I[159]=new Array();I[159][0]=100;
+I[159][1]='';
+I[159][2]='1';
+I[159][3]=new Array();
+I[159][3][0]=new Array('Not even Pedro, knew her','',1,100,1);
+I[160]=new Array();I[160][0]=100;
+I[160][1]='';
+I[160][2]='1';
+I[160][3]=new Array();
+I[160][3][0]=new Array('I would rather study in Cali ','',1,100,1);
+I[160][3][1]=new Array('I would prefer to study in Cali','',1,100,1);
+I[161]=new Array();I[161][0]=100;
+I[161][1]='';
+I[161][2]='1';
+I[161][3]=new Array();
+I[161][3][0]=new Array('They are all very friendly','',1,100,1);
+
+
+function StartUp(){
+	RemoveBottomNavBarForIE();
+
+//If there's only one question, no need for question navigation controls
+	if (QsToShow < 2){
+		document.getElementById('QNav').style.display = 'none';
+	}
+	
+
+	
+
+	PreloadImages('../Ejercicios Internet/PRUEBA.GIF');
+
+	
+	CompleteEmptyFeedback();
+
+	SetUpQuestions();
+	ClearTextBoxes();
+	CreateStatusArray();
+	
+
+	
+//Check search string for q parameter
+	if (document.location.search.length > 0){
+		if (ShuffleQs == false){
+			var JumpTo = parseInt(document.location.search.substring(1,document.location.search.length))-1;
+			if (JumpTo <= QsToShow){
+				ChangeQ(JumpTo);
+			}
+		}
+	}
+}
+
+function ShowHideQuestions(){
+	FuncBtnOut(document.getElementById('ShowMethodButton'));
+	document.getElementById('ShowMethodButton').style.display = 'none';
+	if (ShowingAllQuestions == false){
+		for (var i=0; i<QArray.length; i++){
+				QArray[i].style.display = '';
+			}
+		document.getElementById('Questions').style.listStyleType = 'decimal';
+		document.getElementById('OneByOneReadout').style.display = 'none';
+		document.getElementById('ShowMethodButton').innerHTML = ShowOneByOneCaption;
+		ShowingAllQuestions = true;
+	}
+	else{
+		for (var i=0; i<QArray.length; i++){
+				if (i != CurrQNum){
+					QArray[i].style.display = 'none';
+				}
+			}
+		document.getElementById('Questions').style.listStyleType = 'none';
+		document.getElementById('OneByOneReadout').style.display = '';
+		document.getElementById('ShowMethodButton').innerHTML = ShowAllQuestionsCaption;
+		ShowingAllQuestions = false;	
+	}
+	document.getElementById('ShowMethodButton').style.display = 'inline';
+}
+
+function CreateStatusArray(){
+	var QNum, ANum;
+//For each item in the item array
+	for (QNum=0; QNum<I.length; QNum++){
+//Check if the question still exists (hasn't been nuked by showing a random selection)
+		if (document.getElementById('Q_' + QNum) != null){
+			State[QNum] = new Array();
+			State[QNum][0] = -1; //Score for this q; -1 shows question not done yet
+			State[QNum][1] = new Array(); //answers
+			for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+				State[QNum][1][ANum] = 0; //answer not chosen yet; when chosen, will store its position in the series of choices
+			}
+			State[QNum][2] = 0; //tries at this q so far
+			State[QNum][3] = 0; //incrementing percent-correct values of selected answers
+			State[QNum][4] = 0; //penalties incurred for hints
+			State[QNum][5] = ''; //Sequence of answers chosen by number
+		}
+		else{
+			State[QNum] = null;
+		}
+	}
+}
+
+
+
+
+
+function CalculateOverallScore(){
+	var TotalWeighting = 0;
+	var TotalScore = 0;
+	
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] > -1){
+				TotalWeighting += I[QNum][0];
+				TotalScore += (I[QNum][0] * State[QNum][0]);
+			}
+		}
+	}
+	Score = Math.floor((TotalScore/TotalWeighting)*100);
+}
+
+function CheckFinished(){
+	var FB = '';
+	var AllDone = true;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] < 0){
+				AllDone = false;
+			}
+		}
+	}
+	if (AllDone == true){
+	
+//Report final score and submit if necessary
+		CalculateOverallScore();
+		FB = YourScoreIs + ' ' + Score + '%.';
+		if (ShowCorrectFirstTime == true){
+			var CFT = 0;
+			for (QNum=0; QNum<State.length; QNum++){
+				if (State[QNum] != null){
+					if (State[QNum][0] >= 1){
+						CFT++;
+					}
+				}
+			}
+			FB += '<br />' + CorrectFirstTime + ' ' + CFT + '/' + QsToShow;
+		}
+		WriteToInstructions(FB);
+		
+		Finished == true;
+
+		TimeOver = true;
+		Locked = true;
+		
+
+
+		Finished = true;
+		Detail = '<?xml version="1.0"?><hpnetresult><fields>';
+		for (QNum=0; QNum<State.length; QNum++){
+			if (State[QNum] != null){
+				if (State[QNum][5].length > 0){
+					Detail += '<field><fieldname>Question #' + (QNum+1) + '</fieldname><fieldtype>question-tracking</fieldtype><fieldlabel>Q ' + (QNum+1) + '</fieldlabel><fieldlabelid>QuestionTrackingField</fieldlabelid><fielddata>' + State[QNum][5] + '</fielddata></field>';
+				}
+			}
+		}
+		Detail += '</fields></hpnetresult>';
+		setTimeout('Finish()', SubmissionTimeout);
+	}
+}
+
+
+
+
+
+//CORE CODE FOR CHECKING SHORT ANSWER GUESSES AGAINST ANSWER ARRAYS
+
+var CaseSensitive = false;
+var ShowAlsoCorrect = true;
+var PleaseEnter = 'Por favor digite algo porque as&#x00ED; me queda muy dificil evaluarlo!';
+var HybridTries = 2;
+var PartlyIncorrect = 'En lo resaltado est&#x00E1; patinando:';
+var CorrectList = 'Respuesta (s) correcta (s): ';
+var NextCorrect = 'Next correct letter in the answer: ';
+var CurrBox = null;
+
+function TrackFocus(BoxID){
+	InTextBox = true;
+	CurrBox = document.getElementById(BoxID);
+}
+
+function LeaveGap(){
+	InTextBox = false;
+}
+
+function TypeChars(Chars){
+	if (CurrBox != null){
+//		if (CurrBox.style.display != 'none'){
+			CurrBox.value += Chars;
+			CurrBox.focus();
+//		}
+	}
+}
+
+function CheckGuess(Guess, Answer, CaseSensitive, PercentCorrect, Feedback){
+	this.Guess = Guess;
+	this.Answer = Answer;
+	this.PercentCorrect = PercentCorrect;
+	this.Feedback = Feedback;
+	if (CaseSensitive == false){
+		this.WorkingGuess = Guess.toLowerCase();
+		this.WorkingAnswer = Answer.toLowerCase();
+	}
+	else{
+		this.WorkingGuess = Guess;
+		this.WorkingAnswer = Answer;				
+	}
+	this.Hint = '';
+	this.HintPenalty = 1/Answer.length;
+	this.CorrectStart = '';
+	this.WrongMiddle = '';
+	this.CorrectEnd = '';
+	this.PercentMatch = 0;
+	this.DoCheck();
+}
+
+function CheckGuess_DoCheck(){
+//Check if it's an exact match
+	if (this.WorkingAnswer == this.WorkingGuess){
+		this.PercentMatch = 100;
+		this.CorrectStart = this.Guess;
+	return;
+	}
+//Figure out how much of the beginning is correct
+	var i = 0;
+	var CorrectChars = 0;
+	while (this.WorkingAnswer.charAt(i) == this.WorkingGuess.charAt(i)){
+		i++;
+		CorrectChars++;
+	}
+//Stash the hint
+	this.Hint = this.Answer.charAt(i);
+	
+	this.CorrectStart = this.Guess.substring(0, i);
+	
+//If there's more to the answer, look at the rest of it
+	if (i<this.Guess.length){
+	
+//Figure out how much of the end is correct
+		var j = this.WorkingGuess.length-1;
+		var k = this.WorkingAnswer.length-1;
+		while ((j>=i)&&((this.WorkingAnswer.charAt(k) == this.WorkingGuess.charAt(j))&&(CorrectChars < this.Answer.length))){
+			CorrectChars++;
+			j--;
+			k--;
+		}
+		this.CorrectEnd = this.Guess.substring(j+1, this.Guess.length);
+		this.WrongMiddle = this.Guess.substring(i, j+1);
+	}
+	if (TrimString(this.WrongMiddle).length < 1){this.WrongMiddle = '_';}
+//Calculate match score based on how much of the guess is correct
+	if (CorrectChars < this.Answer.length){
+		this.PercentMatch = Math.floor(100*CorrectChars)/this.Answer.length;
+	}
+	else{
+		this.PercentMatch = Math.floor((100 * CorrectChars)/this.Guess.length);
+	}	
+}
+
+CheckGuess.prototype.DoCheck = CheckGuess_DoCheck;
+
+function CheckAnswerArray(CaseSensitive){
+	this.CaseSensitive = CaseSensitive;
+	this.Answers = new Array();
+	this.Score = 0;
+	this.Feedback = '';
+	this.Hint = '';
+	this.HintPenalty = 0;
+	this.MatchedAnswerLength = 1;
+	this.CompleteMatch = false;
+	this.MatchNum = -1;
+}
+
+function CheckAnswerArray_AddAnswer(Guess, Answer, PercentCorrect, Feedback){
+	this.Answers.push(new CheckGuess(Guess, Answer, this.CaseSensitive, PercentCorrect, Feedback));
+}
+
+CheckAnswerArray.prototype.AddAnswer = CheckAnswerArray_AddAnswer;
+
+function CheckAnswerArray_ClearAll(){
+	this.Answers.length = 0;
+}
+
+CheckAnswerArray.prototype.ClearAll = CheckAnswerArray_ClearAll;
+
+function CheckAnswerArray_GetBestMatch(){
+//First check for a 100% match
+	for (var i=0; i<this.Answers.length; i++){
+		if (this.Answers[i].PercentMatch == 100){
+			this.Feedback = this.Answers[i].Feedback;
+			this.Score = this.Answers[i].PercentCorrect;
+			this.CompleteMatch = true;
+			this.MatchNum = i;
+			return;
+		}
+	}
+//Now check for the best alternative match
+	var PercentMatch = 0;
+	var BestMatch = -1;
+	for (i=0; i<this.Answers.length; i++){
+		if ((this.Answers[i].PercentMatch > PercentMatch)&&(this.Answers[i].PercentCorrect == 100)){
+			BestMatch = i;
+			PercentMatch = this.Answers[i].PercentMatch;
+		}
+	}
+	if (BestMatch > -1){
+		this.Score = this.Answers[BestMatch].PercentMatch;
+		this.Feedback = PartlyIncorrect + ' ';
+		this.Feedback += '<span class="Answer">' + this.Answers[BestMatch].CorrectStart;
+		this.Feedback += '<span class="Highlight">' + this.Answers[BestMatch].WrongMiddle + '</span>';
+		this.Feedback += this.Answers[BestMatch].CorrectEnd + '</span>';
+		this.Hint = '<span class="Answer">' + this.Answers[BestMatch].CorrectStart;
+		this.Hint += '<span class="Highlight">' + this.Answers[BestMatch].Hint + '</span></span>';
+		this.HintPenalty = this.Answers[BestMatch].HintPenalty;
+	}
+	else{
+		this.Score = 0;
+		this.Feedback = '';
+	}
+}
+
+CheckAnswerArray.prototype.GetBestMatch = CheckAnswerArray_GetBestMatch;
+
+function CheckShortAnswer(QNum){
+//bail if question doesn't exist or exercise finished
+	if ((State[QNum].length < 1)||(Finished == true)){return;}
+	
+//bail if question already complete
+	if (State[QNum][0] > -1){return;}
+
+//Get the guess
+	var G = document.getElementById('Q_' + QNum + '_Guess').value;
+	
+//If no guess, bail with message; no penalty
+	if (G.length < 1){
+		ShowMessage(PleaseEnter);
+		return;
+	}
+
+//Increment tries
+	State[QNum][2]++;
+	
+//Create a check object
+	var CA = new CheckAnswerArray(CaseSensitive);
+
+	CA.ClearAll();
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		CA.AddAnswer(G, I[QNum][3][ANum][0], I[QNum][3][ANum][3], I[QNum][3][ANum][1]);
+	}
+	CA.GetBestMatch();
+	
+//Store any match in the state tracking field
+	if (CA.MatchNum > -1){
+		State[QNum][5] += String.fromCharCode(65+CA.MatchNum) + ',';
+	}
+
+//Add the percent correct value for this answer to the Q State (works for all
+//situations, wrong or right
+	State[QNum][3] += CA.Score;
+	
+//Now branch, based on the nature of the match
+//Is it a complete match?
+	if (CA.CompleteMatch == true){
+		
+//Is it with a wrong answer, or a right answer?
+		if (CA.Score == 100){
+//It's right
+			CalculateShortAnsQuestionScore(QNum);
+//Get correct answer list if required, assuming there are any other correct alternatives
+			if (ShowAlsoCorrect == true){
+				var AlsoCorrectList = GetCorrectList(QNum, G, false);
+				if (AlsoCorrectList.length > 0){
+					CA.Feedback += '<br />' + CorrectList + '<br />' +  '<span class="Answer">' + AlsoCorrectList + '</span>';
+				}
+			}	
+		
+//Get the overall score and add it to the feedback
+			if (ContinuousScoring == true){
+				CalculateOverallScore();
+				CA.Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.';
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.');
+			}
+			ShowMessage(CA.Feedback);
+//Put the answer in
+			ReplaceGuessBox(QNum, G);
+			CheckFinished();
+			return;
+		}
+	}
+	
+//Otherwise, it's a match to a predicted wrong/partially correct, or a partial
+//match to a right answer
+	if (CA.Feedback.length < 1){CA.Feedback = DefaultWrong;} 
+	ShowMessage(CA.Feedback);
+
+//If necessary, switch a hybrid question to m/c
+	if (State[QNum][2] >= HybridTries){
+		SwitchHybridDisplay(QNum);
+	}
+}
+
+function CalculateShortAnsQuestionScore(QNum){
+	var Tries = State[QNum][2] + State[QNum][4]; //include tries and hint penalties;
+	var PercentCorrect = State[QNum][3];
+	var HintPenalties = State[QNum][4];
+
+//Make sure it's not already complete
+	if (State[QNum][0] < 0){
+		if (HintPenalties >= 1){
+			State[QNum][0] = 0;
+		}
+		else{
+			State[QNum][0] = (PercentCorrect/(100*Tries));
+		}
+		if (State[QNum][0] < 0){
+			State[QNum][0] = 0;
+		}
+	}
+}
+
+function SwitchHybridDisplay(QNum){
+	if (document.getElementById('Q_' + QNum + '_Hybrid_MC') != null){
+		document.getElementById('Q_' + QNum + '_Hybrid_MC').style.display = '';
+		if (document.getElementById('Q_' + QNum + '_SA') != null){
+			document.getElementById('Q_' + QNum + '_SA').style.display = 'none';
+		}
+	}
+}
+
+function GetCorrectArray(QNum){
+	var Result = new Array();
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][2] == 1){ //This is an acceptable correct answer
+			Result.push(I[QNum][3][ANum][0]);
+		}
+	}	
+	return Result;
+}
+
+function GetCorrectList(QNum, Answer, IncludeAnswer){
+	var As = GetCorrectArray(QNum);
+	var Result = '';
+	for (var ANum=0; ANum<As.length; ANum++){
+		if ((IncludeAnswer == true)||(As[ANum] != Answer)){
+			Result += As[ANum] + '<br />';
+		}
+	}
+	return Result;
+}
+
+function GetFirstCorrectAnswer(QNum){
+	var As = GetCorrectArray(QNum);
+	if (As.length > 0){
+		return As[0];
+	}
+	else{
+		return '';
+	}
+}
+
+function ReplaceGuessBox(QNum, Ans){
+	if (document.getElementById('Q_' + QNum + '_SA') != null){
+		var El = document.getElementById('Q_' + QNum + '_SA');
+		while (El.childNodes.length > 0){
+			El.removeChild(El.childNodes[0]);
+		}
+		var A = document.createElement('span');
+		A.setAttribute('class', 'Answer');
+		var T = document.createTextNode(Ans);
+		A.appendChild(T);
+		El.appendChild(A);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+
+<body onload="StartUp()" id="TheBody">
+
+<!-- BeginTopNavButtons -->
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<h2 class="ExerciseTitle" style="margin-top: 0; margin-bottom: 0">
+	<font color="#FF0000">&quot;LA HORA DE LA VERDAD&quot;</font><center><img src="../Ejercicios Internet/PRUEBA.GIF" alt="PRUEBA.GIF" width="361" height="80" border="0"></img></center>
+
+
+</div>
+
+<div id="InstructionsDiv" class="StdDiv">
+	<p class="MsoNormal" style="text-align: justify; background: #A0CDDE"><b>
+	<span style="font-family:&quot;Bell MT&quot;;color:#00000D">La técnica de la 
+	selección múltiple, si bien es un mecanismo válido, no en todos los casos 
+	arroja los resultados reales sobre una evaluación. Cuando usted va a 
+	conversar, escribir o leer no contará con esas ayudas. Por ello está sí es 
+	una evaluación real pues tiene que digitar lo que va a decir. Tenga en 
+	cuenta los siguientes puntos:</span></b></p>
+	<p class="MsoNormal" style="text-align: justify; background: #A0CDDE"><b>
+	<span style="font-family:&quot;Bell MT&quot;;color:#00000D"><br>
+	<i>- Utilice </i></span><i>
+	<span style="font-family:&quot;Bell MT&quot;;
+color:green">contracciones</span><span style="font-family:&quot;Bell MT&quot;;
+color:#00000D"> en inglés para que concuerde su respuesta.&nbsp; Al digitar en 
+	español tenga en cuenta </span>
+	<span style="font-family:&quot;Bell MT&quot;;
+color:red">las tildes y comas.</span></i></b></p>
+	<p class="MsoNormal" style="text-align: justify; background: #A0CDDE"><b><i>
+	<span style="font-family:&quot;Bell MT&quot;;color:#00000D">- No verá la 
+	valoración porcentual de su puntaje pues eventualmente tiene que aprenderlas 
+	todas.<br>
+	- No hay opción para ver la respuesta correcta pues si usted se le midió a 
+	hacer este ejercicio es porque ya realizó el&nbsp;ejercicio</span><span style="font-family:&quot;Bell MT&quot;;color:red"> 
+	&quot;EVALUACIÓN AVANZADA&quot; </span>
+	<span style="font-family:&quot;Bell MT&quot;;color:#00000D">que es similar 
+	pero con opciones, una de las cuales es la respuesta correcta. </span></i>
+	</b>
+</div>
+
+
+
+
+<div id="MainDiv" class="StdDiv">
+ 
+<div id="QNav" class="QuestionNavigation">
+
+<p style="text-align: right;">
+<button id="ShowMethodButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ShowHideQuestions(); return false;">Mostrar todas las preguntas</button>
+</p>
+
+<div id="OneByOneReadout">
+<button id="PrevQButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(-1); return false;">&lt;=</button>
+
+<span id="QNumReadout" class="QNum">&nbsp;</span>
+
+<button id="NextQButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(1); return false;">=&gt;</button>
+<br />
+</div>
+
+</div>
+ 
+<ol class="QuizQuestions" id="Questions">
+<li class="QuizQuestion" id="Q_0" style="display: none;"><p class="QuestionText">Es importante que el no sepa la verdad</p><div class="ShortAnswer" id="Q_0_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_0_Guess" onfocus="TrackFocus('Q_0_Guess')" onblur="LeaveGap()" class="GapBox" size="41"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(0)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_1" style="display: none;"><p class="QuestionText">Ella es la hija de Carlos y de Mary (Utilizando el posesivo saj&#x00F3;n)</p><div class="ShortAnswer" id="Q_1_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_1_Guess" onfocus="TrackFocus('Q_1_Guess')" onblur="LeaveGap()" class="GapBox" size="33"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(1)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_2" style="display: none;"><p class="QuestionText">Pedro y yo somos felices</p><div class="ShortAnswer" id="Q_2_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_2_Guess" onfocus="TrackFocus('Q_2_Guess')" onblur="LeaveGap()" class="GapBox" size="21"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(2)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_3" style="display: none;"><p class="QuestionText">Ni mis pap&#x00E1;s ni Mar&#x00ED;a saben la verdad</p><div class="ShortAnswer" id="Q_3_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_3_Guess" onfocus="TrackFocus('Q_3_Guess')" onblur="LeaveGap()" class="GapBox" size="44"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(3)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_4" style="display: none;"><p class="QuestionText">Esta mujer me gusta m&#x00E1;s</p><div class="ShortAnswer" id="Q_4_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_4_Guess" onfocus="TrackFocus('Q_4_Guess')" onblur="LeaveGap()" class="GapBox" size="24"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(4)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_5" style="display: none;"><p class="QuestionText">Esta es la canci&#x00F3;n que m&#x00E1;s me gusta</p><div class="ShortAnswer" id="Q_5_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_5_Guess" onfocus="TrackFocus('Q_5_Guess')" onblur="LeaveGap()" class="GapBox" size="37"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(5)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_6" style="display: none;"><p class="QuestionText">Este computador es el que menos me gusta</p><div class="ShortAnswer" id="Q_6_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_6_Guess" onfocus="TrackFocus('Q_6_Guess')" onblur="LeaveGap()" class="GapBox" size="46"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(6)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_7" style="display: none;"><p class="QuestionText">Yo quer&#x00ED;a un perro que no costara demasiado</p><div class="ShortAnswer" id="Q_7_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_7_Guess" onfocus="TrackFocus('Q_7_Guess')" onblur="LeaveGap()" class="GapBox" size="43"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(7)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_8" style="display: none;"><p class="QuestionText">M&#x00E1;s te vale!</p><div class="ShortAnswer" id="Q_8_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_8_Guess" onfocus="TrackFocus('Q_8_Guess')" onblur="LeaveGap()" class="GapBox" size="13"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(8)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_9" style="display: none;"><p class="QuestionText">Peter podr&#x00E1; adoptar una ni&#x00F1;a</p><div class="ShortAnswer" id="Q_9_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_9_Guess" onfocus="TrackFocus('Q_9_Guess')" onblur="LeaveGap()" class="GapBox" size="34"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(9)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_10" style="display: none;"><p class="QuestionText">Se supone que debo estar feliz aqu&#x00ED;?</p><div class="ShortAnswer" id="Q_10_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_10_Guess" onfocus="TrackFocus('Q_10_Guess')" onblur="LeaveGap()" class="GapBox" size="31"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(10)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_11" style="display: none;"><p class="QuestionText">A m&#x00ED; para nada me gusta el f&#x00FA;tbol</p><div class="ShortAnswer" id="Q_11_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_11_Guess" onfocus="TrackFocus('Q_11_Guess')" onblur="LeaveGap()" class="GapBox" size="26"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(11)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_12" style="display: none;"><p class="QuestionText">Alguien m&#x00E1;s ha visto a Pedro?</p><div class="ShortAnswer" id="Q_12_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_12_Guess" onfocus="TrackFocus('Q_12_Guess')" onblur="LeaveGap()" class="GapBox" size="28"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(12)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_13" style="display: none;"><p class="QuestionText">C&#x00F3;mo m&#x00E1;s puedo yo conocer la altura de este edificio?</p><div class="ShortAnswer" id="Q_13_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_13_Guess" onfocus="TrackFocus('Q_13_Guess')" onblur="LeaveGap()" class="GapBox" size="48"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(13)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_14" style="display: none;"><p class="QuestionText">Con raz&#x00F3;n est&#x00E1;s tan gordo</p><div class="ShortAnswer" id="Q_14_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_14_Guess" onfocus="TrackFocus('Q_14_Guess')" onblur="LeaveGap()" class="GapBox" size="24"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(14)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_15" style="display: none;"><p class="QuestionText">Compr&#x00E9; un edificio de cinco apartamentos</p><div class="ShortAnswer" id="Q_15_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_15_Guess" onfocus="TrackFocus('Q_15_Guess')" onblur="LeaveGap()" class="GapBox" size="34"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(15)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_16" style="display: none;"><p class="QuestionText">Dame otra oportunidad</p><div class="ShortAnswer" id="Q_16_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_16_Guess" onfocus="TrackFocus('Q_16_Guess')" onblur="LeaveGap()" class="GapBox" size="22"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(16)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_17" style="display: none;"><p class="QuestionText">El alcalde mismo di&#x00F3; la orden</p><div class="ShortAnswer" id="Q_17_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_17_Guess" onfocus="TrackFocus('Q_17_Guess')" onblur="LeaveGap()" class="GapBox" size="32"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(17)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_18" style="display: none;"><p class="QuestionText">Estar&#x00E9; contigo, no importa como</p><div class="ShortAnswer" id="Q_18_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_18_Guess" onfocus="TrackFocus('Q_18_Guess')" onblur="LeaveGap()" class="GapBox" size="32"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(18)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_19" style="display: none;"><p class="QuestionText">El podr&#x00ED;a haber ido (no sabemos si fu&#x00E9;)</p><div class="ShortAnswer" id="Q_19_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_19_Guess" onfocus="TrackFocus('Q_19_Guess')" onblur="LeaveGap()" class="GapBox" size="18"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(19)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_20" style="display: none;"><p class="QuestionText">Ella nunca ha ido a Cartagena</p><div class="ShortAnswer" id="Q_20_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_20_Guess" onfocus="TrackFocus('Q_20_Guess')" onblur="LeaveGap()" class="GapBox" size="31"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(20)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_21" style="display: none;"><p class="QuestionText">Es importante no tener enemigos</p><div class="ShortAnswer" id="Q_21_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_21_Guess" onfocus="TrackFocus('Q_21_Guess')" onblur="LeaveGap()" class="GapBox" size="33"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(21)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_22" style="display: none;"><p class="QuestionText">Estoy tan cansado que no puedo volar</p><div class="ShortAnswer" id="Q_22_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_22_Guess" onfocus="TrackFocus('Q_22_Guess')" onblur="LeaveGap()" class="GapBox" size="30"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(22)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_23" style="display: none;"><p class="QuestionText">Ellos desear&#x00ED;an (a ellos les gustar&#x00ED;a) que tu volases este helic&#x00F3;ptero <br /></p><div class="ShortAnswer" id="Q_23_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_23_Guess" onfocus="TrackFocus('Q_23_Guess')" onblur="LeaveGap()" class="GapBox" size="41"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(23)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_24" style="display: none;"><p class="QuestionText">Eso es peligroso, as&#x00ED; como ilegal</p><div class="ShortAnswer" id="Q_24_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_24_Guess" onfocus="TrackFocus('Q_24_Guess')" onblur="LeaveGap()" class="GapBox" size="38"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(24)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_25" style="display: none;"><p class="QuestionText">Fui castigado por no volar</p><div class="ShortAnswer" id="Q_25_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_25_Guess" onfocus="TrackFocus('Q_25_Guess')" onblur="LeaveGap()" class="GapBox" size="29"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(25)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_26" style="display: none;"><p class="QuestionText">He wouldn&#x00B4;t say the answer</p><div class="ShortAnswer" id="Q_26_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_26_Guess" onfocus="TrackFocus('Q_26_Guess')" onblur="LeaveGap()" class="GapBox" size="33"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(26)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_27" style="display: none;"><p class="QuestionText">I don't like your speaking at all</p><div class="ShortAnswer" id="Q_27_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_27_Guess" onfocus="TrackFocus('Q_27_Guess')" onblur="LeaveGap()" class="GapBox" size="32"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(27)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_28" style="display: none;"><p class="QuestionText">La noticia es preocupante</p><div class="ShortAnswer" id="Q_28_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_28_Guess" onfocus="TrackFocus('Q_28_Guess')" onblur="LeaveGap()" class="GapBox" size="21"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(28)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_29" style="display: none;"><p class="QuestionText">Lo mejor es que te vayas</p><div class="ShortAnswer" id="Q_29_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_29_Guess" onfocus="TrackFocus('Q_29_Guess')" onblur="LeaveGap()" class="GapBox" size="18"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(29)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_30" style="display: none;"><p class="QuestionText">No quiero volver a quererte</p><div class="ShortAnswer" id="Q_30_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_30_Guess" onfocus="TrackFocus('Q_30_Guess')" onblur="LeaveGap()" class="GapBox" size="35"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(30)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_31" style="display: none;"><p class="QuestionText">Ojal&#x00E1; ella fuese m&#x00E1;s joven</p><div class="ShortAnswer" id="Q_31_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_31_Guess" onfocus="TrackFocus('Q_31_Guess')" onblur="LeaveGap()" class="GapBox" size="23"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(31)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_32" style="display: none;"><p class="QuestionText">Pedro volar&#x00E1; ma&#x00F1;ana y yo tambi&#x00E9;n</p><div class="ShortAnswer" id="Q_32_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_32_Guess" onfocus="TrackFocus('Q_32_Guess')" onblur="LeaveGap()" class="GapBox" size="37"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(32)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_33" style="display: none;"><p class="QuestionText">Por casualidad sabes sus nombres?</p><div class="ShortAnswer" id="Q_33_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_33_Guess" onfocus="TrackFocus('Q_33_Guess')" onblur="LeaveGap()" class="GapBox" size="39"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(33)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_34" style="display: none;"><p class="QuestionText">En realidad, yo nac&#x00ED; en Colombia</p><div class="ShortAnswer" id="Q_34_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_34_Guess" onfocus="TrackFocus('Q_34_Guess')" onblur="LeaveGap()" class="GapBox" size="32"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(34)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_35" style="display: none;"><p class="QuestionText">Qu&#x00E9; m&#x00E1;s le dijiste a ella?</p><div class="ShortAnswer" id="Q_35_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_35_Guess" onfocus="TrackFocus('Q_35_Guess')" onblur="LeaveGap()" class="GapBox" size="27"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(35)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_36" style="display: none;"><p class="QuestionText">Quieres agua?</p><div class="ShortAnswer" id="Q_36_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_36_Guess" onfocus="TrackFocus('Q_36_Guess')" onblur="LeaveGap()" class="GapBox" size="23"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(36)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_37" style="display: none;"><p class="QuestionText">Tomorrow I will have understood the truth</p><div class="ShortAnswer" id="Q_37_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_37_Guess" onfocus="TrackFocus('Q_37_Guess')" onblur="LeaveGap()" class="GapBox" size="35"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(37)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_38" style="display: none;"><p class="QuestionText">Tienes algo para darme?</p><div class="ShortAnswer" id="Q_38_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_38_Guess" onfocus="TrackFocus('Q_38_Guess')" onblur="LeaveGap()" class="GapBox" size="32"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(38)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_39" style="display: none;"><p class="QuestionText">Uno piensa que volar es f&#x00E1;cil</p><div class="ShortAnswer" id="Q_39_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_39_Guess" onfocus="TrackFocus('Q_39_Guess')" onblur="LeaveGap()" class="GapBox" size="30"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(39)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_40" style="display: none;"><p class="QuestionText">A ella no le gusta el f&#x00FA;tbol y a el tampoco </p><div class="ShortAnswer" id="Q_40_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_40_Guess" onfocus="TrackFocus('Q_40_Guess')" onblur="LeaveGap()" class="GapBox" size="46"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(40)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_41" style="display: none;"><p class="QuestionText">Yo me baj&#x00E9; del tren</p><div class="ShortAnswer" id="Q_41_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_41_Guess" onfocus="TrackFocus('Q_41_Guess')" onblur="LeaveGap()" class="GapBox" size="19"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(41)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_42" style="display: none;"><p class="QuestionText">Yo deber&#x00ED;a haber evitado ver la pel&#x00ED;cula</p><div class="ShortAnswer" id="Q_42_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_42_Guess" onfocus="TrackFocus('Q_42_Guess')" onblur="LeaveGap()" class="GapBox" size="38"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(42)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_43" style="display: none;"><p class="QuestionText">Yo no s&#x00E9; si el est&#x00E1; diciendo la verdad o no</p><div class="ShortAnswer" id="Q_43_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_43_Guess" onfocus="TrackFocus('Q_43_Guess')" onblur="LeaveGap()" class="GapBox" size="51"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(43)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_44" style="display: none;"><p class="QuestionText">Yo a duras penas te conozco</p><div class="ShortAnswer" id="Q_44_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_44_Guess" onfocus="TrackFocus('Q_44_Guess')" onblur="LeaveGap()" class="GapBox" size="17"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(44)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_45" style="display: none;"><p class="QuestionText">Yo necesito que ella cante esta noche</p><div class="ShortAnswer" id="Q_45_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_45_Guess" onfocus="TrackFocus('Q_45_Guess')" onblur="LeaveGap()" class="GapBox" size="26"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(45)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_46" style="display: none;"><p class="QuestionText">Yo no he podido encontrar el hotel</p><div class="ShortAnswer" id="Q_46_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_46_Guess" onfocus="TrackFocus('Q_46_Guess')" onblur="LeaveGap()" class="GapBox" size="37"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(46)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_47" style="display: none;"><p class="QuestionText">Yo s&#x00ED; bes&#x00E9; a Pedro anoche</p><div class="ShortAnswer" id="Q_47_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_47_Guess" onfocus="TrackFocus('Q_47_Guess')" onblur="LeaveGap()" class="GapBox" size="27"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(47)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_48" style="display: none;"><p class="QuestionText">El es qui&#x00E9;n vende revistas</p><div class="ShortAnswer" id="Q_48_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_48_Guess" onfocus="TrackFocus('Q_48_Guess')" onblur="LeaveGap()" class="GapBox" size="34"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(48)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_49" style="display: none;"><p class="QuestionText">Encontr&#x00E9; unos ratones aqu&#x00ED; arriba</p><div class="ShortAnswer" id="Q_49_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_49_Guess" onfocus="TrackFocus('Q_49_Guess')" onblur="LeaveGap()" class="GapBox" size="25"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(49)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_50" style="display: none;"><p class="QuestionText">Hace fr&#x00ED;o aqu&#x00ED; adentro</p><div class="ShortAnswer" id="Q_50_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_50_Guess" onfocus="TrackFocus('Q_50_Guess')" onblur="LeaveGap()" class="GapBox" size="17"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(50)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_51" style="display: none;"><p class="QuestionText">Cuando era joven, yo sol&#x00ED;a jugar f&#x00FA;tbol todos los d&#x00ED;as </p><div class="ShortAnswer" id="Q_51_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_51_Guess" onfocus="TrackFocus('Q_51_Guess')" onblur="LeaveGap()" class="GapBox" size="49"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(51)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_52" style="display: none;"><p class="QuestionText">Yo estoy acostumbrado a volar </p><div class="ShortAnswer" id="Q_52_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_52_Guess" onfocus="TrackFocus('Q_52_Guess')" onblur="LeaveGap()" class="GapBox" size="18"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(52)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_53" style="display: none;"><p class="QuestionText">Si yo hubiese ido a Cali ya lo sabr&#x00ED;as</p><div class="ShortAnswer" id="Q_53_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_53_Guess" onfocus="TrackFocus('Q_53_Guess')" onblur="LeaveGap()" class="GapBox" size="47"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(53)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_54" style="display: none;"><p class="QuestionText">Como te dije antes, est&#x00E1;s despedida </p><div class="ShortAnswer" id="Q_54_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_54_Guess" onfocus="TrackFocus('Q_54_Guess')" onblur="LeaveGap()" class="GapBox" size="35"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(54)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_55" style="display: none;"><p class="QuestionText">El aceite limpia, lubrica y suaviza</p><div class="ShortAnswer" id="Q_55_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_55_Guess" onfocus="TrackFocus('Q_55_Guess')" onblur="LeaveGap()" class="GapBox" size="34"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(55)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_56" style="display: none;"><p class="QuestionText">Esa es la raz&#x00F3;n por la cual ella muri&#x00F3;</p><div class="ShortAnswer" id="Q_56_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_56_Guess" onfocus="TrackFocus('Q_56_Guess')" onblur="LeaveGap()" class="GapBox" size="32"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(56)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_57" style="display: none;"><p class="QuestionText">Si Pedro fuera a matarte, tu lo sabr&#x00ED;as</p><div class="ShortAnswer" id="Q_57_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_57_Guess" onfocus="TrackFocus('Q_57_Guess')" onblur="LeaveGap()" class="GapBox" size="44"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(57)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_58" style="display: none;"><p class="QuestionText">Como as&#x00ED; que no viniste! </p><div class="ShortAnswer" id="Q_58_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_58_Guess" onfocus="TrackFocus('Q_58_Guess')" onblur="LeaveGap()" class="GapBox" size="25"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(58)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_59" style="display: none;"><p class="QuestionText">Mi hermano es m&#x00E1;s alto que yo </p><div class="ShortAnswer" id="Q_59_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_59_Guess" onfocus="TrackFocus('Q_59_Guess')" onblur="LeaveGap()" class="GapBox" size="27"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(59)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_60" style="display: none;"><p class="QuestionText">El tiene una tienda, o mejor dicho, un supermercado</p><div class="ShortAnswer" id="Q_60_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_60_Guess" onfocus="TrackFocus('Q_60_Guess')" onblur="LeaveGap()" class="GapBox" size="40"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(60)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_61" style="display: none;"><p class="QuestionText">Se oy&#x00F3; una explosi&#x00F3;n </p><div class="ShortAnswer" id="Q_61_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_61_Guess" onfocus="TrackFocus('Q_61_Guess')" onblur="LeaveGap()" class="GapBox" size="22"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(61)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_62" style="display: none;"><p class="QuestionText">Si hubiese habido una pregunta el profesor no la habr&#x00ED;a podido haber contestado<br /></p><div class="ShortAnswer" id="Q_62_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_62_Guess" onfocus="TrackFocus('Q_62_Guess')" onblur="LeaveGap()" class="GapBox" size="77"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(62)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_63" style="display: none;"><p class="QuestionText">Yo quiero que ellos vayan </p><div class="ShortAnswer" id="Q_63_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_63_Guess" onfocus="TrackFocus('Q_63_Guess')" onblur="LeaveGap()" class="GapBox" size="17"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(63)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_64" style="display: none;"><p class="QuestionText">Deja tu quejadera a todo momento! </p><div class="ShortAnswer" id="Q_64_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_64_Guess" onfocus="TrackFocus('Q_64_Guess')" onblur="LeaveGap()" class="GapBox" size="35"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(64)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_65" style="display: none;"><p class="QuestionText">Los carros estar&#x00E1;n siendo probados ma&#x00F1;ana </p><div class="ShortAnswer" id="Q_65_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_65_Guess" onfocus="TrackFocus('Q_65_Guess')" onblur="LeaveGap()" class="GapBox" size="38"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(65)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_66" style="display: none;"><p class="QuestionText">Casi no hay peligro</p><div class="ShortAnswer" id="Q_66_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_66_Guess" onfocus="TrackFocus('Q_66_Guess')" onblur="LeaveGap()" class="GapBox" size="22"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(66)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_67" style="display: none;"><p class="QuestionText">No quiero repetir tal experiencia </p><div class="ShortAnswer" id="Q_67_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_67_Guess" onfocus="TrackFocus('Q_67_Guess')" onblur="LeaveGap()" class="GapBox" size="38"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(67)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_68" style="display: none;"><p class="QuestionText">Mi hermano se sent&#x00F3; aqu&#x00ED;</p><div class="ShortAnswer" id="Q_68_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_68_Guess" onfocus="TrackFocus('Q_68_Guess')" onblur="LeaveGap()" class="GapBox" size="24"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(68)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_69" style="display: none;"><p class="QuestionText">Como no fui invitado, no estuve all&#x00E1; </p><div class="ShortAnswer" id="Q_69_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_69_Guess" onfocus="TrackFocus('Q_69_Guess')" onblur="LeaveGap()" class="GapBox" size="43"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(69)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_70" style="display: none;"><p class="QuestionText">Ella desear&#x00ED;a, (a ella le gustar&#x00ED;a) que yo fuese m&#x00E1;s alto</p><div class="ShortAnswer" id="Q_70_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_70_Guess" onfocus="TrackFocus('Q_70_Guess')" onblur="LeaveGap()" class="GapBox" size="24"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(70)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_71" style="display: none;"><p class="QuestionText">Yo trabaj&#x00E9; para esa compa&#x00F1;&#x00ED;a como abogado </p><div class="ShortAnswer" id="Q_71_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_71_Guess" onfocus="TrackFocus('Q_71_Guess')" onblur="LeaveGap()" class="GapBox" size="37"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(71)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_72" style="display: none;"><p class="QuestionText">Donde quiera que voy, veo su hermosura </p><div class="ShortAnswer" id="Q_72_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_72_Guess" onfocus="TrackFocus('Q_72_Guess')" onblur="LeaveGap()" class="GapBox" size="38"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(72)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_73" style="display: none;"><p class="QuestionText">Es problem&#x00E1;tica la situaci&#x00F3;n?</p><div class="ShortAnswer" id="Q_73_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_73_Guess" onfocus="TrackFocus('Q_73_Guess')" onblur="LeaveGap()" class="GapBox" size="29"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(73)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_74" style="display: none;"><p class="QuestionText">Que Dios te bendiga! </p><div class="ShortAnswer" id="Q_74_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_74_Guess" onfocus="TrackFocus('Q_74_Guess')" onblur="LeaveGap()" class="GapBox" size="18"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(74)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_75" style="display: none;"><p class="QuestionText">Sucede que el es mi hermano</p><div class="ShortAnswer" id="Q_75_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_75_Guess" onfocus="TrackFocus('Q_75_Guess')" onblur="LeaveGap()" class="GapBox" size="27"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(75)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_76" style="display: none;"><p class="QuestionText">Ojal&#x00E1; el pudiese venir pasado ma&#x00F1;ana</p><div class="ShortAnswer" id="Q_76_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_76_Guess" onfocus="TrackFocus('Q_76_Guess')" onblur="LeaveGap()" class="GapBox" size="43"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(76)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_77" style="display: none;"><p class="QuestionText">O el est&#x00E1; loco, o est&#x00E1; muy enfermo </p><div class="ShortAnswer" id="Q_77_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_77_Guess" onfocus="TrackFocus('Q_77_Guess')" onblur="LeaveGap()" class="GapBox" size="32"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(77)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_78" style="display: none;"><p class="QuestionText">Peter told Martha, "You have been a good friend"<br />What did Peter tell her? </p><div class="ShortAnswer" id="Q_78_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_78_Guess" onfocus="TrackFocus('Q_78_Guess')" onblur="LeaveGap()" class="GapBox" size="31"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(78)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_79" style="display: none;"><p class="QuestionText">Lorna told Peter: "I flew last night"<br />What did Lorna tell Peter? </p><div class="ShortAnswer" id="Q_79_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_79_Guess" onfocus="TrackFocus('Q_79_Guess')" onblur="LeaveGap()" class="GapBox" size="29"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(79)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_80" style="display: none;"><p class="QuestionText">Lorna told Peter, "I would like to win the race"<br />What did Lorna tell Peter? </p><div class="ShortAnswer" id="Q_80_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_80_Guess" onfocus="TrackFocus('Q_80_Guess')" onblur="LeaveGap()" class="GapBox" size="35"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(80)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_81" style="display: none;"><p class="QuestionText">He told me, "I'm waiting for my mother"<br />What did he tell me? </p><div class="ShortAnswer" id="Q_81_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_81_Guess" onfocus="TrackFocus('Q_81_Guess')" onblur="LeaveGap()" class="GapBox" size="34"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(81)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_82" style="display: none;"><p class="QuestionText">Lorna told Peter, "I will be helping you"<br />What did Lorna tell Peter? </p><div class="ShortAnswer" id="Q_82_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_82_Guess" onfocus="TrackFocus('Q_82_Guess')" onblur="LeaveGap()" class="GapBox" size="31"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(82)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_83" style="display: none;"><p class="QuestionText">Lorna told Peter, " I could win the contest"<br />What did Lorna tell Peter? </p><div class="ShortAnswer" id="Q_83_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_83_Guess" onfocus="TrackFocus('Q_83_Guess')" onblur="LeaveGap()" class="GapBox" size="30"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(83)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_84" style="display: none;"><p class="QuestionText">He said, "I know you"<br />What did he say? </p><div class="ShortAnswer" id="Q_84_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_84_Guess" onfocus="TrackFocus('Q_84_Guess')" onblur="LeaveGap()" class="GapBox" size="15"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(84)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_85" style="display: none;"><p class="QuestionText">Mary told me, "I have known the truth"<br />What did Mary tell me? </p><div class="ShortAnswer" id="Q_85_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_85_Guess" onfocus="TrackFocus('Q_85_Guess')" onblur="LeaveGap()" class="GapBox" size="28"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(85)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_86" style="display: none;"><p class="QuestionText">He said, "I will help her"<br />What did he say? </p><div class="ShortAnswer" id="Q_86_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_86_Guess" onfocus="TrackFocus('Q_86_Guess')" onblur="LeaveGap()" class="GapBox" size="22"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(86)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_87" style="display: none;"><p class="QuestionText">Morir&#x00E1;s si no comes! </p><div class="ShortAnswer" id="Q_87_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_87_Guess" onfocus="TrackFocus('Q_87_Guess')" onblur="LeaveGap()" class="GapBox" size="31"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(87)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_88" style="display: none;"><p class="QuestionText">El comi&#x00F3; sin darse cuenta que la comida estaba envenenada</p><div class="ShortAnswer" id="Q_88_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_88_Guess" onfocus="TrackFocus('Q_88_Guess')" onblur="LeaveGap()" class="GapBox" size="46"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(88)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_89" style="display: none;"><p class="QuestionText">Yo hab&#x00ED;a acabado de llegar</p><div class="ShortAnswer" id="Q_89_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_89_Guess" onfocus="TrackFocus('Q_89_Guess')" onblur="LeaveGap()" class="GapBox" size="18"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(89)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_90" style="display: none;"><p class="QuestionText">She is hardly breathing </p><div class="ShortAnswer" id="Q_90_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_90_Guess" onfocus="TrackFocus('Q_90_Guess')" onblur="LeaveGap()" class="GapBox" size="26"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(90)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_91" style="display: none;"><p class="QuestionText">El la mat&#x00F3; a causa de su locura (la locura de &#x00E9;l)</p><div class="ShortAnswer" id="Q_91_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_91_Guess" onfocus="TrackFocus('Q_91_Guess')" onblur="LeaveGap()" class="GapBox" size="40"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(91)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_92" style="display: none;"><p class="QuestionText">Sucede que no me gusta el f&#x00FA;tbol </p><div class="ShortAnswer" id="Q_92_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_92_Guess" onfocus="TrackFocus('Q_92_Guess')" onblur="LeaveGap()" class="GapBox" size="29"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(92)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_93" style="display: none;"><p class="QuestionText">No volemos esta noche</p><div class="ShortAnswer" id="Q_93_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_93_Guess" onfocus="TrackFocus('Q_93_Guess')" onblur="LeaveGap()" class="GapBox" size="21"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(93)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_94" style="display: none;"><p class="QuestionText">El fue despedido por su despreocupaci&#x00F3;n </p><div class="ShortAnswer" id="Q_94_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_94_Guess" onfocus="TrackFocus('Q_94_Guess')" onblur="LeaveGap()" class="GapBox" size="40"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(94)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_95" style="display: none;"><p class="QuestionText">Entre m&#x00E1;s conozco a los hombres, m&#x00E1;s quiero a mi perro </p><div class="ShortAnswer" id="Q_95_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_95_Guess" onfocus="TrackFocus('Q_95_Guess')" onblur="LeaveGap()" class="GapBox" size="43"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(95)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_96" style="display: none;"><p class="QuestionText">Ojal&#x00E1; tu vinieses a mi fiesta </p><div class="ShortAnswer" id="Q_96_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_96_Guess" onfocus="TrackFocus('Q_96_Guess')" onblur="LeaveGap()" class="GapBox" size="33"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(96)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_97" style="display: none;"><p class="QuestionText">Me gusta la m&#x00FA;sica y a Pedro tambi&#x00E9;n </p><div class="ShortAnswer" id="Q_97_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_97_Guess" onfocus="TrackFocus('Q_97_Guess')" onblur="LeaveGap()" class="GapBox" size="31"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(97)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_98" style="display: none;"><p class="QuestionText">La ni&#x00F1;a que gan&#x00F3; la carrera es colombiana?</p><div class="ShortAnswer" id="Q_98_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_98_Guess" onfocus="TrackFocus('Q_98_Guess')" onblur="LeaveGap()" class="GapBox" size="39"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(98)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_99" style="display: none;"><p class="QuestionText">Puedes parquear aqu&#x00ED; (Est&#x00E1; permitido) </p><div class="ShortAnswer" id="Q_99_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_99_Guess" onfocus="TrackFocus('Q_99_Guess')" onblur="LeaveGap()" class="GapBox" size="17"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(99)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_100" style="display: none;"><p class="QuestionText">El compr&#x00F3; este libro para que yo lo lea </p><div class="ShortAnswer" id="Q_100_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_100_Guess" onfocus="TrackFocus('Q_100_Guess')" onblur="LeaveGap()" class="GapBox" size="37"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(100)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_101" style="display: none;"><p class="QuestionText">He won't come</p><div class="ShortAnswer" id="Q_101_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_101_Guess" onfocus="TrackFocus('Q_101_Guess')" onblur="LeaveGap()" class="GapBox" size="20"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(101)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_102" style="display: none;"><p class="QuestionText">He wouldn't come</p><div class="ShortAnswer" id="Q_102_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_102_Guess" onfocus="TrackFocus('Q_102_Guess')" onblur="LeaveGap()" class="GapBox" size="20"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(102)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_103" style="display: none;"><p class="QuestionText">El m&#x00E1;s o menos tiene mi edad </p><div class="ShortAnswer" id="Q_103_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_103_Guess" onfocus="TrackFocus('Q_103_Guess')" onblur="LeaveGap()" class="GapBox" size="18"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(103)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_104" style="display: none;"><p class="QuestionText">Yo prefiero volar en lugar de estudiar </p><div class="ShortAnswer" id="Q_104_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_104_Guess" onfocus="TrackFocus('Q_104_Guess')" onblur="LeaveGap()" class="GapBox" size="35"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(104)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_105" style="display: none;"><p class="QuestionText">El debe haber estado loco cuando la mat&#x00F3;</p><div class="ShortAnswer" id="Q_105_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_105_Guess" onfocus="TrackFocus('Q_105_Guess')" onblur="LeaveGap()" class="GapBox" size="42"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(105)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_106" style="display: none;"><p class="QuestionText">Tomar alcohol es como suicidarse </p><div class="ShortAnswer" id="Q_106_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_106_Guess" onfocus="TrackFocus('Q_106_Guess')" onblur="LeaveGap()" class="GapBox" size="41"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(106)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_107" style="display: none;"><p class="QuestionText">Si tuvieses un problema, d&#x00E9;jame saberlo</p><div class="ShortAnswer" id="Q_107_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_107_Guess" onfocus="TrackFocus('Q_107_Guess')" onblur="LeaveGap()" class="GapBox" size="44"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(107)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_108" style="display: none;"><p class="QuestionText">Yo soy alem&#x00E1;n, en cambio el es espa&#x00F1;ol</p><div class="ShortAnswer" id="Q_108_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_108_Guess" onfocus="TrackFocus('Q_108_Guess')" onblur="LeaveGap()" class="GapBox" size="33"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(108)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_109" style="display: none;"><p class="QuestionText">No se supone que bebas y conduzcas </p><div class="ShortAnswer" id="Q_109_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_109_Guess" onfocus="TrackFocus('Q_109_Guess')" onblur="LeaveGap()" class="GapBox" size="38"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(109)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_110" style="display: none;"><p class="QuestionText">"Barrab&#x00E1;s ser&#x00E1; ejecutado ma&#x00F1;ana" (Titular de Prensa) </p><div class="ShortAnswer" id="Q_110_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_110_Guess" onfocus="TrackFocus('Q_110_Guess')" onblur="LeaveGap()" class="GapBox" size="34"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(110)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_111" style="display: none;"><p class="QuestionText">Un tal Pedro te llam&#x00F3; esta ma&#x00F1;ana </p><div class="ShortAnswer" id="Q_111_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_111_Guess" onfocus="TrackFocus('Q_111_Guess')" onblur="LeaveGap()" class="GapBox" size="33"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(111)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_112" style="display: none;"><p class="QuestionText">Ella es la &#x00FA;nica amiga que yo tengo </p><div class="ShortAnswer" id="Q_112_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_112_Guess" onfocus="TrackFocus('Q_112_Guess')" onblur="LeaveGap()" class="GapBox" size="29"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(112)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_113" style="display: none;"><p class="QuestionText">Fui a Cali caminando </p><div class="ShortAnswer" id="Q_113_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_113_Guess" onfocus="TrackFocus('Q_113_Guess')" onblur="LeaveGap()" class="GapBox" size="22"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(113)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_114" style="display: none;"><p class="QuestionText">El hombre que te vi&#x00F3;, los vi&#x00F3; a ellos?</p><div class="ShortAnswer" id="Q_114_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_114_Guess" onfocus="TrackFocus('Q_114_Guess')" onblur="LeaveGap()" class="GapBox" size="34"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(114)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_115" style="display: none;"><p class="QuestionText">A lo mejor el viene</p><div class="ShortAnswer" id="Q_115_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_115_Guess" onfocus="TrackFocus('Q_115_Guess')" onblur="LeaveGap()" class="GapBox" size="13"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(115)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_116" style="display: none;"><p class="QuestionText">Is Maria about?</p><div class="ShortAnswer" id="Q_116_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_116_Guess" onfocus="TrackFocus('Q_116_Guess')" onblur="LeaveGap()" class="GapBox" size="19"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(116)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_117" style="display: none;"><p class="QuestionText">Valdr&#x00E1; la pena tomar un taxi? </p><div class="ShortAnswer" id="Q_117_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_117_Guess" onfocus="TrackFocus('Q_117_Guess')" onblur="LeaveGap()" class="GapBox" size="32"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(117)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_118" style="display: none;"><p class="QuestionText">El avi&#x00F3;n est&#x00E1; pr&#x00F3;ximo a aterrizar </p><div class="ShortAnswer" id="Q_118_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_118_Guess" onfocus="TrackFocus('Q_118_Guess')" onblur="LeaveGap()" class="GapBox" size="26"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(118)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_119" style="display: none;"><p class="QuestionText">Yo no he podido encontrar la pista </p><div class="ShortAnswer" id="Q_119_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_119_Guess" onfocus="TrackFocus('Q_119_Guess')" onblur="LeaveGap()" class="GapBox" size="38"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(119)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_120" style="display: none;"><p class="QuestionText">Yo escasamente tengo 20 a&#x00F1;os</p><div class="ShortAnswer" id="Q_120_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_120_Guess" onfocus="TrackFocus('Q_120_Guess')" onblur="LeaveGap()" class="GapBox" size="17"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(120)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_121" style="display: none;"><p class="QuestionText">Peter: Do you mind if I smoke?<br />Luc&#x00ED;a: Not at all (Qu&#x00E9; significa "not at all"?)</p><div class="ShortAnswer" id="Q_121_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_121_Guess" onfocus="TrackFocus('Q_121_Guess')" onblur="LeaveGap()" class="GapBox" size="17"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(121)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_122" style="display: none;"><p class="QuestionText">El casi me mata</p><div class="ShortAnswer" id="Q_122_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_122_Guess" onfocus="TrackFocus('Q_122_Guess')" onblur="LeaveGap()" class="GapBox" size="19"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(122)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_123" style="display: none;"><p class="QuestionText">Cu&#x00E1;ndo llegaste? (Mostrando sorpresa) </p><div class="ShortAnswer" id="Q_123_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_123_Guess" onfocus="TrackFocus('Q_123_Guess')" onblur="LeaveGap()" class="GapBox" size="25"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(123)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_124" style="display: none;"><p class="QuestionText">A duras penas puedo dormir </p><div class="ShortAnswer" id="Q_124_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_124_Guess" onfocus="TrackFocus('Q_124_Guess')" onblur="LeaveGap()" class="GapBox" size="18"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(124)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_125" style="display: none;"><p class="QuestionText">El fue a Santiago, por mi parte, yo permanec&#x00ED; en Valparaiso </p><div class="ShortAnswer" id="Q_125_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_125_Guess" onfocus="TrackFocus('Q_125_Guess')" onblur="LeaveGap()" class="GapBox" size="54"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(125)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_126" style="display: none;"><p class="QuestionText">Ni siquiera s&#x00E9; tu nombre </p><div class="ShortAnswer" id="Q_126_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_126_Guess" onfocus="TrackFocus('Q_126_Guess')" onblur="LeaveGap()" class="GapBox" size="27"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(126)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_127" style="display: none;"><p class="QuestionText">El deber&#x00ED;a haber llamado</p><div class="ShortAnswer" id="Q_127_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_127_Guess" onfocus="TrackFocus('Q_127_Guess')" onblur="LeaveGap()" class="GapBox" size="21"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(127)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_128" style="display: none;"><p class="QuestionText">De alguna manera yo voy a encontrarla</p><div class="ShortAnswer" id="Q_128_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_128_Guess" onfocus="TrackFocus('Q_128_Guess')" onblur="LeaveGap()" class="GapBox" size="30"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(128)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_129" style="display: none;"><p class="QuestionText">Celia Cruz fue una mujer alegre y ser&#x00E1; recordada como tal </p><div class="ShortAnswer" id="Q_129_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_129_Guess" onfocus="TrackFocus('Q_129_Guess')" onblur="LeaveGap()" class="GapBox" size="61"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(129)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_130" style="display: none;"><p class="QuestionText">Al terminar de volar, &#x00E9;l se fue </p><div class="ShortAnswer" id="Q_130_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_130_Guess" onfocus="TrackFocus('Q_130_Guess')" onblur="LeaveGap()" class="GapBox" size="31"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(130)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_131" style="display: none;"><p class="QuestionText">Yo deber&#x00ED;a haber evitado ver esa pel&#x00ED;cula </p><div class="ShortAnswer" id="Q_131_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_131_Guess" onfocus="TrackFocus('Q_131_Guess')" onblur="LeaveGap()" class="GapBox" size="39"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(131)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_132" style="display: none;"><p class="QuestionText">Estar&#x00E9; aqu&#x00ED; hasta que el venga</p><div class="ShortAnswer" id="Q_132_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_132_Guess" onfocus="TrackFocus('Q_132_Guess')" onblur="LeaveGap()" class="GapBox" size="26"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(132)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_133" style="display: none;"><p class="QuestionText">Yo nunca te dejar&#x00E9; </p><div class="ShortAnswer" id="Q_133_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_133_Guess" onfocus="TrackFocus('Q_133_Guess')" onblur="LeaveGap()" class="GapBox" size="20"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(133)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_134" style="display: none;"><p class="QuestionText">El no es ni loco ni perezoso </p><div class="ShortAnswer" id="Q_134_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_134_Guess" onfocus="TrackFocus('Q_134_Guess')" onblur="LeaveGap()" class="GapBox" size="28"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(134)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_135" style="display: none;"><p class="QuestionText">Pedro trabaja como una mula </p><div class="ShortAnswer" id="Q_135_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_135_Guess" onfocus="TrackFocus('Q_135_Guess')" onblur="LeaveGap()" class="GapBox" size="23"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(135)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_136" style="display: none;"><p class="QuestionText">Es importante que el sea sincero </p><div class="ShortAnswer" id="Q_136_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_136_Guess" onfocus="TrackFocus('Q_136_Guess')" onblur="LeaveGap()" class="GapBox" size="33"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(136)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_137" style="display: none;"><p class="QuestionText">Entre m&#x00E1;s fumo, peor me siento </p><div class="ShortAnswer" id="Q_137_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_137_Guess" onfocus="TrackFocus('Q_137_Guess')" onblur="LeaveGap()" class="GapBox" size="34"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(137)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_138" style="display: none;"><p class="QuestionText">M&#x00E1;s que amantes, somos amigos </p><div class="ShortAnswer" id="Q_138_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_138_Guess" onfocus="TrackFocus('Q_138_Guess')" onblur="LeaveGap()" class="GapBox" size="32"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(138)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_139" style="display: none;"><p class="QuestionText">Yo todav&#x00ED;a te amo</p><div class="ShortAnswer" id="Q_139_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_139_Guess" onfocus="TrackFocus('Q_139_Guess')" onblur="LeaveGap()" class="GapBox" size="16"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(139)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_140" style="display: none;"><p class="QuestionText">Se pueden sentar (Se expresa un permiso)</p><div class="ShortAnswer" id="Q_140_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_140_Guess" onfocus="TrackFocus('Q_140_Guess')" onblur="LeaveGap()" class="GapBox" size="11"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(140)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_141" style="display: none;"><p class="QuestionText">Podr&#x00ED;a llover esta noche? </p><div class="ShortAnswer" id="Q_141_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_141_Guess" onfocus="TrackFocus('Q_141_Guess')" onblur="LeaveGap()" class="GapBox" size="22"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(141)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_142" style="display: none;"><p class="QuestionText">Yo soy bueno para las matem&#x00E1;ticas</p><div class="ShortAnswer" id="Q_142_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_142_Guess" onfocus="TrackFocus('Q_142_Guess')" onblur="LeaveGap()" class="GapBox" size="16"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(142)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_143" style="display: none;"><p class="QuestionText">Si pudieras, vivir&#x00ED;as conmigo?</p><div class="ShortAnswer" id="Q_143_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_143_Guess" onfocus="TrackFocus('Q_143_Guess')" onblur="LeaveGap()" class="GapBox" size="37"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(143)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_144" style="display: none;"><p class="QuestionText">Si hubiese habido una raz&#x00F3;n yo habr&#x00ED;a vivido contigo </p><div class="ShortAnswer" id="Q_144_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_144_Guess" onfocus="TrackFocus('Q_144_Guess')" onblur="LeaveGap()" class="GapBox" size="54"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(144)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_145" style="display: none;"><p class="QuestionText">Carlos depende de su hermano</p><div class="ShortAnswer" id="Q_145_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_145_Guess" onfocus="TrackFocus('Q_145_Guess')" onblur="LeaveGap()" class="GapBox" size="29"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(145)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_146" style="display: none;"><p class="QuestionText">Tu entendimiento es notable</p><div class="ShortAnswer" id="Q_146_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_146_Guess" onfocus="TrackFocus('Q_146_Guess')" onblur="LeaveGap()" class="GapBox" size="32"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(146)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_147" style="display: none;"><p class="QuestionText">La situaci&#x00F3;n es entendible</p><div class="ShortAnswer" id="Q_147_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_147_Guess" onfocus="TrackFocus('Q_147_Guess')" onblur="LeaveGap()" class="GapBox" size="31"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(147)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_148" style="display: none;"><p class="QuestionText">Dame dos besos m&#x00E1;s</p><div class="ShortAnswer" id="Q_148_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_148_Guess" onfocus="TrackFocus('Q_148_Guess')" onblur="LeaveGap()" class="GapBox" size="23"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(148)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_149" style="display: none;"><p class="QuestionText">Qu&#x00E9; buena actriz!</p><div class="ShortAnswer" id="Q_149_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_149_Guess" onfocus="TrackFocus('Q_149_Guess')" onblur="LeaveGap()" class="GapBox" size="20"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(149)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_150" style="display: none;"><p class="QuestionText">Yo ni siquiera le&#x00ED; ese libro</p><div class="ShortAnswer" id="Q_150_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_150_Guess" onfocus="TrackFocus('Q_150_Guess')" onblur="LeaveGap()" class="GapBox" size="28"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(150)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_151" style="display: none;"><p class="QuestionText">Qu&#x00E9; buenos actores!</p><div class="ShortAnswer" id="Q_151_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_151_Guess" onfocus="TrackFocus('Q_151_Guess')" onblur="LeaveGap()" class="GapBox" size="17"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(151)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_152" style="display: none;"><p class="QuestionText">Descansaste suficientemente?</p><div class="ShortAnswer" id="Q_152_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_152_Guess" onfocus="TrackFocus('Q_152_Guess')" onblur="LeaveGap()" class="GapBox" size="20"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(152)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_153" style="display: none;"><p class="QuestionText">Yo prefiero volar en lugar de estudiar </p><div class="ShortAnswer" id="Q_153_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_153_Guess" onfocus="TrackFocus('Q_153_Guess')" onblur="LeaveGap()" class="GapBox" size="35"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(153)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_154" style="display: none;"><p class="QuestionText">Es que nunca escuchas?</p><div class="ShortAnswer" id="Q_154_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_154_Guess" onfocus="TrackFocus('Q_154_Guess')" onblur="LeaveGap()" class="GapBox" size="22"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(154)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_155" style="display: none;"><p class="QuestionText">Incluso mi mam&#x00E1; sabe la verdad</p><div class="ShortAnswer" id="Q_155_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_155_Guess" onfocus="TrackFocus('Q_155_Guess')" onblur="LeaveGap()" class="GapBox" size="30"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(155)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_156" style="display: none;"><p class="QuestionText">No te hab&#x00ED;a visto desde que ten&#x00ED;as 15 a&#x00F1;os</p><div class="ShortAnswer" id="Q_156_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_156_Guess" onfocus="TrackFocus('Q_156_Guess')" onblur="LeaveGap()" class="GapBox" size="56"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(156)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_157" style="display: none;"><p class="QuestionText">Mi carro es lo suficientemente bueno para m&#x00ED;<br /></p><div class="ShortAnswer" id="Q_157_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_157_Guess" onfocus="TrackFocus('Q_157_Guess')" onblur="LeaveGap()" class="GapBox" size="28"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(157)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_158" style="display: none;"><p class="QuestionText">Tu ni siquiera debes trabajar</p><div class="ShortAnswer" id="Q_158_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_158_Guess" onfocus="TrackFocus('Q_158_Guess')" onblur="LeaveGap()" class="GapBox" size="20"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(158)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_159" style="display: none;"><p class="QuestionText">Ni siquiera Pedro la conoc&#x00ED;a</p><div class="ShortAnswer" id="Q_159_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_159_Guess" onfocus="TrackFocus('Q_159_Guess')" onblur="LeaveGap()" class="GapBox" size="24"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(159)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_160" style="display: none;"><p class="QuestionText">Yo preferir&#x00E1; estudiar en Cali</p><div class="ShortAnswer" id="Q_160_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_160_Guess" onfocus="TrackFocus('Q_160_Guess')" onblur="LeaveGap()" class="GapBox" size="31"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(160)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_161" style="display: none;"><p class="QuestionText">Ellos todos son muy amigables</p><div class="ShortAnswer" id="Q_161_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_161_Guess" onfocus="TrackFocus('Q_161_Guess')" onblur="LeaveGap()" class="GapBox" size="26"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(161)">Ser&#x00E1; que s&#x00ED; le pegu&#x00E9;? Averig&#x00FC;emos:</button></div></form></div></li></ol>
+
+
+
+</div>
+
+
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>

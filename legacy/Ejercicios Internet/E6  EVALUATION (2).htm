@@ -1,0 +1,1930 @@
+<?xml version="1.0"?>
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+       <html xmlns="http://www.w3.org/1999/xhtml"
+             xml:lang="en">
+<head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to jairo alberto payan."></meta><meta name="keywords" content="Hot Potatoes, Half-Baked Software, Windows, University of Victoria"></meta>
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC:Creator" content="UNREGISTERED" />
+<meta name="DC:Title" content="EVALUATION (2)" />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<title>
+EVALUATION (2)
+</title>
+
+<!-- Made with executable version 5.5 Release 0 Build 16 -->
+
+<style type="text/css">
+
+body{
+	font-family: COMIC SANS,Arial;
+	background-color: #a6a6a6;
+	color: #000000;
+	background-image: url('../Backup/Mis%20documentos/CURSO%20INGLES%20BASE/Ejercicios%20Internet/nova.GIF'); 
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: small
+}
+
+p{
+	text-align: justify;
+	margin: 0px;
+	font-size: small;
+}
+
+table, tr, td, div, span{
+	font-size: small;
+}
+
+div.Titles{
+	padding-top: 10px;
+	text-align: center;
+	margin-bottom: 4px;
+	color: #000000;
+}
+
+.ExerciseTitle{
+	font-size: large;
+	color: #000000;
+}
+
+.ExerciseSubtitle{
+	color: #000000;
+
+}
+
+span.Instructions{
+
+}
+
+.QuestionText{
+
+}
+
+.AnswerText{
+
+}
+
+.QNum{
+	font-weight: bold;
+}
+
+.FeedbackText{
+
+}	
+
+div.Feedback {
+	background-color: #a6a6a6;
+	left: 1px;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: small;
+}
+
+
+
+div.StdDiv{
+	background-color: #80ffff;
+	text-align: center;
+	color: #000000;
+	padding: 1em;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	margin: 1px 0px 0px 0px;
+	font-size: small;
+}
+
+
+.FunctionButton {
+	background-color: #80ffff;
+	color: #000000;
+	text-align: center;
+	border-style: solid;
+	border-color: #80ffff;
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+div.NavButtonBar{
+	background-color: #000000;
+	text-align: center;
+	margin: 2px 0px 2px 0px;
+	clear: both;
+	font-size: small;
+}
+
+div.NavButtonBar button {
+	border-style: solid;
+	border-color: #000000;
+	background-color: #000000;
+	border-width: 2px;
+	padding: 2px 2px 2px 2px;
+	color: #ffffff;
+	cursor: pointer;	
+}
+
+a{
+	color: #0000ff;
+}
+
+a:visited{
+	color: #0000cc;
+}
+
+a:hover{
+	color: #0000ff;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+<!--
+
+// BrowserCheck Object
+
+
+function BrowserCheck() {
+	var b = navigator.appName;
+	this.mac = (navigator.appVersion.indexOf('Mac') != -1);
+	if (b=="Netscape") this.b = 'ns';
+	else if (b=="Microsoft Internet Explorer") this.b = 'ie';
+	else this.b = b;
+	this.ns = (this.b == 'ns');
+	this.ie = (this.b == 'ie');
+	this.version = navigator.appVersion;
+	if (this.b == 'ie'){
+		var x = this.version.indexOf('MSIE ') + 5;
+		var vnum = '';
+
+		while ((this.version.charAt(x) > -1)&&(this.version.charAt(x) < 10)){
+			vnum += this.version.charAt(x);
+			x++;
+		}
+		this.v = parseInt(vnum);
+	}
+	else{
+		this.v = parseInt(this.version);
+	}
+	if (this.ns&&(this.v == 5)){
+		this.v = 6;
+	}
+	this.min = (this.v > 5);
+}
+
+is = new BrowserCheck();
+
+if ((is.min == false)||(is.ie5mac)){
+	alert('Your browser can\'t handle this page. You need NS6+ or IE6+ on Windows, or NS6+ on Mac.');
+}
+
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	if (is.ns) this.W = window.innerWidth;
+	if (is.ie) this.W = document.body.clientWidth;
+	if (is.ns) this.H = window.innerHeight;
+	if (is.ie) this.H = document.body.clientHeight;
+
+}
+
+var pg = null;
+
+function SuppressBackspace(e){ 
+
+	if (is.ns) {
+		thisKey = e.keyCode;
+	}
+	else {
+		thisKey = window.event.keyCode;
+	}
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+	}
+
+	if (Suppress == true){
+		if (is.ie){
+			window.event.returnValue = false;	
+			window.event.cancelBubble = true;
+		}
+		else{
+			e.preventDefault();
+		}
+	}
+}
+
+var NavLightColor = '#7f7f7f';
+var NavShadeColor = '#000000';
+var NavBarColor = '#000000';
+var FuncLightColor = '#bfffff';
+var FuncShadeColor = '#407f7f';
+var ExBGColor = '#80ffff';
+
+function NavBtnOver(Btn){
+	Btn.style.padding = '1px 3px 3px 1px';
+	Btn.style.borderLeftColor = NavLightColor;
+	Btn.style.borderTopColor = NavLightColor;
+	Btn.style.borderRightColor = NavShadeColor;
+	Btn.style.borderBottomColor = NavShadeColor;
+}
+
+function NavBtnOut(Btn){
+	Btn.style.borderColor = NavBarColor;
+	Btn.style.padding = '2px 2px 2px 2px';
+}
+
+function NavBtnDown(Btn){
+	Btn.style.borderLeftColor = NavShadeColor;
+	Btn.style.borderTopColor = NavShadeColor;
+	Btn.style.borderRightColor = NavLightColor;
+	Btn.style.borderBottomColor = NavLightColor;
+	Btn.style.padding = '3px 1px 1px 3px';
+}
+
+function FuncBtnOver(Btn){
+	Btn.style.padding = '2px 7px 4px 5px';
+	Btn.style.borderLeftColor = FuncLightColor;
+	Btn.style.borderTopColor = FuncLightColor;
+	Btn.style.borderRightColor = FuncShadeColor;
+	Btn.style.borderBottomColor = FuncShadeColor;
+}
+
+function FuncBtnOut(Btn){
+	Btn.style.borderColor = '#80ffff';
+	Btn.style.padding = '3px 6px 3px 6px';
+}
+
+function FuncBtnDown(Btn){
+	Btn.style.borderLeftColor = FuncShadeColor;
+	Btn.style.borderTopColor = FuncShadeColor;
+	Btn.style.borderRightColor = FuncLightColor;
+	Btn.style.borderBottomColor = FuncLightColor;
+	Btn.style.padding = '4px 5px 2px 7px';
+}
+
+var topZ = 100;
+
+var CurrQNum = 0;
+var ALetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var CorrectIndicator = 'O.K';
+var IncorrectIndicator = 'Oops!';
+var YourScoreIs = 'Your score is:';
+var Tries = 0;
+var CorrectChoices = 0;
+var ContinuousScoring = true;
+var CorrectFirstTime = 'Questions answered correctly first time:';
+var ShuffleQs = true;
+var ShuffleAs = true;
+var DefaultRight = 'Great job, go on';
+var DefaultWrong = 'WHAT HAPPENS TO YOU, BABY?';
+var QsToShow = 50;
+var ReadingURL = '[ReadingURL]';
+var Score = 0;
+var TempReading = '';
+var StartTime = (new Date()).toLocaleString();
+var HPNStartTime = (new Date()).getTime();
+var Finished = false;
+var SubmissionTimeout = 30000;
+
+
+
+var QButtonsOpener = '<button class="FunctionButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(-1); return false;">&nbsp;&lt;=&nbsp;</button><span class="QNum">';
+var QButtonsCloser = '</span><button id="NextQButton" class="FunctionButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(1); return false;">&nbsp;=&gt;&nbsp;</button>';
+
+
+var TableOpener = '<form name="QForm">';
+TableOpener += '<table border="0" style="margin-left: auto; margin-right: auto; margin-top: 10px;">';
+var QRow = '<tr><td valign="top" align="right"><span class="QNum">[QNumber].&nbsp;&nbsp;</span></td>';
+QRow += '<td valign="top" align="left"> <p><span class="QuestionText">[Question]</span><br />&nbsp;</p>';
+QRow += '</td></tr>';
+
+var ARow = '<tr><td>&nbsp;</td><td><table border="0" cellpadding="0" cellspacing="2">';
+ARow += '<tr><td></td><td valign="middle" align="left"><span id="FB_[QNum]_[ANum]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>';
+ARow += '<td valign="middle" align="left"><button class="FunctionButton" onfocus="FuncBtnOver(this)" onmouseover="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="CheckAnswer([QNum],[ANum]); return false;">&nbsp;[ALetter]&nbsp;</button></td>';
+
+ARow += '<td><span class="AnswerText">[Ans]</span></td></tr>';
+ARow += '</table></td></tr>';
+
+var MARow = '<tr><td></td><td valign="top" align="left"><input type="checkbox" name="A_[QNum]_[ANum]" value="[Correct]"></input>';
+MARow += '<span class="AnswerText">[Ans]</span></td></tr>';
+
+
+var CheckButton = '<tr><td align="center" colspan="2"><table border="0"><tr><td>';
+CheckButton += '<button class="FunctionButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="CheckMulti([QNum]); return false;">&nbsp;Verificar&nbsp;</button>';
+CheckButton += '</td></tr></table></td></tr>';
+
+TableCloser = '</table></form>';
+
+function ReduceItems(){
+	var ItemToDump=0;
+	var j=0;
+	while (I.length > QsToShow){
+		ItemToDump = Math.floor(I.length*Math.random());
+		for (j=ItemToDump; j<(I.length-1); j++){
+			I[j] = I[j+1];
+		}
+		I.length = I.length-1;
+	}
+}
+
+function Shuffle(InArray){
+	Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < j; k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteFeedback(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+//Calculate and set its left setting
+	topZ++;
+	FDiv.style.zIndex = topZ;
+
+//Position the feedback div
+	pg = new PageDim();
+	FDiv.style.left = Math.floor(pg.W/3) + 'px';
+	FDiv.style.width = Math.floor(pg.W/3) + 'px';
+//Set the top again in case the window has been resized
+	if (is.ns){
+		FDiv.style.top = Math.floor(pg.H/3) + window.pageYOffset + 'px';
+	}
+	else{
+		FDiv.style.top = Math.floor(pg.H/3) + document.body.scrollTop + 'px';
+	}
+	FDiv.style.display = 'block';
+	document.getElementById('FeedbackOKButton').focus();
+
+
+}
+
+function HideFeedback(){
+	document.getElementById('FeedbackOKButton').blur();
+	document.getElementById('FeedbackContent').innerHTML = '';
+	document.getElementById('FeedbackDiv').style.display='none';
+	document.getElementById('NextQButton').focus();
+	if (Finished == true){
+		Finish();
+	}
+}
+
+function WriteToInstructions(Feedback) {
+	Feedback = '<span class="FeedbackText">' + Feedback + '</span>';
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+}
+
+function WriteScore(Feedback) {
+	Feedback = '<span class="FeedbackText">' + Feedback + '</span>';
+	document.getElementById('ScoreDiv').innerHTML = Feedback;
+
+}
+
+
+
+
+function StartUp(){
+
+//IE bug avoidance -- remove bottom navbar
+	if (is.ie){
+		if (document.getElementById('BottomNavBar') != null){
+			document.getElementById('TheBody').removeChild(document.getElementById('BottomNavBar'));
+		}
+	}
+
+	if (is.ie){
+		document.attachEvent('onkeydown',SuppressBackspace);
+		window.attachEvent('onkeydown',SuppressBackspace);
+	}
+	else if (is.ns){
+		window.addEventListener('keypress',SuppressBackspace,false);
+	}
+
+
+
+
+
+//Reduce array if required
+	if (QsToShow < I.length){
+		ReduceItems();
+	}
+
+//Shuffle stuff if required
+
+	if (ShuffleQs == true){
+		I = Shuffle(I);
+	}
+
+	if (ShuffleAs == true){
+		for (var i=0; i<I.length; i++){
+			I[i][1] = Shuffle(I[i][1]);
+		}
+	}
+
+//Create arrays
+	CreateStatusArrays();
+
+
+//Show the first question
+	ShowQuestion(CurrQNum);
+
+
+
+}
+
+
+I = new Array();
+
+I[0] = new Array();
+I[0][0]='I don\'t have ____ money. ';
+I[0][1] = new Array();
+I[0][1][0] = new Array();
+I[0][1][0][0]='some';
+I[0][1][0][1]='';
+I[0][1][0][2] = 0;
+I[0][1][1] = new Array();
+I[0][1][1][0]='any';
+I[0][1][1][1]='';
+I[0][1][1][2] = 1;
+I[0][1][2] = new Array();
+I[0][1][2][0]='no';
+I[0][1][2][1]='';
+I[0][1][2][2] = 0;
+I[0][1][3] = new Array();
+I[0][1][3][0]='not';
+I[0][1][3][1]='';
+I[0][1][3][2] = 0;
+I[0][2] = 0;
+
+I[1] = new Array();
+I[1][0]='Bill: Will you have a long flight?<br />Jeff: Yes, I\'m flying ____ New York to Los Angeles.';
+I[1][1] = new Array();
+I[1][1][0] = new Array();
+I[1][1][0][0]='of';
+I[1][1][0][1]='';
+I[1][1][0][2] = 0;
+I[1][1][1] = new Array();
+I[1][1][1][0]='among';
+I[1][1][1][1]='';
+I[1][1][1][2] = 0;
+I[1][1][2] = new Array();
+I[1][1][2][0]='on';
+I[1][1][2][1]='';
+I[1][1][2][2] = 0;
+I[1][1][3] = new Array();
+I[1][1][3][0]='from';
+I[1][1][3][1]='';
+I[1][1][3][2] = 1;
+I[1][2] = 0;
+
+I[2] = new Array();
+I[2][0]='May I have ____ water, please? ';
+I[2][1] = new Array();
+I[2][1][0] = new Array();
+I[2][1][0][0]='many';
+I[2][1][0][1]='';
+I[2][1][0][2] = 0;
+I[2][1][1] = new Array();
+I[2][1][1][0]='a few';
+I[2][1][1][1]='';
+I[2][1][1][2] = 0;
+I[2][1][2] = new Array();
+I[2][1][2][0]='much';
+I[2][1][2][1]='';
+I[2][1][2][2] = 0;
+I[2][1][3] = new Array();
+I[2][1][3][0]='a little';
+I[2][1][3][1]='';
+I[2][1][3][2] = 1;
+I[2][2] = 0;
+
+I[3] = new Array();
+I[3][0]='Do they want carrots ____ peas? ';
+I[3][1] = new Array();
+I[3][1][0] = new Array();
+I[3][1][0][0]='an ';
+I[3][1][0][1]='';
+I[3][1][0][2] = 0;
+I[3][1][1] = new Array();
+I[3][1][1][0]='some';
+I[3][1][1][1]='';
+I[3][1][1][2] = 0;
+I[3][1][2] = new Array();
+I[3][1][2][0]='a few';
+I[3][1][2][1]='';
+I[3][1][2][2] = 0;
+I[3][1][3] = new Array();
+I[3][1][3][0]='or';
+I[3][1][3][1]='';
+I[3][1][3][2] = 1;
+I[3][2] = 0;
+
+I[4] = new Array();
+I[4][0]='____ bread do we have? ';
+I[4][1] = new Array();
+I[4][1][0] = new Array();
+I[4][1][0][0]='How much';
+I[4][1][0][1]='';
+I[4][1][0][2] = 1;
+I[4][1][1] = new Array();
+I[4][1][1][0]='How many';
+I[4][1][1][1]='';
+I[4][1][1][2] = 0;
+I[4][1][2] = new Array();
+I[4][1][2][0]='How often';
+I[4][1][2][1]='';
+I[4][1][2][2] = 0;
+I[4][1][3] = new Array();
+I[4][1][3][0]='Did';
+I[4][1][3][1]='';
+I[4][1][3][2] = 0;
+I[4][2] = 0;
+
+I[5] = new Array();
+I[5][0]='Mary: ____ buy a brush at this grocery store?<br />Jane: Yes. And they sell brushes at the drugstore. ';
+I[5][1] = new Array();
+I[5][1][0] = new Array();
+I[5][1][0][0]='Am I ';
+I[5][1][0][1]='';
+I[5][1][0][2] = 0;
+I[5][1][1] = new Array();
+I[5][1][1][0]='How much did I ';
+I[5][1][1][1]='';
+I[5][1][1][2] = 0;
+I[5][1][2] = new Array();
+I[5][1][2][0]='Can I';
+I[5][1][2][1]='';
+I[5][1][2][2] = 1;
+I[5][1][3] = new Array();
+I[5][1][3][0]='Do I have to ';
+I[5][1][3][1]='';
+I[5][1][3][2] = 0;
+I[5][2] = 0;
+
+I[6] = new Array();
+I[6][0]='A pound is 16 ounces. A ____ pound is 8 ounces.';
+I[6][1] = new Array();
+I[6][1][0] = new Array();
+I[6][1][0][0]='medium';
+I[6][1][0][1]='';
+I[6][1][0][2] = 0;
+I[6][1][1] = new Array();
+I[6][1][1][0]='half';
+I[6][1][1][1]='';
+I[6][1][1][2] = 1;
+I[6][1][2] = new Array();
+I[6][1][2][0]='mean';
+I[6][1][2][1]='';
+I[6][1][2][2] = 0;
+I[6][1][3] = new Array();
+I[6][1][3][0]='small';
+I[6][1][3][1]='';
+I[6][1][3][2] = 0;
+I[6][2] = 0;
+
+I[7] = new Array();
+I[7][0]='I have ____ friends. ';
+I[7][1] = new Array();
+I[7][1][0] = new Array();
+I[7][1][0][0]='lot';
+I[7][1][0][1]='';
+I[7][1][0][2] = 0;
+I[7][1][1] = new Array();
+I[7][1][1][0]='lots of';
+I[7][1][1][1]='';
+I[7][1][1][2] = 1;
+I[7][1][2] = new Array();
+I[7][1][2][0]='any';
+I[7][1][2][1]='';
+I[7][1][2][2] = 0;
+I[7][1][3] = new Array();
+I[7][1][3][0]='a';
+I[7][1][3][1]='';
+I[7][1][3][2] = 0;
+I[7][2] = 0;
+
+I[8] = new Array();
+I[8][0]='She doesn\'t eat ____ ice cream.';
+I[8][1] = new Array();
+I[8][1][0] = new Array();
+I[8][1][0][0]='some';
+I[8][1][0][1]='';
+I[8][1][0][2] = 0;
+I[8][1][1] = new Array();
+I[8][1][1][0]='a few';
+I[8][1][1][1]='';
+I[8][1][1][2] = 0;
+I[8][1][2] = new Array();
+I[8][1][2][0]='a lot of';
+I[8][1][2][1]='';
+I[8][1][2][2] = 1;
+I[8][1][3] = new Array();
+I[8][1][3][0]='many';
+I[8][1][3][1]='';
+I[8][1][3][2] = 0;
+I[8][2] = 0;
+
+I[9] = new Array();
+I[9][0]='Betty: Does this store sell cigarettes? <br />Clerk: No, you ____ buy cigarettes here.';
+I[9][1] = new Array();
+I[9][1][0] = new Array();
+I[9][1][0][0]='mustn\'t';
+I[9][1][0][1]='';
+I[9][1][0][2] = 0;
+I[9][1][1] = new Array();
+I[9][1][1][0]='can\'t';
+I[9][1][1][1]='';
+I[9][1][1][2] = 1;
+I[9][1][2] = new Array();
+I[9][1][2][0]='shouldn\'t';
+I[9][1][2][1]='';
+I[9][1][2][2] = 0;
+I[9][1][3] = new Array();
+I[9][1][3][0]='may';
+I[9][1][3][1]='';
+I[9][1][3][2] = 0;
+I[9][2] = 0;
+
+I[10] = new Array();
+I[10][0]='You may wear a dress ____ slacks. ';
+I[10][1] = new Array();
+I[10][1][0] = new Array();
+I[10][1][0][0]='many';
+I[10][1][0][1]='';
+I[10][1][0][2] = 0;
+I[10][1][1] = new Array();
+I[10][1][1][0]='or';
+I[10][1][1][1]='';
+I[10][1][1][2] = 1;
+I[10][1][2] = new Array();
+I[10][1][2][0]='lost of';
+I[10][1][2][1]='';
+I[10][1][2][2] = 0;
+I[10][1][3] = new Array();
+I[10][1][3][0]='a';
+I[10][1][3][1]='';
+I[10][1][3][2] = 0;
+I[10][2] = 0;
+
+I[11] = new Array();
+I[11][0]='January...February...March. <br />March is the ____. ';
+I[11][1] = new Array();
+I[11][1][0] = new Array();
+I[11][1][0][0]='three';
+I[11][1][0][1]='';
+I[11][1][0][2] = 0;
+I[11][1][1] = new Array();
+I[11][1][1][0]='tree';
+I[11][1][1][1]='';
+I[11][1][1][2] = 0;
+I[11][1][2] = new Array();
+I[11][1][2][0]='third';
+I[11][1][2][1]='';
+I[11][1][2][2] = 1;
+I[11][1][3] = new Array();
+I[11][1][3][0]='threeth';
+I[11][1][3][1]='';
+I[11][1][3][2] = 0;
+I[11][2] = 0;
+
+I[12] = new Array();
+I[12][0]='He has ____ dollars. ';
+I[12][1] = new Array();
+I[12][1][0] = new Array();
+I[12][1][0][0]='lot of';
+I[12][1][0][1]='';
+I[12][1][0][2] = 0;
+I[12][1][1] = new Array();
+I[12][1][1][0]='lots';
+I[12][1][1][1]='';
+I[12][1][1][2] = 0;
+I[12][1][2] = new Array();
+I[12][1][2][0]='lots of';
+I[12][1][2][1]='';
+I[12][1][2][2] = 1;
+I[12][1][3] = new Array();
+I[12][1][3][0]='a little';
+I[12][1][3][1]='';
+I[12][1][3][2] = 0;
+I[12][2] = 0;
+
+I[13] = new Array();
+I[13][0]='Jane: ______________________. <br />Bill: Lesson three. ';
+I[13][1] = new Array();
+I[13][1][0] = new Array();
+I[13][1][0][0]='When will we study the third lesson? ';
+I[13][1][0][1]='';
+I[13][1][0][2] = 0;
+I[13][1][1] = new Array();
+I[13][1][1][0]='How many lessons are we studying? ';
+I[13][1][1][1]='';
+I[13][1][1][2] = 0;
+I[13][1][2] = new Array();
+I[13][1][2][0]='Who\'s studying lesson three? ';
+I[13][1][2][1]='';
+I[13][1][2][2] = 1;
+I[13][1][3] = new Array();
+I[13][1][3][0]='Which lesson are we studying? ';
+I[13][1][3][1]='';
+I[13][1][3][2] = 0;
+I[13][2] = 0;
+
+I[14] = new Array();
+I[14][0]='John and Mary are eating ____. ';
+I[14][1] = new Array();
+I[14][1][0] = new Array();
+I[14][1][0][0]='together';
+I[14][1][0][1]='';
+I[14][1][0][2] = 1;
+I[14][1][1] = new Array();
+I[14][1][1][0]='among';
+I[14][1][1][1]='';
+I[14][1][1][2] = 0;
+I[14][1][2] = new Array();
+I[14][1][2][0]='between';
+I[14][1][2][1]='';
+I[14][1][2][2] = 0;
+I[14][1][3] = new Array();
+I[14][1][3][0]='above';
+I[14][1][3][1]='';
+I[14][1][3][2] = 0;
+I[14][2] = 0;
+
+I[15] = new Array();
+I[15][0]='Sara: You can\'t go. The ticket costs $1.25.<br />Jane: I have a dollar. I ____ a quarter. ';
+I[15][1] = new Array();
+I[15][1][0] = new Array();
+I[15][1][0][0]='have to ';
+I[15][1][0][1]='';
+I[15][1][0][2] = 0;
+I[15][1][1] = new Array();
+I[15][1][1][0]='get';
+I[15][1][1][1]='';
+I[15][1][1][2] = 0;
+I[15][1][2] = new Array();
+I[15][1][2][0]='need';
+I[15][1][2][1]='';
+I[15][1][2][2] = 1;
+I[15][1][3] = new Array();
+I[15][1][3][0]='needed';
+I[15][1][3][1]='';
+I[15][1][3][2] = 0;
+I[15][2] = 0;
+
+I[16] = new Array();
+I[16][0]='I don\'t see ____ children here today. ';
+I[16][1] = new Array();
+I[16][1][0] = new Array();
+I[16][1][0][0]='some';
+I[16][1][0][1]='';
+I[16][1][0][2] = 0;
+I[16][1][1] = new Array();
+I[16][1][1][0]='no';
+I[16][1][1][1]='';
+I[16][1][1][2] = 0;
+I[16][1][2] = new Array();
+I[16][1][2][0]='any';
+I[16][1][2][1]='';
+I[16][1][2][2] = 1;
+I[16][1][3] = new Array();
+I[16][1][3][0]='a little';
+I[16][1][3][1]='';
+I[16][1][3][2] = 0;
+I[16][2] = 0;
+
+I[17] = new Array();
+I[17][0]='No, I don\'t have____. ';
+I[17][1] = new Array();
+I[17][1][0] = new Array();
+I[17][1][0][0]='some';
+I[17][1][0][1]='';
+I[17][1][0][2] = 0;
+I[17][1][1] = new Array();
+I[17][1][1][0]='not';
+I[17][1][1][1]='';
+I[17][1][1][2] = 0;
+I[17][1][2] = new Array();
+I[17][1][2][0]='any';
+I[17][1][2][1]='';
+I[17][1][2][2] = 1;
+I[17][1][3] = new Array();
+I[17][1][3][0]='a lot of';
+I[17][1][3][1]='';
+I[17][1][3][2] = 0;
+I[17][2] = 0;
+
+I[18] = new Array();
+I[18][0]='Mary: I\'m hungry. When is dinner? <br />Bill: ____ it\' s in five minutes.';
+I[18][1] = new Array();
+I[18][1][0] = new Array();
+I[18][1][0][0]='I think';
+I[18][1][0][1]='';
+I[18][1][0][2] = 1;
+I[18][1][1] = new Array();
+I[18][1][1][0]='because';
+I[18][1][1][1]='';
+I[18][1][1][2] = 0;
+I[18][1][2] = new Array();
+I[18][1][2][0]='ready';
+I[18][1][2][1]='';
+I[18][1][2][2] = 0;
+I[18][1][3] = new Array();
+I[18][1][3][0]='I didn&#180;t like';
+I[18][1][3][1]='';
+I[18][1][3][2] = 0;
+I[18][2] = 0;
+
+I[19] = new Array();
+I[19][0]='I live ____ Bonner Street.';
+I[19][1] = new Array();
+I[19][1][0] = new Array();
+I[19][1][0][0]='in';
+I[19][1][0][1]='';
+I[19][1][0][2] = 0;
+I[19][1][1] = new Array();
+I[19][1][1][0]='on';
+I[19][1][1][1]='';
+I[19][1][1][2] = 1;
+I[19][1][2] = new Array();
+I[19][1][2][0]='at';
+I[19][1][2][1]='';
+I[19][1][2][2] = 0;
+I[19][1][3] = new Array();
+I[19][1][3][0]='over';
+I[19][1][3][1]='';
+I[19][1][3][2] = 0;
+I[19][2] = 0;
+
+I[20] = new Array();
+I[20][0]='She thought ____. ';
+I[20][1] = new Array();
+I[20][1][0] = new Array();
+I[20][1][0][0]='was cold outside ';
+I[20][1][0][1]='';
+I[20][1][0][2] = 0;
+I[20][1][1] = new Array();
+I[20][1][1][0]='that it was cold outside ';
+I[20][1][1][1]='';
+I[20][1][1][2] = 1;
+I[20][1][2] = new Array();
+I[20][1][2][0]='why it was cold outside';
+I[20][1][2][1]='';
+I[20][1][2][2] = 0;
+I[20][1][3] = new Array();
+I[20][1][3][0]='was it cold outside ';
+I[20][1][3][1]='';
+I[20][1][3][2] = 0;
+I[20][2] = 0;
+
+I[21] = new Array();
+I[21][0]='Jane: What do you want to do? <br />Mary: I think ____ like to go to a movie.';
+I[21][1] = new Array();
+I[21][1][0] = new Array();
+I[21][1][0][0]='me';
+I[21][1][0][1]='';
+I[21][1][0][2] = 0;
+I[21][1][1] = new Array();
+I[21][1][1][0]='I\'d ';
+I[21][1][1][1]='';
+I[21][1][1][2] = 1;
+I[21][1][2] = new Array();
+I[21][1][2][0]='I';
+I[21][1][2][1]='';
+I[21][1][2][2] = 0;
+I[21][1][3] = new Array();
+I[21][1][3][0]='that';
+I[21][1][3][1]='';
+I[21][1][3][2] = 0;
+I[21][2] = 0;
+
+I[22] = new Array();
+I[22][0]='Bill: Did you see that? <br />Mark: No, I didn\'t see ____. ';
+I[22][1] = new Array();
+I[22][1][0] = new Array();
+I[22][1][0][0]='nothing';
+I[22][1][0][1]='';
+I[22][1][0][2] = 0;
+I[22][1][1] = new Array();
+I[22][1][1][0]='anything';
+I[22][1][1][1]='';
+I[22][1][1][2] = 1;
+I[22][1][2] = new Array();
+I[22][1][2][0]='any';
+I[22][1][2][1]='';
+I[22][1][2][2] = 0;
+I[22][1][3] = new Array();
+I[22][1][3][0]='some';
+I[22][1][3][1]='';
+I[22][1][3][2] = 0;
+I[22][2] = 0;
+
+I[23] = new Array();
+I[23][0]='Did he sell ____? ';
+I[23][1] = new Array();
+I[23][1][0] = new Array();
+I[23][1][0][0]='to you the car ';
+I[23][1][0][1]='';
+I[23][1][0][2] = 0;
+I[23][1][1] = new Array();
+I[23][1][1][0]='the car you ';
+I[23][1][1][1]='';
+I[23][1][1][2] = 0;
+I[23][1][2] = new Array();
+I[23][1][2][0]='you to the car ';
+I[23][1][2][1]='';
+I[23][1][2][2] = 0;
+I[23][1][3] = new Array();
+I[23][1][3][0]='the car to you ';
+I[23][1][3][1]='';
+I[23][1][3][2] = 1;
+I[23][2] = 0;
+
+I[24] = new Array();
+I[24][0]='Ted: What\'s wrong? <br />Tom: I don\'t like this milk. It\'s ____! ';
+I[24][1] = new Array();
+I[24][1][0] = new Array();
+I[24][1][0][0]='delicious ';
+I[24][1][0][1]='';
+I[24][1][0][2] = 0;
+I[24][1][1] = new Array();
+I[24][1][1][0]='good ';
+I[24][1][1][1]='';
+I[24][1][1][2] = 0;
+I[24][1][2] = new Array();
+I[24][1][2][0]='awful ';
+I[24][1][2][1]='';
+I[24][1][2][2] = 1;
+I[24][1][3] = new Array();
+I[24][1][3][0]='dry ';
+I[24][1][3][1]='';
+I[24][1][3][2] = 0;
+I[24][2] = 0;
+
+I[25] = new Array();
+I[25][0]='Bob: Is there water on the table? <br />Tom: Yes, it\' s ____. ';
+I[25][1] = new Array();
+I[25][1][0] = new Array();
+I[25][1][0][0]='dry ';
+I[25][1][0][1]='';
+I[25][1][0][2] = 0;
+I[25][1][1] = new Array();
+I[25][1][1][0]='cloudy ';
+I[25][1][1][1]='';
+I[25][1][1][2] = 0;
+I[25][1][2] = new Array();
+I[25][1][2][0]='wet ';
+I[25][1][2][1]='';
+I[25][1][2][2] = 1;
+I[25][1][3] = new Array();
+I[25][1][3][0]='sunny ';
+I[25][1][3][1]='';
+I[25][1][3][2] = 0;
+I[25][2] = 0;
+
+I[26] = new Array();
+I[26][0]='We talked to Bob last weekend, ______ we didn\'t talk to Bob this morning.';
+I[26][1] = new Array();
+I[26][1][0] = new Array();
+I[26][1][0][0]='also ';
+I[26][1][0][1]='';
+I[26][1][0][2] = 0;
+I[26][1][1] = new Array();
+I[26][1][1][0]='or ';
+I[26][1][1][1]='';
+I[26][1][1][2] = 0;
+I[26][1][2] = new Array();
+I[26][1][2][0]='but';
+I[26][1][2][1]='';
+I[26][1][2][2] = 1;
+I[26][1][3] = new Array();
+I[26][1][3][0]='and';
+I[26][1][3][1]='';
+I[26][1][3][2] = 0;
+I[26][2] = 0;
+
+I[27] = new Array();
+I[27][0]='They are giving ____. ';
+I[27][1] = new Array();
+I[27][1][0] = new Array();
+I[27][1][0][0]='him some food/ some food to him';
+I[27][1][0][1]='';
+I[27][1][0][2] = 1;
+I[27][1][1] = new Array();
+I[27][1][1][0]='some food him';
+I[27][1][1][1]='';
+I[27][1][1][2] = 0;
+I[27][1][2] = new Array();
+I[27][1][2][0]='to him some food';
+I[27][1][2][1]='';
+I[27][1][2][2] = 0;
+I[27][1][3] = new Array();
+I[27][1][3][0]='some foods him';
+I[27][1][3][1]='';
+I[27][1][3][2] = 0;
+I[27][2] = 0;
+
+I[28] = new Array();
+I[28][0]='I don\'t think ____ his dinner. ';
+I[28][1] = new Array();
+I[28][1][0] = new Array();
+I[28][1][0][0]='that he ';
+I[28][1][0][1]='';
+I[28][1][0][2] = 0;
+I[28][1][1] = new Array();
+I[28][1][1][0]='he';
+I[28][1][1][1]='';
+I[28][1][1][2] = 0;
+I[28][1][2] = new Array();
+I[28][1][2][0]='he wants ';
+I[28][1][2][1]='';
+I[28][1][2][2] = 1;
+I[28][1][3] = new Array();
+I[28][1][3][0]='wants';
+I[28][1][3][1]='';
+I[28][1][3][2] = 0;
+I[28][2] = 0;
+
+I[29] = new Array();
+I[29][0]='Bob bought a shirt. Bob ______ bought trousers. ';
+I[29][1] = new Array();
+I[29][1][0] = new Array();
+I[29][1][0][0]='altough';
+I[29][1][0][1]='';
+I[29][1][0][2] = 0;
+I[29][1][1] = new Array();
+I[29][1][1][0]='and';
+I[29][1][1][1]='';
+I[29][1][1][2] = 0;
+I[29][1][2] = new Array();
+I[29][1][2][0]='no ';
+I[29][1][2][1]='';
+I[29][1][2][2] = 0;
+I[29][1][3] = new Array();
+I[29][1][3][0]='also';
+I[29][1][3][1]='';
+I[29][1][3][2] = 1;
+I[29][2] = 0;
+
+I[30] = new Array();
+I[30][0]='Mrs. Smith: Why did she go to bed early?<br />Mr. Smith: ____ she got tired.';
+I[30][1] = new Array();
+I[30][1][0] = new Array();
+I[30][1][0][0]='After ';
+I[30][1][0][1]='';
+I[30][1][0][2] = 0;
+I[30][1][1] = new Array();
+I[30][1][1][0]='Because ';
+I[30][1][1][1]='';
+I[30][1][1][2] = 1;
+I[30][1][2] = new Array();
+I[30][1][2][0]='By ';
+I[30][1][2][1]='';
+I[30][1][2][2] = 0;
+I[30][1][3] = new Array();
+I[30][1][3][0]='How ';
+I[30][1][3][1]='';
+I[30][1][3][2] = 0;
+I[30][2] = 0;
+
+I[31] = new Array();
+I[31][0]='John: ____ the weather today? <br />Mary: Cloudy and cold. Wear a jacket. ';
+I[31][1] = new Array();
+I[31][1][0] = new Array();
+I[31][1][0][0]='How is ';
+I[31][1][0][1]='';
+I[31][1][0][2] = 1;
+I[31][1][1] = new Array();
+I[31][1][1][0]='How does ';
+I[31][1][1][1]='';
+I[31][1][1][2] = 0;
+I[31][1][2] = new Array();
+I[31][1][2][0]='Why is ';
+I[31][1][2][1]='';
+I[31][1][2][2] = 0;
+I[31][1][3] = new Array();
+I[31][1][3][0]='Why does ';
+I[31][1][3][1]='';
+I[31][1][3][2] = 0;
+I[31][2] = 0;
+
+I[32] = new Array();
+I[32][0]='He has ____ in his hand. What is it? ';
+I[32][1] = new Array();
+I[32][1][0] = new Array();
+I[32][1][0][0]='anything else ';
+I[32][1][0][1]='';
+I[32][1][0][2] = 0;
+I[32][1][1] = new Array();
+I[32][1][1][0]='something';
+I[32][1][1][1]='';
+I[32][1][1][2] = 1;
+I[32][1][2] = new Array();
+I[32][1][2][0]='anything';
+I[32][1][2][1]='';
+I[32][1][2][2] = 0;
+I[32][1][3] = new Array();
+I[32][1][3][0]='some';
+I[32][1][3][1]='';
+I[32][1][3][2] = 0;
+I[32][2] = 0;
+
+I[33] = new Array();
+I[33][0]='We went downtown last Saturday, ____ we went downtown last Sunday. <br />I don\'t want to go today. ';
+I[33][1] = new Array();
+I[33][1][0] = new Array();
+I[33][1][0][0]='by';
+I[33][1][0][1]='';
+I[33][1][0][2] = 0;
+I[33][1][1] = new Array();
+I[33][1][1][0]='or';
+I[33][1][1][1]='';
+I[33][1][1][2] = 0;
+I[33][1][2] = new Array();
+I[33][1][2][0]='but';
+I[33][1][2][1]='';
+I[33][1][2][2] = 0;
+I[33][1][3] = new Array();
+I[33][1][3][0]='and';
+I[33][1][3][1]='';
+I[33][1][3][2] = 1;
+I[33][2] = 0;
+
+I[34] = new Array();
+I[34][0]='We don\'t think ____ go to the movie. ';
+I[34][1] = new Array();
+I[34][1][0] = new Array();
+I[34][1][0][0]='that ';
+I[34][1][0][1]='';
+I[34][1][0][2] = 0;
+I[34][1][1] = new Array();
+I[34][1][1][0]='we can ';
+I[34][1][1][1]='';
+I[34][1][1][2] = 1;
+I[34][1][2] = new Array();
+I[34][1][2][0]='we ';
+I[34][1][2][1]='';
+I[34][1][2][2] = 0;
+I[34][1][3] = new Array();
+I[34][1][3][0]='that we ';
+I[34][1][3][1]='';
+I[34][1][3][2] = 0;
+I[34][2] = 0;
+
+I[35] = new Array();
+I[35][0]='We drove all night long. Then we were home ____. ';
+I[35][1] = new Array();
+I[35][1][0] = new Array();
+I[35][1][0][0]='final';
+I[35][1][0][1]='';
+I[35][1][0][2] = 0;
+I[35][1][1] = new Array();
+I[35][1][1][0]='finally';
+I[35][1][1][1]='';
+I[35][1][1][2] = 1;
+I[35][1][2] = new Array();
+I[35][1][2][0]='at least';
+I[35][1][2][1]='';
+I[35][1][2][2] = 0;
+I[35][1][3] = new Array();
+I[35][1][3][0]='last';
+I[35][1][3][1]='';
+I[35][1][3][2] = 0;
+I[35][2] = 0;
+
+I[36] = new Array();
+I[36][0]='Sue likes to play tennis. Sue ____ likes to swim. ';
+I[36][1] = new Array();
+I[36][1][0] = new Array();
+I[36][1][0][0]='only';
+I[36][1][0][1]='';
+I[36][1][0][2] = 0;
+I[36][1][1] = new Array();
+I[36][1][1][0]='but';
+I[36][1][1][1]='';
+I[36][1][1][2] = 0;
+I[36][1][2] = new Array();
+I[36][1][2][0]='also';
+I[36][1][2][1]='';
+I[36][1][2][2] = 1;
+I[36][1][3] = new Array();
+I[36][1][3][0]='and';
+I[36][1][3][1]='';
+I[36][1][3][2] = 0;
+I[36][2] = 0;
+
+I[37] = new Array();
+I[37][0]='They gave ____. ';
+I[37][1] = new Array();
+I[37][1][0] = new Array();
+I[37][1][0][0]='me some food/some food to me';
+I[37][1][0][1]='';
+I[37][1][0][2] = 1;
+I[37][1][1] = new Array();
+I[37][1][1][0]='to me some food/some food me';
+I[37][1][1][1]='';
+I[37][1][1][2] = 0;
+I[37][1][2] = new Array();
+I[37][1][2][0]='to me some food';
+I[37][1][2][1]='';
+I[37][1][2][2] = 0;
+I[37][1][3] = new Array();
+I[37][1][3][0]='some food to I';
+I[37][1][3][1]='';
+I[37][1][3][2] = 0;
+I[37][2] = 0;
+
+I[38] = new Array();
+I[38][0]='Jim: Why did you take a shower? <br />Ted: ____ I got dirty. ';
+I[38][1] = new Array();
+I[38][1][0] = new Array();
+I[38][1][0][0]='By ';
+I[38][1][0][1]='';
+I[38][1][0][2] = 0;
+I[38][1][1] = new Array();
+I[38][1][1][0]='After ';
+I[38][1][1][1]='';
+I[38][1][1][2] = 0;
+I[38][1][2] = new Array();
+I[38][1][2][0]='How ';
+I[38][1][2][1]='';
+I[38][1][2][2] = 0;
+I[38][1][3] = new Array();
+I[38][1][3][0]='Because ';
+I[38][1][3][1]='';
+I[38][1][3][2] = 1;
+I[38][2] = 0;
+
+I[39] = new Array();
+I[39][0]='Tom: What time is the football game? <br />Sue: ____ it\'s at 2:30.';
+I[39][1] = new Array();
+I[39][1][0] = new Array();
+I[39][1][0][0]='I think';
+I[39][1][0][1]='';
+I[39][1][0][2] = 1;
+I[39][1][1] = new Array();
+I[39][1][1][0]='I don&#180;t know';
+I[39][1][1][1]='';
+I[39][1][1][2] = 0;
+I[39][1][2] = new Array();
+I[39][1][2][0]='Although';
+I[39][1][2][1]='';
+I[39][1][2][2] = 0;
+I[39][1][3] = new Array();
+I[39][1][3][0]='At least';
+I[39][1][3][1]='';
+I[39][1][3][2] = 0;
+I[39][2] = 0;
+
+I[40] = new Array();
+I[40][0]='She can eat beef, ____ she can\'t eat pork. ';
+I[40][1] = new Array();
+I[40][1][0] = new Array();
+I[40][1][0][0]='and';
+I[40][1][0][1]='';
+I[40][1][0][2] = 0;
+I[40][1][1] = new Array();
+I[40][1][1][0]='although';
+I[40][1][1][1]='';
+I[40][1][1][2] = 1;
+I[40][1][2] = new Array();
+I[40][1][2][0]='also';
+I[40][1][2][1]='';
+I[40][1][2][2] = 0;
+I[40][1][3] = new Array();
+I[40][1][3][0]='so';
+I[40][1][3][1]='';
+I[40][1][3][2] = 0;
+I[40][2] = 0;
+
+I[41] = new Array();
+I[41][0]='Will she sell ___? ';
+I[41][1] = new Array();
+I[41][1][0] = new Array();
+I[41][1][0][0]='the medicine to him ';
+I[41][1][0][1]='';
+I[41][1][0][2] = 1;
+I[41][1][1] = new Array();
+I[41][1][1][0]='him to the medicine ';
+I[41][1][1][1]='';
+I[41][1][1][2] = 0;
+I[41][1][2] = new Array();
+I[41][1][2][0]='the medicine him ';
+I[41][1][2][1]='';
+I[41][1][2][2] = 0;
+I[41][1][3] = new Array();
+I[41][1][3][0]='to him the medicine ';
+I[41][1][3][1]='';
+I[41][1][3][2] = 0;
+I[41][2] = 0;
+
+I[42] = new Array();
+I[42][0]='My brother thinks ___________________.';
+I[42][1] = new Array();
+I[42][1][0] = new Array();
+I[42][1][0][0]='why will it be awful ';
+I[42][1][0][1]='';
+I[42][1][0][2] = 0;
+I[42][1][1] = new Array();
+I[42][1][1][0]='will be awful ';
+I[42][1][1][1]='';
+I[42][1][1][2] = 0;
+I[42][1][2] = new Array();
+I[42][1][2][0]='that it will be awful ';
+I[42][1][2][1]='';
+I[42][1][2][2] = 1;
+I[42][1][3] = new Array();
+I[42][1][3][0]='will it be awful ';
+I[42][1][3][1]='';
+I[42][1][3][2] = 0;
+I[42][2] = 0;
+
+I[43] = new Array();
+I[43][0]='Yes, she talked to______ last night. ';
+I[43][1] = new Array();
+I[43][1][0] = new Array();
+I[43][1][0][0]='he';
+I[43][1][0][1]='';
+I[43][1][0][2] = 0;
+I[43][1][1] = new Array();
+I[43][1][1][0]='you';
+I[43][1][1][1]='';
+I[43][1][1][2] = 1;
+I[43][1][2] = new Array();
+I[43][1][2][0]='your';
+I[43][1][2][1]='';
+I[43][1][2][2] = 0;
+I[43][1][3] = new Array();
+I[43][1][3][0]='they';
+I[43][1][3][1]='';
+I[43][1][3][2] = 0;
+I[43][2] = 0;
+
+I[44] = new Array();
+I[44][0]='I live ___ Andrews Street. ';
+I[44][1] = new Array();
+I[44][1][0] = new Array();
+I[44][1][0][0]='in';
+I[44][1][0][1]='';
+I[44][1][0][2] = 0;
+I[44][1][1] = new Array();
+I[44][1][1][0]='at';
+I[44][1][1][1]='';
+I[44][1][1][2] = 0;
+I[44][1][2] = new Array();
+I[44][1][2][0]='on';
+I[44][1][2][1]='';
+I[44][1][2][2] = 1;
+I[44][1][3] = new Array();
+I[44][1][3][0]='over';
+I[44][1][3][1]='';
+I[44][1][3][2] = 0;
+I[44][2] = 0;
+
+I[45] = new Array();
+I[45][0]='Jane: What\'s he doing? <br />Tom: He\'s putting ____ under his desk. ';
+I[45][1] = new Array();
+I[45][1][0] = new Array();
+I[45][1][0][0]='something';
+I[45][1][0][1]='';
+I[45][1][0][2] = 1;
+I[45][1][1] = new Array();
+I[45][1][1][0]='anything';
+I[45][1][1][1]='';
+I[45][1][1][2] = 0;
+I[45][1][2] = new Array();
+I[45][1][2][0]='some';
+I[45][1][2][1]='';
+I[45][1][2][2] = 0;
+I[45][1][3] = new Array();
+I[45][1][3][0]='any';
+I[45][1][3][1]='';
+I[45][1][3][2] = 0;
+I[45][2] = 0;
+
+I[46] = new Array();
+I[46][0]='Tom: What ____ you like to do? <br />Bob: Let\'s go swimming. ';
+I[46][1] = new Array();
+I[46][1][0] = new Array();
+I[46][1][0][0]='will ';
+I[46][1][0][1]='';
+I[46][1][0][2] = 0;
+I[46][1][1] = new Array();
+I[46][1][1][0]='how ';
+I[46][1][1][1]='';
+I[46][1][1][2] = 0;
+I[46][1][2] = new Array();
+I[46][1][2][0]='would ';
+I[46][1][2][1]='';
+I[46][1][2][2] = 1;
+I[46][1][3] = new Array();
+I[46][1][3][0]='should';
+I[46][1][3][1]='';
+I[46][1][3][2] = 0;
+I[46][2] = 0;
+
+I[47] = new Array();
+I[47][0]='Mary: ____ your new class? <br />John: I like it. I\'m learning a lot. ';
+I[47][1] = new Array();
+I[47][1][0] = new Array();
+I[47][1][0][0]='How does ';
+I[47][1][0][1]='';
+I[47][1][0][2] = 0;
+I[47][1][1] = new Array();
+I[47][1][1][0]='How is ';
+I[47][1][1][1]='';
+I[47][1][1][2] = 1;
+I[47][1][2] = new Array();
+I[47][1][2][0]='Why does';
+I[47][1][2][1]='';
+I[47][1][2][2] = 0;
+I[47][1][3] = new Array();
+I[47][1][3][0]='Why is';
+I[47][1][3][1]='';
+I[47][1][3][2] = 0;
+I[47][2] = 0;
+
+I[48] = new Array();
+I[48][0]='I can\'t see ___ over there. ';
+I[48][1] = new Array();
+I[48][1][0] = new Array();
+I[48][1][0][0]='nothing';
+I[48][1][0][1]='';
+I[48][1][0][2] = 0;
+I[48][1][1] = new Array();
+I[48][1][1][0]='nobody';
+I[48][1][1][1]='';
+I[48][1][1][2] = 0;
+I[48][1][2] = new Array();
+I[48][1][2][0]='anything';
+I[48][1][2][1]='';
+I[48][1][2][2] = 1;
+I[48][1][3] = new Array();
+I[48][1][3][0]='nothing else';
+I[48][1][3][1]='';
+I[48][1][3][2] = 0;
+I[48][2] = 0;
+
+I[49] = new Array();
+I[49][0]='Where do you live?<br />I live ____ 120 Illinois Drive';
+I[49][1] = new Array();
+I[49][1][0] = new Array();
+I[49][1][0][0]='in';
+I[49][1][0][1]='';
+I[49][1][0][2] = 0;
+I[49][1][1] = new Array();
+I[49][1][1][0]='on';
+I[49][1][1][1]='';
+I[49][1][1][2] = 0;
+I[49][1][2] = new Array();
+I[49][1][2][0]='at';
+I[49][1][2][1]='';
+I[49][1][2][2] = 1;
+I[49][1][3] = new Array();
+I[49][1][3][0]='around';
+I[49][1][3][1]='';
+I[49][1][3][2] = 0;
+I[49][2] = 0;
+
+
+Status = new Array();
+
+
+function CreateStatusArrays(){
+	for (var x=0; x<I.length; x++){
+		Status[x] = new Array();
+		Status[x][0] = 0; // Question not done yet
+		Status[x][1] = new Array(); //for tracking whether answers chosen
+		for (var y=0; y<I[x][1].length; y++){
+			Status[x][1][y] = '0'; //Answers not chosen yet
+		}
+		Status[x][2] = 0; //Wrong tries at this question so far
+		Status[x][3] = 0; //Score for this question, out of one
+	}
+}
+
+function UpdateQuestionStatus(QNum){
+	if (Status[QNum][2] >= Status[QNum][1].length-1){
+		Status[QNum][0] = 1;
+		for (var i=0; i<Status[QNum][1].length; i++){
+			if (Status[QNum][1][i] == '0'){
+				Status[QNum][1][i] = 'R';
+			}
+		}
+	}
+}
+
+function ReplaceStuff(Token, Replacement, InString){
+	var i = InString.indexOf(Token);
+	var FirstBit = '';
+	var LastBit = '';
+	while (i>-1){
+		FirstBit = InString.substring(0, i);
+		LastBit = InString.substring(i + Token.length, InString.length);	
+		InString = FirstBit + Replacement + LastBit;
+		i = InString.indexOf(Token);
+	}
+	return InString;
+}
+
+function ChangeQ(ChangeBy){
+	var NewNum = CurrQNum + ChangeBy;
+	if ((NewNum >= 0)&&(NewNum<I.length)){
+		CurrQNum = NewNum;
+		ShowQuestion(CurrQNum);
+		CalculateScore();
+		if (ContinuousScoring == true){
+			var CurrScore = YourScoreIs + ' ' + Score + '%.';
+			WriteScore(CurrScore);
+		}
+	}
+}
+
+function BuildQuestion(QNum){
+	if (I[QNum][2] == 0){
+		var Temp = ReplaceStuff('[Question]', I[QNum][0], QRow);
+
+		var AnsRows = '';
+		for (var i=0; i<I[QNum][1].length; i++){
+			TempAns = ARow;
+			TempAns = ReplaceStuff('[ANum]', i, TempAns);
+			TempAns = ReplaceStuff('[ALetter]', ' ' + ALetters.charAt(i) + ' ', TempAns);
+			TempAns = ReplaceStuff('[Ans]', I[QNum][1][i][0], TempAns);
+			TempAns = ReplaceStuff('[Feedback]', I[QNum][1][i][1], TempAns);
+			AnsRows += TempAns;
+		}
+		Temp += AnsRows;
+		Temp = ReplaceStuff('[QNumber]', QNum+1, Temp);
+		Temp = ReplaceStuff('[QNum]', QNum, Temp);
+	}
+	else{
+		var Temp = ReplaceStuff('[Question]', I[QNum][0], QRow);
+		var AnsRows = '';
+		for (var i=0; i<I[QNum][1].length; i++){
+			TempAns = MARow;
+			TempAns = ReplaceStuff('[ANum]', i, TempAns);
+			TempAns = ReplaceStuff('[Correct]', I[QNum][1][i][2], TempAns);
+			TempAns = ReplaceStuff('[Ans]', I[QNum][1][i][0], TempAns);
+			AnsRows += TempAns;
+		}
+		Temp += AnsRows;
+		Temp += CheckButton;
+		Temp = ReplaceStuff('[QNumber]', QNum+1, Temp);
+		Temp = ReplaceStuff('[QNum]', QNum, Temp);
+	}
+	return Temp;
+}
+
+function DisplayExercise(StuffToDisplay){
+	document.getElementById('MainDiv').innerHTML = StuffToDisplay;
+
+}
+
+function ShowQuestion(QNum){
+//First, create the Q number readout at the top
+	var Readout = (QNum+1) + '/' + I.length;
+	while (Readout.length < 7){
+		Readout = ' ' + Readout + ' ';
+	}
+	Readout = QButtonsOpener + Readout + QButtonsCloser;
+
+	var Output = BuildQuestion(QNum);
+
+	Output = TableOpener + Output + TableCloser;
+
+	DisplayExercise(Readout + Output);
+
+//Mark the answers already done
+	for (i=0; i<Status[QNum][1].length; i++){
+		if (Status[QNum][1][i] == 'R'){
+
+			MarkAnswer(QNum,i,true,false)
+		}
+		if (Status[QNum][1][i] == 'W'){
+			MarkAnswer(QNum,i,false,false)
+		}
+		if (Status[QNum][1][i] == 'C'){
+			CheckCheckbox(QNum,i);
+		}
+	}
+
+//Set the focus
+	document.getElementById('NextQButton').focus();
+}
+
+function CheckMulti(QNum){
+	var TotWrong = 0;
+	var Output = '';
+	var TotAns = I[QNum][1].length;
+	for (var i=TotAns-1; i>=0; i--){
+//Find any incorrect choices
+
+		var b = eval('document.QForm.A_' + QNum + '_' + i);
+
+		if (b != null){
+//if it's wrong, count it
+			if (b.checked == true){
+				Status[QNum][1][i] = 'C';
+			}
+			else{
+				Status[QNum][1][i] = 'U';
+			}
+			if (((b.checked == true) && (b.value == "0"))||((b.checked == false)&&(b.value == "1"))){
+				TotWrong++;
+			}
+		}				
+	}
+
+	if (TotWrong == 0){
+		Output = DefaultRight;
+	}
+	else{
+		Output = DefaultWrong + '<br />' + (TotAns-TotWrong) + '/' + TotAns;
+	}
+
+//If you haven't tried the question before
+	if (Status[QNum][0] == 0){
+		if (TotWrong > 0){
+			Status[QNum][2]++;
+		}
+		if (TotWrong == 0){
+			Status[QNum][0] = 1;
+//Calculate the score for this question as a floating-point fraction of 1
+			Status[QNum][3] =  ((Status[QNum][1].length - Status[QNum][2]) - 1) / (Status[QNum][1].length - 1);
+//If less than zero, set to zero
+			if (Status[QNum][3] < 0){Status[QNum][3] = 0;}
+		}
+	}
+
+//Check whether the quiz is finished
+	Finished = true;
+	for (var i=0; i<Status.length; i++){
+		if (Status[i][0] == 0){Finished = false;}
+	}
+
+//Calculate the score if needed
+		
+		
+	if (Status[QNum][0] == 1){
+		if ((Finished==true)||(ContinuousScoring==true)){
+			CalculateScore();
+			var CurrScore = YourScoreIs + ' ' + Score + '%.';
+			Output = Output + '<br />' + CurrScore;
+			WriteScore(CurrScore);
+		}
+
+		if (Finished == true){
+			var CFT = 0;
+			for (i=0; i<I.length; i++){
+				if (Status[i][2] == 0){
+					CFT++;
+				}
+
+
+			}
+			Output += '<br />' + CorrectFirstTime + CFT + '/' + I.length;
+			WriteToInstructions(Output);
+
+
+			setTimeout('Finish()', SubmissionTimeout);
+		}
+	}
+
+//Show the feedback
+	if (Output.length > 0){
+		WriteFeedback(Output);
+	}
+}
+
+function CheckAnswer(QNum, ANum){
+	var Output = I[QNum][1][ANum][1];
+
+	if (Output==''){
+		if (I[QNum][1][ANum][2] == 1){
+			Output = DefaultRight;
+		}
+		else{
+			Output = DefaultWrong;
+		}
+	}
+
+//If it's not been previously answered correctly
+	if (Status[QNum][0] == 0){
+//If it's a correct answer
+		if (I[QNum][1][ANum][2] == 1){
+			Status[QNum][0] = 1;//Mark the Q as done
+			Status[QNum][1][ANum] = 'R';
+			MarkAnswer(QNum, ANum, true);
+//Calculate the score for this question as a floating-point fraction of 1
+			var PossibleWrongs = 0;
+			for (var i=0; i<I[QNum][1].length; i++){
+				if (I[QNum][1][i][2] == 0){
+					PossibleWrongs++;
+				}
+			}
+
+			if (PossibleWrongs == 0){PossibleWrongs = 1;}
+
+			Status[QNum][3] = 1 - (Status[QNum][2]/PossibleWrongs);
+
+//If less than zero, set to zero
+			if (Status[QNum][3] < 0){Status[QNum][3] = 0;}
+		}
+		else{
+			if (Status[QNum][1][ANum] != 'W'){
+				Status[QNum][1][ANum] = 'W';
+				MarkAnswer(QNum, ANum, false);
+				Status[QNum][2]++; //increment wrong tries for this Q
+			}
+		}
+	}
+
+	UpdateQuestionStatus(QNum);
+
+//Check whether the quiz is finished
+	Finished = true;
+	for (var i=0; i<Status.length; i++){
+		if (Status[i][0] == 0){Finished = false;}
+	}
+
+//Calculate the score if needed
+		
+	if (Status[QNum][0] == 1){
+		if ((Finished==true)||(ContinuousScoring==true)){
+			CalculateScore();
+			var CurrScore = YourScoreIs + ' ' + Score + '%.';
+			Output = Output + '<br />' + CurrScore;
+			WriteScore(CurrScore);
+		}
+
+		if (Finished == true){
+			var CFT = 0;
+			for (i=0; i<I.length; i++){
+				if (Status[i][2] == 0){
+					CFT++;
+				}
+			}
+			Output += '<br />' + CorrectFirstTime + CFT + '/' + I.length;
+			WriteToInstructions(Output);
+			CurrScore = YourScoreIs + ' ' + Score + '%.';
+			WriteScore(CurrScore);
+
+
+			setTimeout('Finish()', SubmissionTimeout);
+		}
+	}
+
+//Show the feedback
+	if (Output.length > 0){
+		WriteFeedback(Output);
+	}
+}
+
+function CalculateScore(){
+	var TriedQs = 0;
+	var TotalScore = 0;
+	for (var i=0; i<Status.length; i++){
+		if ((Status[i][2] > 0)||(Status[i][3] == 1)){
+			TriedQs++;
+			TotalScore += Status[i][3];
+		}
+	}
+	if (TriedQs == 0){
+		Score = 0;
+	}
+	else{
+		Score = (Math.floor(100 * (TotalScore/TriedQs)));
+	}
+}
+
+function MarkAnswer(QNum, ANum, Right, Done){
+	if (Done == false){
+		var Mark = CorrectIndicator;
+		if (Right == false){Mark = IncorrectIndicator;}
+		document.getElementById('FB_' + QNum + '_' + ANum).innerHTML = Mark;
+	}
+	else{
+		if (Right == false){
+			document.getElementById('FB_' + QNum + '_' + ANum).innerHTML = IncorrectIndicator;
+		}
+		else{
+			document.getElementById('FB_' + QNum + '_' + ANum).innerHTML = CorrectIndicator;
+		}
+	}
+}
+
+function CheckCheckbox(QNum, ANum){
+	if (eval('document.QForm.A_' + QNum + '_' + ANum) != null){
+		eval('document.QForm.A_' + QNum + '_' + ANum).checked = true;
+
+	}
+}
+
+
+
+
+
+function Finish(){
+//If there's a form, fill it out and submit it
+	if (document.store != null){
+		Frm = document.store;
+		Frm.starttime.value = HPNStartTime;
+		Frm.endtime.value = (new Date()).getTime();
+		Frm.mark.value = Score;
+		Frm.submit();
+	}
+}
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+<!-- <body>Fool those dumb ad-inserting ISPs</body> -->
+
+<body onload="StartUp()" id="TheBody">
+
+<!-- BeginTopNavButtons -->
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<span class="ExerciseTitle"><font color="#FF0000">EVALUATION (2)</font></span><font color="#FF0000"><br />
+	</font><br />
+</div>
+
+
+
+<div id="InstructionsDiv" class="StdDiv">
+	<p id="Instructions">Esta evaluaci&#243;n se presenta totalmente en ingl&#233;s y forma parte de 12 con estas caracter&#237;sticas, ordenadas por grado de dificultad. Con ellas se busca ver su capacidad de asimilaci&#243;n en el evento de que tenga que presentar ex&#225;menes de la parte de gram&#225;tica, como el TOEFL, Michigan, y SAT entre otros, cuyo estilo de preguntas es muy similar.</p>
+</div>
+
+
+	<div id="ScoreDiv" class="StdDiv">
+&nbsp;
+	</div>
+
+
+	<div id="MainDiv" class="StdDiv">
+&nbsp;
+	</div>
+
+
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FunctionButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>
