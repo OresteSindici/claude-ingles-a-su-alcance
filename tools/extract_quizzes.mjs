@@ -3,7 +3,7 @@
 import fs from "node:fs"; import path from "node:path"; import vm from "node:vm";
 const [dir, out] = process.argv.slice(2);
 const dec = new TextDecoder("windows-1252");
-const ent = (s) => String(s ?? "").replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n))
+const ent = (s) => String(s ?? "").replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCharCode(parseInt(h, 16))).replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n))
   .replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&nbsp;/g, " ")
   .replace(/<br\s*\/?>/gi, "\n").replace(/<[^>]+>/g, "").replace(/[ \t]+/g, " ").trim();
 const quizzes = [];
@@ -13,6 +13,11 @@ for (const f of fs.readdirSync(dir).filter((f) => /\.html?$/i.test(f)).sort()) {
   const lines = html.split(/\r?\n/);
   const pick = (re) => lines.filter((l) => re.test(l)).join("\n");
   const ctx = {};
+  // The author's own feedback voice ("Qué pasó? No dizque estaba cuchilla?")
+  const voiceKeys = ["DefaultRight", "DefaultWrong", "CorrectIndicator", "IncorrectIndicator", "YourScoreIs", "CorrectResponse", "IncorrectResponse", "PartlyIncorrect"];
+  const vctx = {};
+  vm.runInNewContext(pick(new RegExp("^var (" + voiceKeys.join("|") + ") = '.*';\\s*$")), vctx);
+  const voice = Object.fromEntries(Object.entries(vctx).map(([k, v]) => [k, ent(v)]).filter(([, v]) => v));
   if (/<td class="LeftItem">/.test(html)) {
     // JMatch: select id "s<row>_<key>", the correct option has value == key
     const options = {};
@@ -20,12 +25,12 @@ for (const f of fs.readdirSync(dir).filter((f) => /\.html?$/i.test(f)).sort()) {
       for (const o of m[3].matchAll(/<option value="(\d+)">([\s\S]*?)<\/option>/g)) options[o[1]] = ent(o[2]);
       return { left: ent(m[1]), key: m[2] };
     });
-    quizzes.push({ id: f, type: "matching", title, pairs: pairs.map((p) => ({ left: p.left, right: options[p.key] })) });
+    quizzes.push({ id: f, voice, type: "matching", title, pairs: pairs.map((p) => ({ left: p.left, right: options[p.key] })) });
   } else if (/^I\[0\]\[1\]/m.test(html)) {
     vm.runInNewContext("var I=[];" + pick(/^I\[\d+\]/), ctx);
     // JQuiz v6 keeps the question text in the HTML (div.QuestionText) and options in I[n][3]
     const qTexts = [...html.matchAll(/<(?:p|div) class="QuestionText"[^>]*>([\s\S]*?)<\/(?:p|div)>/gi)].map((m) => ent(m[1]));
-    quizzes.push({ id: f, type: "multiple-choice", title, questions: ctx.I.map((q, i) => {
+    quizzes.push({ id: f, voice, type: "multiple-choice", title, questions: ctx.I.map((q, i) => {
       const v6 = Array.isArray(q[3]);
       const opts = v6 ? q[3] : q[1];
       return { question: v6 ? qTexts[i] ?? "" : ent(q[0]),
@@ -34,13 +39,15 @@ for (const f of fs.readdirSync(dir).filter((f) => /\.html?$/i.test(f)).sort()) {
   } else if (/var Segments/.test(html)) {
     vm.runInNewContext("var Segments=[];var Answers=[];" + pick(/^(Segments|Answers)\[\d+\]/), ctx);
     const words = ctx.Segments.map((s) => s[0]);
-    quizzes.push({ id: f, type: "sentence-order", title, segments: words,
+    quizzes.push({ id: f, voice, type: "sentence-order", title, segments: words,
       // Segments[i][1] is the segment's id; Answers lists ids in the correct order
       answers: ctx.Answers.map((a) => a.map((id) => ctx.Segments.find((sg) => sg[1] === id)[0]).join(" ")) });
   } else {
-    quizzes.push({ id: f, type: "page", title, text: ent(html.replace(/<style[\s\S]*?<\/style>|<script[\s\S]*?<\/script>/gi, "")).slice(0, 4000) });
+    quizzes.push({ id: f, voice, type: "page", title, text: ent(html.replace(/<style[\s\S]*?<\/style>|<script[\s\S]*?<\/script>/gi, "")).slice(0, 4000) });
   }
 }
 fs.writeFileSync(out, JSON.stringify(quizzes, null, 1));
+const allVoice = {}; quizzes.forEach((q) => Object.entries(q.voice || {}).forEach(([k, v]) => ((allVoice[k] ??= new Set()).add(v))));
+fs.writeFileSync(path.join(path.dirname(out), "voice.json"), JSON.stringify(Object.fromEntries(Object.entries(allVoice).map(([k, v]) => [k, [...v]])), null, 1));
 const c = {}; quizzes.forEach((q) => (c[q.type] = (c[q.type] || 0) + 1));
 console.log(c, "MC questions:", quizzes.filter((q) => q.questions).reduce((n, q) => n + q.questions.length, 0));

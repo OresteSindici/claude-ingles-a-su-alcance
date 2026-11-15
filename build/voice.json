@@ -1,0 +1,56 @@
+{
+ "CorrectResponse": [
+  "Estás en lo cierto!",
+  "Correcto"
+ ],
+ "IncorrectResponse": [
+  "Qué pena. Por qué no aplica la formula?",
+  "Qué pena. Siga intentandolo",
+  "Lo siento.Siga intentándolo hasta que los aprenda todos!"
+ ],
+ "YourScoreIs": [
+  "Puntaje:",
+  "Su puntaje es:",
+  "Vamos en...",
+  "Your score is:",
+  "Recuerde que el porcentaje es lo de menos en este ejercicio."
+ ],
+ "CorrectIndicator": [
+  "Exacto!",
+  "O.K",
+  "Esa es!",
+  "Correcto!"
+ ],
+ "IncorrectIndicator": [
+  "Sorry!",
+  "Oops!",
+  "PLOP!",
+  "SORRY"
+ ],
+ "DefaultRight": [
+  "Lo (a) veo bien!",
+  "Great job, go on",
+  "Exacto!",
+  "Vamos bien! Siga así",
+  "Por ahi sí es la cosa",
+  "Bingo",
+  "Se nota que el curso le ha servido!"
+ ],
+ "DefaultWrong": [
+  "Siga estudiando. Si no se aprende el listado de los verbos le queda difícil avanzar.",
+  "Qué pasó? No dizque estaba \"cuchilla\"?",
+  "No me haga quedar mal!",
+  "WHAT HAPPENS TO YOU, BABY?",
+  "Me parece que hay que repasar!",
+  "Siga practicando que la práctica hace al maestro",
+  "Se lo dije!",
+  "Siga estudiando que la noche es larga!",
+  "Siga estudiando!",
+  "Un repaso no caería mal!",
+  "No está ni tibio!"
+ ],
+ "PartlyIncorrect": [
+  "Su respuesta tiene esto de errada:",
+  "En lo resaltado está patinando:"
+ ]
+}

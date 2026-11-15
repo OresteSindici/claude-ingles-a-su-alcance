@@ -1,114 +1,238 @@
 <title>Inglés a su Alcance</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;800&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
 <style>
-/* Layout: single reading column; a sticky formula strip; each sentence is a drill card */
+/* Layout: cockpit-night app shell. Tricolour stripe + sticky top bar, one reading column, drill cards, toast "radio" messages from Mi Coronel */
 :root{
-  --bg:#f3f6f7; --surface:#ffffff; --fg:#14232b; --muted:#56666e; --line:#d5dfe2;
-  --aux:#007f80;            /* the teal the 2002 manual used for the "21" */
-  --aux-soft:#e0f1f1; --sun:#c98a00; --ok:#2f7d4a; --redo:#b4472f;
-  --display:"Sora",system-ui,sans-serif; --body:"Source Sans 3",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+  --bg:#081629; --panel:#0f2442; --panel-2:#16305a; --fg:#eaf2fb; --muted:#9fb3cc; --line:#21406b;
+  --sky:#3ab8f2; --gold:#f5b800; --red:#e0384e; --ok:#3fd18a;
+  --on-gold:#081629; --on-sky:#06121f;
+  --display:"Saira Condensed","Arial Narrow",system-ui,sans-serif; --body:"Source Sans 3",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+  color-scheme:dark;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0e171b; --surface:#16232a; --fg:#e4eef0; --muted:#97a9b0; --line:#2a3b43;
-  --aux:#4fc4c2; --aux-soft:#173638; --sun:#e2b13c; --ok:#6cc58a; --redo:#ef8a72; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0e171b; --surface:#16232a; --fg:#e4eef0; --muted:#97a9b0; --line:#2a3b43;
-  --aux:#4fc4c2; --aux-soft:#173638; --sun:#e2b13c; --ok:#6cc58a; --redo:#ef8a72; color-scheme:dark}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
+  --bg:#eef3f9; --panel:#ffffff; --panel-2:#e3ecf7; --fg:#0b1d36; --muted:#4f6584; --line:#c9d7ea;
+  --sky:#0a7fc0; --gold:#b98a00; --red:#c4243a; --ok:#1d8a55; --on-gold:#ffffff; --on-sky:#ffffff; color-scheme:light}}
+:root[data-theme="light"]{
+  --bg:#eef3f9; --panel:#ffffff; --panel-2:#e3ecf7; --fg:#0b1d36; --muted:#4f6584; --line:#c9d7ea;
+  --sky:#0a7fc0; --gold:#b98a00; --red:#c4243a; --ok:#1d8a55; --on-gold:#ffffff; --on-sky:#ffffff; color-scheme:light}
+[hidden]{display:none!important}
+html{background:var(--bg)}
 body{background:var(--bg);color:var(--fg);font:17px/1.55 var(--body)}
-.wrap{max-width:760px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-header .eyebrow{font:600 12px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--aux)}
-h1{font:700 clamp(28px,6vw,40px)/1.1 var(--display);margin:6px 0 8px;text-wrap:balance}
-header p{color:var(--muted);margin:0;max-width:62ch}
-.tribute{margin-top:14px;font-size:14px;color:var(--muted);border-left:3px solid var(--sun);padding-left:10px}
-.formulas{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px;margin-top:22px;border-bottom:1px solid var(--line)}
-.formulas h2{font:600 12px var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
-.fgrid{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}
-.f{flex:0 0 auto;border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:6px 10px;font-size:13px;line-height:1.3}
-.f b{font:500 12px var(--mono);color:var(--aux)} .f span{display:block;font:500 13px var(--mono)}
-.f.on{border-color:var(--aux);background:var(--aux-soft)}
-.progress{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:22px 0 10px;font-size:15px}
-.bar{flex:1;height:6px;background:var(--line);border-radius:3px;overflow:hidden}.bar i{display:block;height:100%;background:var(--aux);width:0;transition:width .3s}
-.section{font:700 18px var(--display);margin:24px 0 4px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--panel)}
+.stripe{height:5px;background:linear-gradient(90deg,#fcd116 0 50%,#003893 50% 75%,#ce1126 75%)}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:8;background:var(--panel);border-bottom:1px solid var(--line)}
+.top .in{max-width:780px;margin:0 auto;display:flex;align-items:center;gap:12px;padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.brand{font:800 22px/1 var(--display);letter-spacing:.02em;text-transform:uppercase;margin-right:auto;display:flex;align-items:center;gap:8px}
+.brand svg{width:26px;height:16px;fill:var(--gold)}
+.tabs{display:flex;gap:4px}
+.tabs a{font:600 15px var(--body);color:var(--muted);text-decoration:none;padding:6px 12px;border-radius:999px}
+.tabs a[aria-current="page"]{background:var(--gold);color:var(--on-gold)}
+.wrap{max-width:780px;margin:0 auto;padding-block:24px 72px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font:700 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--sky)}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.01em;text-wrap:balance}
+h1{font-weight:800;font-size:clamp(36px,9vw,58px);line-height:.95;margin:8px 0 12px}
+h1 span{color:var(--gold)}
+.lead{color:var(--muted);max-width:60ch;margin:0}
+/* rank / progress */
+.hud{margin-top:22px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.insignia{width:54px;height:54px;border-radius:50%;background:var(--panel-2);display:grid;place-items:center;border:2px solid var(--gold)}
+.insignia svg{width:30px;height:30px;fill:var(--gold)}
+.hud .rank{font:800 24px/1 var(--display);text-transform:uppercase}
+.hud .sub{font-size:14px;color:var(--muted);display:flex;justify-content:space-between;gap:8px;margin-top:4px;font-variant-numeric:tabular-nums}
+.bar{height:8px;background:var(--panel-2);border-radius:4px;overflow:hidden;margin-top:8px}.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--sky),var(--gold));transition:width .4s}
+/* formulas */
+.formulas{margin-top:26px}
+.formulas h2{font-size:22px;margin:0 0 4px}
+.formulas p{margin:0 0 10px;color:var(--muted);font-size:15px}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(138px,1fr));gap:8px}
+.f{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:13px;line-height:1.3;transition:border-color .2s,transform .2s}
+.f b{font:700 13px var(--mono);color:var(--gold)} .f span{display:block;margin-top:4px;font:500 13px var(--mono);color:var(--fg)}
+.f.on{border-color:var(--gold);transform:translateY(-2px)}
+.f .k21{color:var(--sky)}
+.sec{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:30px 0 4px}
+.sec h2{font-size:26px;margin:0}
+.sec small{font:500 12px var(--mono);color:var(--muted)}
 .hint{color:var(--muted);font-size:15px;margin:0 0 14px}
+.hint em{font-style:normal;color:var(--sky);font-weight:700}
 .list{display:grid;gap:12px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:10px}
-.card.done-ok{border-color:var(--ok)} .card.done-redo{border-color:var(--redo)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;gap:10px;transition:border-color .2s}
+.card.ok{border-color:var(--ok)} .card.redo{border-color:var(--red)}
 .row{display:flex;gap:12px;align-items:flex-start}
-.num{font:500 13px var(--mono);color:var(--muted);padding-top:4px;min-width:2.2em}
-.sent{flex:1;min-width:0;font:600 19px/1.35 var(--display)} .sent em{font-style:normal;color:var(--aux)}
-.tag{font:500 12px var(--mono);color:var(--aux);border:1px solid var(--aux);border-radius:4px;padding:2px 6px;white-space:nowrap;cursor:help}
-button{font:600 15px var(--body);border-radius:8px;cursor:pointer}
-button:focus-visible,input:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
-.play{width:40px;height:40px;flex:0 0 40px;border:0;background:var(--aux);color:var(--surface);display:grid;place-items:center}
-.play svg{width:16px;height:16px;fill:currentColor}
-input{width:100%;font:17px var(--body);padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg)}
-.actions{display:flex;gap:8px;flex-wrap:wrap}
-.reveal{border:1px solid var(--aux);background:transparent;color:var(--aux);padding:8px 14px}
-.ans{background:var(--aux-soft);border-radius:8px;padding:10px 12px;white-space:pre-line}
-.ans small{display:block;font:600 11px var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--aux);margin-bottom:2px}
+.num{font:700 13px var(--mono);color:var(--muted);padding-top:5px;min-width:2.2em}
+.sent{flex:1;min-width:0;font:800 23px/1.15 var(--display);text-transform:uppercase;letter-spacing:.01em}
+.sent em{font-style:normal;color:var(--sky)}
+.tag{font:700 12px var(--mono);color:var(--gold);border:1px solid var(--gold);border-radius:6px;padding:3px 7px;white-space:nowrap;cursor:help;margin-top:3px}
+button{font:700 15px var(--body);border-radius:10px;cursor:pointer}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.play{width:42px;height:42px;flex:0 0 42px;border:0;background:var(--sky);color:var(--on-sky);display:grid;place-items:center;border-radius:50%}
+.play svg{width:15px;height:15px;fill:currentColor;margin-left:2px}
+.play.on{box-shadow:0 0 0 4px color-mix(in srgb,var(--sky) 35%,transparent)}
+input{width:100%;font:17px var(--body);padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--fg)}
+.reveal{justify-self:start;border:1px solid var(--sky);background:transparent;color:var(--sky);padding:8px 14px}
+.ans{background:var(--panel-2);border-radius:10px;padding:10px 12px;white-space:pre-line}
+.ans small{display:block;font:700 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:3px}
 .self{display:flex;gap:8px;flex-wrap:wrap}
-.self button{border:1px solid var(--line);background:var(--surface);color:var(--fg);padding:7px 12px}
-.self .y[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:var(--surface)}
-.self .n[aria-pressed="true"]{background:var(--redo);border-color:var(--redo);color:var(--surface)}
-footer{margin-top:36px;font-size:13px;color:var(--muted);text-align:center}
+.self button{border:1px solid var(--line);background:transparent;color:var(--fg);padding:8px 12px}
+.self .y[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:var(--on-sky)}
+.self .n[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
+/* radio toast */
+.toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translate(-50%,140%);width:min(440px,calc(100% - 32px));background:var(--panel-2);border:1px solid var(--gold);border-radius:14px;padding:12px 14px;display:flex;gap:12px;align-items:center;transition:transform .35s cubic-bezier(.2,.9,.3,1.2);z-index:20}
+.toast.show{transform:translate(-50%,0)}
+.toast img{width:40px;height:40px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid var(--gold);flex:0 0 40px}
+.toast b{display:block;font:700 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.toast p{margin:0;font-weight:600}
+/* homenaje */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:20px;align-items:end}
+.portrait{width:150px;aspect-ratio:139/256;max-width:100%;border-radius:14px;overflow:hidden;border:2px solid var(--gold);background:var(--panel)}
+.portrait img{width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.05)}
+.handle{display:inline-flex;gap:8px;align-items:center;margin-top:14px;font:700 14px var(--mono);background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+.handle i{font-style:normal;color:var(--gold)}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:24px 0}
+.facts div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
+.facts strong{display:block;font:800 30px/1 var(--display);color:var(--gold)}
+.facts span{font-size:14px;color:var(--muted)}
+.story p{max-width:64ch}
+.letters{display:grid;gap:14px;margin-top:10px}
+.letter{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+.letter.with-img{grid-template-columns:96px minmax(0,1fr)}
+.letter img{width:96px;border-radius:8px;align-self:start}
+.letter h3{margin:0;font-size:22px;color:var(--sky)}
+.letter p{margin:0;white-space:pre-line;font-family:Georgia,"Times New Roman",serif;font-size:17px;line-height:1.6}
+.sig{color:var(--muted);font-size:14px;margin-top:16px}
+.cta{display:inline-block;margin-top:22px;background:var(--gold);color:var(--on-gold);text-decoration:none;font:800 18px var(--display);text-transform:uppercase;padding:10px 18px;border-radius:10px}
+footer{margin-top:40px;font-size:13px;color:var(--muted);text-align:center}
+@media (max-width:520px){.hero{grid-template-columns:1fr}.portrait{width:120px}.facts strong{font-size:24px}.letter.with-img{grid-template-columns:1fr}.letter img{width:90px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
-<div class="wrap">
-<header>
-  <div class="eyebrow">Prototipo · Lección de práctica</div>
-  <h1>Inglés a su Alcance</h1>
-  <p>Escuche cada frase, escriba su traducción al español y luego compare con la respuesta del manual. El número entre paréntesis indica la fórmula que usa la frase.</p>
-  <div class="tribute">Programa diseñado por el Teniente Coronel Jairo Alberto Payán, Fuerza Aérea Colombiana, Base Aérea de Melgar, 2002.</div>
-</header>
-<nav class="formulas" aria-label="Fórmulas">
-  <h2>Las 5 fórmulas</h2>
-  <div class="fgrid" id="fgrid"></div>
-</nav>
-<div class="progress"><span id="ptext">0 de 0 practicadas</span><div class="bar"><i id="pbar"></i></div></div>
-<div class="section">Del inglés al español</div>
-<p class="hint">Las palabras en verde azulado son los «21»: los auxiliares que permiten construir cualquier frase.</p>
-<div class="list" id="list"></div>
-<footer>Página 32 del manual original · Audio original de 2002</footer>
-</div>
+
+<div class="stripe" aria-hidden="true"></div>
+<div class="top"><div class="in">
+  <div class="brand"><svg viewBox="0 0 52 32" aria-hidden="true"><path d="M26 30 0 8l4-6 22 18L48 2l4 6z"/></svg>Inglés a su Alcance</div>
+  <nav class="tabs" aria-label="Secciones"><a href="#leccion" id="tab-leccion">Lección</a><a href="#homenaje" id="tab-homenaje">Homenaje</a></nav>
+</div></div>
+
+<main class="wrap" id="view-leccion">
+  <div class="eyebrow">Prototipo · Página 32 del manual</div>
+  <h1>Despegue con<br><span>los 21</span></h1>
+  <p class="lead">Escuche cada frase, escriba su traducción y compare con la respuesta de Mi Coronel. Cada frase lleva el número de la fórmula que la construye.</p>
+  <section class="hud" aria-label="Su progreso">
+    <div class="insignia" aria-hidden="true"><svg viewBox="0 0 24 24" id="rank-icon"></svg></div>
+    <div><div class="rank" id="rank">Recluta</div>
+      <div class="sub"><span id="ptext">0 de 20 frases</span><span id="next">Próximo rango: Cadete</span></div>
+      <div class="bar"><i id="pbar"></i></div></div>
+  </section>
+  <section class="formulas" aria-label="Fórmulas">
+    <h2>Las 5 fórmulas</h2>
+    <p>Toda frase en inglés obedece a una de estas fórmulas. Memorice la posición del 21.</p>
+    <div class="fgrid" id="fgrid"></div>
+  </section>
+  <div class="sec"><h2>Del inglés al español</h2><small>20 frases · audio 2002</small></div>
+  <p class="hint">Las palabras en <em>azul</em> son los «21»: los auxiliares que le permiten construir cualquier frase.</p>
+  <div class="list" id="list"></div>
+  <footer>Contenido y audio originales del manual «Inglés a su Alcance», 2002.</footer>
+</main>
+
+<main class="wrap" id="view-homenaje" hidden>
+  <div class="hero">
+    <div>
+      <div class="eyebrow">Homenaje</div>
+      <h1>Teniente Coronel<br><span>Jairo Alberto Payán</span></h1>
+      <p class="lead">Oficial de la Fuerza Aérea Colombiana. Escribió este curso en 2002, en la Base Aérea de Melgar, durante el tiempo de su injusta detención.</p>
+      <div class="handle">Identidad digital: <i>«agraviado»</i></div>
+    </div>
+    <div class="portrait"><img src="__PORTRAIT__" alt="El Teniente Coronel Jairo Alberto Payán en uniforme de la Fuerza Aérea"></div>
+  </div>
+  <div class="facts">
+    <div><strong>25+</strong><span>años al servicio de la Patria</span></div>
+    <div><strong>21</strong><span>auxiliares para construir cualquier frase</span></div>
+    <div><strong>Cientos</strong><span>de militares aprendieron con su método</span></div>
+  </div>
+  <section class="story">
+    <h2>La historia</h2>
+    <p>Aprendió inglés por su cuenta y descubrió que el idioma se podía enseñar con una lógica casi matemática: cinco fórmulas y los 21 auxiliares. Con ese método, escrito a mano y luego convertido en un manual interactivo con audio y ejercicios, enseñó a cientos de miembros de la Fuerza Pública de Colombia.</p>
+    <p>Firmaba como <strong>«agraviado»</strong>, porque se sentía agraviado por la justicia de su país. Al instalar el manual, antes de la primera lección, quien lo instalaba leía estas palabras suyas.</p>
+  </section>
+  <div class="letters" id="letters"></div>
+  <p class="sig">Textos tomados del instalador original del manual (2003).</p>
+  <a class="cta" href="#leccion">Empezar a aprender</a>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"><img src="__PORTRAIT__" alt=""><div><b>Mi Coronel dice</b><p id="toast-msg"></p></div></div>
+
 <script>
 const DATA = /*DATA*/[];
+const VOICE = /*VOICE*/{};
+const LETTERS = /*LETTERS*/[];
 const F = {1:["Afirmativa","S + V + C"],2:["Afirmativa con 21","S + 21 + V + C"],3:["Negativa","S + 21 + N + V + C"],4:["Interrogativa","21 + S + V + C"],5:["Interrogativa negativa","21 + N + S + V + C"]};
+const RANKS = [[0,"Recluta"],[3,"Cadete"],[6,"Alférez"],[9,"Subteniente"],[12,"Teniente"],[15,"Capitán"],[18,"Mayor"],[20,"Teniente Coronel"]];
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+// views
+function route(){ const v = location.hash === "#homenaje" ? "homenaje" : "leccion";
+  for (const k of ["leccion","homenaje"]) { document.getElementById("view-"+k).hidden = k !== v;
+    document.getElementById("tab-"+k).toggleAttribute("aria-current", k === v); document.getElementById("tab-"+k).setAttribute("aria-current", k === v ? "page" : "false"); }
+  window.scrollTo(0,0); }
+addEventListener("hashchange", route); route();
+
+// formulas
 const fgrid = document.getElementById("fgrid");
-for (const [k,[name,f]] of Object.entries(F)) fgrid.insertAdjacentHTML("beforeend",`<div class="f" data-f="${k}"><b>(${k})</b> ${name}<span>${f}</span></div>`);
-const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-function mark(text, hl){ let h = esc(text); for (const w of hl) { const e = esc(w); h = h.replace(new RegExp("\\b"+e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"(?![\\w'’])"), `<em>${e}</em>`);} return h; }
-let state = {}; try { state = JSON.parse(localStorage.getItem("ias-demo") || "{}"); } catch {}
-const save = () => { try { localStorage.setItem("ias-demo", JSON.stringify(state)); } catch {} };
-const list = document.getElementById("list"); let current;
+for (const [k,[name,f]] of Object.entries(F)) fgrid.insertAdjacentHTML("beforeend",
+  `<div class="f" data-f="${k}"><b>(${k})</b> ${name}<span>${f.replace(/21/g,'<b class="k21">21</b>')}</span></div>`);
+
+// letters
+document.getElementById("letters").innerHTML = LETTERS.map(l =>
+  `<article class="letter${l.img ? " with-img" : ""}">${l.img ? `<img src="${l.img}" alt="">` : ""}<div><h3>${esc(l.titulo)}</h3><p>${esc(l.texto)}</p></div></article>`).join("");
+
+// toast with the author's own feedback lines
+const toast = document.getElementById("toast"); let tt;
+const pick = a => a[Math.floor(Math.random()*a.length)];
+function radio(msg){ document.getElementById("toast-msg").textContent = msg; toast.classList.add("show"); clearTimeout(tt); tt = setTimeout(() => toast.classList.remove("show"), 3200); }
+
+// lesson
+function mark(text, hl){ let h = esc(text); for (const w of hl) { const e = esc(w).replace(/[.*+?^${}()|[\]\\]/g,"\\$&"); h = h.replace(new RegExp("\\b"+e+"(?![\\w'’])"), m => `<em>${m}</em>`);} return h; }
+let state = {}; try { state = JSON.parse(localStorage.getItem("ias-demo-v2") || "{}"); } catch {}
+const save = () => { try { localStorage.setItem("ias-demo-v2", JSON.stringify(state)); } catch {} };
+const list = document.getElementById("list"); let current, currentBtn;
 DATA.forEach(d => {
-  const s = state[d.n] || {};
+  const s = state[d.n] ||= {};
   const card = document.createElement("article"); card.className = "card";
   card.innerHTML = `
     <div class="row"><span class="num">${d.n}.</span><div class="sent">${mark(d.prompt, d.hl)}</div>
       <span class="tag" title="${F[d.formula]?.[0]||""}: ${F[d.formula]?.[1]||""}">(${d.formula})</span>
       <button class="play" aria-label="Escuchar frase ${d.n}"><svg viewBox="0 0 16 16"><path d="M3 2l11 6-11 6z"/></svg></button></div>
     <input id="t${d.n}" placeholder="Escriba su traducción…" autocomplete="off" value="${esc(s.t||"")}">
-    <div class="actions"><button class="reveal">Ver respuesta</button></div>
+    <button class="reveal">Ver respuesta</button>
     <div class="ans" hidden><small>Respuesta del manual</small>${esc(d.answer)}</div>
     <div class="self" hidden><button class="y">La tuve bien</button><button class="n">Debo repasarla</button></div>`;
-  const ans = card.querySelector(".ans"), self = card.querySelector(".self"), y = card.querySelector(".y"), n = card.querySelector(".n");
+  const ans = card.querySelector(".ans"), self = card.querySelector(".self"), y = card.querySelector(".y"), n = card.querySelector(".n"), rv = card.querySelector(".reveal");
   const paint = () => { y.setAttribute("aria-pressed", s.r==="y"); n.setAttribute("aria-pressed", s.r==="n");
-    card.classList.toggle("done-ok", s.r==="y"); card.classList.toggle("done-redo", s.r==="n"); };
-  const open = () => { ans.hidden = false; self.hidden = false; card.querySelector(".reveal").hidden = true; };
+    card.classList.toggle("ok", s.r==="y"); card.classList.toggle("redo", s.r==="n"); };
+  const open = () => { ans.hidden = false; self.hidden = false; rv.hidden = true; };
   if (s.r) open(); paint();
-  card.querySelector(".reveal").onclick = () => { open(); s.seen = 1; state[d.n] = s; save(); };
-  const audio = new Audio(d.audio);
-  card.querySelector(".play").onclick = () => { if (current && current !== audio) current.pause(); current = audio; audio.currentTime = 0; audio.play().catch(()=>{}); };
-  card.querySelector("input").oninput = e => { s.t = e.target.value; state[d.n] = s; save(); };
-  y.onclick = () => { s.r = "y"; state[d.n] = s; save(); paint(); progress(); };
-  n.onclick = () => { s.r = "n"; state[d.n] = s; save(); paint(); progress(); };
-  card.onmouseenter = card.onfocusin = () => document.querySelectorAll(".f").forEach(el => el.classList.toggle("on", el.dataset.f == d.formula));
+  rv.onclick = () => { open(); save(); };
+  const audio = new Audio(d.audio), pb = card.querySelector(".play");
+  audio.onended = () => pb.classList.remove("on");
+  pb.onclick = () => { if (current && current !== audio) { current.pause(); currentBtn.classList.remove("on"); }
+    current = audio; currentBtn = pb; audio.currentTime = 0; pb.classList.add("on"); audio.play().catch(()=>pb.classList.remove("on")); };
+  card.querySelector("input").oninput = e => { s.t = e.target.value; save(); };
+  y.onclick = () => { const before = rankOf(); s.r = "y"; save(); paint(); progress(); const after = rankOf();
+    radio(after !== before ? `¡Ascendido a ${after}! ${pick(VOICE.DefaultRight||["¡Bien!"])}` : pick(VOICE.DefaultRight||["¡Bien!"])); };
+  n.onclick = () => { s.r = "n"; save(); paint(); progress(); radio(pick(VOICE.DefaultWrong||["Siga estudiando!"])); };
+  card.addEventListener("focusin", () => hl(d.formula)); card.addEventListener("mouseenter", () => hl(d.formula));
   list.append(card);
 });
-function progress(){ const done = DATA.filter(d => state[d.n]?.r).length;
-  document.getElementById("ptext").textContent = `${done} de ${DATA.length} practicadas`;
-  document.getElementById("pbar").style.width = (100*done/DATA.length)+"%"; }
+function hl(f){ document.querySelectorAll(".f").forEach(el => el.classList.toggle("on", el.dataset.f == f)); }
+const doneCount = () => DATA.filter(d => state[d.n]?.r === "y").length;
+function rankOf(){ const c = doneCount(); return RANKS.filter(([m]) => c >= m).pop()[1]; }
+const ICONS = ["M12 3l2.6 5.6 6.1.6-4.6 4.1 1.3 6L12 16.3 6.6 19.3l1.3-6L3.3 9.2l6.1-.6z",
+  "M4 8l8-4 8 4-8 4zM4 13l8 4 8-4M4 17l8 4 8-4"];
+function progress(){ const c = doneCount(), i = RANKS.findIndex(r => r[1] === rankOf()), nx = RANKS[i+1];
+  document.getElementById("rank").textContent = RANKS[i][1];
+  document.getElementById("rank-icon").innerHTML = `<path d="${ICONS[i >= 3 ? 0 : 1]}"/>`;
+  document.getElementById("ptext").textContent = `${c} de ${DATA.length} frases`;
+  document.getElementById("next").textContent = nx ? `Próximo rango: ${nx[1]}` : "Rango máximo";
+  document.getElementById("pbar").style.width = (100*c/DATA.length)+"%"; }
 progress();
 </script>

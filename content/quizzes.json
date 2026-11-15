@@ -1,6 +1,11 @@
 [
  {
   "id": "1.htm",
+  "voice": {
+   "CorrectResponse": "Estás en lo cierto!",
+   "IncorrectResponse": "Qué pena. Por qué no aplica la formula?",
+   "YourScoreIs": "Puntaje:"
+  },
   "type": "sentence-order",
   "title": "",
   "segments": [
@@ -17,6 +22,11 @@
  },
  {
   "id": "10.htm",
+  "voice": {
+   "CorrectResponse": "Estás en lo cierto!",
+   "IncorrectResponse": "Qué pena. Por qué no aplica la formula?",
+   "YourScoreIs": "Puntaje:"
+  },
   "type": "sentence-order",
   "title": "",
   "segments": [
@@ -33,6 +43,11 @@
  },
  {
   "id": "11.htm",
+  "voice": {
+   "CorrectResponse": "Estás en lo cierto!",
+   "IncorrectResponse": "Qué pena. Por qué no aplica la formula?",
+   "YourScoreIs": "Puntaje:"
+  },
   "type": "sentence-order",
   "title": "",
   "segments": [
@@ -49,6 +64,11 @@
  },
  {
   "id": "12.htm",
+  "voice": {
+   "CorrectResponse": "Estás en lo cierto!",
+   "IncorrectResponse": "Qué pena. Por qué no aplica la formula?",
+   "YourScoreIs": "Puntaje:"
+  },
   "type": "sentence-order",
   "title": "",
   "segments": [
@@ -64,6 +84,11 @@
  },
  {
   "id": "13.htm",
+  "voice": {
+   "CorrectResponse": "Estás en lo cierto!",
+   "IncorrectResponse": "Qué pena. Por qué no aplica la formula?",
+   "YourScoreIs": "Puntaje:"
+  },
   "type": "sentence-order",
   "title": "",
   "segments": [
@@ -81,6 +106,11 @@
  },
  {
   "id": "14.htm",
+  "voice": {
+   "CorrectResponse": "Estás en lo cierto!",
+   "IncorrectResponse": "Qué pena. Por qué no aplica la formula?",
+   "YourScoreIs": "Puntaje:"
+  },
   "type": "sentence-order",
   "title": "",
   "segments": [
@@ -97,6 +127,11 @@
  },
  {
   "id": "15.htm",
+  "voice": {
+   "CorrectResponse": "Estás en lo cierto!",
+   "IncorrectResponse": "Qué pena. Por qué no aplica la formula?",
+   "YourScoreIs": "Puntaje:"
+  },
   "type": "sentence-order",
   "title": "",
   "segments": [
@@ -114,6 +149,11 @@
  },
  {
   "id": "2.htm",
+  "voice": {
+   "CorrectResponse": "Estás en lo cierto!",
+   "IncorrectResponse": "Qué pena. Por qué no aplica la formula?",
+   "YourScoreIs": "Puntaje:"
+  },
   "type": "sentence-order",
   "title": "ESTRUCTURA DE LAS FRASES",
   "segments": [
@@ -131,6 +171,11 @@
  },
  {
   "id": "3.htm",
+  "voice": {
+   "CorrectResponse": "Estás en lo cierto!",
+   "IncorrectResponse": "Qué pena. Siga intentandolo",
+   "YourScoreIs": "Puntaje:"
+  },
   "type": "sentence-order",
   "title": "",
   "segments": [
@@ -148,6 +193,11 @@
  },
  {
   "id": "4.htm",
+  "voice": {
+   "CorrectResponse": "Estás en lo cierto!",
+   "IncorrectResponse": "Qué pena. Por qué no aplica la formula?",
+   "YourScoreIs": "Puntaje:"
+  },
   "type": "sentence-order",
   "title": "ESTRUCTURA DE LAS FRASES",
   "segments": [
@@ -162,6 +212,11 @@
  },
  {
   "id": "5.htm",
+  "voice": {
+   "CorrectResponse": "Estás en lo cierto!",
+   "IncorrectResponse": "Qué pena. Por qué no aplica la formula?",
+   "YourScoreIs": "Puntaje:"
+  },
   "type": "sentence-order",
   "title": "",
   "segments": [
@@ -180,6 +235,11 @@
  },
  {
   "id": "6.htm",
+  "voice": {
+   "CorrectResponse": "Estás en lo cierto!",
+   "IncorrectResponse": "Qué pena. Por qué no aplica la formula?",
+   "YourScoreIs": "Puntaje:"
+  },
   "type": "sentence-order",
   "title": "",
   "segments": [
@@ -195,6 +255,11 @@
  },
  {
   "id": "7.htm",
+  "voice": {
+   "CorrectResponse": "Estás en lo cierto!",
+   "IncorrectResponse": "Qué pena. Por qué no aplica la formula?",
+   "YourScoreIs": "Puntaje:"
+  },
   "type": "sentence-order",
   "title": "",
   "segments": [
@@ -211,6 +276,11 @@
  },
  {
   "id": "8.htm",
+  "voice": {
+   "CorrectResponse": "Estás en lo cierto!",
+   "IncorrectResponse": "Qué pena. Por qué no aplica la formula?",
+   "YourScoreIs": "Puntaje:"
+  },
   "type": "sentence-order",
   "title": "",
   "segments": [
@@ -226,6 +296,11 @@
  },
  {
   "id": "9.htm",
+  "voice": {
+   "CorrectResponse": "Estás en lo cierto!",
+   "IncorrectResponse": "Qué pena. Por qué no aplica la formula?",
+   "YourScoreIs": "Puntaje:"
+  },
   "type": "sentence-order",
   "title": "",
   "segments": [
@@ -241,6 +316,13 @@
  },
  {
   "id": "E6   VERBO + VERBO EN CONTINUO..htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Siga estudiando. Si no se aprende el listado de los verbos le queda difícil avanzar."
+  },
   "type": "multiple-choice",
   "title": "VERBO + VERBO EN CONTINUO",
   "questions": [
@@ -968,6 +1050,13 @@
  },
  {
   "id": "E6  ALTOUGH, THOUGH, .....htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": " ALTHOUGH, THOUGH, EVEN THOUGH, NEVERTHELESS, HOWEVER.",
   "questions": [
@@ -1200,6 +1289,13 @@
  },
  {
   "id": "E6  AS O LIKE.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Vamos en...",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "No me haga quedar mal!"
+  },
   "type": "multiple-choice",
   "title": "AS\" O \"LIKE",
   "questions": [
@@ -1264,7 +1360,7 @@
     ]
    },
    {
-    "question": "Comp&#x00F3;rtate como yo te dije",
+    "question": "Compórtate como yo te dije",
     "options": [
      {
       "text": "Behave as I told you",
@@ -1279,7 +1375,7 @@
     ]
    },
    {
-    "question": "Carlos trabaja como una mula (mucho) en esa f&#x00E1;brica",
+    "question": "Carlos trabaja como una mula (mucho) en esa fábrica",
     "options": [
      {
       "text": "Carlos works like a mule at that factory",
@@ -1324,7 +1420,7 @@
     ]
    },
    {
-    "question": "Yo voy a ir a Cali, por su parte Pedro ir&#x00E1; a Medellin",
+    "question": "Yo voy a ir a Cali, por su parte Pedro irá a Medellin",
     "options": [
      {
       "text": "I'm going to Cali, as for Pedro, he will go to Medellin",
@@ -1357,6 +1453,13 @@
  },
  {
   "id": "E6  EITHER, NEITHER- SOO, TOO.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Vamos en...",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "No me haga quedar mal!"
+  },
   "type": "multiple-choice",
   "title": "EITHER, NEITHER- SOO, TOO",
   "questions": [
@@ -1376,7 +1479,7 @@
     ]
    },
    {
-    "question": "Pedro no ir&#x00E1; a Cali y Mar&#x00ED;a tampoco.",
+    "question": "Pedro no irá a Cali y María tampoco.",
     "options": [
      {
       "text": "Pedro won't go to Cali and María won't either",
@@ -1391,7 +1494,7 @@
     ]
    },
    {
-    "question": "Pedro no ir&#x00E1; a Cali y Mar&#x00ED;a tampoco.",
+    "question": "Pedro no irá a Cali y María tampoco.",
     "options": [
      {
       "text": "Pedro won't go to Cali and neither will Maria",
@@ -1436,7 +1539,7 @@
     ]
    },
    {
-    "question": "Yo no deber&#x00ED;a ir a la fiesta y ella tampoco",
+    "question": "Yo no debería ir a la fiesta y ella tampoco",
     "options": [
      {
       "text": "I shouldn't go to the party and she shouldn't either",
@@ -1451,7 +1554,7 @@
     ]
    },
    {
-    "question": "Yo no deber&#x00ED;a ir a la fiesta y ella tampoco",
+    "question": "Yo no debería ir a la fiesta y ella tampoco",
     "options": [
      {
       "text": "I shouldn't go to the party and neither should she",
@@ -1496,7 +1599,7 @@
     ]
    },
    {
-    "question": "Pedro podr&#x00ED;a ganar y Martha tambi&#x00E9;n",
+    "question": "Pedro podría ganar y Martha también",
     "options": [
      {
       "text": "Pedro could win and Martha could too.",
@@ -1511,7 +1614,7 @@
     ]
    },
    {
-    "question": "Pedro podr&#x00ED;a ganar y Martha tambi&#x00E9;n",
+    "question": "Pedro podría ganar y Martha también",
     "options": [
      {
       "text": "Pedro could win and so could Martha.",
@@ -1526,7 +1629,7 @@
     ]
    },
    {
-    "question": "Pablo vino anoche y Jos&#x00E9; tambien",
+    "question": "Pablo vino anoche y José tambien",
     "options": [
      {
       "text": "Pablo came last night and so did Jose",
@@ -1541,7 +1644,7 @@
     ]
    },
    {
-    "question": "Tu deber&#x00ED;as cantar y Pedro tambi&#x00E9;n",
+    "question": "Tu deberías cantar y Pedro también",
     "options": [
      {
       "text": "You should sing and so should Pedro",
@@ -1556,7 +1659,7 @@
     ]
    },
    {
-    "question": "Tu deber&#x00ED;as cantar y Pedro tambi&#x00E9;n",
+    "question": "Tu deberías cantar y Pedro también",
     "options": [
      {
       "text": "You should sing and Pedro should too.",
@@ -1574,6 +1677,13 @@
  },
  {
   "id": "E6  EVALUATION (11).htm",
+  "voice": {
+   "CorrectIndicator": "O.K",
+   "IncorrectIndicator": "Oops!",
+   "YourScoreIs": "Your score is:",
+   "DefaultRight": "Great job, go on",
+   "DefaultWrong": "WHAT HAPPENS TO YOU, BABY?"
+  },
   "type": "multiple-choice",
   "title": "EVALUATION (11)",
   "questions": [
@@ -2831,6 +2941,13 @@
  },
  {
   "id": "E6  EVALUATION (12).htm",
+  "voice": {
+   "CorrectIndicator": "O.K",
+   "IncorrectIndicator": "Oops!",
+   "YourScoreIs": "Your score is:",
+   "DefaultRight": "Great job, go on",
+   "DefaultWrong": "WHAT HAPPENS TO YOU, BABY?"
+  },
   "type": "multiple-choice",
   "title": "EVALUATION (12)",
   "questions": [
@@ -4088,6 +4205,13 @@
  },
  {
   "id": "E6  EVALUATION (2).htm",
+  "voice": {
+   "CorrectIndicator": "O.K",
+   "IncorrectIndicator": "Oops!",
+   "YourScoreIs": "Your score is:",
+   "DefaultRight": "Great job, go on",
+   "DefaultWrong": "WHAT HAPPENS TO YOU, BABY?"
+  },
   "type": "multiple-choice",
   "title": "EVALUATION (2)",
   "questions": [
@@ -5345,6 +5469,13 @@
  },
  {
   "id": "E6  EVALUATION (7).htm",
+  "voice": {
+   "CorrectIndicator": "O.K",
+   "IncorrectIndicator": "Oops!",
+   "YourScoreIs": "Your score is:",
+   "DefaultRight": "Great job, go on",
+   "DefaultWrong": "WHAT HAPPENS TO YOU, BABY?"
+  },
   "type": "multiple-choice",
   "title": "EVALUATION (7)",
   "questions": [
@@ -6602,6 +6733,13 @@
  },
  {
   "id": "E6  EVALUATION (8).htm",
+  "voice": {
+   "CorrectIndicator": "O.K",
+   "IncorrectIndicator": "Oops!",
+   "YourScoreIs": "Your score is:",
+   "DefaultRight": "Great job, go on",
+   "DefaultWrong": "WHAT HAPPENS TO YOU, BABY?"
+  },
   "type": "multiple-choice",
   "title": "EVALUATION (8)",
   "questions": [
@@ -7859,6 +7997,13 @@
  },
  {
   "id": "E6  FORMA ESPECIAL DEL SUSTANTIVO.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Vamos en...",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "No me haga quedar mal!"
+  },
   "type": "multiple-choice",
   "title": "FORMA ESPECIAL DEL SUSTANTIVO",
   "questions": [
@@ -7878,7 +8023,7 @@
     ]
    },
    {
-    "question": "El profesor protest&#x00F3; por tu \"comedera\" en clase",
+    "question": "El profesor protestó por tu \"comedera\" en clase",
     "options": [
      {
       "text": "The teacher complained about your eating in class",
@@ -7893,7 +8038,7 @@
     ]
    },
    {
-    "question": "El est&#x00E1; pobre a causa de su continua \"apostadera\"",
+    "question": "El está pobre a causa de su continua \"apostadera\"",
     "options": [
      {
       "text": "He is poor because of his continuos betting",
@@ -7983,7 +8128,7 @@
     ]
    },
    {
-    "question": "Tu \"silbadera\" me est&#x00E1; volviendo loco!",
+    "question": "Tu \"silbadera\" me está volviendo loco!",
     "options": [
      {
       "text": "Your whistling is driving me crazy",
@@ -8016,6 +8161,13 @@
  },
  {
   "id": "E6  FORMAS DEL INFINITIVO..htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "FORMAS DEL INFINITIVO",
   "questions": [
@@ -8238,6 +8390,13 @@
  },
  {
   "id": "E6  FRASES CONDICIONALES.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "FRASES CONDICIONALES",
   "questions": [
@@ -8720,6 +8879,13 @@
  },
  {
   "id": "E6  GRADOS DE OBLIGATORIEDAD.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "GRADOS DE OBLIGATORIEDAD",
   "questions": [
@@ -9012,6 +9178,13 @@
  },
  {
   "id": "E6  PRONOMBRES INDEFINIDOS.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "PRONOMBRES INDEFINIDOS ",
   "questions": [
@@ -9259,6 +9432,13 @@
  },
  {
   "id": "E6  PRONOMBRES REFLEXIVOS.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "PRONOMBRES REFLEXIVOS ",
   "questions": [
@@ -9556,6 +9736,13 @@
  },
  {
   "id": "E6  REPORTED SPEECH.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "REPORTED SPEECH\" DIRECTO E INDIRECTO",
   "questions": [
@@ -9803,6 +9990,13 @@
  },
  {
   "id": "E6  SUBJUNTIVO.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Me parece que hay que repasar!"
+  },
   "type": "multiple-choice",
   "title": "SUBJUNTIVO",
   "questions": [
@@ -10190,11 +10384,18 @@
  },
  {
   "id": "E6  SUJETO+ VERBO + PRONOMBRES COMO COMPLEMENTO.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Vamos en...",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "No me haga quedar mal!"
+  },
   "type": "multiple-choice",
   "title": "SUJETO+ VERBO + PRONOMBRES COMO COMPLEMENTO",
   "questions": [
    {
-    "question": "Me gustar&#x00ED;a que estudiases esta noche",
+    "question": "Me gustaría que estudiases esta noche",
     "options": [
      {
       "text": "I would like you to study tonight",
@@ -10239,7 +10440,7 @@
     ]
    },
    {
-    "question": "El me pidi&#x00F3; que no fuera a la fiesta",
+    "question": "El me pidió que no fuera a la fiesta",
     "options": [
      {
       "text": "He asked me don't go to the party",
@@ -10269,7 +10470,7 @@
     ]
    },
    {
-    "question": "Ellos quer&#x00ED;an que fueras conmigo",
+    "question": "Ellos querían que fueras conmigo",
     "options": [
      {
       "text": "They wanted you to go with me",
@@ -10299,7 +10500,7 @@
     ]
    },
    {
-    "question": "Quizas yo necesitar&#x00E9; que vayas con ella",
+    "question": "Quizas yo necesitaré que vayas con ella",
     "options": [
      {
       "text": "Maybe I will need you to go with her",
@@ -10359,7 +10560,7 @@
     ]
    },
    {
-    "question": "Necesito que Mar&#x00ED;a les explique la situaci&#x00F3;n",
+    "question": "Necesito que María les explique la situación",
     "options": [
      {
       "text": "I need Maria to explain them the situation",
@@ -10389,7 +10590,7 @@
     ]
    },
    {
-    "question": "Pedro quer&#x00ED;a que Maria volara anoche",
+    "question": "Pedro quería que Maria volara anoche",
     "options": [
      {
       "text": "Pedro wanted Maria to fly last night",
@@ -10404,7 +10605,7 @@
     ]
    },
    {
-    "question": "Yo quiero que Colombia sea un pa&#x00ED;s maravilloso",
+    "question": "Yo quiero que Colombia sea un país maravilloso",
     "options": [
      {
       "text": "I want Colombia to be a wonderful country",
@@ -10434,7 +10635,7 @@
     ]
    },
    {
-    "question": "Carlos necesita que el banco est&#x00E9; abierto esta noche",
+    "question": "Carlos necesita que el banco esté abierto esta noche",
     "options": [
      {
       "text": "Carlos needs the bank to be opened tonight",
@@ -10494,7 +10695,7 @@
     ]
    },
    {
-    "question": "Que caus&#x00F3; que el cambiara su decisi&#x00F3;n?",
+    "question": "Que causó que el cambiara su decisión?",
     "options": [
      {
       "text": "What caused him to change his mind?",
@@ -10512,6 +10713,13 @@
  },
  {
   "id": "E6  TAG QUESTIONS..htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "TAG QUESTIONS",
   "questions": [
@@ -10894,6 +11102,13 @@
  },
  {
   "id": "E6  USO AVANZADO DE LOS AUXILIARES.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "USO AVANZADO DE LOS AUXILIARES",
   "questions": [
@@ -11506,6 +11721,13 @@
  },
  {
   "id": "E6  USO BÁSICO DE  AUXILIARES.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "AUXILIARES: USO BÁSICO",
   "questions": [
@@ -12173,6 +12395,13 @@
  },
  {
   "id": "E6  USO DE PREPOSICIONES (1).htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "USO DE PREPOSICIONES\" (1)",
   "questions": [
@@ -12520,6 +12749,13 @@
  },
  {
   "id": "E6  USO DE PREPOSICIONES (2).htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "USO DE PREPOSICIONES\" (2)",
   "questions": [
@@ -12927,6 +13163,13 @@
  },
  {
   "id": "E6  USO DE PREPOSICIONES (3).htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "USO DE PREPOSICIONES\" (3)",
   "questions": [
@@ -13334,6 +13577,13 @@
  },
  {
   "id": "E6  USO DE PREPOSICIONES (4).htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "USO DE PREPOSICIONES\" (4)",
   "questions": [
@@ -13921,6 +14171,13 @@
  },
  {
   "id": "E6  USO DE PREPOSICIONES (5).htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "USO DE PREPOSICIONES\" (5)",
   "questions": [
@@ -14513,6 +14770,13 @@
  },
  {
   "id": "E6  USO DE PREPOSICIONES (6).htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "USO DE PREPOSICIONES \" (6)",
   "questions": [
@@ -15025,11 +15289,18 @@
  },
  {
   "id": "E6  VERBO + TO + PRONOMBRES COMO COMPLEMENTO.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Vamos en...",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "No me haga quedar mal!"
+  },
   "type": "multiple-choice",
   "title": "VERBO + TO + PRONOMBRES COMO COMPLEMENTO",
   "questions": [
    {
-    "question": "El me golpe&#x00F3; con un martillo.",
+    "question": "El me golpeó con un martillo.",
     "options": [
      {
       "text": "He hit to me with a hammer",
@@ -15044,7 +15315,7 @@
     ]
    },
    {
-    "question": "El convers&#x00F3; conmigo ayer.",
+    "question": "El conversó conmigo ayer.",
     "options": [
      {
       "text": "He talked me yesterday.",
@@ -15059,7 +15330,7 @@
     ]
    },
    {
-    "question": "El me escuch&#x00F3; esta ma&#x00F1;ana.",
+    "question": "El me escuchó esta mañana.",
     "options": [
      {
       "text": "He listened me this morning",
@@ -15074,7 +15345,7 @@
     ]
    },
    {
-    "question": "Por favor, h&#x00E1;blame",
+    "question": "Por favor, háblame",
     "options": [
      {
       "text": "Please, speak me.",
@@ -15089,7 +15360,7 @@
     ]
    },
    {
-    "question": "El la mat&#x00F3;.",
+    "question": "El la mató.",
     "options": [
      {
       "text": "He killed to her.",
@@ -15104,7 +15375,7 @@
     ]
    },
    {
-    "question": "Mi hermano me empuj&#x00F3;.",
+    "question": "Mi hermano me empujó.",
     "options": [
      {
       "text": "My brother pushed me.",
@@ -15119,7 +15390,7 @@
     ]
    },
    {
-    "question": "Mi esposa me llam&#x00F3; anoche.",
+    "question": "Mi esposa me llamó anoche.",
     "options": [
      {
       "text": "My wife called me last night",
@@ -15134,7 +15405,7 @@
     ]
    },
    {
-    "question": "Habl&#x00E9; con mi abogado",
+    "question": "Hablé con mi abogado",
     "options": [
      {
       "text": "I talked with my lawyer",
@@ -15179,7 +15450,7 @@
     ]
    },
    {
-    "question": "Mi esposa me escribi&#x00F3; anoche",
+    "question": "Mi esposa me escribió anoche",
     "options": [
      {
       "text": "My wife wrote me last night",
@@ -15194,7 +15465,7 @@
     ]
    },
    {
-    "question": "El me habl&#x00F3; anoche",
+    "question": "El me habló anoche",
     "options": [
      {
       "text": "He spoke me last night",
@@ -15212,6 +15483,13 @@
  },
  {
   "id": "E6  VERBO - ADJETIVO - ADVERBIO - SUSTANTIVO (1).htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "VERBO - ADJETIVO - ADVERBIO - SUSTANTIVO (1)",
   "questions": [
@@ -15519,6 +15797,13 @@
  },
  {
   "id": "E6  VERBO- ADJETIVO - ADVERBIO - SUSTANTIVO (2) .htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "VERBO- ADJETIVO - ADVERBIO (2)",
   "questions": [
@@ -15826,6 +16111,13 @@
  },
  {
   "id": "E6  VERBO- ADJETIVO - ADVERBIO - SUSTANTIVO (3).htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "VERBO - ADJETIVO - ADVERBIO - SUSTANTIVO (3)",
   "questions": [
@@ -16238,6 +16530,13 @@
  },
  {
   "id": "E6  VOZ  PASIVA..htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "VOZ PASIVA",
   "questions": [
@@ -16665,6 +16964,13 @@
  },
  {
   "id": "E6 A LITTLE - A FEW - LITTLE - FEW - MUCH - A LOT OF.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "A LITTLE - A FEW - LITTLE - FEW - MUCH - A LOT OF - A LOT- LOTS OF ",
   "questions": [
@@ -17192,6 +17498,13 @@
  },
  {
   "id": "E6 ADJETIVO - VERBO.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "ADJETIVO - VERBO ",
   "questions": [
@@ -17399,6 +17712,13 @@
  },
  {
   "id": "E6 ADJETIVOS + PREPOSICIONES  (1).htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "ADJETIVOS + PREPOSICIONES (1) ",
   "questions": [
@@ -17706,6 +18026,13 @@
  },
  {
   "id": "E6 ADJETIVOS + PREPOSICIONES  (2).htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "ADJETIVOS + PREPOSICIONES (2) ",
   "questions": [
@@ -17953,6 +18280,13 @@
  },
  {
   "id": "E6 ANOTHER, THE OTHER, THE OTHERS, OTHERS.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "ANOTHER, THE OTHER, THE OTHERS, OTHERS. ",
   "questions": [
@@ -18410,6 +18744,13 @@
  },
  {
   "id": "E6 ANY LONGER - ANYMORE - NO LONGER - NO MORE.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "ANY LONGER - ANYMORE - NO LONGER - NO MORE",
   "questions": [
@@ -18567,11 +18908,19 @@
  },
  {
   "id": "E6 APRENDIENDO REFRANES.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Recuerde que el porcentaje es lo de menos en este ejercicio.",
+   "DefaultRight": "Exacto!",
+   "DefaultWrong": "Siga practicando que la práctica hace al maestro",
+   "PartlyIncorrect": "Su respuesta tiene esto de errada:"
+  },
   "type": "multiple-choice",
   "title": "APRENDIENDO REFRANES",
   "questions": [
    {
-    "question": "EN LA VARIEDAD EST&#x00C1; EL PLACER",
+    "question": "EN LA VARIEDAD ESTÁ EL PLACER",
     "options": [
      {
       "text": "Variety is the spice of life",
@@ -18581,7 +18930,7 @@
     ]
    },
    {
-    "question": "NADIE EST&#x00C1; CONTENTO CON LO QUE TIENE",
+    "question": "NADIE ESTÁ CONTENTO CON LO QUE TIENE",
     "options": [
      {
       "text": "The grass is always greener on the other side",
@@ -18601,7 +18950,7 @@
     ]
    },
    {
-    "question": "MAS VALE P&#x00C1;JARO EN MANO QUE CIEN VOLANDO",
+    "question": "MAS VALE PÁJARO EN MANO QUE CIEN VOLANDO",
     "options": [
      {
       "text": "A bird in the hand is worth two in the bush",
@@ -18611,7 +18960,7 @@
     ]
    },
    {
-    "question": "DEL &#x00C1;RBOL CA&#x00CD;DO TODOS HACEN LE&#x00D1;A",
+    "question": "DEL ÁRBOL CAÍDO TODOS HACEN LEÑA",
     "options": [
      {
       "text": "A fallen man is everybody's prey",
@@ -18631,7 +18980,7 @@
     ]
    },
    {
-    "question": "DIME CON QUI&#x00C9;N ANDAS Y TE DIR&#x00C9; QUI&#x00C9;N ERES",
+    "question": "DIME CON QUIÉN ANDAS Y TE DIRÉ QUIÉN ERES",
     "options": [
      {
       "text": "A man is known, by the company he keeps",
@@ -18671,7 +19020,7 @@
     ]
    },
    {
-    "question": "NO DEJES PARA MA&#x00D1;ANA LO QUE PUEDAS HACER HOY",
+    "question": "NO DEJES PARA MAÑANA LO QUE PUEDAS HACER HOY",
     "options": [
      {
       "text": "A stitch in time, saves nine",
@@ -18751,7 +19100,7 @@
     ]
    },
    {
-    "question": "M&#x00C1;S VALE SOLO QUE MAL ACOMPA&#x00D1;ADO",
+    "question": "MÁS VALE SOLO QUE MAL ACOMPAÑADO",
     "options": [
      {
       "text": "Better alone than in bad company",
@@ -18761,7 +19110,7 @@
     ]
    },
    {
-    "question": "M&#x00C1;S VALE TARDE QUE NUNCA",
+    "question": "MÁS VALE TARDE QUE NUNCA",
     "options": [
      {
       "text": "Better late than never",
@@ -18771,7 +19120,7 @@
     ]
    },
    {
-    "question": "M&#x00C1;S VALE MALO CONOCIDO QUE BUENO POR CONOCER",
+    "question": "MÁS VALE MALO CONOCIDO QUE BUENO POR CONOCER",
     "options": [
      {
       "text": "Better the devil we know than the devil we don't",
@@ -18781,7 +19130,7 @@
     ]
    },
    {
-    "question": "DIOS LOS CR&#x00CD;A Y ELLOS SE JUNTAN",
+    "question": "DIOS LOS CRÍA Y ELLOS SE JUNTAN",
     "options": [
      {
       "text": "Birds of a feather, fly togheter",
@@ -18791,7 +19140,7 @@
     ]
    },
    {
-    "question": "PRIMERO LA OBLIGACI&#x00D3;N Y DESPU&#x00C9;S LA DEVOCI&#x00D3;N",
+    "question": "PRIMERO LA OBLIGACIÓN Y DESPUÉS LA DEVOCIÓN",
     "options": [
      {
       "text": "Business before pleasure",
@@ -18841,7 +19190,7 @@
     ]
    },
    {
-    "question": "A P&#x00CD;CARO, P&#x00CD;CARO Y MEDIO",
+    "question": "A PÍCARO, PÍCARO Y MEDIO",
     "options": [
      {
       "text": "Diamond cut diamond",
@@ -18851,7 +19200,7 @@
     ]
    },
    {
-    "question": "HAZ EL BIEN Y NO MIRES A QUI&#x00C9;N",
+    "question": "HAZ EL BIEN Y NO MIRES A QUIÉN",
     "options": [
      {
       "text": "Do well and dread no shame",
@@ -18901,7 +19250,7 @@
     ]
    },
    {
-    "question": "NO HAY MAL QUE DURE CIEN A&#x00D1;OS",
+    "question": "NO HAY MAL QUE DURE CIEN AÑOS",
     "options": [
      {
       "text": "Everything will turn out right in the end",
@@ -18911,7 +19260,7 @@
     ]
    },
    {
-    "question": "LA EXCEPCI&#x00D3;N CONFIRMA LA REGLA",
+    "question": "LA EXCEPCIÓN CONFIRMA LA REGLA",
     "options": [
      {
       "text": "Exception proves the rule",
@@ -18921,7 +19270,7 @@
     ]
    },
    {
-    "question": "A PALABRAS NECIAS, O&#x00CD;DOS SORDOS",
+    "question": "A PALABRAS NECIAS, OÍDOS SORDOS",
     "options": [
      {
       "text": "Foolish talk, deaf ears",
@@ -18981,7 +19330,7 @@
     ]
    },
    {
-    "question": "A TODO SE&#x00D1;OR, TODO HONOR",
+    "question": "A TODO SEÑOR, TODO HONOR",
     "options": [
      {
       "text": "Honor to whom honor is due",
@@ -18991,7 +19340,7 @@
     ]
    },
    {
-    "question": "LA ESPERANZA ES LO &#x00DA;LTIMO QUE SE PIERDE",
+    "question": "LA ESPERANZA ES LO ÚLTIMO QUE SE PIERDE",
     "options": [
      {
       "text": "Hope springs eternal",
@@ -19041,7 +19390,7 @@
     ]
    },
    {
-    "question": "NO S&#x00D3;LO DEL PAN VIVE EL HOMBRE",
+    "question": "NO SÓLO DEL PAN VIVE EL HOMBRE",
     "options": [
      {
       "text": "Man shall not live on bread alone",
@@ -19081,7 +19430,7 @@
     ]
    },
    {
-    "question": "MUCHO RUIDO Y POCAS NUECES/MUCHO TIL&#x00CD;N TIL&#x00CD;N Y NADA DE PALETAS",
+    "question": "MUCHO RUIDO Y POCAS NUECES/MUCHO TILÍN TILÍN Y NADA DE PALETAS",
     "options": [
      {
       "text": "Much cry and little wool",
@@ -19121,7 +19470,7 @@
     ]
    },
    {
-    "question": "M&#x00C1;S SABE EL DIABLO POR VIEJO QUE POR DIABLO",
+    "question": "MÁS SABE EL DIABLO POR VIEJO QUE POR DIABLO",
     "options": [
      {
       "text": "Nothing like the old horse for the hard road",
@@ -19151,7 +19500,7 @@
     ]
    },
    {
-    "question": "LA OCASI&#x00D3;N HACE AL LADR&#x00D3;N",
+    "question": "LA OCASIÓN HACE AL LADRÓN",
     "options": [
      {
       "text": "Opportunity makes a thief",
@@ -19161,7 +19510,7 @@
     ]
    },
    {
-    "question": "OJOS QUE NO VEN, CORAZ&#x00D3;N QUE NO SIENTE",
+    "question": "OJOS QUE NO VEN, CORAZÓN QUE NO SIENTE",
     "options": [
      {
       "text": "Out of sight, out of mind",
@@ -19171,7 +19520,7 @@
     ]
    },
    {
-    "question": "LA PR&#x00C1;CTICA HACE AL MAESTRO",
+    "question": "LA PRÁCTICA HACE AL MAESTRO",
     "options": [
      {
       "text": "Practice makes perfect",
@@ -19231,7 +19580,7 @@
     ]
    },
    {
-    "question": "DONDE MANDA CAPIT&#x00C1;N, NO MANDA MARINERO",
+    "question": "DONDE MANDA CAPITÁN, NO MANDA MARINERO",
     "options": [
      {
       "text": "The boss is the boss",
@@ -19241,7 +19590,7 @@
     ]
    },
    {
-    "question": "LA SUERTE EST&#x00C1; ECHADA",
+    "question": "LA SUERTE ESTÁ ECHADA",
     "options": [
      {
       "text": "The chips are down",
@@ -19301,7 +19650,7 @@
     ]
    },
    {
-    "question": "EL CAMINO AL INFIERNO EST&#x00C1; LLENO DE BUENAS INTENCIONES",
+    "question": "EL CAMINO AL INFIERNO ESTÁ LLENO DE BUENAS INTENCIONES",
     "options": [
      {
       "text": "The road to hell is paved with good intentions",
@@ -19321,7 +19670,7 @@
     ]
    },
    {
-    "question": "CUANDO EL R&#x00CD;O SUENA, PIEDRAS LLEVA",
+    "question": "CUANDO EL RÍO SUENA, PIEDRAS LLEVA",
     "options": [
      {
       "text": "There is no smoke without fire",
@@ -19331,7 +19680,7 @@
     ]
    },
    {
-    "question": "LO DICHO, DICHO EST&#x00C1;",
+    "question": "LO DICHO, DICHO ESTÁ",
     "options": [
      {
       "text": "Time and words can never be recalled",
@@ -19341,7 +19690,7 @@
     ]
    },
    {
-    "question": "MATAR DOS P&#x00C1;JAROS DE UN SOLO TIRO",
+    "question": "MATAR DOS PÁJAROS DE UN SOLO TIRO",
     "options": [
      {
       "text": "TO KILL TWO BIRDS WITH ONE STONE",
@@ -19361,7 +19710,7 @@
     ]
    },
    {
-    "question": "LA UNI&#x00D3;N HACE LA FUERZA",
+    "question": "LA UNIÓN HACE LA FUERZA",
     "options": [
      {
       "text": "Unity means power",
@@ -19401,7 +19750,7 @@
     ]
    },
    {
-    "question": "CUANDO EL GATO NO EST&#x00C1;, LOS RATONES HACEN FIESTA",
+    "question": "CUANDO EL GATO NO ESTÁ, LOS RATONES HACEN FIESTA",
     "options": [
      {
       "text": "When the cat's away, the mice will play",
@@ -19421,7 +19770,7 @@
     ]
    },
    {
-    "question": "NO SE PUEDE ANDAR EN LA PROCESI&#x00D3;N Y REPICANDO AL MISMO TIEMPO",
+    "question": "NO SE PUEDE ANDAR EN LA PROCESIÓN Y REPICANDO AL MISMO TIEMPO",
     "options": [
      {
       "text": "You can't have your cake and eat it",
@@ -19461,7 +19810,7 @@
     ]
    },
    {
-    "question": "ES MEJOR SER CABEZA DE RAT&#x00D3;N QUE COLA DE LE&#x00D3;N",
+    "question": "ES MEJOR SER CABEZA DE RATÓN QUE COLA DE LEÓN",
     "options": [
      {
       "text": "It's better to reign in hell than to serve in heaven",
@@ -19511,7 +19860,7 @@
     ]
    },
    {
-    "question": "POLVO ERES Y EN POLVO TE CONVERTIR&#x00C1;S",
+    "question": "POLVO ERES Y EN POLVO TE CONVERTIRÁS",
     "options": [
      {
       "text": "Dust to dust, ashes to ashes",
@@ -19534,8 +19883,15 @@
  },
  {
   "id": "E6 ARTICULOS INDEFINIDOS.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Vamos en...",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "No me haga quedar mal!"
+  },
   "type": "multiple-choice",
-  "title": "ART&#x00CD;CULOS INDEFINIDOS",
+  "title": "ARTÍCULOS INDEFINIDOS",
   "questions": [
    {
     "question": "_____ pilot.",
@@ -19781,6 +20137,13 @@
  },
  {
   "id": "E6 COMPARACION DE SUSTANTIVOS, COMPARACION ESPECIAL.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "COMPARACIONES DE SUSTANTIVOS - COMPARACION ESPECIAL",
   "questions": [
@@ -20163,6 +20526,13 @@
  },
  {
   "id": "E6 COMPARACIONES DE ADJETIVOS Y SUPERLATIVOS.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "COMPARACIONES DE ADJETIVOS Y SUPERLATIVOS",
   "questions": [
@@ -20375,6 +20745,13 @@
  },
  {
   "id": "E6 CONJUNCIONES.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "CONJUNCIONES",
   "questions": [
@@ -20882,6 +21259,13 @@
  },
  {
   "id": "E6 ENFATIZACIÓN DE LA ACCIÓN DE LOS VERBOS.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "ENFATIZACIÓN DE LA ACCIÓN DE LOS VERBOS ",
   "questions": [
@@ -21139,6 +21523,13 @@
  },
  {
   "id": "E6 EVALUACIÓN BASICA.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "PLOP!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Vamos bien! Siga así",
+   "DefaultWrong": "No me haga quedar mal!"
+  },
   "type": "multiple-choice",
   "title": "EVALUACIÓN BÁSICA",
   "questions": [
@@ -22591,6 +22982,13 @@
  },
  {
   "id": "E6 EVALUATION (1) .htm",
+  "voice": {
+   "CorrectIndicator": "O.K",
+   "IncorrectIndicator": "Oops!",
+   "YourScoreIs": "Your score is:",
+   "DefaultRight": "Great job, go on",
+   "DefaultWrong": "WHAT HAPPENS TO YOU, BABY?"
+  },
   "type": "multiple-choice",
   "title": "EVALUATION (1)",
   "questions": [
@@ -23848,6 +24246,13 @@
  },
  {
   "id": "E6 EVALUATION (10).htm",
+  "voice": {
+   "CorrectIndicator": "O.K",
+   "IncorrectIndicator": "Oops!",
+   "YourScoreIs": "Your score is:",
+   "DefaultRight": "Great job, go on",
+   "DefaultWrong": "WHAT HAPPENS TO YOU, BABY?"
+  },
   "type": "multiple-choice",
   "title": "EVALUATION (10)",
   "questions": [
@@ -25105,6 +25510,13 @@
  },
  {
   "id": "E6 EVALUATION (3).htm",
+  "voice": {
+   "CorrectIndicator": "O.K",
+   "IncorrectIndicator": "Oops!",
+   "YourScoreIs": "Your score is:",
+   "DefaultRight": "Great job, go on",
+   "DefaultWrong": "WHAT HAPPENS TO YOU, BABY?"
+  },
   "type": "multiple-choice",
   "title": "EVALUATION (3)",
   "questions": [
@@ -26362,6 +26774,13 @@
  },
  {
   "id": "E6 EVALUATION (4).htm",
+  "voice": {
+   "CorrectIndicator": "O.K",
+   "IncorrectIndicator": "Oops!",
+   "YourScoreIs": "Your score is:",
+   "DefaultRight": "Great job, go on",
+   "DefaultWrong": "WHAT HAPPENS TO YOU, BABY?"
+  },
   "type": "multiple-choice",
   "title": "EVALUATION (4)",
   "questions": [
@@ -27619,6 +28038,13 @@
  },
  {
   "id": "E6 EVALUATION (5).htm",
+  "voice": {
+   "CorrectIndicator": "O.K",
+   "IncorrectIndicator": "Oops!",
+   "YourScoreIs": "Your score is:",
+   "DefaultRight": "Great job, go on",
+   "DefaultWrong": "WHAT HAPPENS TO YOU, BABY?"
+  },
   "type": "multiple-choice",
   "title": "EVALUATION (5)",
   "questions": [
@@ -28876,6 +29302,13 @@
  },
  {
   "id": "E6 EVALUATION (6).htm",
+  "voice": {
+   "CorrectIndicator": "O.K",
+   "IncorrectIndicator": "Oops!",
+   "YourScoreIs": "Your score is:",
+   "DefaultRight": "Great job, go on",
+   "DefaultWrong": "WHAT HAPPENS TO YOU, BABY?"
+  },
   "type": "multiple-choice",
   "title": "EVALUATION (6)",
   "questions": [
@@ -30133,6 +30566,13 @@
  },
  {
   "id": "E6 EVALUATION (9).htm",
+  "voice": {
+   "CorrectIndicator": "O.K",
+   "IncorrectIndicator": "Oops!",
+   "YourScoreIs": "Your score is:",
+   "DefaultRight": "Great job, go on",
+   "DefaultWrong": "WHAT HAPPENS TO YOU, BABY?"
+  },
   "type": "multiple-choice",
   "title": "EVALUATION (9)",
   "questions": [
@@ -31390,6 +31830,13 @@
  },
  {
   "id": "E6 FOR-SINCE-DURING.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "FOR - SINCE - DURING",
   "questions": [
@@ -31772,6 +32219,13 @@
  },
  {
   "id": "E6 FOR-SINCE.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Vamos en...",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "No me haga quedar mal!"
+  },
   "type": "multiple-choice",
   "title": "FOR\" O \"SINCE",
   "questions": [
@@ -32004,6 +32458,13 @@
  },
  {
   "id": "E6 INTERPRETACIÓN DE LOS DOCE TIEMPOS.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "INTERPRETACIÓN DE LOS DOCE TIEMPOS ",
   "questions": [
@@ -32311,6 +32772,13 @@
  },
  {
   "id": "E6 INTERPRETACIÓN DE LOS TRES FUTUROS.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "INTERPRETACIÓN DE LOS TRES FUTUROS",
   "questions": [
@@ -32638,6 +33106,13 @@
  },
  {
   "id": "E6 MAKE-DO.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Vamos en...",
+   "DefaultRight": "Exacto!",
+   "DefaultWrong": "Se lo dije!"
+  },
   "type": "multiple-choice",
   "title": "TO MAKE\" O \"TO DO ",
   "questions": [
@@ -33020,6 +33495,13 @@
  },
  {
   "id": "E6 MODISMOS.htm",
+  "voice": {
+   "CorrectIndicator": "Esa es!",
+   "IncorrectIndicator": "PLOP!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Por ahi sí es la cosa",
+   "DefaultWrong": "Siga estudiando que la noche es larga!"
+  },
   "type": "multiple-choice",
   "title": "INTERPRETACIÓN DE MODISMOS\" (GRUPOS DE 50)",
   "questions": [
@@ -44492,6 +44974,13 @@
  },
  {
   "id": "E6 OMISION DEL ARTICULO DEFINIDO.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Vamos en...",
+   "DefaultRight": "Bingo",
+   "DefaultWrong": "Siga estudiando!"
+  },
   "type": "multiple-choice",
   "title": "OMISION DEL ARTICULO DEFINIDO\" (THE)",
   "questions": [
@@ -44661,7 +45150,7 @@
     ]
    },
    {
-    "question": "I am afraid of ___ death. I don&#x00B4;t want to die.",
+    "question": "I am afraid of ___ death. I don´t want to die.",
     "options": [
      {
       "text": "the",
@@ -44721,7 +45210,7 @@
     ]
    },
    {
-    "question": "El c&#x00E1;ncer es muy peligroso",
+    "question": "El cáncer es muy peligroso",
     "options": [
      {
       "text": "Cancer is very dangerous",
@@ -44766,7 +45255,7 @@
     ]
    },
    {
-    "question": "La Texaco es una compa&#x00F1;&#x00ED;a petrolera",
+    "question": "La Texaco es una compañía petrolera",
     "options": [
      {
       "text": "Texaco is an oil company",
@@ -44781,7 +45270,7 @@
     ]
    },
    {
-    "question": "El Per&#x00FA; es un pa&#x00ED;s hermoso",
+    "question": "El Perú es un país hermoso",
     "options": [
      {
       "text": "Peru is a beautiful country",
@@ -44811,7 +45300,7 @@
     ]
    },
    {
-    "question": "Yo conoc&#x00ED; el Golfo de M&#x00E9;jico",
+    "question": "Yo conocí el Golfo de Méjico",
     "options": [
      {
       "text": "I knew Gulf of Mexico",
@@ -44919,6 +45408,13 @@
  },
  {
   "id": "E6 PLURALES IRREGULARES DE SUSTANTIVOS.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Vamos en...",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "No me haga quedar mal!"
+  },
   "type": "multiple-choice",
   "title": "PLURALES IRREGULARES DE SUSTANTIVOS",
   "questions": [
@@ -45091,6 +45587,13 @@
  },
  {
   "id": "E6 PRONOMBRES PERSONALES COMO COMPLEMENTO.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "PRONOMBRES PERSONALES COMO COMPLEMENTO",
   "questions": [
@@ -45283,6 +45786,13 @@
  },
  {
   "id": "E6 PRONOMBRES POSESIVOS.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Qué pasó? No dizque estaba \"cuchilla\"?"
+  },
   "type": "multiple-choice",
   "title": "PRONOMBRES POSESIVOS",
   "questions": [
@@ -45465,6 +45975,13 @@
  },
  {
   "id": "E6 SOME- ANY (2).htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Vamos en...",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "No me haga quedar mal!"
+  },
   "type": "multiple-choice",
   "title": "SOME- ANY \" (2)",
   "questions": [
@@ -45499,7 +46016,7 @@
     ]
    },
    {
-    "question": "I&#x00B4;m hungry but there isn't ___ food in the refrigerator.",
+    "question": "I´m hungry but there isn't ___ food in the refrigerator.",
     "options": [
      {
       "text": "some",
@@ -45787,6 +46304,13 @@
  },
  {
   "id": "E6 SOME-ANY..htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Vamos en...",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "No me haga quedar mal!"
+  },
   "type": "multiple-choice",
   "title": "SOME- ANY ",
   "questions": [
@@ -46109,6 +46633,13 @@
  },
  {
   "id": "E6 STILL- JET..htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Vamos en...",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "No me haga quedar mal!"
+  },
   "type": "multiple-choice",
   "title": "STILL - YET ",
   "questions": [
@@ -46143,7 +46674,7 @@
     ]
    },
    {
-    "question": "Cu&#x00E1;l es la frase correcta?",
+    "question": "Cuál es la frase correcta?",
     "options": [
      {
       "text": "I still don't love you",
@@ -46173,7 +46704,7 @@
     ]
    },
    {
-    "question": "Cu&#x00E1;l es la frase correcta?",
+    "question": "Cuál es la frase correcta?",
     "options": [
      {
       "text": "The bus hasn't still come",
@@ -46203,7 +46734,7 @@
     ]
    },
    {
-    "question": "Cu&#x00E1;l es la frase correcta?",
+    "question": "Cuál es la frase correcta?",
     "options": [
      {
       "text": "They are still eating",
@@ -46248,7 +46779,7 @@
     ]
    },
    {
-    "question": "Cu&#x00E1;l es la frase correcta?",
+    "question": "Cuál es la frase correcta?",
     "options": [
      {
       "text": "I love you yet",
@@ -46278,7 +46809,7 @@
     ]
    },
    {
-    "question": "Cu&#x00E1;l es la frase correcta?",
+    "question": "Cuál es la frase correcta?",
     "options": [
      {
       "text": "I don't know your name yet",
@@ -46346,11 +46877,18 @@
  },
  {
   "id": "E6 THERE IS- THERE ARE..htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Vamos en...",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "No me haga quedar mal!"
+  },
   "type": "multiple-choice",
   "title": "THERE IS\" O \"THERE ARE",
   "questions": [
    {
-    "question": "There ___ many people living in Ciudad Bol&#x00ED;var.",
+    "question": "There ___ many people living in Ciudad Bolívar.",
     "options": [
      {
       "text": "is",
@@ -46635,7 +47173,7 @@
     ]
    },
    {
-    "question": "There ___ an excelent road from Villavicencio to Bogot&#x00E1;.",
+    "question": "There ___ an excelent road from Villavicencio to Bogotá.",
     "options": [
      {
       "text": "is",
@@ -46653,11 +47191,18 @@
  },
  {
   "id": "E6 UBICACION DE ADVERBIOS EN LA FRASE.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Vamos en...",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "No me haga quedar mal!"
+  },
   "type": "multiple-choice",
   "title": "UBICACION DE ADVERBIOS EN LA FRASE",
   "questions": [
    {
-    "question": "El siempre est&#x00E1; cansado",
+    "question": "El siempre está cansado",
     "options": [
      {
       "text": "He always is tired",
@@ -46687,7 +47232,7 @@
     ]
    },
    {
-    "question": "El cant&#x00F3; ayer aqu&#x00ED;",
+    "question": "El cantó ayer aquí",
     "options": [
      {
       "text": "He sang yesterday here",
@@ -46717,7 +47262,7 @@
     ]
    },
    {
-    "question": "Mar&#x00ED;a bail&#x00F3; all&#x00E1; maravillosamente",
+    "question": "María bailó allá maravillosamente",
     "options": [
      {
       "text": "María danced marvelously there",
@@ -46732,7 +47277,7 @@
     ]
    },
    {
-    "question": "Ma&#x00F1;ana voy a volar",
+    "question": "Mañana voy a volar",
     "options": [
      {
       "text": "I'm going to fly tomorrow",
@@ -46747,7 +47292,7 @@
     ]
    },
    {
-    "question": "El comprar&#x00E1; hoy un nuevo carro",
+    "question": "El comprará hoy un nuevo carro",
     "options": [
      {
       "text": "He will buy a new car today",
@@ -46762,7 +47307,7 @@
     ]
    },
    {
-    "question": "Tu nunca podr&#x00E1;s vencerme",
+    "question": "Tu nunca podrás vencerme",
     "options": [
      {
       "text": "You never will be able to beat me",
@@ -46777,7 +47322,7 @@
     ]
    },
    {
-    "question": "Yo juego f&#x00FA;tbol bien",
+    "question": "Yo juego fútbol bien",
     "options": [
      {
       "text": "I play soccer well",
@@ -46792,7 +47337,7 @@
     ]
    },
    {
-    "question": "Mary siempre est&#x00E1; triste",
+    "question": "Mary siempre está triste",
     "options": [
      {
       "text": "Mary always is sad",
@@ -46822,7 +47367,7 @@
     ]
    },
    {
-    "question": "Pedro nunca deber&#x00ED;a decir mentiras",
+    "question": "Pedro nunca debería decir mentiras",
     "options": [
      {
       "text": "Pedro should never tell lies.",
@@ -46837,7 +47382,7 @@
     ]
    },
    {
-    "question": "Yo nunca te dejar&#x00E9;",
+    "question": "Yo nunca te dejaré",
     "options": [
      {
       "text": "I never will leave you",
@@ -46852,7 +47397,7 @@
     ]
    },
    {
-    "question": "Ellos ya est&#x00E1;n cansados",
+    "question": "Ellos ya están cansados",
     "options": [
      {
       "text": "They are already tired",
@@ -46912,7 +47457,7 @@
     ]
    },
    {
-    "question": "Ella est&#x00E1; siempre en Bogot&#x00E1;",
+    "question": "Ella está siempre en Bogotá",
     "options": [
      {
       "text": "She always is in Bogotá",
@@ -46927,7 +47472,7 @@
     ]
    },
    {
-    "question": "Yo nunca juego f&#x00FA;tbol",
+    "question": "Yo nunca juego fútbol",
     "options": [
      {
       "text": "I never play soccer",
@@ -46957,7 +47502,7 @@
     ]
    },
    {
-    "question": "Yo nunca podr&#x00ED;a dejarte",
+    "question": "Yo nunca podría dejarte",
     "options": [
      {
       "text": "I never could leave your",
@@ -46972,7 +47517,7 @@
     ]
    },
    {
-    "question": "Yo nunca puedo ganar la loter&#x00ED;a",
+    "question": "Yo nunca puedo ganar la lotería",
     "options": [
      {
       "text": "I can never win the lottery",
@@ -46987,7 +47532,7 @@
     ]
    },
    {
-    "question": "Pedro siempre deber&#x00ED;a estar armado",
+    "question": "Pedro siempre debería estar armado",
     "options": [
      {
       "text": "Pedro should always be armed",
@@ -47002,7 +47547,7 @@
     ]
    },
    {
-    "question": "El tambi&#x00E9;n est&#x00E1; loco",
+    "question": "El también está loco",
     "options": [
      {
       "text": "He is also crazy",
@@ -47017,7 +47562,7 @@
     ]
    },
    {
-    "question": "Yo juego futbol tambi&#x00E9;n",
+    "question": "Yo juego futbol también",
     "options": [
      {
       "text": "I play soccer also",
@@ -47032,7 +47577,7 @@
     ]
    },
    {
-    "question": "Yo tambi&#x00E9;n he visto la luna",
+    "question": "Yo también he visto la luna",
     "options": [
      {
       "text": "I also have seen the moon",
@@ -47050,8 +47595,15 @@
  },
  {
   "id": "E6 VERBO + PREPOSICIONES (1).htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Vamos en...",
+   "DefaultRight": "Bingo",
+   "DefaultWrong": "Siga estudiando!"
+  },
   "type": "multiple-choice",
-  "title": "VERBO + PREPOSICI&#x00D3;N\" (1)",
+  "title": "VERBO + PREPOSICIÓN\" (1)",
   "questions": [
    {
     "question": "The students always complain ______ the teacher.",
@@ -47069,7 +47621,7 @@
     ]
    },
    {
-    "question": "How do you compare Bogot&#x00E1; ________ Medellin?",
+    "question": "How do you compare Bogotá ________ Medellin?",
     "options": [
      {
       "text": "with",
@@ -47084,7 +47636,7 @@
     ]
    },
    {
-    "question": "That man always contributes________ the problem. He doesn&#x00B4;t help at all.",
+    "question": "That man always contributes________ the problem. He doesn´t help at all.",
     "options": [
      {
       "text": "to",
@@ -47189,7 +47741,7 @@
     ]
    },
    {
-    "question": "Please, listen _______ me. I&#x00B4;m your father.",
+    "question": "Please, listen _______ me. I´m your father.",
     "options": [
      {
       "text": "at",
@@ -47204,7 +47756,7 @@
     ]
    },
    {
-    "question": "I&#x00B4;m looking forward _______ seing my mother. She is going to bring me a lot of presents .",
+    "question": "I´m looking forward _______ seing my mother. She is going to bring me a lot of presents .",
     "options": [
      {
       "text": "of",
@@ -47249,7 +47801,7 @@
     ]
    },
    {
-    "question": "I&#x00B4;m good _______ history.",
+    "question": "I´m good _______ history.",
     "options": [
      {
       "text": "in",
@@ -47279,7 +47831,7 @@
     ]
    },
    {
-    "question": "Look _______ me. I&#x00B4;m talking to you.",
+    "question": "Look _______ me. I´m talking to you.",
     "options": [
      {
       "text": "at",
@@ -47297,8 +47849,15 @@
  },
  {
   "id": "E6 VERBO + PREPOSICIONES (2).htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Vamos en...",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "No me haga quedar mal!"
+  },
   "type": "multiple-choice",
-  "title": "VERBO + PREPOSICI&#x00D3;N \" (2)",
+  "title": "VERBO + PREPOSICIÓN \" (2)",
   "questions": [
    {
     "question": "You have to concentrate _______ your studies.",
@@ -47481,7 +48040,7 @@
     ]
    },
    {
-    "question": "I&#x00B4;m counting _______ you for this assignment.",
+    "question": "I´m counting _______ you for this assignment.",
     "options": [
      {
       "text": "on",
@@ -47529,12 +48088,20 @@
  },
  {
   "id": "EJERCICIOS EN INGLÉS E6.htm",
+  "voice": {},
   "type": "page",
   "title": "BIENVENIDO AL MENÚ PRINCIPAL DE EJERCICIOS SOBRE SU CURSO INTERACTIVO",
   "text": "BIENVENIDO AL MENÚ PRINCIPAL DE EJERCICIOS SOBRE SU CURSO INTERACTIVO\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nBIENVENIDO AL BANCO DE PREGUNTAS EN IDIOMA INGLÉS\r\n \r\n\r\n\r\n\r\n \r\n\r\n\r\n\r\nA CONTINUACIÓN ENCONTRARÁ UNOS BANCOS DE PREGUNTAS EN LOS CUALES \r\nAPLICARÁ SU CAPACIDAD DE ASIMILACIÓN DE LOS CONTENIDOS DEL \"MANUAL DE INGLÉS\" Y \r\nADEMÁS APRENDERÁ NUEVO VOCABULARIO. LO ANIMO A QUE REALICE TODOS Y CADA \r\nUNO DE LOS EJERCICIOS QUE CONFORMAN ESTA EVALUACIÓN. A DIFERENCIA DE LOS REPASOS \r\n\"BÁSICO\" Y \"AVANZADO\", EL TEXTO DE LAS PREGUNTAS Y RESPUESTAS SIEMPRE LO \r\nENCONTRARÁ EN IDIOMA INGLÉS.\r\n\r\n \r\n\r\n\r\n \r\n\r\n\r\n\r\n \r\nEVALUATION 1\r\n\r\n \r\n\r\n\r\n\r\n EVALUATION 2\r\n\r\n \r\n\r\n\r\n \r\n EVALUATION \r\n3\r\n\r\n \r\n\r\n\r\n EVALUATION 4\r\n\r\n \r\n\r\n\r\n \r\n\r\nEVALUATION 5\r\n\r\n \r\n\r\n\r\n \r\n\r\nEVALUATION 6\r\n\r\n \r\n\r\n\r\n \r\n\r\nEVALUATION 7\r\n\r\n \r\n\r\n\r\n \r\n\r\nEVALUATION 8\r\n\r\n \r\n\r\n\r\n \r\n\r\nEVALUATION 9\r\n\r\n \r\n\r\n\r\n \r\n\r\nEVALUATION 10\r\n\r\n \r\n\r\n\r\n \r\n\r\nEVALUATION 11\r\n\r\n \r\n\r\n\r\n \r\n\r\nEVALUATION 12\r\n\r\n \r\n\r\n\r\nPágina Web creada por Ricardo Alberto Payán, \r\n2003. Colombia"
  },
  {
   "id": "EVALUACIÓN AVANZADA.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "Sorry!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Lo (a) veo bien!",
+   "DefaultWrong": "Un repaso no caería mal!"
+  },
   "type": "multiple-choice",
   "title": "RESUMEN AVANZADO ",
   "questions": [
@@ -51662,12 +52229,21 @@
  },
  {
   "id": "HOW + ADJETIVO-ADVERBIO.html",
+  "voice": {},
   "type": "page",
   "title": "ESL Quiz - How & Complement - Matching Quiz (Vera Mello)\r\nI-TESL-J",
   "text": "ESL Quiz - How & Complement - Matching Quiz (Vera Mello)\r\nI-TESL-J\r\n\r\n\r\n\r\n\r\n\r\n\"How\" + Adjetivo/adverbio\r\nUtilice las cajas de la izquierda para digitar el literal de la \r\nrespuesta escogida entre las opciones de la derecha.\nLuego haga \"click\" en el \r\nbotón \"Verificar respuestas\".\r\n\r\n\r\n1. ___ letters has the secretary typed?\n2. ___ is it to the nearest drugstore?\n3. ___ do they owe you?\n4. ___ going out tonight?\n5. ___ is your grandma? She looks so young!\n6. ___ does it take you to get to school by bike?\n7. ___ is the \r\nMagdalena River? Can we reach its bottom?\n8. ___ do the meetings take place? Every week? \r\n\r\n\r\n\r\n a.\r\nHow much\n \r\n b. How\r\nlong\n \r\n c. How \r\noften\n d. \r\nHow many\n\r\n e. How\r\nabout\n f. \r\n How deep\n\r\n g. \r\nHow far\n\r\n h. How \r\nold\n\r\n\r\n\r\n \r\nLa expresión\r\n \"How about\" significa \"Qué te \r\nparece\"\r\no \"Qué opinas?\r\n \r\n\r\n\r\n\r\n \r\nVer respuestas discriminadas\r\n1-d 2-g 3-a 4-e 5-h 6-b 7-f 8-cPara regresar al \r\nManual, si entró a la página desde él, cierre la ventana de manera normal. \r\nPara regresar al Menú de los Quizes haga clic en la flecha \r\n\"Atrás\" del explorador.\r\nJavaScript creado por \r\nRicardo Alberto Payán, Base Aérea de Melgar, Fuerza Aérea Colombiana 2003.\n\r\nComentarios agraviado@lalupa.com"
  },
  {
   "id": "LA HORA DE LA VERDAD.htm",
+  "voice": {
+   "CorrectIndicator": "Exacto!",
+   "IncorrectIndicator": "PLOP!",
+   "YourScoreIs": "Su puntaje es:",
+   "DefaultRight": "Se nota que el curso le ha servido!",
+   "DefaultWrong": "No está ni tibio!",
+   "PartlyIncorrect": "En lo resaltado está patinando:"
+  },
   "type": "multiple-choice",
   "title": "LA HORA DE LA VERDAD",
   "questions": [
@@ -51682,7 +52258,7 @@
     ]
    },
    {
-    "question": "Ella es la hija de Carlos y de Mary (Utilizando el posesivo saj&#x00F3;n)",
+    "question": "Ella es la hija de Carlos y de Mary (Utilizando el posesivo sajón)",
     "options": [
      {
       "text": "She is Carlos and Mary's daughter",
@@ -51702,7 +52278,7 @@
     ]
    },
    {
-    "question": "Ni mis pap&#x00E1;s ni Mar&#x00ED;a saben la verdad",
+    "question": "Ni mis papás ni María saben la verdad",
     "options": [
      {
       "text": "Neither my parents nor Maria Knows the truth",
@@ -51712,7 +52288,7 @@
     ]
    },
    {
-    "question": "Esta mujer me gusta m&#x00E1;s",
+    "question": "Esta mujer me gusta más",
     "options": [
      {
       "text": "I like this woman better",
@@ -51722,7 +52298,7 @@
     ]
    },
    {
-    "question": "Esta es la canci&#x00F3;n que m&#x00E1;s me gusta",
+    "question": "Esta es la canción que más me gusta",
     "options": [
      {
       "text": "This is the song that I like the most",
@@ -51742,7 +52318,7 @@
     ]
    },
    {
-    "question": "Yo quer&#x00ED;a un perro que no costara demasiado",
+    "question": "Yo quería un perro que no costara demasiado",
     "options": [
      {
       "text": "I wanted a dog that wouldn't cost too much",
@@ -51757,7 +52333,7 @@
     ]
    },
    {
-    "question": "M&#x00E1;s te vale!",
+    "question": "Más te vale!",
     "options": [
      {
       "text": "You'd better!",
@@ -51767,7 +52343,7 @@
     ]
    },
    {
-    "question": "Peter podr&#x00E1; adoptar una ni&#x00F1;a",
+    "question": "Peter podrá adoptar una niña",
     "options": [
      {
       "text": "Peter will be able to adopt a girl",
@@ -51777,7 +52353,7 @@
     ]
    },
    {
-    "question": "Se supone que debo estar feliz aqu&#x00ED;?",
+    "question": "Se supone que debo estar feliz aquí?",
     "options": [
      {
       "text": "Am I supposed to be happy here?",
@@ -51787,7 +52363,7 @@
     ]
    },
    {
-    "question": "A m&#x00ED; para nada me gusta el f&#x00FA;tbol",
+    "question": "A mí para nada me gusta el fútbol",
     "options": [
      {
       "text": "I don't like soccer at all",
@@ -51797,7 +52373,7 @@
     ]
    },
    {
-    "question": "Alguien m&#x00E1;s ha visto a Pedro?",
+    "question": "Alguien más ha visto a Pedro?",
     "options": [
      {
       "text": "Has anybody else seen Pedro?",
@@ -51807,7 +52383,7 @@
     ]
    },
    {
-    "question": "C&#x00F3;mo m&#x00E1;s puedo yo conocer la altura de este edificio?",
+    "question": "Cómo más puedo yo conocer la altura de este edificio?",
     "options": [
      {
       "text": "How else can I know the height of this building?",
@@ -51817,7 +52393,7 @@
     ]
    },
    {
-    "question": "Con raz&#x00F3;n est&#x00E1;s tan gordo",
+    "question": "Con razón estás tan gordo",
     "options": [
      {
       "text": "No wonder you are so fat",
@@ -51827,7 +52403,7 @@
     ]
    },
    {
-    "question": "Compr&#x00E9; un edificio de cinco apartamentos",
+    "question": "Compré un edificio de cinco apartamentos",
     "options": [
      {
       "text": "I bought a five apartment building",
@@ -51847,7 +52423,7 @@
     ]
    },
    {
-    "question": "El alcalde mismo di&#x00F3; la orden",
+    "question": "El alcalde mismo dió la orden",
     "options": [
      {
       "text": "The mayor gave the order himself",
@@ -51862,7 +52438,7 @@
     ]
    },
    {
-    "question": "Estar&#x00E9; contigo, no importa como",
+    "question": "Estaré contigo, no importa como",
     "options": [
      {
       "text": "I'll be with you, no matter what",
@@ -51872,7 +52448,7 @@
     ]
    },
    {
-    "question": "El podr&#x00ED;a haber ido (no sabemos si fu&#x00E9;)",
+    "question": "El podría haber ido (no sabemos si fué)",
     "options": [
      {
       "text": "He may have gone",
@@ -51917,7 +52493,7 @@
     ]
    },
    {
-    "question": "Ellos desear&#x00ED;an (a ellos les gustar&#x00ED;a) que tu volases este helic&#x00F3;ptero",
+    "question": "Ellos desearían (a ellos les gustaría) que tu volases este helicóptero",
     "options": [
      {
       "text": "They wish you would fly this helicopter",
@@ -51927,7 +52503,7 @@
     ]
    },
    {
-    "question": "Eso es peligroso, as&#x00ED; como ilegal",
+    "question": "Eso es peligroso, así como ilegal",
     "options": [
      {
       "text": "That is dangerous, as well as unlawful",
@@ -51947,7 +52523,7 @@
     ]
    },
    {
-    "question": "He wouldn&#x00B4;t say the answer",
+    "question": "He wouldn´t say the answer",
     "options": [
      {
       "text": "El se negó a decir la respuesta",
@@ -52027,7 +52603,7 @@
     ]
    },
    {
-    "question": "Ojal&#x00E1; ella fuese m&#x00E1;s joven",
+    "question": "Ojalá ella fuese más joven",
     "options": [
      {
       "text": "I wish she were younger",
@@ -52037,7 +52613,7 @@
     ]
    },
    {
-    "question": "Pedro volar&#x00E1; ma&#x00F1;ana y yo tambi&#x00E9;n",
+    "question": "Pedro volará mañana y yo también",
     "options": [
      {
       "text": "Pedro will fly tomorrow and so will I",
@@ -52072,7 +52648,7 @@
     ]
    },
    {
-    "question": "En realidad, yo nac&#x00ED; en Colombia",
+    "question": "En realidad, yo nací en Colombia",
     "options": [
      {
       "text": "Actually, I was born in Colombia",
@@ -52082,7 +52658,7 @@
     ]
    },
    {
-    "question": "Qu&#x00E9; m&#x00E1;s le dijiste a ella?",
+    "question": "Qué más le dijiste a ella?",
     "options": [
      {
       "text": "What else did you tell her?",
@@ -52122,7 +52698,7 @@
     ]
    },
    {
-    "question": "Uno piensa que volar es f&#x00E1;cil",
+    "question": "Uno piensa que volar es fácil",
     "options": [
      {
       "text": "One thinks that flying is easy",
@@ -52132,7 +52708,7 @@
     ]
    },
    {
-    "question": "A ella no le gusta el f&#x00FA;tbol y a el tampoco",
+    "question": "A ella no le gusta el fútbol y a el tampoco",
     "options": [
      {
       "text": "She doesn't like soccer and neither does he",
@@ -52147,7 +52723,7 @@
     ]
    },
    {
-    "question": "Yo me baj&#x00E9; del tren",
+    "question": "Yo me bajé del tren",
     "options": [
      {
       "text": "I got off the train",
@@ -52157,7 +52733,7 @@
     ]
    },
    {
-    "question": "Yo deber&#x00ED;a haber evitado ver la pel&#x00ED;cula",
+    "question": "Yo debería haber evitado ver la película",
     "options": [
      {
       "text": "I should have avoided seeing the movie",
@@ -52167,7 +52743,7 @@
     ]
    },
    {
-    "question": "Yo no s&#x00E9; si el est&#x00E1; diciendo la verdad o no",
+    "question": "Yo no sé si el está diciendo la verdad o no",
     "options": [
      {
       "text": "I don't know whether he is telling the truth or not",
@@ -52212,7 +52788,7 @@
     ]
    },
    {
-    "question": "Yo s&#x00ED; bes&#x00E9; a Pedro anoche",
+    "question": "Yo sí besé a Pedro anoche",
     "options": [
      {
       "text": "I did kiss Pedro last night",
@@ -52222,7 +52798,7 @@
     ]
    },
    {
-    "question": "El es qui&#x00E9;n vende revistas",
+    "question": "El es quién vende revistas",
     "options": [
      {
       "text": "He is the one who sells magazines",
@@ -52237,7 +52813,7 @@
     ]
    },
    {
-    "question": "Encontr&#x00E9; unos ratones aqu&#x00ED; arriba",
+    "question": "Encontré unos ratones aquí arriba",
     "options": [
      {
       "text": "I found some mice up here",
@@ -52247,7 +52823,7 @@
     ]
    },
    {
-    "question": "Hace fr&#x00ED;o aqu&#x00ED; adentro",
+    "question": "Hace frío aquí adentro",
     "options": [
      {
       "text": "It's cold in here",
@@ -52257,7 +52833,7 @@
     ]
    },
    {
-    "question": "Cuando era joven, yo sol&#x00ED;a jugar f&#x00FA;tbol todos los d&#x00ED;as",
+    "question": "Cuando era joven, yo solía jugar fútbol todos los días",
     "options": [
      {
       "text": "When I was young, I would play soccer every day",
@@ -52282,7 +52858,7 @@
     ]
    },
    {
-    "question": "Si yo hubiese ido a Cali ya lo sabr&#x00ED;as",
+    "question": "Si yo hubiese ido a Cali ya lo sabrías",
     "options": [
      {
       "text": "If I had gone to Cali you would already know it",
@@ -52292,7 +52868,7 @@
     ]
    },
    {
-    "question": "Como te dije antes, est&#x00E1;s despedida",
+    "question": "Como te dije antes, estás despedida",
     "options": [
      {
       "text": "As I told you before, you are fired",
@@ -52312,7 +52888,7 @@
     ]
    },
    {
-    "question": "Esa es la raz&#x00F3;n por la cual ella muri&#x00F3;",
+    "question": "Esa es la razón por la cual ella murió",
     "options": [
      {
       "text": "That is the reason why she died.",
@@ -52327,7 +52903,7 @@
     ]
    },
    {
-    "question": "Si Pedro fuera a matarte, tu lo sabr&#x00ED;as",
+    "question": "Si Pedro fuera a matarte, tu lo sabrías",
     "options": [
      {
       "text": "If Pedro were to kill you, you would know it",
@@ -52337,7 +52913,7 @@
     ]
    },
    {
-    "question": "Como as&#x00ED; que no viniste!",
+    "question": "Como así que no viniste!",
     "options": [
      {
       "text": "How come you didn't come!",
@@ -52347,7 +52923,7 @@
     ]
    },
    {
-    "question": "Mi hermano es m&#x00E1;s alto que yo",
+    "question": "Mi hermano es más alto que yo",
     "options": [
      {
       "text": "My brother is taller than I",
@@ -52367,7 +52943,7 @@
     ]
    },
    {
-    "question": "Se oy&#x00F3; una explosi&#x00F3;n",
+    "question": "Se oyó una explosión",
     "options": [
      {
       "text": "An explosion was heard",
@@ -52377,7 +52953,7 @@
     ]
    },
    {
-    "question": "Si hubiese habido una pregunta el profesor no la habr&#x00ED;a podido haber contestado",
+    "question": "Si hubiese habido una pregunta el profesor no la habría podido haber contestado",
     "options": [
      {
       "text": "If there had been a question the teacher wouldn't have been able to answer it",
@@ -52412,7 +52988,7 @@
     ]
    },
    {
-    "question": "Los carros estar&#x00E1;n siendo probados ma&#x00F1;ana",
+    "question": "Los carros estarán siendo probados mañana",
     "options": [
      {
       "text": "The cars will be being tested tomorrow",
@@ -52442,7 +53018,7 @@
     ]
    },
    {
-    "question": "Mi hermano se sent&#x00F3; aqu&#x00ED;",
+    "question": "Mi hermano se sentó aquí",
     "options": [
      {
       "text": "My brother sat over here",
@@ -52452,7 +53028,7 @@
     ]
    },
    {
-    "question": "Como no fui invitado, no estuve all&#x00E1;",
+    "question": "Como no fui invitado, no estuve allá",
     "options": [
      {
       "text": "Since I wasn't invited, I wasn't there",
@@ -52472,7 +53048,7 @@
     ]
    },
    {
-    "question": "Ella desear&#x00ED;a, (a ella le gustar&#x00ED;a) que yo fuese m&#x00E1;s alto",
+    "question": "Ella desearía, (a ella le gustaría) que yo fuese más alto",
     "options": [
      {
       "text": "She wishes I were taller",
@@ -52482,7 +53058,7 @@
     ]
    },
    {
-    "question": "Yo trabaj&#x00E9; para esa compa&#x00F1;&#x00ED;a como abogado",
+    "question": "Yo trabajé para esa compañía como abogado",
     "options": [
      {
       "text": "I worked for that company as a lawyer",
@@ -52507,7 +53083,7 @@
     ]
    },
    {
-    "question": "Es problem&#x00E1;tica la situaci&#x00F3;n?",
+    "question": "Es problemática la situación?",
     "options": [
      {
       "text": "Is the situation troublesome?",
@@ -52537,7 +53113,7 @@
     ]
    },
    {
-    "question": "Ojal&#x00E1; el pudiese venir pasado ma&#x00F1;ana",
+    "question": "Ojalá el pudiese venir pasado mañana",
     "options": [
      {
       "text": "I wish he could come the day after tomorrow",
@@ -52547,7 +53123,7 @@
     ]
    },
    {
-    "question": "O el est&#x00E1; loco, o est&#x00E1; muy enfermo",
+    "question": "O el está loco, o está muy enfermo",
     "options": [
      {
       "text": "Either he is crazy, or very sick",
@@ -52652,7 +53228,7 @@
     ]
    },
    {
-    "question": "Morir&#x00E1;s si no comes!",
+    "question": "Morirás si no comes!",
     "options": [
      {
       "text": "You shall die if you don't eat!",
@@ -52662,7 +53238,7 @@
     ]
    },
    {
-    "question": "El comi&#x00F3; sin darse cuenta que la comida estaba envenenada",
+    "question": "El comió sin darse cuenta que la comida estaba envenenada",
     "options": [
      {
       "text": "He ate not realizing the food was poisoned",
@@ -52677,7 +53253,7 @@
     ]
    },
    {
-    "question": "Yo hab&#x00ED;a acabado de llegar",
+    "question": "Yo había acabado de llegar",
     "options": [
      {
       "text": "I had just arrived",
@@ -52702,7 +53278,7 @@
     ]
    },
    {
-    "question": "El la mat&#x00F3; a causa de su locura (la locura de &#x00E9;l)",
+    "question": "El la mató a causa de su locura (la locura de él)",
     "options": [
      {
       "text": "He killed her because of his craziness",
@@ -52717,7 +53293,7 @@
     ]
    },
    {
-    "question": "Sucede que no me gusta el f&#x00FA;tbol",
+    "question": "Sucede que no me gusta el fútbol",
     "options": [
      {
       "text": "I don't happen to like soccer",
@@ -52737,7 +53313,7 @@
     ]
    },
    {
-    "question": "El fue despedido por su despreocupaci&#x00F3;n",
+    "question": "El fue despedido por su despreocupación",
     "options": [
      {
       "text": "He was fired because of his carelessness",
@@ -52747,7 +53323,7 @@
     ]
    },
    {
-    "question": "Entre m&#x00E1;s conozco a los hombres, m&#x00E1;s quiero a mi perro",
+    "question": "Entre más conozco a los hombres, más quiero a mi perro",
     "options": [
      {
       "text": "The more I know men, the more I love my dog",
@@ -52757,7 +53333,7 @@
     ]
    },
    {
-    "question": "Ojal&#x00E1; tu vinieses a mi fiesta",
+    "question": "Ojalá tu vinieses a mi fiesta",
     "options": [
      {
       "text": "I wish you would come to my party",
@@ -52767,7 +53343,7 @@
     ]
    },
    {
-    "question": "Me gusta la m&#x00FA;sica y a Pedro tambi&#x00E9;n",
+    "question": "Me gusta la música y a Pedro también",
     "options": [
      {
       "text": "I like music and so does Pedro",
@@ -52782,7 +53358,7 @@
     ]
    },
    {
-    "question": "La ni&#x00F1;a que gan&#x00F3; la carrera es colombiana?",
+    "question": "La niña que ganó la carrera es colombiana?",
     "options": [
      {
       "text": "Is the girl who won the race Colombian?",
@@ -52792,7 +53368,7 @@
     ]
    },
    {
-    "question": "Puedes parquear aqu&#x00ED; (Est&#x00E1; permitido)",
+    "question": "Puedes parquear aquí (Está permitido)",
     "options": [
      {
       "text": "You can park here",
@@ -52802,7 +53378,7 @@
     ]
    },
    {
-    "question": "El compr&#x00F3; este libro para que yo lo lea",
+    "question": "El compró este libro para que yo lo lea",
     "options": [
      {
       "text": "He bought this book for me to read it",
@@ -52842,7 +53418,7 @@
     ]
    },
    {
-    "question": "El m&#x00E1;s o menos tiene mi edad",
+    "question": "El más o menos tiene mi edad",
     "options": [
      {
       "text": "He is about my age",
@@ -52867,7 +53443,7 @@
     ]
    },
    {
-    "question": "El debe haber estado loco cuando la mat&#x00F3;",
+    "question": "El debe haber estado loco cuando la mató",
     "options": [
      {
       "text": "He must have been crazy when he killed her",
@@ -52887,7 +53463,7 @@
     ]
    },
    {
-    "question": "Si tuvieses un problema, d&#x00E9;jame saberlo",
+    "question": "Si tuvieses un problema, déjame saberlo",
     "options": [
      {
       "text": "If you should have a problem, let me know it",
@@ -52902,7 +53478,7 @@
     ]
    },
    {
-    "question": "Yo soy alem&#x00E1;n, en cambio el es espa&#x00F1;ol",
+    "question": "Yo soy alemán, en cambio el es español",
     "options": [
      {
       "text": "I'm German, whereas he is Spanish",
@@ -52922,7 +53498,7 @@
     ]
    },
    {
-    "question": "\"Barrab&#x00E1;s ser&#x00E1; ejecutado ma&#x00F1;ana\" (Titular de Prensa)",
+    "question": "\"Barrabás será ejecutado mañana\" (Titular de Prensa)",
     "options": [
      {
       "text": "\"Barrabas to be executed tomorrow\"",
@@ -52932,7 +53508,7 @@
     ]
    },
    {
-    "question": "Un tal Pedro te llam&#x00F3; esta ma&#x00F1;ana",
+    "question": "Un tal Pedro te llamó esta mañana",
     "options": [
      {
       "text": "One Pedro called you this morning",
@@ -52942,7 +53518,7 @@
     ]
    },
    {
-    "question": "Ella es la &#x00FA;nica amiga que yo tengo",
+    "question": "Ella es la única amiga que yo tengo",
     "options": [
      {
       "text": "She is the one friend I have",
@@ -52967,7 +53543,7 @@
     ]
    },
    {
-    "question": "El hombre que te vi&#x00F3;, los vi&#x00F3; a ellos?",
+    "question": "El hombre que te vió, los vió a ellos?",
     "options": [
      {
       "text": "Did the man who saw you, see them?",
@@ -53007,7 +53583,7 @@
     ]
    },
    {
-    "question": "Valdr&#x00E1; la pena tomar un taxi?",
+    "question": "Valdrá la pena tomar un taxi?",
     "options": [
      {
       "text": "Will taking a taxi be wortwhile?",
@@ -53022,7 +53598,7 @@
     ]
    },
    {
-    "question": "El avi&#x00F3;n est&#x00E1; pr&#x00F3;ximo a aterrizar",
+    "question": "El avión está próximo a aterrizar",
     "options": [
      {
       "text": "The plane is about to land",
@@ -53042,7 +53618,7 @@
     ]
    },
    {
-    "question": "Yo escasamente tengo 20 a&#x00F1;os",
+    "question": "Yo escasamente tengo 20 años",
     "options": [
      {
       "text": "I'm barely twenty",
@@ -53052,7 +53628,7 @@
     ]
    },
    {
-    "question": "Peter: Do you mind if I smoke?\nLuc&#x00ED;a: Not at all (Qu&#x00E9; significa \"not at all\"?)",
+    "question": "Peter: Do you mind if I smoke?\nLucía: Not at all (Qué significa \"not at all\"?)",
     "options": [
      {
       "text": "Absolutamente no",
@@ -53082,7 +53658,7 @@
     ]
    },
    {
-    "question": "Cu&#x00E1;ndo llegaste? (Mostrando sorpresa)",
+    "question": "Cuándo llegaste? (Mostrando sorpresa)",
     "options": [
      {
       "text": "When ever did you arrive?",
@@ -53102,7 +53678,7 @@
     ]
    },
    {
-    "question": "El fue a Santiago, por mi parte, yo permanec&#x00ED; en Valparaiso",
+    "question": "El fue a Santiago, por mi parte, yo permanecí en Valparaiso",
     "options": [
      {
       "text": "He went to Santiago, as for me, I stayed in Valparaiso",
@@ -53112,7 +53688,7 @@
     ]
    },
    {
-    "question": "Ni siquiera s&#x00E9; tu nombre",
+    "question": "Ni siquiera sé tu nombre",
     "options": [
      {
       "text": "I don't even know your name",
@@ -53127,7 +53703,7 @@
     ]
    },
    {
-    "question": "El deber&#x00ED;a haber llamado",
+    "question": "El debería haber llamado",
     "options": [
      {
       "text": "He should have called",
@@ -53147,7 +53723,7 @@
     ]
    },
    {
-    "question": "Celia Cruz fue una mujer alegre y ser&#x00E1; recordada como tal",
+    "question": "Celia Cruz fue una mujer alegre y será recordada como tal",
     "options": [
      {
       "text": "Celia Cruz was a happy woman and she will be remember as such",
@@ -53157,7 +53733,7 @@
     ]
    },
    {
-    "question": "Al terminar de volar, &#x00E9;l se fue",
+    "question": "Al terminar de volar, él se fue",
     "options": [
      {
       "text": "Upon finishing flying, he left",
@@ -53172,7 +53748,7 @@
     ]
    },
    {
-    "question": "Yo deber&#x00ED;a haber evitado ver esa pel&#x00ED;cula",
+    "question": "Yo debería haber evitado ver esa película",
     "options": [
      {
       "text": "I should have avoided seeing that movie",
@@ -53182,7 +53758,7 @@
     ]
    },
    {
-    "question": "Estar&#x00E9; aqu&#x00ED; hasta que el venga",
+    "question": "Estaré aquí hasta que el venga",
     "options": [
      {
       "text": "I'll be here until he come",
@@ -53192,7 +53768,7 @@
     ]
    },
    {
-    "question": "Yo nunca te dejar&#x00E9;",
+    "question": "Yo nunca te dejaré",
     "options": [
      {
       "text": "I'll never leave you",
@@ -53237,7 +53813,7 @@
     ]
    },
    {
-    "question": "Entre m&#x00E1;s fumo, peor me siento",
+    "question": "Entre más fumo, peor me siento",
     "options": [
      {
       "text": "The more I smoke, the worse I feel",
@@ -53247,7 +53823,7 @@
     ]
    },
    {
-    "question": "M&#x00E1;s que amantes, somos amigos",
+    "question": "Más que amantes, somos amigos",
     "options": [
      {
       "text": "We're friends rather than lovers",
@@ -53257,7 +53833,7 @@
     ]
    },
    {
-    "question": "Yo todav&#x00ED;a te amo",
+    "question": "Yo todavía te amo",
     "options": [
      {
       "text": "I still love you",
@@ -53277,7 +53853,7 @@
     ]
    },
    {
-    "question": "Podr&#x00ED;a llover esta noche?",
+    "question": "Podría llover esta noche?",
     "options": [
      {
       "text": "Might it rain tonight?",
@@ -53292,7 +53868,7 @@
     ]
    },
    {
-    "question": "Yo soy bueno para las matem&#x00E1;ticas",
+    "question": "Yo soy bueno para las matemáticas",
     "options": [
      {
       "text": "I'm good at math",
@@ -53302,7 +53878,7 @@
     ]
    },
    {
-    "question": "Si pudieras, vivir&#x00ED;as conmigo?",
+    "question": "Si pudieras, vivirías conmigo?",
     "options": [
      {
       "text": "If you could, would you live with me?",
@@ -53312,7 +53888,7 @@
     ]
    },
    {
-    "question": "Si hubiese habido una raz&#x00F3;n yo habr&#x00ED;a vivido contigo",
+    "question": "Si hubiese habido una razón yo habría vivido contigo",
     "options": [
      {
       "text": "If there had been a reason I would have lived with you",
@@ -53342,7 +53918,7 @@
     ]
    },
    {
-    "question": "La situaci&#x00F3;n es entendible",
+    "question": "La situación es entendible",
     "options": [
      {
       "text": "The situation is understandable",
@@ -53352,7 +53928,7 @@
     ]
    },
    {
-    "question": "Dame dos besos m&#x00E1;s",
+    "question": "Dame dos besos más",
     "options": [
      {
       "text": "Give me two more kisses",
@@ -53362,7 +53938,7 @@
     ]
    },
    {
-    "question": "Qu&#x00E9; buena actriz!",
+    "question": "Qué buena actriz!",
     "options": [
      {
       "text": "What a good actress!",
@@ -53372,7 +53948,7 @@
     ]
    },
    {
-    "question": "Yo ni siquiera le&#x00ED; ese libro",
+    "question": "Yo ni siquiera leí ese libro",
     "options": [
      {
       "text": "I didn´t even read that book",
@@ -53382,7 +53958,7 @@
     ]
    },
    {
-    "question": "Qu&#x00E9; buenos actores!",
+    "question": "Qué buenos actores!",
     "options": [
      {
       "text": "What good actors!",
@@ -53427,7 +54003,7 @@
     ]
    },
    {
-    "question": "Incluso mi mam&#x00E1; sabe la verdad",
+    "question": "Incluso mi mamá sabe la verdad",
     "options": [
      {
       "text": "Even my mother knows the truth",
@@ -53437,7 +54013,7 @@
     ]
    },
    {
-    "question": "No te hab&#x00ED;a visto desde que ten&#x00ED;as 15 a&#x00F1;os",
+    "question": "No te había visto desde que tenías 15 años",
     "options": [
      {
       "text": "I haven't seen you ever since you were fifteen",
@@ -53452,7 +54028,7 @@
     ]
    },
    {
-    "question": "Mi carro es lo suficientemente bueno para m&#x00ED;",
+    "question": "Mi carro es lo suficientemente bueno para mí",
     "options": [
      {
       "text": "My car is good enough for me",
@@ -53472,7 +54048,7 @@
     ]
    },
    {
-    "question": "Ni siquiera Pedro la conoc&#x00ED;a",
+    "question": "Ni siquiera Pedro la conocía",
     "options": [
      {
       "text": "Not even Pedro, knew her",
@@ -53482,7 +54058,7 @@
     ]
    },
    {
-    "question": "Yo preferir&#x00E1; estudiar en Cali",
+    "question": "Yo preferirá estudiar en Cali",
     "options": [
      {
       "text": "I would rather study in Cali",
@@ -53510,18 +54086,27 @@
  },
  {
   "id": "MENÚ PRINCIPAL E6.htm",
+  "voice": {},
   "type": "page",
   "title": "BIENVENIDO AL MENÚ PRINCIPAL DE EJERCICIOS SOBRE SU CURSO INTERACTIVO",
   "text": "BIENVENIDO AL MENÚ PRINCIPAL DE EJERCICIOS SOBRE SU CURSO INTERACTIVO\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nBIENVENIDO AL MENÚ PRINCIPAL DE EJERCICIOS \r\nINTERACTIVOS:\r\n \r\n\r\n\r\n\r\n \r\n\r\n\r\n\r\nPara realizar un ejercicio simplemente haga click en el enlace sobre el tema de \r\nsu elección (ORDENADO ALFABETICAMENTE MÁS NO \r\nSECUENCIALMENTE) y se abrirá la evaluación \r\ncorrespondiente. Los ejercicios están ordenados de manera alfabética para \r\nfacilitar la consulta. Usted puede realizar estas pruebas de manera \r\nindependiente pero recomiendo referirse al Manual en sí, desde donde también \r\ntendrá acceso a cada uno de ellos, conforme al plan de estudios.\r\n\r\n \r\n\r\n\r\n \r\n \r\n \r\n \r\n \r\n \r\n \r\n \r\n \r\n \r\n \r\n TEMA\r\n \r\n \r\n \r\n \r\n PÁGINA DEL MANUAL\r\n \r\n \r\n \r\n \r\n \r\n 1\r\n \r\n \r\n \r\n ADJETIVO – VERBO\r\n \r\n \r\n \r\n 66\r\n \r\n \r\n \r\n \r\n 2\r\n \r\n \r\n \r\n \r\n ADJETIVOS + \r\n PREPOSICIONES (1)\r\n \r\n \r\n \r\n 192\r\n \r\n \r\n \r\n \r\n 3\r\n \r\n \r\n \r\n \r\n ADJETIVOS + \r\n PREPOSICIONES (2)\r\n \r\n \r\n \r\n 192\r\n \r\n \r\n \r\n \r\n 4\r\n \r\n \r\n \r\n ALTHOUGH, \r\n THOUGH, EVEN THOUGH, HOWEVER\r\n \r\n \r\n \r\n 107\r\n \r\n \r\n \r\n \r\n 5\r\n \r\n \r\n \r\n \r\n \r\n ANOTHER, \r\n THE OTHER, THE OTHERS, OTHERS \r\n \r\n \r\n \r\n \r\n \r\n \r\n 134\r\n \r\n \r\n \r\n \r\n 6\r\n \r\n \r\n \r\n \r\n ANYMORE- ANY LONGER - NO MORE- NO LONGER\r\n \r\n \r\n \r\n 115\r\n \r\n \r\n \r\n \r\n 7\r\n \r\n \r\n \r\n ARTÍCULOS INDEFINIDOS \r\n \r\n \r\n \r\n \r\n \r\n 5\r\n \r\n \r\n \r\n \r\n 8\r\n \r\n \r\n \r\n \r\n AUXILIARES:\r\n USO BÁSICO \r\n \r\n \r\n \r\n \r\n \r\n \r\n 21\r\n \r\n \r\n \r\n \r\n 9\r\n \r\n \r\n \r\n \r\n AUXILIARES: \r\n USO AVANZADO \r\n \r\n \r\n \r\n \r\n \r\n \r\n 125\r\n \r\n \r\n \r\n \r\n 10\r\n \r\n \r\n \r\n \r\n ANÁLISIS \r\n DE \"REPORTED SPEECH\" (DIRECTO E INDIRECTO)\r\n \r\n \r\n \r\n \r\n 130\r\n \r\n \r\n \r\n \r\n 11\r\n \r\n \r\n \r\n \r\n A LITTLE-A FEW-LITTLE-FEW-MUCH-A LOT OF - LOTS OF - A \r\n LOT \r\n \r\n \r\n \r\n 77\r\n \r\n \r\n \r\n \r\n 12\r\n \r\n \r\n AS VS. LIKE\r\n \r\n \r\n 135\r\n \r\n \r\n \r\n \r\n 13\r\n \r\n \r\n \r\n \r\n \r\n COMPARACIÓN DE ADJETIVOS Y SUPERLATIVO\r\n \r\n \r\n \r\n 52\r\n \r\n \r\n \r\n \r\n 14\r\n \r\n \r\n \r\n \r\n COMPARACIÓN \r\n DE SUSTANTIVOS Y COMPARATIVO ESPECIAL\r\n \r\n \r\n \r\n 54\r\n \r\n \r\n \r\n \r\n 15\r\n \r\n \r\n \r\n CONJUNCIONES \r\n \r\n \r\n \r\n \r\n 61\r\n \r\n \r\n \r\n \r\n 16\r\n \r\n \r\n \r\n EITHER-NEITHER-SOO-TOO\r\n \r\n \r\n 111\r\n \r\n \r\n \r\n \r\n 17\r\n \r\n \r\n \r\n \r\n ENFATIZACIÓN DE LA ACCIÓN DE LOS VERBOS\r\n \r\n \r\n \r\n 80\r\n \r\n \r\n \r\n \r\n 18\r\n \r\n \r\n \r\n \r\n FORMA ESPECIAL DEL \r\n SUSTANTIVO \r\n \r\n \r\n \r\n \r\n \r\n 70\r\n \r\n \r\n \r\n \r\n 19\r\n \r\n \r\n \r\n \r\n FORMAS DEL INFINITIVO\r\n \r\n \r\n \r\n 102\r\n \r\n \r\n \r\n \r\n 20\r\n \r\n \r\n \r\n FOR- \r\n SINCE \r\n \r\n \r\n \r\n 109\r\n \r\n \r\n \r\n \r\n 21\r\n \r\n \r\n \r\n \r\n FOR-SINCE-DURING \r\n \r\n \r\n \r\n \r\n 109\r\n \r\n \r\n \r\n \r\n 22\r\n \r\n \r\n \r\n \r\n FRASES CONDICIONALES\r\n \r\n \r\n \r\n 55\r\n \r\n \r\n \r\n \r\n 23\r\n \r\n \r\n \r\n \r\n GRADOS DE OBLIGATORIEDAD\r\n \r\n \r\n \r\n 50\r\n \r\n \r\n \r\n \r\n 24\r\n \r\n \r\n \r\n \r\n HOW \r\n + \r\n ADJETIVO/ADVERBIO\r\n \r\n \r\n \r\n \r\n 110\r\n \r\n \r\n \r\n \r\n 25\r\n \r\n \r\n \r\n \r\n INTERPRETACIÓN DE LOS DOCE TIEMPOS \r\n \r\n \r\n \r\n \r\n \r\n 24\r\n \r\n \r\n \r\n \r\n 26\r\n \r\n \r\n \r\n \r\n INTERPRETACIÓN \r\n DE LOS TRES FUTUROS\r\n \r\n \r\n \r\n 38\r\n \r\n \r\n \r\n \r\n 27\r\n \r\n \r\n \r\n MAKE –DO \r\n \r\n \r\n \r\n \r\n \r\n \r\n 133\r\n \r\n \r\n \r\n \r\n 28\r\n \r\n \r\n \r\n \r\n OMISIÓN DEL ARTICULO \r\n (THE) \r\n \r\n \r\n \r\n \r\n \r\n 120\r\n \r\n \r\n \r\n \r\n 29\r\n \r\n \r\n \r\n PLURALES \r\n IRREGULARES DE SUSTANTIVOS\r\n \r\n \r\n \r\n 6\r\n \r\n \r\n \r\n \r\n 30\r\n \r\n \r\n \r\n \r\n PRONOMBRES INDEFINIDOS\r\n \r\n \r\n \r\n 10\r\n \r\n \r\n \r\n \r\n 31\r\n \r\n \r\n \r\n \r\n PRONOMBRES \r\n PERSONALES COMO COMPLEMENTO\r\n \r\n \r\n \r\n 9\r\n \r\n \r\n \r\n \r\n 32\r\n \r\n \r\n \r\n \r\n PRONOMBRES POSESIVOS\r\n \r\n \r\n \r\n 9\r\n \r\n \r\n \r\n \r\n 33\r\n \r\n \r\n \r\n PRONOMBRES REFLEXIVOS\r\n \r\n \r\n \r\n 63\r\n \r\n \r\n \r\n \r\n 34\r\n \r\n \r\n \r\n \r\n PREPOSICIONES (1)\r\n \r\n \r\n \r\n 60\r\n \r\n \r\n \r\n \r\n 35\r\n \r\n \r\n \r\n \r\n PREPOSICIONES (2) \r\n \r\n \r\n \r\n \r\n 60\r\n \r\n \r\n \r\n \r\n 36\r\n \r\n \r\n \r\n \r\n PREPOSICIONES (3) \r\n \r\n \r\n \r\n \r\n \r\n 60\r\n \r\n \r\n \r\n \r\n 37\r\n \r\n \r\n \r\n \r\n PREPOSICIONES (4) \r\n \r\n \r\n \r\n \r\n \r\n 60\r\n \r\n \r\n \r\n \r\n 38\r\n \r\n \r\n \r\n \r\n PREPOSICIONES (5)\r\n \r\n \r\n \r\n 60\r\n \r\n \r\n \r\n \r\n 39\r\n \r\n \r\n \r\n \r\n PREPOSICIONES (6)\r\n \r\n \r\n \r\n 60\r\n \r\n \r\n \r\n \r\n 40\r\n \r\n \r\n \r\n RESPUESTAS \r\n CORTAS\r\n \r\n \r\n \r\n 58\r\n \r\n \r\n \r\n \r\n 41\r\n \r\n \r\n \r\n SOME- \r\n ANY\r\n \r\n \r\n \r\n 78\r\n \r\n \r\n \r\n \r\n 42\r\n \r\n \r\n \r\n \r\n SOME-ANY (2)\r\n \r\n \r\n \r\n 78\r\n \r\n \r\n \r\n \r\n 43\r\n \r\n \r\n \r\n \r\n STILL-YET\r\n \r\n \r\n \r\n 93\r\n \r\n \r\n \r\n \r\n 44\r\n \r\n \r\n \r\n SUBJUNTIVO\r\n \r\n \r\n \r\n 59/105\r\n \r\n \r\n \r\n \r\n 45\r\n \r\n \r\n \r\n \r\n SUJETO + VERBO + PRONOMBRES "
  },
  {
   "id": "RESPUESTAS CORTAS.html",
+  "voice": {},
   "type": "page",
   "title": "MANUAL \"INGLES A SU ALCANCE\" RESPUESTAS CORTAS",
   "text": "MANUAL \"INGLES A SU ALCANCE\" RESPUESTAS CORTAS\n\n\n\n\nShort Answers - Respuestas Cortas.\nLuego de pensar su respuesta \ndespliegue el menú para ver si está correcta.\nAre you busy?\nYes, ___. \n\n Ver respuestaYes, I am. / Yes, we are.\n Do you live in New York?\nNo, ___. \n\n Ver respuestaNo, I don't. / No, we don't.\n Can Sylvia ride a bike?\nYes, ___.\n\n Ver respuestaYes, she can.\n Does your father read the newspaper every day?\nYes, ___.\n\n Ver respuestaYes, he does.\n Do you and your friends play soccer on Saturday?\nNo, ___.\n\n Ver respuestaNo, we don't.\n Is your sister a doctor?\nNo, ___.\n\n Ver respuestaNo, she isn't.\n Can \n Teresa and María play the piano?\nYes, ___.\n\n Ver respuestaYes, they can.\n Is \n Bogotá big?\nYes, ___.\n\n Ver respuestaYes, it is.\n Are you thirsty?\nNo, ___.\n\n Ver respuestaNo, I'm not. / No, we aren't.\n Does \n Mauricio like pepperoni pizza?\nNo, ___.\n\n Ver respuestaNo, he doesn't.\n Are the students listening to music?\nNo, ___.\n\n Ver respuestaNo, they aren't.\n Is the supermarket next to the post office?\nNo, ___.\n\n Ver respuestaNo, it isn't.\n Is \n Fernando Botero Vietnamese?\nNo, ___.\n\n Ver respuestaNo, he isn't.\n Is your mother sleeping?\nNo, ___.\n\n Ver respuestaNo, she isn't.\n Can you speak Portuguese?\nYes, ___.\n\n Ver respuestaYes, I can. / Yes, we can.\n \n\nPara regresar al Manual, si entró a la página desde él, cierre \nla ventana de manera normal. \nPara regresar al Menú de los Quizes haga clic en la flecha \n\"Atrás\" del explorador.\n \nJavaScript creado por \nRicardo Alberto Payán, Base Aérea de Melgar, Fuerza Aérea Colombiana 2003.\n\nComentarios agraviado@lalupa.com"
  },
  {
   "id": "VERBOS IRREGULARES.htm",
+  "voice": {
+   "CorrectIndicator": "Correcto!",
+   "IncorrectIndicator": "SORRY",
+   "YourScoreIs": "Puntaje:",
+   "CorrectResponse": "Correcto",
+   "IncorrectResponse": "Lo siento.Siga intentándolo hasta que los aprenda todos!"
+  },
   "type": "matching",
   "title": "APRENDA 105 VERBOS IRREGULARES",
   "pairs": [
@@ -53734,7 +54319,7 @@
    },
    {
     "left": "TEACH",
-    "right": "ENSE&#x00D1;AR"
+    "right": "ENSEÑAR"
    },
    {
     "left": "THINK",
@@ -53947,6 +54532,13 @@
  },
  {
   "id": "VERBOS REGULARES.htm",
+  "voice": {
+   "CorrectIndicator": "Correcto!",
+   "IncorrectIndicator": "SORRY",
+   "YourScoreIs": "Puntaje:",
+   "CorrectResponse": "Correcto",
+   "IncorrectResponse": "Lo siento.Siga intentándolo hasta que los aprenda todos!"
+  },
   "type": "matching",
   "title": "APRENDA VERBOS REGULARES",
   "pairs": [
@@ -54280,7 +54872,7 @@
    },
    {
     "left": "LEAK",
-    "right": "ESCAPAR (UN L&#x00CD;QUIDO)"
+    "right": "ESCAPAR (UN LÍQUIDO)"
    },
    {
     "left": "HATE",
@@ -54315,7 +54907,7 @@
    },
    {
     "left": "MISS",
-    "right": "FALLAR-EXTRA&#x00D1;AR"
+    "right": "FALLAR-EXTRAÑAR"
    },
    {
     "left": "MIX",
