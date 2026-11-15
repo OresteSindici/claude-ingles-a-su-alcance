@@ -66,9 +66,11 @@ function Home({ data }: { data: AllData }) {
   const p = useProgress();
   const placement = data.course.placement[0];
   return (<>
-    <div className="eyebrow">Curso gratuito · Método del TC Payán</div>
-    <h1>Inglés con <span>5 fórmulas</span> y 21 palabras</h1>
-    <p className="lead">El método con el que cientos de militares colombianos aprendieron inglés. Escuche, traduzca y compruebe, frase por frase.</p>
+    <section className="sky-hero">
+      <div className="eyebrow">Curso gratuito · Método del TC Payán</div>
+      <h1>Inglés con 5 fórmulas<br /><span>y 21 palabras</span></h1>
+      <p className="lead">El método con el que cientos de militares colombianos aprendieron inglés. Escuche, traduzca y compruebe, frase por frase.</p>
+    </section>
     <RankHud />
     {placement && !p.quizzes[placement] && (
       <a className="mission" href={`#/ejercicio/${placement}`}>

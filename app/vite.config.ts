@@ -13,8 +13,8 @@ export default defineConfig({
         short_name: "Manual Inglés",
         description: "El método del TC Jairo Alberto Payán: 5 fórmulas y los 21 auxiliares.",
         lang: "es",
-        theme_color: "#081629",
-        background_color: "#081629",
+        theme_color: "#12171b",
+        background_color: "#12171b",
         display: "standalone",
         start_url: "/",
         icons: [
