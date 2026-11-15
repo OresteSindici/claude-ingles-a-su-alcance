@@ -22,8 +22,10 @@ El inglés se construye con lógica casi matemática: cinco fórmulas y los **21
 
 ## La app
 
-- **Curso** en cuatro etapas con las 48 lecciones del manual, las páginas originales y 506 frases para practicar con el audio original.
-- **Ejercicios**: 88 ejercicios interactivos del curso (selección múltiple, ordenar frases, verbos) con las respuestas de «Mi Coronel».
+- **Curso** en cuatro etapas con las 48 lecciones del manual como texto fácil de leer y buscar, con las 499 frases de práctica (audio original) y los ejercicios en el lugar donde el manual los propone.
+- **Fórmulas interactivas**: toque S, 21, N, V o C para ver qué significa cada pieza.
+- **Buscador** en todo el manual y **Manual original** con las 206 páginas tal como se publicaron.
+- **Ejercicios**: 88 ejercicios interactivos del curso (selección múltiple, ordenar frases, verbos), cada uno enlazado a la lección que lo explica, con los comentarios de «Mi Coronel».
 - **Rangos** de Recluta a General según el progreso.
 - **Homenaje** al autor.
 - Se instala en el celular como app (PWA) y funciona sin conexión en las lecciones ya visitadas.
@@ -54,6 +56,7 @@ python3 tools/extract_pdf.py legacy build
 node tools/extract_quizzes.mjs "legacy/Ejercicios Internet" build/quizzes.json
 python3 tools/build_content.py legacy
 python3 tools/render_pages.py "legacy/MANUAL INGLÉS A SU ALCANCE.pdf" app/public/pages
+python3 tools/build_theory.py      # la teoría del PDF como texto estructurado
 python3 tools/build_app_data.py
 ```
 
