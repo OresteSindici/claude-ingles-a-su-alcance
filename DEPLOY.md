@@ -1,4 +1,4 @@
-# Publicar la app en Firebase
+# Publicar el Manual Inglés a su Alcance en Firebase
 
 La app se publica sola en Firebase Hosting cada vez que se actualiza la rama `main` en GitHub.
 Para conectarla hay que hacer esto **una sola vez**.
@@ -20,10 +20,10 @@ El plan gratuito (Spark) es suficiente: 10 GB de almacenamiento y 360 MB de trá
    - Secret: pegue **todo** el contenido del archivo `.json`.
 3. Borre el archivo `.json` de su computador cuando termine. Es una llave: no la comparta ni la suba al repositorio.
 
-## 3. Avisarle a Claude el ID del proyecto
+## 3. ID del proyecto
 
-Claude lo pone en `.firebaserc` y, desde ese momento, cada cambio en `main` queda publicado en
-`https://<ID-del-proyecto>.web.app`.
+El ID ya está en `.firebaserc`: `manual-ingles-a-su-alcance`. Desde que exista el secreto del paso 2,
+cada cambio en `main` queda publicado en <https://manual-ingles-a-su-alcance.web.app>.
 
 ## Editar el texto del Homenaje
 

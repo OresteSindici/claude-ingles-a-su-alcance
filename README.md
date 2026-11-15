@@ -1,6 +1,6 @@
-# Inglés a su Alcance
+# Manual Inglés a su Alcance
 
-Modernización del manual interactivo **"Inglés a su Alcance"** (2002), creado por el
+Modernización del manual interactivo **"Manual Inglés a su Alcance"** (2002), creado por el
 Teniente Coronel **Jairo Alberto Payán**, Fuerza Aérea Colombiana, en la Base Aérea de Melgar,
 durante el tiempo de su injusta detención. Con este método aprendieron inglés cientos de
 miembros de la Fuerza Pública de Colombia.

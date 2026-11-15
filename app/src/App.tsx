@@ -19,7 +19,7 @@ function Shell({ children, tab }: { children: ReactNode; tab: string }) {
   return (<>
     <div className="stripe" aria-hidden="true" />
     <header className="top"><div className="in">
-      <a className="brand" href="#/"><svg viewBox="0 0 52 32" aria-hidden="true"><path d={ICON_WINGS} /></svg>Inglés a su Alcance</a>
+      <a className="brand" href="#/"><svg viewBox="0 0 52 32" aria-hidden="true"><path d={ICON_WINGS} /></svg><span><small>Manual</small>Inglés a su Alcance</span></a>
       <nav className="tabs" aria-label="Secciones">
         <a href="#/" aria-current={tab === "curso" ? "page" : undefined}>Curso</a>
         <a href="#/ejercicios" aria-current={tab === "ejercicios" ? "page" : undefined}>Ejercicios</a>
@@ -246,5 +246,5 @@ export function App({ data }: { data: AllData }) {
     : view === "ejercicios" ? <QuizzesIndex data={data} />
     : view === "homenaje" ? <Homenaje data={data} />
     : !view ? <Home data={data} /> : <NotFound />;
-  return <Shell tab={tab}>{body}<footer>«Inglés a su Alcance» © 2002 TC Jairo Alberto Payán. Contenido y audio originales.</footer></Shell>;
+  return <Shell tab={tab}>{body}<footer>«Manual Inglés a su Alcance» © 2002 TC Jairo Alberto Payán. Contenido y audio originales.</footer></Shell>;
 }

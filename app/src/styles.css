@@ -22,6 +22,8 @@ button:disabled{cursor:default;opacity:.45}
 .top .in{max-width:820px;margin:0 auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .brand{font:800 22px/1 var(--display);letter-spacing:.02em;text-transform:uppercase;margin-right:auto;display:flex;align-items:center;gap:8px;color:var(--fg);text-decoration:none}
 .brand svg{width:26px;height:16px;fill:var(--gold);flex:none}
+.brand span{display:grid;line-height:.95}
+.brand small{font:700 11px var(--mono);letter-spacing:.22em;color:var(--gold)}
 .tabs{display:flex;gap:2px}
 .tabs a{font:600 15px var(--body);color:var(--muted);text-decoration:none;padding:6px 11px;border-radius:999px}
 .tabs a[aria-current="page"]{background:var(--gold);color:var(--on-gold)}

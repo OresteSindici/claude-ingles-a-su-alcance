@@ -13,6 +13,6 @@ Escribió el curso en 2002, en la Base Aérea de Melgar, durante el tiempo de su
 
 ## Más de 20 años después
 
-En 2002 su hijo Ricardo Alberto le ayudó con la parte de sistemas. Hoy, más de veinte años después, ese mismo hijo moderniza el curso para que cualquier hispanohablante pueda aprender inglés gratis con el método de su padre.
+En 2002 su hijo Ricardo Alberto le ayudó con la parte de sistemas. Hoy, más de veinte años después, ese mismo hijo moderniza el *Manual Inglés a su Alcance* para que cualquier hispanohablante pueda aprender inglés gratis con el método de su padre.
 
 Al instalar el manual original, antes de la primera lección, quien lo instalaba leía estas palabras suyas.

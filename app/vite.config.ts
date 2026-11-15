@@ -9,8 +9,8 @@ export default defineConfig({
       registerType: "autoUpdate",
       includeAssets: ["icons/apple-touch-icon.png"],
       manifest: {
-        name: "Inglés a su Alcance",
-        short_name: "Inglés",
+        name: "Manual Inglés a su Alcance",
+        short_name: "Manual Inglés",
         description: "El método del TC Jairo Alberto Payán: 5 fórmulas y los 21 auxiliares.",
         lang: "es",
         theme_color: "#081629",
