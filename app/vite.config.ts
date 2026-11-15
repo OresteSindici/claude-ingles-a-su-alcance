@@ -25,8 +25,10 @@ export default defineConfig({
       },
       workbox: {
         // App shell + course data are precached; page images and audio are cached as they are used.
-        globPatterns: ["**/*.{js,css,html,png,svg}", "data/*.json", "homenaje/*.jpg"],
+        globPatterns: ["**/*.{js,css,html,png,svg}", "data/{course,quizzes,voice,homenaje}.json", "homenaje/*.jpg"],
         runtimeCaching: [
+          { urlPattern: /\/data\/(lessons\/|search\.json)/, handler: "StaleWhileRevalidate",
+            options: { cacheName: "lecciones" } },
           { urlPattern: /\/(pages|audio)\//, handler: "CacheFirst",
             options: { cacheName: "contenido", expiration: { maxEntries: 600 } } },
           { urlPattern: /^https:\/\/fonts\.(googleapis|gstatic)\.com\//, handler: "StaleWhileRevalidate",

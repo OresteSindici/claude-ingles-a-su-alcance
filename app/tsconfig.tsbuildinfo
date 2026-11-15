@@ -1,1 +1,1 @@
-{"root":["./src/App.tsx","./src/data.ts","./src/main.tsx","./src/md.tsx","./src/progress.ts","./src/voice.tsx","./src/components/Drill.tsx","./src/components/QuizPlayer.tsx"],"version":"5.6.3"}
+{"root":["./src/App.tsx","./src/data.ts","./src/main.tsx","./src/md.tsx","./src/progress.ts","./src/voice.tsx","./src/components/Blocks.tsx","./src/components/Drill.tsx","./src/components/FormulaExplorer.tsx","./src/components/QuizPlayer.tsx"],"version":"5.6.3"}
