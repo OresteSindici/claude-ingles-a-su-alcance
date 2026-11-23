@@ -1,9 +1,10 @@
 import { useEffect, useState, type ReactNode } from "react";
-import { loadLesson, loadSearch, pageImg, type AllData, type Block, type LessonMeta, type Quiz } from "./data";
+import { loadLesson, loadSearch, type AllData, type Block, type LessonMeta, type Quiz } from "./data";
 import { points, rank, useProgress, PASS } from "./progress";
 import { QuizPlayer } from "./components/QuizPlayer";
 import { Blocks, QuizCard } from "./components/Blocks";
 import { FormulaExplorer } from "./components/FormulaExplorer";
+import { ManualIndex, ManualPage } from "./components/Manual";
 import { Markdown } from "./md";
 import homenajeText from "./content/homenaje.md?raw";
 
@@ -24,6 +25,7 @@ function Shell({ children, tab }: { children: ReactNode; tab: string }) {
       <nav className="tabs" aria-label="Secciones">
         <a href="#/" aria-current={tab === "curso" ? "page" : undefined}>Curso</a>
         <a href="#/ejercicios" aria-current={tab === "ejercicios" ? "page" : undefined}>Ejercicios</a>
+        <a href="#/manual" aria-current={tab === "manual" ? "page" : undefined}>Manual</a>
         <a href="#/homenaje" aria-current={tab === "homenaje" ? "page" : undefined}>Homenaje</a>
       </nav>
     </div></header>
@@ -96,7 +98,7 @@ function Home({ data }: { data: AllData }) {
       })}
       <a className="stage original" href="#/manual">
         <span className="stage-n">PDF</span>
-        <div><strong>Manual original</strong><span>Las 206 páginas tal como se publicaron en 2002, con su diseño original.</span></div>
+        <div><strong>Manual original</strong><span>Las 206 páginas tal como se publicaron en 2002, con sus audios y respuestas interactivas.</span></div>
       </a>
     </div>
     <a className="tribute" href="#/homenaje">
@@ -207,30 +209,6 @@ function QuizView({ data, id }: { data: AllData; id: string }) {
   </>);
 }
 
-function ManualView({ data, page }: { data: AllData; page?: string }) {
-  const n = Math.min(206, Math.max(1, Number(page) || 1));
-  const [zoom, setZoom] = useState(false);
-  const lid = data.course.pageLesson[n];
-  const lesson = data.course.lessons.find((l) => l.id === lid);
-  return (<>
-    <a className="back" href="#/">← Curso</a>
-    <div className="eyebrow">Manual original · 2002</div>
-    <h1 className="h-quiz">Página {n} de 206</h1>
-    <div className="manual-bar">
-      <a className={"ghost small" + (n <= 1 ? " off" : "")} href={`#/manual/${n - 1}`}>← Anterior</a>
-      <form onSubmit={(e) => { e.preventDefault(); const v = new FormData(e.currentTarget).get("n"); go("manual/" + v); }}>
-        <input name="n" type="number" min={1} max={206} defaultValue={n} key={n} aria-label="Ir a la página" />
-      </form>
-      <a className={"ghost small" + (n >= 206 ? " off" : "")} href={`#/manual/${n + 1}`}>Siguiente →</a>
-    </div>
-    {lesson && <p className="hint">Esta página en texto: <a href={`#/leccion/${lesson.id}/p/${n}`}>{lesson.num ? lesson.num + ". " : ""}{lesson.title}</a></p>}
-    <figure className={"page-fig" + (zoom ? " zoom" : "")}>
-      <div className="page-scroll"><img className="page-img" src={pageImg(n)} alt={`Página ${n} del manual original`} width={1275} height={1650} onClick={() => setZoom(!zoom)} /></div>
-      <figcaption><span>Toque la página para {zoom ? "reducir" : "ampliar"}</span></figcaption>
-    </figure>
-  </>);
-}
-
 function SearchView({ data, q }: { data: AllData; q: string }) {
   const [idx, setIdx] = useState<[string, number, string][] | null>(null);
   useEffect(() => { loadSearch().then(setIdx); }, []);
@@ -297,10 +275,10 @@ function NotFound() { return <><h1>No encontrado</h1><p><a href="#/">Volver al i
 
 export function App({ data }: { data: AllData }) {
   const [view, id, , extra] = useRoute();
-  const tab = view === "homenaje" ? "homenaje" : view === "ejercicios" || view === "ejercicio" ? "ejercicios" : "curso";
+  const tab = view === "homenaje" ? "homenaje" : view === "ejercicios" || view === "ejercicio" ? "ejercicios" : view === "manual" ? "manual" : "curso";
   const body = view === "etapa" ? <StageView data={data} id={id} />
     : view === "leccion" ? <LessonView data={data} id={id} page={extra} />
-    : view === "manual" ? <ManualView data={data} page={id} />
+    : view === "manual" ? (id ? <ManualPage data={data} page={id} /> : <ManualIndex />)
     : view === "buscar" ? <SearchView data={data} q={decodeURIComponent(id ?? "")} />
     : view === "ejercicio" ? <QuizView data={data} id={id} />
     : view === "ejercicios" ? <QuizzesIndex data={data} />

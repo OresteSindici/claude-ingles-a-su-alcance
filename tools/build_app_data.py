@@ -185,3 +185,40 @@ json.dump(voice, open(f"{OUT}/voice.json", "w"), ensure_ascii=False)
 print(len(lessons), "lessons;", sum(l["drills"] for l in lessons), "drills;", len(quizzes), "quizzes;",
       sum(1 for q in quizzes if q["lessons"]), "quizzes linked to lessons;", len(search), "search entries")
 print([(q["title"], q["lessons"]) for q in quizzes if not q["lessons"]])
+
+# ---- Manual tab: interactive overlay for the original pages (from tools/build_manual.py) ----
+RAW = json.load(open("build/manual_raw.json"))
+audio_files = set(os.listdir("app/public/audio"))
+manual, unresolved = {}, []
+for n, items in RAW.items():
+    out = []
+    for it in items:
+        k, r = it["k"], it["r"]
+        if k == "audio":
+            if f'{it["a"]}.mp3' in audio_files: out.append({"k": "audio", "r": r, "src": f'audio/{it["a"]}.mp3'})
+        elif k == "goto":
+            out.append({"k": "goto", "r": r, "p": it["p"]})
+        elif k == "url":
+            out.append({"k": "url", "r": r, "u": it["u"]})
+        elif k == "file":
+            # PDF string escapes: \( \) and octal (\321 = Ñ in Windows-1252)
+            f = re.sub(r"\\([0-7]{3})", lambda m: bytes([int(m.group(1), 8)]).decode("cp1252"), it["f"])
+            f = re.sub(r"\\([()\\])", r"\1", f)
+            if re.match(r"^(www\.|https?://)", f):
+                out.append({"k": "url", "r": r, "u": f if f.startswith("http") else "http://" + f}); continue
+            low = f.lower()
+            if low.endswith(".txt"):
+                txt = read_answer(f)
+                if txt: out.append({"k": "answer", "r": r, "t": txt}); continue
+            if "men" in low and "principal" in low:
+                out.append({"k": "nav", "r": r, "to": "ejercicios", "label": "Menú de ejercicios"}); continue
+            qid = quiz_for(f)
+            if qid and qid in {q["id"] for q in quizzes}:
+                out.append({"k": "quiz", "r": r, "id": qid, "label": next(q["title"] for q in quizzes if q["id"] == qid)}); continue
+            unresolved.append((n, f))
+    manual[n] = out
+toc = [{"title": re.sub(r"\s+", " ", t["title"]).strip(), "page": t["page"], "level": t["level"]}
+       for t in C["toc"] if t["page"] > 0 and t["level"] <= 2]
+json.dump({"pages": manual, "toc": toc}, open(f"{OUT}/manual.json", "w"), ensure_ascii=False)
+from collections import Counter
+print("manual overlay:", dict(Counter(i["k"] for v in manual.values() for i in v)), "unresolved:", unresolved)
