@@ -259,3 +259,11 @@ mark{background:color-mix(in srgb,var(--gold) 40%,transparent);color:inherit;bor
 .manual-bar a{text-decoration:none;color:var(--fg);border-radius:10px}
 .manual-bar a.off{pointer-events:none;opacity:.4}
 .manual-bar input{width:84px;text-align:center}
+/* audio availability */
+.spk{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vertical-align:-3px}
+.spk path:first-child{fill:currentColor;stroke:none}
+.has-audio{color:var(--gold)!important;font:600 12px var(--mono)}
+.audio-badge{display:inline-flex;align-items:center;gap:4px;margin-left:8px;padding:1px 7px;border:1px solid var(--sky);border-radius:999px;color:var(--sky);font:700 11px var(--mono)}
+.audio-note{display:flex;gap:10px;align-items:flex-start;margin:0 0 12px;padding:10px 12px;border-radius:10px;background:color-mix(in srgb,var(--sky) 14%,var(--panel));color:var(--fg)}
+.audio-note b{color:var(--sky)}
+.audio-note .spk{flex:none;margin-top:4px;color:var(--sky)} .audio-note a{font-weight:700}

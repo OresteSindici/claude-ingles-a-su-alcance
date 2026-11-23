@@ -29,7 +29,11 @@ export default defineConfig({
         runtimeCaching: [
           { urlPattern: /\/data\/(lessons\/|search\.json)/, handler: "StaleWhileRevalidate",
             options: { cacheName: "lecciones" } },
-          { urlPattern: /\/(pages|audio)\//, handler: "CacheFirst",
+          // Audio: Safari (iPhone) requests audio in byte ranges, so the cache must answer range requests.
+          { urlPattern: /\/audio\/.*\.mp3$/, handler: "CacheFirst",
+            options: { cacheName: "audio", rangeRequests: true, cacheableResponse: { statuses: [200] },
+              expiration: { maxEntries: 250 } } },
+          { urlPattern: /\/pages\//, handler: "CacheFirst",
             options: { cacheName: "contenido", expiration: { maxEntries: 600 } } },
           { urlPattern: /^https:\/\/fonts\.(googleapis|gstatic)\.com\//, handler: "StaleWhileRevalidate",
             options: { cacheName: "fuentes" } },

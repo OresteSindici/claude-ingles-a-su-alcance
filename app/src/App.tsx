@@ -48,6 +48,7 @@ function RankHud() {
   );
 }
 
+const Speaker = () => <svg className="spk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4zM16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" /></svg>;
 const lessonQuizzes = (l: LessonMeta) => [...l.quizzes, ...(l.extra ?? [])];
 const passed = (p: ReturnType<typeof useProgress>, q: string) => { const x = p.quizzes[q]; return !!x && x.best / x.total >= PASS; };
 
@@ -88,7 +89,8 @@ function Home({ data }: { data: AllData }) {
           <a key={s.id} className="stage" href={`#/etapa/${s.id}`}>
             <span className="stage-n">{String(i + 1).padStart(2, "0")}</span>
             <div><strong>{s.title}</strong><span>{s.desc}</span>
-              <small>{ls.length} lecciones{keys.length ? ` · ${done}/${keys.length} frases` : ""}</small></div>
+              <small>{ls.length} lecciones{keys.length ? ` · ${done}/${keys.length} frases` : ""}</small>
+              {ls.some((l) => l.audio) && <small className="has-audio"><Speaker /> Audio original en {ls.filter((l) => l.audio).length} {ls.filter((l) => l.audio).length === 1 ? "lección" : "lecciones"}</small>}</div>
           </a>
         );
       })}
@@ -123,7 +125,8 @@ function StageView({ data, id }: { data: AllData; id: string }) {
           <li key={l.id}><a href={`#/leccion/${l.id}`} className={complete ? "done" : ""}>
             <span className="lnum">{l.num || "·"}</span>
             <span className="ltitle">{l.title}</span>
-            <span className="lmeta">{l.drillKeys.length ? `${done}/${l.drillKeys.length} frases` : "Lectura"}{qs.length ? ` · ${qd}/${qs.length} ejercicios` : ""}</span>
+            <span className="lmeta">{l.drillKeys.length ? `${done}/${l.drillKeys.length} frases` : "Lectura"}{qs.length ? ` · ${qd}/${qs.length} ejercicios` : ""}
+              {l.audio > 0 && <span className="audio-badge"><Speaker /> Audio</span>}</span>
           </a></li>
         );
       })}
@@ -145,6 +148,8 @@ function LessonView({ data, id, page }: { data: AllData; id: string; page?: stri
     <a className="back" href={`#/etapa/${stage.id}`}>← {stage.title}</a>
     <div className="eyebrow">{l.num ? `Capítulo ${l.num}` : "Lección"} · {l.first === l.last ? `Página ${l.first}` : `Páginas ${l.first}–${l.last}`}</div>
     <h1 className="h-lesson">{l.title}</h1>
+    {l.audio > 0 && <p className="audio-note"><Speaker /> <span>{l.audio} frases con el audio original de 2002. Toque el botón <b>▶</b> junto a cada frase para escucharla.{" "}
+      {l.audioPage && l.audioPage !== l.first && <a href={`#/leccion/${l.id}/p/${l.audioPage}`}>Ir a la primera frase con audio (página {l.audioPage})</a>}</span></p>}
     {blocks === null ? <p className="muted">Cargando lección…</p> : <Blocks blocks={blocks} data={data} lessonId={l.id} />}
     {practice.length > 0 && (
       <section className="practice"><h2 className="h-sec">Practique este tema</h2>

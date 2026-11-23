@@ -11,7 +11,7 @@ export type Block =
   | { t: "reveal"; key: string; prompt: string; answer: string }
   | { t: "quiz"; id: string };
 export type LessonMeta = { id: string; num: string; title: string; stage: string; subs: string[]; first: number; last: number;
-  drills: number; quizzes: string[]; extra?: string[]; drillKeys: string[] };
+  drills: number; audio: number; audioPage: number | null; quizzes: string[]; extra?: string[]; drillKeys: string[] };
 export type Stage = { id: string; title: string; desc: string };
 export type Course = { stages: Stage[]; lessons: LessonMeta[]; pageLesson: Record<string, string>; placement: string[] };
 export type Option = { text: string; feedback: string; correct: boolean };

@@ -129,6 +129,8 @@ for i, s in enumerate(starts):
     json.dump(blocks, open(f"{OUT}/lessons/{lid}.json", "w"), ensure_ascii=False)
     lessons.append({"id": lid, "num": num, "title": name, "stage": stage, "subs": [x.capitalize() for x in s["subs"]],
                     "first": s["page"], "last": end, "drills": drills, "quizzes": qids,
+                    "audio": sum(1 for b in blocks if b["t"] == "drill" and b.get("audio")),
+                    "audioPage": next((b["page"] for b in blocks if b["t"] == "drill" and b.get("audio")), None),
                     "drillKeys": [f'{b["page"]}-{b["n"]}' for b in blocks if b["t"] == "drill"]})
 
 # Quizzes: clear names, a sort order, and the lessons that teach their topic
