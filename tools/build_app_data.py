@@ -58,7 +58,31 @@ for t in toc:
         starts.append({"page": t["page"], "title": title, "subs": [], "also": []})
 starts[0]["page"] = 1  # include the cover/intro pages in the first lesson
 pages = {p["page"]: p for p in C["pages"]}
-lessons = []
+THEORY = json.load(open("build/theory.json"))   # from tools/build_theory.py
+
+def read_answer(rel):
+    path = os.path.join("legacy", rel)
+    if not os.path.exists(path):
+        dd, f = os.path.split(path)
+        m = [x for x in os.listdir(dd) if x.lower() == f.lower()] if os.path.isdir(dd) else []
+        if not m: return None
+        path = os.path.join(dd, m[0])
+    raw = open(path, "rb").read()
+    try: t = raw.decode("utf-8")
+    except UnicodeDecodeError: t = raw.decode("cp1252")
+    return unicodedata.normalize("NFC", t.replace("\r\n", "\n").replace("\r", "\n")).strip()
+
+def plain_block(b):
+    if b["t"] in ("p", "h2", "h3", "li"): return "".join(r["x"] for r in b["runs"])
+    if b["t"] in ("grid", "table"): return " · ".join("".join(r["x"] for r in (c or [])) for row in b["rows"] for c in row)
+    if b["t"] == "idiom": return f'{b["idiom"]}: {b["meaning"]} {b["example"]}'
+    if b["t"] == "drill": return b["prompt"]
+    if b["t"] == "reveal": return b["prompt"]
+    return ""
+
+os.makedirs(f"{OUT}/lessons", exist_ok=True)
+for f in os.listdir(f"{OUT}/lessons"): os.remove(f"{OUT}/lessons/{f}")
+lessons, search, page_lesson, quiz_lessons = [], [], {}, {}
 for i, s in enumerate(starts):
     end = (starts[i + 1]["page"] - 1) if i + 1 < len(starts) else 206
     end = max(end, s["page"])
@@ -67,35 +91,134 @@ for i, s in enumerate(starts):
     clean = lambda x: re.sub(r"\s*\(.*?\)\s*\.?$", "", x).strip(" .:")
     cap = lambda x: x[:1].upper() + x[1:].lower() if x.upper() == x else x
     name = " · ".join(cap(clean(x)) for x in [name] + s.get("also", []))
-    lp = []
+    lid = slug((num + "-" if num else "") + name)[:60]
+    blocks, drills, qids = [], 0, []
     for n in range(s["page"], end + 1):
-        p = pages[n]
-        items = [it for it in p["items"] if it.get("audio") or it.get("answers")]
-        links = []
-        targets = [l["target"] for l in p["links"] if "target" in l] + \
-                  [f for f in p.get("unmatchedAnswers", []) if not f.lower().endswith(".txt")]
-        for t in targets:
-            if True:
-                qid = quiz_for(t)
-                if qid and qid not in [x["quiz"] for x in links]: links.append({"quiz": qid})
-        lp.append({"n": n, "items": [{"n": it["n"], "prompt": it["prompt"], "formula": it["formula"],
-                                      "hl": it["highlight"], "audio": it.get("audio"),
-                                      "answers": [a["text"] for a in it.get("answers", [])]} for it in items],
-                   "quizzes": links})
+        page_lesson[n] = lid
+        items = {it["n"]: it for it in pages[n]["items"]}
+        blocks.append({"t": "page", "n": n})
+        for b in THEORY[str(n)]:
+            if b["t"] == "drill":
+                it = items.get(b["n"])
+                if not it: continue
+                b = {"t": "drill", "page": n, "n": it["n"], "prompt": it["prompt"], "formula": it["formula"],
+                     "hl": it["highlight"], "audio": it.get("audio"),
+                     "answers": [a["text"] for a in it.get("answers", []) if a["text"]]}
+                drills += 1
+            elif b["t"] == "reveal":
+                txt = read_answer(b["file"])
+                if not txt: continue
+                prompt = b["prompt"]
+                prev = blocks[-1] if blocks else None
+                if not prompt and prev and prev["t"] == "li" and re.fullmatch(r"[A-C]\.", prev.get("mark", "")):
+                    # "C. Si yo hubiera sabido…" followed by its answer box: merge them into one card
+                    prompt = prev["mark"] + " " + "".join(r["x"] for r in prev["runs"]); blocks.pop()
+                if not prompt:   # e.g. CONDICIONALES/3B.txt -> "Frase 3, forma B"
+                    m2 = re.search(r"(\d+)([A-C])\d*\.txt$", b["file"], re.I)
+                    prompt = f"Frase {m2.group(1)}, forma {m2.group(2).upper()}: tradúzcala y compare" if m2 else ""
+                b = {"t": "reveal", "key": slug(b["file"]), "prompt": prompt, "answer": txt}
+            elif b["t"] == "quiz":
+                qid = quiz_for(b["file"])
+                if not qid or qid in qids: continue
+                qids.append(qid); quiz_lessons.setdefault(qid, []).append(lid)
+                b = {"t": "quiz", "id": qid}
+            blocks.append(b)
+            txt = plain_block(b).strip()
+            if txt and b["t"] != "page": search.append([lid, n, txt[:400]])
     stage = next(st[0] for st in STAGES if st[3] <= s["page"] <= st[4])
-    lessons.append({"id": slug((num + "-" if num else "") + name)[:60], "num": num, "title": name,
-                    "stage": stage, "subs": [x.capitalize() for x in s["subs"]], "pages": lp})
+    json.dump(blocks, open(f"{OUT}/lessons/{lid}.json", "w"), ensure_ascii=False)
+    lessons.append({"id": lid, "num": num, "title": name, "stage": stage, "subs": [x.capitalize() for x in s["subs"]],
+                    "first": s["page"], "last": end, "drills": drills, "quizzes": qids,
+                    "audio": sum(1 for b in blocks if b["t"] == "drill" and b.get("audio")),
+                    "audioPage": next((b["page"] for b in blocks if b["t"] == "drill" and b.get("audio")), None),
+                    "drillKeys": [f'{b["page"]}-{b["n"]}' for b in blocks if b["t"] == "drill"]})
+
+# Quizzes: clear names, a sort order, and the lessons that teach their topic
+def nice(q):
+    m = re.match(r"evaluation-(\d+)$", q["id"])
+    if m: return f"Evaluación general {m.group(1)}", 100 + int(m.group(1))
+    names = {"evaluacion-basica": ("Evaluación básica (prueba de nivel)", 1), "evaluacion-avanzada": ("Evaluación avanzada", 200),
+             "la-hora-de-la-verdad": ("La hora de la verdad", 300)}
+    if q["id"] in names: return names[q["id"]]
+    m = re.match(r"ordene-(\d+)$", q["id"])
+    if m: return f"Ordene la frase {m.group(1)}", 400 + int(m.group(1))
+    return q["title"], 500
+# Which lesson teaches each quiz's topic (hand-checked; values are lesson-id prefixes).
+TOPIC = {
+ "a-little-a-few": "xxx-", "adjetivo-verbo": "ix-", "adjetivos-preposiciones": "lista-de-verbos-con-prep",
+ "altough-though": "xlv-", "another-the-other": "liii-", "any-longer": "il-", "verbos-irregulares": "x-conj",
+ "verbos-regulares": "x-conj", "articulos-indefinidos": "iii-", "as-o-like": "liii-", "uso-basico-de-auxiliares": "xii-",
+ "comparaciones-de-adjetivos": "xx-", "comparacion-de-sustantivos": "xx-", "conjunciones": "xxv-",
+ "either-neither": "il-", "enfatizacion": "xxxiii-", "for-since": "xlvii-", "forma-especial-del-sustantivo": "xxviii-",
+ "formas-del-infinitivo": "xli-", "frases-condicionales": "xxi-", "grados-de-obligatoriedad": "xix-",
+ "interpretacion-de-los-doce": "xv-", "interpretacion-de-los-tres": "xv-", "modismos": "xl-",
+ "omision-del-articulo": "iii-", "plurales-irregulares": "iv-", "pronombres-indefinidos": "vi-",
+ "pronombres-personales": "vi-", "pronombres-posesivos": "vi-", "pronombres-reflexivos": "xxvii-",
+ "reported-speech": "liii-", "some-any": "xxxi-", "still-jet": "xxxvii-", "subjuntivo": "xliii-",
+ "sujeto-verbo-pronombres": "il-", "tag-questions": "xxxvi-", "there-is": "il-", "make-do": "liii-",
+ "ubicacion-de-adverbios": "xxxviii-", "uso-avanzado-de-los-auxiliares": "lii-", "uso-de-preposiciones": "xxiv-",
+ "verbo-preposiciones": "lista-de-verbos-con-prep", "verbo-to-pronombres": "xxxi-", "verbo-verbo-en-continuo": "xxviii-",
+ "verbo-adjetivo-adverbio": "ix-", "voz-pasiva": "xxvi-", "ordene-": "xvi-",
+}
+strip_acc = lambda x: unicodedata.normalize("NFKD", x).encode("ascii", "ignore").decode()
+words = lambda x: {w for w in re.findall(r"[a-z]{4,}", strip_acc(x.lower())) if w not in {"para", "como", "verbo", "verbos", "frase", "frases", "con", "uso", "usos", "de", "los", "las"}}
+for q in quizzes:
+    q["title"], q["order"] = nice(q)
+    q["title"] = re.sub(r'\s*"\s*', " ", q["title"]).replace(" )", ")").strip()
+    key = next((k for k in TOPIC if q["id"].startswith(k)), None)
+    ls = [l["id"] for l in lessons if key and l["id"].startswith(TOPIC[key])][:1]
+    q["lessons"] = ls
+    for l in lessons:   # the topic lesson also offers the quiz ("Practique este tema")
+        if l["id"] in ls and q["id"] not in l["quizzes"]: l.setdefault("extra", []).append(q["id"])
+quizzes.sort(key=lambda q: (q["order"], q["title"]))
 
 PLACEMENT = ["evaluacion-basica", "la-hora-de-la-verdad", "evaluacion-avanzada"]
-data = {"stages": [{"id": a, "title": b, "desc": c} for a, b, c, *_ in STAGES],
-        "lessons": lessons, "placement": [p for p in PLACEMENT if any(q["id"] == p for q in quizzes)]}
+data = {"stages": [{"id": a, "title": b, "desc": c} for a, b, c, *_ in STAGES], "lessons": lessons,
+        "pageLesson": page_lesson, "placement": [p for p in PLACEMENT if any(q["id"] == p for q in quizzes)]}
 json.dump(data, open(f"{OUT}/course.json", "w"), ensure_ascii=False)
 json.dump(quizzes, open(f"{OUT}/quizzes.json", "w"), ensure_ascii=False)
+json.dump(search, open(f"{OUT}/search.json", "w"), ensure_ascii=False)
 v = json.load(open("content/voice.json"))
 voice = {"right": [x for x in v["DefaultRight"] if not x.isupper() and "Great" not in x],
          "wrong": [x for x in v["DefaultWrong"] if not x.isupper() and "verbos" not in x]}
 json.dump(voice, open(f"{OUT}/voice.json", "w"), ensure_ascii=False)
-linked = {l["quiz"] for ls in lessons for p in ls["pages"] for l in p["quizzes"]}
-print(len(lessons), "lessons;", sum(len(p["items"]) for ls in lessons for p in ls["pages"]), "drill items;",
-      len(quizzes), "quizzes;", len(linked), "linked from lessons; placement:", data["placement"])
-print([q["id"] for q in quizzes][:200])
+print(len(lessons), "lessons;", sum(l["drills"] for l in lessons), "drills;", len(quizzes), "quizzes;",
+      sum(1 for q in quizzes if q["lessons"]), "quizzes linked to lessons;", len(search), "search entries")
+print([(q["title"], q["lessons"]) for q in quizzes if not q["lessons"]])
+
+# ---- Manual tab: interactive overlay for the original pages (from tools/build_manual.py) ----
+RAW = json.load(open("build/manual_raw.json"))
+audio_files = set(os.listdir("app/public/audio"))
+manual, unresolved = {}, []
+for n, items in RAW.items():
+    out = []
+    for it in items:
+        k, r = it["k"], it["r"]
+        if k == "audio":
+            if f'{it["a"]}.mp3' in audio_files: out.append({"k": "audio", "r": r, "src": f'audio/{it["a"]}.mp3'})
+        elif k == "goto":
+            out.append({"k": "goto", "r": r, "p": it["p"]})
+        elif k == "url":
+            out.append({"k": "url", "r": r, "u": it["u"]})
+        elif k == "file":
+            # PDF string escapes: \( \) and octal (\321 = Ñ in Windows-1252)
+            f = re.sub(r"\\([0-7]{3})", lambda m: bytes([int(m.group(1), 8)]).decode("cp1252"), it["f"])
+            f = re.sub(r"\\([()\\])", r"\1", f)
+            if re.match(r"^(www\.|https?://)", f):
+                out.append({"k": "url", "r": r, "u": f if f.startswith("http") else "http://" + f}); continue
+            low = f.lower()
+            if low.endswith(".txt"):
+                txt = read_answer(f)
+                if txt: out.append({"k": "answer", "r": r, "t": txt}); continue
+            if "men" in low and "principal" in low:
+                out.append({"k": "nav", "r": r, "to": "ejercicios", "label": "Menú de ejercicios"}); continue
+            qid = quiz_for(f)
+            if qid and qid in {q["id"] for q in quizzes}:
+                out.append({"k": "quiz", "r": r, "id": qid, "label": next(q["title"] for q in quizzes if q["id"] == qid)}); continue
+            unresolved.append((n, f))
+    manual[n] = out
+toc = [{"title": re.sub(r"\s+", " ", t["title"]).strip(), "page": t["page"], "level": t["level"]}
+       for t in C["toc"] if t["page"] > 0 and t["level"] <= 2]
+json.dump({"pages": manual, "toc": toc}, open(f"{OUT}/manual.json", "w"), ensure_ascii=False)
+from collections import Counter
+print("manual overlay:", dict(Counter(i["k"] for v in manual.values() for i in v)), "unresolved:", unresolved)

@@ -25,9 +25,15 @@ export default defineConfig({
       },
       workbox: {
         // App shell + course data are precached; page images and audio are cached as they are used.
-        globPatterns: ["**/*.{js,css,html,png,svg}", "data/*.json", "homenaje/*.jpg"],
+        globPatterns: ["**/*.{js,css,html,png,svg}", "data/{course,quizzes,voice,homenaje}.json", "homenaje/*.jpg"],
         runtimeCaching: [
-          { urlPattern: /\/(pages|audio)\//, handler: "CacheFirst",
+          { urlPattern: /\/data\/(lessons\/|search\.json|manual\.json)/, handler: "StaleWhileRevalidate",
+            options: { cacheName: "lecciones" } },
+          // Audio: Safari (iPhone) requests audio in byte ranges, so the cache must answer range requests.
+          { urlPattern: /\/audio\/.*\.mp3$/, handler: "CacheFirst",
+            options: { cacheName: "audio", rangeRequests: true, cacheableResponse: { statuses: [200] },
+              expiration: { maxEntries: 250 } } },
+          { urlPattern: /\/pages\//, handler: "CacheFirst",
             options: { cacheName: "contenido", expiration: { maxEntries: 600 } } },
           { urlPattern: /^https:\/\/fonts\.(googleapis|gstatic)\.com\//, handler: "StaleWhileRevalidate",
             options: { cacheName: "fuentes" } },
